@@ -148,7 +148,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = DRL_to_purify_orsk
-	icon = GFX_focus_GER_the_ride_goes_on
+	icon = GFX_focus_DRL_to_purify_orsk
 	cost = 3.60
 	prerequisite = {
 		focus = DRL_our_leader
@@ -203,6 +203,7 @@ shared_focus = {
 	relative_position_id = DRL_to_purify_orsk
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_wipe_out_insurgents"
+		add_stability = 0.05
 	}
 }
 shared_focus = {
@@ -243,6 +244,7 @@ shared_focus = {
 	relative_position_id = DRL_wipe_out_insurgents
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
+		add_stability = 0.09
 	}
 }
 shared_focus = {
