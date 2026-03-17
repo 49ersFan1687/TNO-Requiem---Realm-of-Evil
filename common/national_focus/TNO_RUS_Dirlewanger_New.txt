@@ -24,6 +24,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_black_bandits_of_the_south"
+		
 	}
 }
 shared_focus = {
@@ -44,6 +45,7 @@ shared_focus = {
 	relative_position_id = DRL_the_black_bandits_of_the_south
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_leader"
+		
 	}
 }
 shared_focus = {
@@ -64,9 +66,7 @@ shared_focus = {
 	relative_position_id = DRL_our_leader
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_army_of_bandits"
-		add_equipment_to_stockpile = {
-			infantry_equipment 
-		}
+		
 	}
 }
 shared_focus = {
@@ -186,8 +186,6 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_fear"
-		add_stability = 0.05
-		add_political_power = 30
 	}
 }
 shared_focus = {
@@ -208,7 +206,7 @@ shared_focus = {
 	relative_position_id = DRL_to_purify_orsk
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_wipe_out_insurgents"
-		add_stability = 0.05
+		
 	}
 }
 shared_focus = {
@@ -229,7 +227,6 @@ shared_focus = {
 	relative_position_id = DRL_send_fear
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
-		add_political_power = 50
 	}
 }
 shared_focus = {
@@ -250,7 +247,6 @@ shared_focus = {
 	relative_position_id = DRL_wipe_out_insurgents
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
-		add_stability = 0.09
 	}
 }
 shared_focus = {
@@ -297,8 +293,6 @@ shared_focus = {
 	relative_position_id = DRL_send_horror
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_aryan_army_in_the_dark"
-		add_political_power = 45
-		add_stability = 0.25
 	}
 }
 shared_focus = {
