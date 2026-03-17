@@ -1,0 +1,9 @@
+DRL_dirlewangers_army_modifier = {
+    enable = { always = yes }
+    # icon = 
+    experience_gain_army = DRL_dirlewangers_army_modifier_experience_gain_army
+    army_attack_factor = DRL_dirlewangers_army_modifier_army_attack_factor
+    army_org = DRL_dirlewangers_army_modifier_army_org
+    planning_speed = DRL_dirlewangers_army_modifier_planning_speed
+    war_support_factor = DRL_dirlewangers_army_modifier_war_support_factor
+}
