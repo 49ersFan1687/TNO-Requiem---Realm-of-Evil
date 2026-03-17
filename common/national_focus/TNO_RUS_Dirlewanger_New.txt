@@ -64,6 +64,9 @@ shared_focus = {
 	relative_position_id = DRL_our_leader
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_army_of_bandits"
+		add_equipment_to_stockpile = {
+			infantry_equipment 
+		}
 	}
 }
 shared_focus = {
@@ -183,6 +186,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_fear"
+		add_stability = 0.05
+		add_political_power = 30
 	}
 }
 shared_focus = {
@@ -224,6 +229,7 @@ shared_focus = {
 	relative_position_id = DRL_send_fear
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
+		add_political_power = 50
 	}
 }
 shared_focus = {
@@ -291,6 +297,8 @@ shared_focus = {
 	relative_position_id = DRL_send_horror
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_aryan_army_in_the_dark"
+		add_political_power = 45
+		add_stability = 0.25
 	}
 }
 shared_focus = {
@@ -313,7 +321,28 @@ shared_focus = {
 	}
 	relative_position_id = DRL_the_aryan_army_in_the_dark
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_lysenkos_instruction"
+		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_realm_begins"
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			set_country_flag = DRL_ready_to_conquer
+		}
+	}
+}
+shared_focus = {
+	id = DRL_preparing_to_strike
+	icon = GFX_focus_generic_military_contacts
+	cost = 3.60
+	prerequisite = {
+		focus = DRL_the_aryan_army_in_the_dark
+	}
+	allow_branch = {
+		has_country_flag = DRL_ready_to_conquer
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_the_realm_begins
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus_DRL_preparing_to_strike"
 	}
 }
 
