@@ -8,11 +8,11 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = DRL_the_black_bandits_of_the_south
+	shared_focus = DRL_the_black_bandits_of_the_orsk
 }
 shared_focus = {
-	id = DRL_the_black_bandits_of_the_south
-	icon = GFX_focus_DRL_the_black_bandits_of_the_south
+	id = DRL_the_black_bandits_of_the_orsk
+	icon = GFX_focus_DRL_the_black_bandits_of_the_orsk
 	cost = 3.60
 	x = 12
 	y = 0
@@ -23,8 +23,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_black_bandits_of_the_south"
-		
+		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_black_bandits_of_the_orsk"
+		add_political_power = 30
 	}
 }
 shared_focus = {
@@ -32,7 +32,7 @@ shared_focus = {
 	icon = GFX_focus_generic_tank_warfare
 	cost = 3.60
 	prerequisite = {
-		focus = DRL_the_black_bandits_of_the_south
+		focus = DRL_the_black_bandits_of_the_orsk
 	}
 	x = 0
 	y = 1
@@ -42,10 +42,10 @@ shared_focus = {
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_the_black_bandits_of_the_south
+	relative_position_id = DRL_the_black_bandits_of_the_orsk
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_leader"
-		
+		add_stability = 0.1
 	}
 }
 shared_focus = {
@@ -66,7 +66,7 @@ shared_focus = {
 	relative_position_id = DRL_our_leader
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_army_of_bandits"
-		
+		add_war_support = 0.1
 	}
 }
 shared_focus = {

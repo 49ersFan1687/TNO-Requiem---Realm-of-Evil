@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_DRL_preparing_to_strike"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_preparing_to_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_The_South_All_Ours"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_The_South_All_Ours.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_to_conquer_the_south"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_to_conquer_the_south.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_with_glory"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_glory.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_with_power"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_power.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_with_strenght"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_strenght.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_as_fast_as_we_must"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_as_fast_as_we_must.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_and_to_orenburg"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_to_orenburg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_magnitogorsk_finale"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_magnitogorsk_finale.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_strike_ural_league"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_strike_ural_league.dds"
+	}
+}
