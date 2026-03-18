@@ -346,13 +346,13 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_aryan_army_in_the_dark
+		focus = DRL_the_realm_begins
 	}
 	allow_branch = {
 		has_country_flag = DRL_ready_to_conquer
 	}
-	x = 0
-	y = 1
+	x = 8
+	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_preparing_to_strike"
 	}
