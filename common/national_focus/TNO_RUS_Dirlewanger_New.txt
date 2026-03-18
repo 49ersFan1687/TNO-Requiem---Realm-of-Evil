@@ -12,9 +12,11 @@ focus_tree = {
 }
 shared_focus = {
 	id = DRL_the_black_bandits_of_the_orsk
-	icon = GFX_focus_DRL_the_black_bandits_of_the_orsk
-	cost = 3.60
-	x = 12
+	icon = GFX_focus_DRL_the_bandits_of_the_south
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	x = 8
 	y = 0
 	ai_will_do = {
 		factor = 80
@@ -23,18 +25,20 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_black_bandits_of_the_orsk"
+		log = "[GetDateText]: [Root.GetName]: DRL_the_black_bandits_of_the_orsk"
 		add_political_power = 30
 	}
 }
 shared_focus = {
 	id = DRL_our_leader
-	icon = GFX_focus_generic_tank_warfare
-	cost = 3.60
+	icon = GFX_focus_DRL_our_db_leader
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_the_black_bandits_of_the_orsk
 	}
-	x = 0
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 80
@@ -42,137 +46,165 @@ shared_focus = {
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_the_black_bandits_of_the_orsk
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_leader"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_our_leader"
 		add_stability = 0.1
 	}
 }
 shared_focus = {
 	id = DRL_our_army_of_bandits
-	icon = GFX_focus_OMS_enhanced_training_programs
-	cost = 3.60
+	icon = GFX_focus_DRL_our_armies_of_bandits
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_our_leader
 	}
-	x = -2
-	y = 1
+	x = 5
+	y = 2
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_our_leader
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_our_army_of_bandits"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_our_army_of_bandits"
 		add_war_support = 0.1
 	}
 }
 shared_focus = {
 	id = DRL_the_art_of_pillage
-	icon = GFX_focus_generic_training_day_and_night
-	cost = 3.60
+	icon = GFX_focus_DRL_the_art_of_pillage
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_our_army_of_bandits
 	}
-	x = -1
-	y = 1
+	x = 3
+	y = 3
 	ai_will_do = {
 		factor = 60
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_our_army_of_bandits
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_art_of_pillage"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_art_of_pillage"
 	}
 }
 shared_focus = {
 	id = DRL_bandits_arms
-	icon = GFX_focus_generic_embrace_totalitarianism
-	cost = 3.60
+	icon = GFX_focus_DRL_bandits_arms
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_our_army_of_bandits
 	}
-	x = 1
-	y = 1
+	x = 7
+	y = 3
 	ai_will_do = {
 		factor = 60
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_our_army_of_bandits
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_bandits_arms"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_bandits_arms"
 	}
 }
 shared_focus = {
 	id = DRL_new_tactics
-	icon = GFX_focus_generic_prepare_for_the_clash
-	cost = 3.60
+	icon = GFX_focus_DRL_the_bandit_new_tactics
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_the_art_of_pillage
 	}
-	x = 0
-	y = 1
+	x = 4
+	y = 4
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_the_art_of_pillage
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_new_tactics"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_new_tactics"
 	}
 }
 shared_focus = {
 	id = DRL_and_with_power
-	icon = GFX_focus_generic_prepare_for_the_clash
-	cost = 3.60
+	icon = GFX_focus_DRL_and_with_bandit_power
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_bandits_arms
 	}
-	x = 0
-	y = 1
+	x = 6
+	y = 4
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_bandits_arms
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_new_tactics"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_with_power"
 	}
 }
 shared_focus = {
 	id = DRL_to_purify_orsk
-	icon = GFX_focus_DRL_to_purify_orsk
-	cost = 3.60
+	icon = GFX_focus_DRL_to_purify_out_orsk
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_our_leader
 	}
-	x = 2
-	y = 1
+	x = 11
+	y = 2
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_our_leader
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_to_purify_orsk"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_to_purify_orsk"
 	}
 }
 shared_focus = {
 	id = DRL_send_fear
-	icon = GFX_focus_generic_forced_conscription
-	cost = 3.60
+	icon = GFX_focus_DRL_send_fear_to_them
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_to_purify_orsk
+	}
+	x = 9
+	y = 3
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_send_fear"
+	}
+}
+shared_focus = {
+	id = DRL_wipe_out_insurgents
+	icon = GFX_focus_DRL_wipe_out_insurgents
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_to_purify_orsk
 	}
@@ -185,137 +217,122 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_fear"
-	}
-}
-shared_focus = {
-	id = DRL_wipe_out_insurgents
-	icon = GFX_focus_generic_wipe_out_insurgents
-	cost = 3.60
-	prerequisite = {
-		focus = DRL_to_purify_orsk
-	}
-	x = 1
-	y = 1
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	relative_position_id = DRL_to_purify_orsk
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_wipe_out_insurgents"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_wipe_out_insurgents"
 		
 	}
 }
 shared_focus = {
 	id = DRL_send_horror
-	icon = GFX_focus_generic_build_our_guns
-	cost = 3.60
+	icon = GFX_focus_DRL_send_horror_to_them
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_send_fear
 	}
-	x = 0
-	y = 1
+	x = 10
+	y = 4
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_send_fear
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_send_horror"
 	}
 }
 shared_focus = {
 	id = DRL_end_the_last_bastards
-	icon = GFX_focus_generic_build_our_guns
-	cost = 3.60
+	icon = GFX_focus_DRL_end_the_last_bastards
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_wipe_out_insurgents
 	}
-	x = 0
-	y = 1
+	x = 12
+	y = 4
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_wipe_out_insurgents
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_send_horror"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_end_the_last_bastards"
 	}
 }
 shared_focus = {
 	id = DRL_the_aryan_army_in_the_dark
-	icon = GFX_focus_MGN_exploitation_of_acquired_areas
-	cost = 3.00
+	icon = GFX_focus_DRL_the_aryan_army_in_dark
+	cost = 3.60
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_new_tactics
 	}
 	prerequisite = {
 		focus = DRL_and_with_power
 	}
-	x = 1
-	y = 1
+	x = 5
+	y = 5
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_new_tactics
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_aryan_army_in_the_dark"
 	}
 }
 shared_focus = {
 	id = DRL_securing_our_bedrock_first
-	icon = GFX_focus_MGN_exploitation_of_acquired_areas
-	cost = 3.00
+	icon = GFX_focus_DRL_securing_our_bedrock_first
+	cost = 3.60
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_send_horror
 	}
 	prerequisite = {
 		focus = DRL_end_the_last_bastards
 	}
-	x = 1
-	y = 1
+	x = 11
+	y = 5
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_send_horror
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_aryan_army_in_the_dark"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_securing_our_bedrock_first"
 	}
 }
 shared_focus = {
 	id = DRL_the_realm_begins
-	icon = GFX_focus_generic_military_contacts
-	cost = 3.60
+	icon = GFX_focus_DRL_the_realm_begins
+	cost = 4.35
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_the_aryan_army_in_the_dark
 	}
 	prerequisite = {
 		focus = DRL_securing_our_bedrock_first
 	}
-	x = 2
-	y = 1
+	x = 8
+	y = 6
 	ai_will_do = {
 		factor = 80
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
-	relative_position_id = DRL_the_aryan_army_in_the_dark
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_the_realm_begins"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_realm_begins"
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			set_country_flag = DRL_ready_to_conquer
@@ -325,7 +342,9 @@ shared_focus = {
 shared_focus = {
 	id = DRL_preparing_to_strike
 	icon = GFX_focus_generic_military_contacts
-	cost = 3.60
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
 	prerequisite = {
 		focus = DRL_the_aryan_army_in_the_dark
 	}
@@ -334,9 +353,8 @@ shared_focus = {
 	}
 	x = 0
 	y = 1
-	relative_position_id = DRL_the_realm_begins
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus_DRL_preparing_to_strike"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_preparing_to_strike"
 	}
 }
 

@@ -1,5 +1,66 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_focus_DRL_the_bandits_of_the_south"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_bandits_of_the_south.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_our_db_leader"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_db_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_our_armies_of_bandits"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_armies_of_bandits.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_art_of_pillage"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_art_of_pillage.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_bandits_arms"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_bandits_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_bandit_new_tactics"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_bandit_new_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_and_with_bandit_power"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_with_bandit_power.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_to_purify_out_orsk"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_to_purify_out_orsk.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_send_fear_to_them"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_send_fear_to_them.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_wipe_out_insurgents"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_wipe_out_insurgents.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_send_horror_to_them"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_send_horror_to_them.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_end_the_last_bastards"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_end_the_last_bastards.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_aryan_army_in_dark"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_aryan_army_in_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_securing_our_bedrock_first"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_securing_our_bedrock_first.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_realm_begins"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_realm_begins.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_focus_DRL_preparing_to_strike"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_preparing_to_strike.dds"
 	}
