@@ -344,12 +344,15 @@ shared_focus = {
 	icon = GFX_focus_generic_military_contacts
 	cost = 4
 	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_the_realm_begins
-	}
+	cancelable = yesa
 	allow_branch = {
 		has_country_flag = DRL_ready_to_conquer
+	}
+	allow_branch = {
+		has_completed_focus = DRL_the_realm_begins
+	}
+	prerequisite = {
+		focus = DRL_the_realm_begins
 	}
 	x = 8
 	y = 7
@@ -358,3 +361,250 @@ shared_focus = {
 	}
 }
 
+shared_focus = {
+	id = DRL_with_strength
+	icon = GFX_focus_DRL_with_strength
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_preparing_to_strike
+	}
+	x = 6
+	y = 8
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_strength"
+	}
+}
+
+shared_focus = {
+	id = DRL_with_glory
+	icon = GFX_focus_DRL_with_glory
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_preparing_to_strike
+	}
+	x = 8
+	y = 8
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_glory"
+	}
+}
+
+shared_focus = {
+	id = DRL_with_fury
+	icon = GFX_focus_DRL_with_fury
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_preparing_to_strike
+	}
+	x = 10
+	y = 8
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_fury"
+	}
+}
+
+shared_focus = {
+	id = DRL_with_power
+	icon = GFX_focus_DRL_with_power
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_with_strength
+	}
+	x = 6
+	y = 9
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_power"
+	}
+}
+
+shared_focus = {
+	id = DRL_and_with_superiority
+	icon = GFX_focus_DRL_and_with_superiority
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_with_glory
+	}
+	x = 8
+	y = 9
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_with_superiority"
+	}
+}
+
+shared_focus = {
+	id = DRL_as_fast_as_we_must
+	icon = GFX_focus_DRL_as_fast_as_we_must
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_with_fury
+	}
+	x = 10
+	y = 9
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_as_fast_as_we_must"
+	}
+}
+
+shared_focus = {
+	id = DRL_to_conquer_the_south
+	icon = GFX_focus_DRL_to_conquer_the_south
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_with_power
+	}
+	prerequisite = {
+		focus = DRL_and_with_superiority
+	}
+	prerequisite = {
+		focus = DRL_as_fast_as_we_must
+	}
+	x = 8
+	y = 10
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_to_conquer_the_south"
+	}
+}
+
+shared_focus = {
+	id = DRL_strike_the_ural_league
+	icon = GFX_focus_DRL_strike_the_ural_league
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_strike_the_ural_league
+	}
+	x = 8
+	y = 11
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_strike_the_ural_league"
+	}
+}
+
+shared_focus = {
+	id = DRL_and_to_orenberg
+	icon = GFX_focus_DRL_and_to_orenberg
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_strike_the_ural_league
+	}
+	x = 8
+	y = 12
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_to_orenberg"
+	}
+}
+
+shared_focus = {
+	id = DRL_the_magnitogorsk_finale
+	icon = GFX_focus_DRL_the_magnitogorsk_finale
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_and_to_orenberg
+	}
+	x = 8
+	y = 13
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_magnitogorsk_finale"
+	}
+}
+
+shared_focus = {
+	id = DRL_the_south_all_ours
+	icon = GFX_focus_DRL_the_south_all_ours
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_magnitogorsk_finale
+	}
+	x = 8
+	y = 14
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_all_ours"
+	}
+}
