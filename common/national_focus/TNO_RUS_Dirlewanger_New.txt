@@ -606,5 +606,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_all_ours"
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			set_country_flag = DRL_regional_smuta_prep
+		}
 	}
 }
