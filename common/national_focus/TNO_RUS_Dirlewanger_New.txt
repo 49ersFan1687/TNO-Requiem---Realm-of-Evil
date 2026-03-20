@@ -528,7 +528,7 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_strike_the_ural_league
+		focus = DRL_to_conquer_the_south
 	}
 	x = 8
 	y = 11
@@ -664,7 +664,7 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_preparing_to_strike
+		focus = DRL_the_south_conquered
 	}
 	x = 8
 	y = 16
@@ -730,7 +730,7 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_lessons_from_the_ss
+		focus = DRL_the_status_of_our_army
 	}
 	x = 8
 	y = 17
