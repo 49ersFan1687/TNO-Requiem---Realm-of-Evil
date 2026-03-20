@@ -168,7 +168,7 @@ country_event = {
 
 	option = {
 		name = DRL.200.a
-		DRL_Dirlewanger_Death = yes
+		#DRL_Dirlewanger_Death = yes
 	}
 }
 
@@ -1511,7 +1511,7 @@ country_event = {
 
 	option = {
 		name = DRL.265.a
-		DRL_Dirlewanger_Death = yes
+		#DRL_Dirlewanger_Death = yes
 	}
 }
 
@@ -3361,7 +3361,7 @@ country_event = {
 		name = DRL.401.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3404,7 +3404,7 @@ country_event = {
 		name = DRL.402.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3447,7 +3447,7 @@ country_event = {
 		name = DRL.403.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3490,7 +3490,7 @@ country_event = {
 		name = DRL.404.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3533,7 +3533,7 @@ country_event = {
 		name = DRL.405.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3576,7 +3576,7 @@ country_event = {
 		name = DRL.406.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3619,7 +3619,7 @@ country_event = {
 		name = DRL.407.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3662,7 +3662,7 @@ country_event = {
 		name = DRL.408.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3705,7 +3705,7 @@ country_event = {
 		name = DRL.409.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3748,7 +3748,7 @@ country_event = {
 		name = DRL.410.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3791,7 +3791,7 @@ country_event = {
 		name = DRL.411.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3834,7 +3834,7 @@ country_event = {
 		name = DRL.412.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3877,7 +3877,7 @@ country_event = {
 		name = DRL.413.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3920,7 +3920,7 @@ country_event = {
 		name = DRL.414.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -3963,7 +3963,7 @@ country_event = {
 		name = DRL.415.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4006,7 +4006,7 @@ country_event = {
 		name = DRL.416.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4049,7 +4049,7 @@ country_event = {
 		name = DRL.417.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4092,7 +4092,7 @@ country_event = {
 		name = DRL.418.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4135,7 +4135,7 @@ country_event = {
 		name = DRL.419.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4178,7 +4178,7 @@ country_event = {
 		name = DRL.420.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4221,7 +4221,7 @@ country_event = {
 		name = DRL.421.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4264,7 +4264,7 @@ country_event = {
 		name = DRL.422.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4307,7 +4307,7 @@ country_event = {
 		name = DRL.423.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4350,7 +4350,7 @@ country_event = {
 		name = DRL.424.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4393,7 +4393,7 @@ country_event = {
 		name = DRL.425.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4436,7 +4436,7 @@ country_event = {
 		name = DRL.426.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4479,7 +4479,7 @@ country_event = {
 		name = DRL.427.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4522,7 +4522,7 @@ country_event = {
 		name = DRL.428.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4565,7 +4565,7 @@ country_event = {
 		name = DRL.429.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4608,7 +4608,7 @@ country_event = {
 		name = DRL.430.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4651,7 +4651,7 @@ country_event = {
 		name = DRL.431.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4694,7 +4694,7 @@ country_event = {
 		name = DRL.432.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4737,7 +4737,7 @@ country_event = {
 		name = DRL.433.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4780,7 +4780,7 @@ country_event = {
 		name = DRL.434.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4823,7 +4823,7 @@ country_event = {
 		name = DRL.435.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4866,7 +4866,7 @@ country_event = {
 		name = DRL.436.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4909,7 +4909,7 @@ country_event = {
 		name = DRL.437.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4952,7 +4952,7 @@ country_event = {
 		name = DRL.438.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -4995,7 +4995,7 @@ country_event = {
 		name = DRL.439.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5038,7 +5038,7 @@ country_event = {
 		name = DRL.440.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5081,7 +5081,7 @@ country_event = {
 		name = DRL.441.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5124,7 +5124,7 @@ country_event = {
 		name = DRL.442.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5167,7 +5167,7 @@ country_event = {
 		name = DRL.443.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5210,7 +5210,7 @@ country_event = {
 		name = DRL.444.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5253,7 +5253,7 @@ country_event = {
 		name = DRL.445.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5296,7 +5296,7 @@ country_event = {
 		name = DRL.446.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5339,7 +5339,7 @@ country_event = {
 		name = DRL.447.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5382,7 +5382,7 @@ country_event = {
 		name = DRL.448.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5425,7 +5425,7 @@ country_event = {
 		name = DRL.449.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5468,7 +5468,7 @@ country_event = {
 		name = DRL.450.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5511,7 +5511,7 @@ country_event = {
 		name = DRL.451.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5554,7 +5554,7 @@ country_event = {
 		name = DRL.452.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5597,7 +5597,7 @@ country_event = {
 		name = DRL.453.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5640,7 +5640,7 @@ country_event = {
 		name = DRL.454.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5683,7 +5683,7 @@ country_event = {
 		name = DRL.455.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5726,7 +5726,7 @@ country_event = {
 		name = DRL.456.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5769,7 +5769,7 @@ country_event = {
 		name = DRL.457.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5812,7 +5812,7 @@ country_event = {
 		name = DRL.458.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5855,7 +5855,7 @@ country_event = {
 		name = DRL.459.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5898,7 +5898,7 @@ country_event = {
 		name = DRL.460.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5941,7 +5941,7 @@ country_event = {
 		name = DRL.461.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -5984,7 +5984,7 @@ country_event = {
 		name = DRL.462.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6027,7 +6027,7 @@ country_event = {
 		name = DRL.463.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6070,7 +6070,7 @@ country_event = {
 		name = DRL.464.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6113,7 +6113,7 @@ country_event = {
 		name = DRL.465.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6156,7 +6156,7 @@ country_event = {
 		name = DRL.466.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6199,7 +6199,7 @@ country_event = {
 		name = DRL.467.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6242,7 +6242,7 @@ country_event = {
 		name = DRL.468.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6285,7 +6285,7 @@ country_event = {
 		name = DRL.469.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6328,7 +6328,7 @@ country_event = {
 		name = DRL.470.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6371,7 +6371,7 @@ country_event = {
 		name = DRL.471.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6414,7 +6414,7 @@ country_event = { #Death in the Magnitogorsk Pass
 		name = DRL.472.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6457,7 +6457,7 @@ country_event = { #Capture in the Magnitogorsk Central Planning Centre
 		name = DRL.473.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6500,7 +6500,7 @@ country_event = {
 		name = DRL.474.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6543,7 +6543,7 @@ country_event = {
 		name = DRL.475.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6586,7 +6586,7 @@ country_event = {
 		name = DRL.476.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6629,7 +6629,7 @@ country_event = {
 		name = DRL.477.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6672,7 +6672,7 @@ country_event = {
 		name = DRL.478.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6715,7 +6715,7 @@ country_event = {
 		name = DRL.479.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6758,7 +6758,7 @@ country_event = {
 		name = DRL.480.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6801,7 +6801,7 @@ country_event = {
 		name = DRL.481.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6844,7 +6844,7 @@ country_event = {
 		name = DRL.482.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6887,7 +6887,7 @@ country_event = {
 		name = DRL.483.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6930,7 +6930,7 @@ country_event = {
 		name = DRL.484.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -6973,7 +6973,7 @@ country_event = {
 		name = DRL.485.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -7016,7 +7016,7 @@ country_event = {
 		name = DRL.486.a
 		if = {
 			limit = { tag = DRL }
-			DRL_Dirlewanger_Death = yes
+			#DRL_Dirlewanger_Death = yes
 		}
 		hidden_effect = {
 			ORE = {
@@ -7057,7 +7057,7 @@ country_event = {
 
 	option = {
 		name = DRL.487.a
-		DRL_Dirlewanger_Death = yes
+		#DRL_Dirlewanger_Death = yes
 	}
 }
 
@@ -7133,107 +7133,107 @@ country_event = {
 	}
 }
 
-country_event = { #schmede is a bitchboi and cannot hold onto power
-	id = DRL.1000
-	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL.1000" }
-	title = DRL.1000.t
-	desc = DRL.1000.d
-	picture = GFX_report_event_ITA_soldiers
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = { #anarchy time
-		name = DRL.1000.a
-		hidden_effect = {
-			set_cosmetic_tag = DRL_DED
-			add_country_leader_role = {
-				character = DRL_Anarchic
-				promote_leader = yes
-				country_leader = {
-					expire = "1999.12.25"
-					ideology = socialist_subtype
-					traits = {
-					}	
-				}
-			}
-			set_politics = {
-				ruling_party = socialist
-			}
-
-			set_popularities = {
-				communist = 0
-				socialist = 100
-				progressivism = 0
-				liberalism = 0
-				conservatism = 0
-				anocracy = 0
-				despotism = 0
-				fascism = 0
-				national_socialism = 0
-				ultranationalism = 0
-				
-			}
-			set_party_name = {
-				ideology = socialist
-				long_name = DRL_DED_socialist_party_long
-				name = DRL_DED_socialist_party
-			}
-			if = {
-				limit = {
-					has_template = "Infanterie-Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Infanterie-Division"
-				}
-			}
-			if = {
-				limit = {
-					has_template = "Russische Räuber Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Russische Räuber Division"
-				}
-			}
-			remove_all_ministers = yes
-			remove_ideas = {
-				DRL_cornered_dog
-				DRL_new_raids
-				DRL_recently_raided
-				DRL_enemies_on_all_sides
-				DRL_bandit_state_1
-				DRL_bandit_state_2
-				DRL_bandit_state_3
-				DRL_bandit_state_4
-				DRL_bandit_state_5
-				DRL_to_the_slaughter
-				DRL_band_exhausted
-				DRL_think_tank_idea
-				DRL_band_collapsed
-				DRL_homemade_body_armor_idea
-				DRL_Soldiers_Extra_Discontent_Idea
-				DRL_Soldiers_Discontent_Idea
-				DRL_Soldiers_Okay_Idea
-				DRL_Soldiers_A_Bit_Happy_Idea
-				DRL_Soldiers_Happy_Idea
-				DRL_Officers_Disloyal_Idea
-				DRL_Officers_Disrespectful_Idea
-				DRL_Officers_Normal_Idea
-				DRL_Officers_Respect_Idea
-				DRL_Officers_Unswayingly_Loyal_Idea
-				DRL_Officer_Purge
-				DRL_Rage_Inducing_Hormones
-				DRL_Steroids
-			}
-			remove_unit_leader_role = DRL_Fritz_Schmedes
-			remove_unit_leader_role = DRL_Gennady_Karkov
-			remove_unit_leader_role = DRL_Kallistros_Thielecke
-			load_focus_tree = ZZZ_blank_focus
-			add_political_power = -4000
-			country_event = { id = TNO_endscreen.51 }
-		}
-	}
-}
+#country_event = { #schmede is a bitchboi and cannot hold onto power
+#	id = DRL.1000
+#	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL.1000" }
+#	title = DRL.1000.t
+#	desc = DRL.1000.d
+#	picture = GFX_report_event_ITA_soldiers
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option = { #anarchy time
+#		name = DRL.1000.a
+#		hidden_effect = {
+#			set_cosmetic_tag = DRL_DED
+#			add_country_leader_role = {
+#				character = DRL_Anarchic
+#				promote_leader = yes
+#				country_leader = {
+#					expire = "1999.12.25"
+#					ideology = socialist_subtype
+#					traits = {
+#					}	
+#				}
+#			}
+#			set_politics = {
+#				ruling_party = socialist
+#			}
+#
+#			set_popularities = {
+#				communist = 0
+#				socialist = 100
+#				progressivism = 0
+#				liberalism = 0
+#				conservatism = 0
+#				anocracy = 0
+#				despotism = 0
+#				fascism = 0
+#				national_socialism = 0
+#				ultranationalism = 0
+#				
+#			}
+#			set_party_name = {
+#				ideology = socialist
+#				long_name = DRL_DED_socialist_party_long
+#				name = DRL_DED_socialist_party
+#			}
+#			if = {
+#				limit = {
+#					has_template = "Infanterie-Division"
+#				}
+#				delete_unit_template_and_units = {
+#					division_template = "Infanterie-Division"
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_template = "Russische Räuber Division"
+#				}
+#				delete_unit_template_and_units = {
+#					division_template = "Russische Räuber Division"
+#				}
+#			}
+#			remove_all_ministers = yes
+#			remove_ideas = {
+#				DRL_cornered_dog
+#				DRL_new_raids
+#				DRL_recently_raided
+#				DRL_enemies_on_all_sides
+#				DRL_bandit_state_1
+#				DRL_bandit_state_2
+#				DRL_bandit_state_3
+#				DRL_bandit_state_4
+#				DRL_bandit_state_5
+#				DRL_to_the_slaughter
+#				DRL_band_exhausted
+#				DRL_think_tank_idea
+#				DRL_band_collapsed
+#				DRL_homemade_body_armor_idea
+#				DRL_Soldiers_Extra_Discontent_Idea
+#				DRL_Soldiers_Discontent_Idea
+#				DRL_Soldiers_Okay_Idea
+#				DRL_Soldiers_A_Bit_Happy_Idea
+#				DRL_Soldiers_Happy_Idea
+#				DRL_Officers_Disloyal_Idea
+#				DRL_Officers_Disrespectful_Idea
+#				DRL_Officers_Normal_Idea
+#				DRL_Officers_Respect_Idea
+#				DRL_Officers_Unswayingly_Loyal_Idea
+#				DRL_Officer_Purge
+#				DRL_Rage_Inducing_Hormones
+#				DRL_Steroids
+#			}
+#			remove_unit_leader_role = DRL_Fritz_Schmedes
+#			remove_unit_leader_role = DRL_Gennady_Karkov
+#			remove_unit_leader_role = DRL_Kallistros_Thielecke
+#			load_focus_tree = ZZZ_blank_focus
+#			add_political_power = -4000
+#			country_event = { id = TNO_endscreen.51 }
+#		}
+#	}
+#}
 
 #Cornered Dog
 country_event = {
