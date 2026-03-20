@@ -612,3 +612,255 @@ shared_focus = {
 		}
 	}
 }
+
+shared_focus = {
+	id = DRL_the_south_conquered
+	icon = GFX_focus_generic_military_contacts
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yesa
+	allow_branch = {
+		has_country_flag = DRL_regional_smuta_prep
+	}
+	allow_branch = {
+		has_completed_focus = DRL_the_south_all_ours
+	}
+	prerequisite = {
+		focus = DRL_the_south_all_ours
+	}
+	x = 8
+	y = 15
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_conquered"
+	}
+}
+
+shared_focus = {
+	id = DRL_strike_away_all_insurgency
+	icon = GFX_focus_DRL_with_strength
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_south_conquered
+	}
+	x = 6
+	y = 16
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_strength"
+	}
+}
+
+shared_focus = {
+	id = DRL_the_status_of_our_army
+	icon = GFX_focus_DRL_the_status_of_our_army
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_preparing_to_strike
+	}
+	x = 8
+	y = 16
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_status_of_our_army"
+	}
+}
+
+shared_focus = {
+	id = DRL_glorify_our_leader
+	icon = GFX_focus_DRL_glorify_our_leader
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_south_conquered
+	}
+	x = 10
+	y = 16
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_glorify_our_leader"
+	}
+}
+
+shared_focus = {
+	id = DRL_not_a_single_one_left
+	icon = GFX_focus_DRL_with_strength
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_strike_away_all_insurgency
+	}
+	x = 6
+	y = 17
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_not_a_single_one_left"
+	}
+}
+
+shared_focus = {
+	id = DRL_lessons_from_the_ss
+	icon = GFX_focus_DRL_lessons_from_the_ss
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_lessons_from_the_ss
+	}
+	x = 8
+	y = 17
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_lessons_from_the_ss"
+	}
+}
+
+shared_focus = {
+	id = DRL_and_his_realm
+	icon = GFX_focus_DRL_and_his_realm
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_glorify_our_leader
+	}
+	x = 10
+	y = 17
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_his_realm"
+	}
+}
+
+shared_focus = {
+	id = DRL_bring_horror_to_their_hearts
+	icon = GFX_focus_DRL_with_strength
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_not_a_single_one_left
+	}
+	x = 6
+	y = 18
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_bring_horror_to_their_hearts"
+	}
+}
+
+shared_focus = {
+	id = DRL_and_done_correctly
+	icon = GFX_focus_DRL_the_status_of_our_army
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_lessons_from_the_ss
+	}
+	x = 8
+	y = 18
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_done_correctly"
+	}
+}
+
+shared_focus = {
+	id = DRL_king_of_the_south
+	icon = GFX_focus_DRL_king_of_the_south
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_and_his_realm
+	}
+	x = 10
+	y = 18
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_king_of_the_south"
+	}
+}
+
+shared_focus = {
+	id = DRL_prepare_for_the_next_mission
+	icon = GFX_focus_DRL_the_status_of_our_army
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_bring_horror_to_their_hearts
+	}
+	prerequisite = {
+		focus = DRL_and_done_correctly
+	}
+	prerequisite = {
+		focus = DRL_king_of_the_south
+	}
+	x = 8
+	y = 19
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_prepare_for_the_next_mission"
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			set_country_flag = DRL_ready_for_smuta
+		}
+	}
+}
