@@ -10,6 +10,19 @@ focus_tree = {
 	default = no
 	shared_focus = DRL_the_black_bandits_of_the_orsk
 }
+
+focus_tree = {
+	id = dirlewanger_smuta
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DRL
+		}
+	}
+	default = no
+}
+
 shared_focus = {
 	id = DRL_the_black_bandits_of_the_orsk
 	icon = GFX_focus_DRL_the_bandits_of_the_south
