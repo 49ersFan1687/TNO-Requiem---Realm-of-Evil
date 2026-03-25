@@ -482,5 +482,132 @@ ideas = {
 				army_core_defence_factor = 0.1
 			}
 		}
+		
+		DRL_Bandits_Arms = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Bandits_Arms" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_black_market_arms
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.04 reliability = -0.06 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.04
+					reliability = -0.06
+					instant = yes
+				}
+				}
+				modifier = {
+			army_cost_modifier = 0.04
+			}
+		}
+		
+		DRL_Weak_Bandits_100 = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Weak_Bandits_100" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_oversized_wehrmacht
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_speed_factor = -0.2
+				resistance_activity = 0.3
+				supply_consumption_factor = 0.15
+				terrain_penalty_reduction = -0.10
+			}
+		}
+		
+		DRL_Weak_Bandits_75 = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Weak_Bandits_75" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CRN_pride_of_the_wehrmacht
+			modifier = {
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_speed_factor = -0.15
+				resistance_activity = 0.2
+				supply_consumption_factor = 0.10
+				terrain_penalty_reduction = -0.075
+			}
+		}
+		
+		DRL_Weak_Bandits_50 = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Weak_Bandits_50" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DRL_soldiers_somewhat_organized
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_speed_factor = -0.075
+				resistance_activity = 0.15
+				supply_consumption_factor = 0.05
+				terrain_penalty_reduction = -0.04
+			}
+		}
+		
+		DRL_Weak_Bandits_25 = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Weak_Bandits_25" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DRL_soldiers_well_organized
+			modifier = {
+				army_speed_factor = -0.05
+				resistance_activity = 0.10
+				supply_consumption_factor = 0.05
+				terrain_penalty_reduction = -0.04
+			}
+		}
+		
+		DRL_Aryan_Army_in_the_Dark_idea = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_Aryan_Army_in_the_Dark_idea" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DRL_rage_inducing_hormones
+			modifier = {
+				army_attack_factor = 0.065
+				army_core_defence_factor = 0.125
+				resistance_decay = -0.1
+				resistance_growth = -0.03
+			}
+		}
 	}
 }
