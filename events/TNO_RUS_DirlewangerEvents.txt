@@ -6,7 +6,7 @@ add_namespace = DRL_beginning
 
 #### INTRO EVENTS - RoE ###
 
-country_event = { ### The Bandit's Relief ###
+country_event = { ### The Bandit's Relief - bandits of the orsk ###
 	id = DRL_beginning.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.1" }
 	title = DRL_beginning.1.t
@@ -21,7 +21,7 @@ country_event = { ### The Bandit's Relief ###
 	}
 }
 
-country_event = {
+country_event = { ### Insurgency - purify orsk ###
 	id = DRL_beginning.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.2" }
 	title = DRL_beginning.2.t
@@ -36,7 +36,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ### Dealing with rebels - Wipe out Insurgents ###
 	id = DRL_beginning.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.3" }
 	title = DRL_beginning.3.t
@@ -51,7 +51,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ### Their Fate - Spread the real horror ###
 	id = DRL_beginning.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.4" }
 	title = DRL_beginning.4.t
@@ -66,7 +66,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ### Their End - Spread the real horror ###
 	id = DRL_beginning.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.5" }
 	title = DRL_beginning.5.t
@@ -81,7 +81,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ### True Power - aryan army in the dark ###
 	id = DRL_beginning.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.6" }
 	title = DRL_beginning.6.t
@@ -93,6 +93,38 @@ country_event = {
 
 	option = {
 		name = DRL_beginning.6.a
+	}
+}
+
+country_event = { ### The realm begins - the realm begins focus ###
+	id = DRL_beginning.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.7" }
+	title = DRL_beginning.7.t
+	desc = DRL_beginning.7.desc
+	picture = a
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DRL_beginning.7.a
+		add_war_support = 0.05
+		add_manpower = 5404
+	}
+}
+
+country_event = { ### True Power - aryan army in the dark ###
+	id = DRL_beginning.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.8" }
+	title = DRL_beginning.8.t
+	desc = DRL_beginning.8.desc
+	picture = a
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DRL_beginning.8.a
 	}
 }
 
