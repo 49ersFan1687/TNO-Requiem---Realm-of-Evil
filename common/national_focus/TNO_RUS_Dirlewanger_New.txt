@@ -65,8 +65,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_our_leader"
-		#event here
-		add_political_power = 30
+		add_political_power = 50
+		country_event = {
+				id = DRL_beginning.9
+				hours = 16
+			}
 	}
 }
 shared_focus = {
@@ -88,9 +91,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_our_army_of_bandits"
-		add_political_power = -10
-		add_war_support = 0.1
-		#event here
+		country_event = { id = DRL_beginning.8 days = 4 random_days = 1 }
+		add_political_power = 10
+		add_war_support = 0.05
 		TNO_improve_conscription_policy_effectiveness_low = yes
 		TNO_worsen_army_professionalism_low = yes
 	}
@@ -419,7 +422,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_securing_our_bedrock_first"
-		add_stability = 0.17
+		add_stability = 0.11
 		add_political_power = 37
 		set_temp_variable = { income_tax_temp = 0.06 }
 		econ_income_tax_rate_change = yes

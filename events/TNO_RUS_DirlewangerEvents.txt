@@ -113,7 +113,7 @@ country_event = { ### The realm begins - the realm begins focus ###
 	}
 }
 
-country_event = { ### True Power - aryan army in the dark ###
+country_event = { ### The State of the Bandit Army - our army of bandits focus ###
 	id = DRL_beginning.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.8" }
 	title = DRL_beginning.8.t
@@ -125,6 +125,24 @@ country_event = { ### True Power - aryan army in the dark ###
 
 	option = {
 		name = DRL_beginning.8.a
+		add_war_support = 0.02
+	}
+}
+
+country_event = { ### Our Leader - Our Great Leader ###
+	id = DRL_beginning.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.9" }
+	title = DRL_beginning.9.t
+	desc = DRL_beginning.9.desc
+	picture = a
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DRL_beginning.9.a
+		add_political_power = -25
+		add_stability = 0.025
 	}
 }
 
