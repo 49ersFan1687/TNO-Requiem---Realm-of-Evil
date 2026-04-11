@@ -1,0 +1,11 @@
+# Need this or else the bookmark UI will fuck out
+bookmarks = {
+	bookmark = {
+		date = 1963.1.1.1
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

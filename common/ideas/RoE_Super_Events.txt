@@ -1,0 +1,7 @@
+ideas = {
+	hidden_ideas = {
+		SE_RUSSIAN_REUNIFICATION_ORSK = {}
+		SE_RUSSIAN_REUNIFICATION_ORSK_D = {}
+		SE_RUSSIAN_REUNIFICATION_ORSK_A = {}
+	}
+}

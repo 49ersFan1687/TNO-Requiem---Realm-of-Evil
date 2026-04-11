@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SE_RUSSIAN_REUNIFICATION_ORSK"
+		textureFile = "gfx/superevent_pictures/orsk_dirlewanger_unification_super.png"
+	}
+}

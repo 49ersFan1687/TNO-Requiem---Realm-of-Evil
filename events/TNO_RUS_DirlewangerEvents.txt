@@ -11,7 +11,7 @@ country_event = { ### The Bandit's Relief - bandits of the orsk ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.1" }
 	title = DRL_beginning.1.t
 	desc = DRL_beginning.1.desc
-	picture = a
+	picture = GFX_report_event_dirlewanger_pic
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -134,7 +134,7 @@ country_event = { ### Our Leader - Our Great Leader ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.9" }
 	title = DRL_beginning.9.t
 	desc = DRL_beginning.9.desc
-	picture = a
+	picture = GFX_report_event_DRL_our_leader
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -147,6 +147,31 @@ country_event = { ### Our Leader - Our Great Leader ###
 }
 
 #### SOUTHERN URALS SMUTA EVENTS - RoE ###
+
+#### WORLD NEWS EVENTS - RoE ###
+add_namespace = DRL_wnews
+
+news_event = { #Reunification of russia
+	id = DRL_wnews.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_wnews.1" }
+	title = DRL_wnews.1.t
+	desc = DRL_wnews.1.desc
+	picture = GFX_news_event_dirlewanger_reunification
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_wnews.1.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = { TNO_temp_super_event = token:SE_RUSSIAN_REUNIFICATION_ORSK }
+			TNO_fire_super_event = yes
+		}
+	}
+}
 
 #### Base TNO events ###
 

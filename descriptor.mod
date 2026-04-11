@@ -1,6 +1,6 @@
-version="1"
+version="0.1"
 dependencies = {
-	"TNO Requiem"
+	"TNO: Requiem"
 }
 tags={
 	"Alternative History"

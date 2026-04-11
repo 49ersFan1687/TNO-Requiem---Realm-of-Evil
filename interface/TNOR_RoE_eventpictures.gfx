@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_dirlewanger_pic"
+		texturefile = "gfx/event_pictures/DRL/dirlewanger_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_our_leader"
+		texturefile = "gfx/event_pictures/DRL/our_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_dirlewanger_reunification"
+		texturefile = "gfx/event_pictures/news_event/DRL/odirlewanger_reunification.png"
+	}
+	
+}

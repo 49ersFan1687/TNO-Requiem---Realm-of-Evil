@@ -340,93 +340,42 @@
 
  DRL_the_realm_begins: "Let the Realm of Evil Begin!"
  DRL_the_realm_begins_desc: "The Brigade has survived - and thrived - by understanding its environment. When we broke away from Germany, we had to adapt our doctrine, altering it to suit the Urals and our needs for raiding.\n\nWith our new deal in place, Lysenko's instructors are imparting to us Soviet tactics. Some of the smarter men have realized that combining the two - Soviet strength and discipline with the unorthodoxy and unpredictability of raiding maneuvers - could give us a real advantage over those who would see us destroyed.\n\nSo we will."
-
- DRL_lysenkos_promises: "Lysenko's Promises"
- DRL_lysenkos_promises_desc: "In exchange for his help, Lysenko demands much from the Brigade. Prisoners who could be put to work - in the base or on their back - or otherwise pressed into service have to be handed over unharmed.\n\nHe's paid us well for them so far, yes, but what else does that madman have, hidden away in his labs? In the depths of the Black Mountain?\n\nIt's time to find out, and see what other items he's willing to offer!"
-
- DRL_spoil_trucks: "Spoil Trucks"
- DRL_spoil_trucks_desc: "Our requests for 'alternative' forms of payment from Lysenko have borne fruit.\n\nThe first such form? Trucks, no doubt taken from the motor pool of the formations that defected alongside him. While the origin matters little to us, the effect matters much, much more. More trucks means that more gold, more grain, more women, more everything can be loaded up and brought back to our camps.\n\nTime to find some sleepy village where they can be put to use!"
-
- DRL_the_riches_of_the_mountain: "The Riches of the Mountain"
- DRL_the_riches_of_the_mountain_desc: "The Brigade continues to hand over valuable prisoners to Lysenko, and it's long past time that we remind him how valuable our continued assistance truly is.\n\nThere's more inside the Black Mountain than he's shared with us so far, much more, and we want it! A little pressure, applied in just the right way, should encourage some additional cooperation and payment.\n\nIf Lysenko knows what's good for him, anyway."
-
- DRL_the_think_tank: "The Think Tank"
- DRL_the_think_tank_desc: "Lysenko's given us trucks, guns, and money. So why doesn't he give us back some of what we've been giving him - people?\n\nHe's got all kinds of scientists hidden away in his labs, and some of them must be less important than the others. Why doesn't he send them to us instead? He'll get more prisoners, and we'll get some eggheads that can move to both perform some 'field research' on prisoners and contribute to our own efforts besides.\n\nIt's too good a deal to pass up. We'll make sure Lysenko sees that."
-
- DRL_loot_the_universe: "Loot the Universe"
- DRL_loot_the_universe_desc: "Lysenko's made the right choices so far, giving us alternative and useful items for our prisoners, and now he's stepping up his normal payments as well!\n\nHe seems to be learning - the Brigade is happy to sell, but payment - considerable payment - is both required and expected. The latest such payment has arrived - more rifles and equipment, including heavier ordnance.\n\nIt's good stuff. Time to go use it!"
-
- DRL_lysenkos_strategy: "Lysenko's Strategy"
- DRL_lysenkos_strategy_desc: "People. It's all Lysenko cares about.\n\nMoney? He could care less. Territory? He has no use for it. Women? Not in the way we want them, that's for sure. No, all he wants are lots of people, marched to the Black Mountain in chains for use in whatever twisted experiments he has planned. Well, if that's what he wants, that's what he gets - as long as he can pay.\n\nIf he can, he can have the people he wants - and we can have the loot, both from them and him, that we want!"
-
- DRL_testing_our_enemies: "Testing Our Enemies"
- DRL_testing_our_enemies_desc: "The Brigade is surrounded by enemies. But that also means that we are surrounded by opportunities.\n\nThe Ural League, Orenburg, and countless small villages and settlements occupy the lands around us, all rich with loot just waiting for us to take it. We must be careful, however, as they are all waiting for us to make a mistake. Therefore, we will first test their strength, and see which of our foes offers the best opportunity.\n\nThen, and only then, will we ride to plunder!"
-
- DRL_strike_at_the_urals: "Strike at the Urals"
- DRL_strike_at_the_urals_desc: "The Ural League, our most vigorous enemy.\n\nAs much as we hate their pathetic mongrel 'state,' we cannot deny that their militias are effective and their communities well protected. On several occasions in the past they have even defeated us, and this is causing us trouble. We must prove that they are not capable of defending their territory, that they, like everyone else, fall before us.\n\nWe must put them in their place. And we will."
-
- DRL_strike_at_orenburg: "Strike Orenburg"
- DRL_strike_at_orenburg_desc: "The communes of Orenburg are disorganized and only loosely held together by shared anarchist ideals. In other words, they are perfect targets.\n\nUp until now, however, they have been the targets of our raids far less than the villages and settlements of the Ural League. This means that, unlike the places we have sacked before, they must be swollen with loot.\n\nTime to show them what the Brigade can do!"
-
- DRL_strike_at_the_peasantry: "Strike at the Peasantry"
- DRL_strike_at_the_peasantry_desc: "Though striking at settlements affiliated with either the League or Orenburg could yield good loot, there is one major problem: they can fight back.\n\nThough that usually isn't a problem, right now we'd rather not risk a defeat. The independent villages that dot the Southern Urals might not be wealthy, but they also have no real defenses. There won't be much loot, but there will be some, as well as women besides.\n\nThat will be enough for now."
-
- DRL_draw_out_the_guard: "Draw Out the Guard"
- DRL_draw_out_the_guard_desc: "At every turn, the Ural Guard frustrates our efforts, organizing defenses, training villagers into militia, and even striking at our camps in the night.\n\nIf we're going to, one day, utterly destroy them, and leave their lands open for plunder, we need to sap their strength first, and the maskirovka tactics we have recently learned can help here. A series of small raids should force them to commit their main force to action.\n\nAnd when they do, we will be waiting."
-
- DRL_the_battle_of_novotroitsk: "The Battle of Novotroitsk"
- DRL_the_battle_of_novotroitsk_desc: "Our gambit worked!\n\nThe raids we conducted on the League's outlying villages have drawn them out, moving to erect defenses around the town on Novotroitsk in anticipation of an engagement. But they still think they will only be fighting another raiding force, and have deployed themselves accordingly.\n\nThey have no idea what's coming."
-
- DRL_the_second_phase: "The Second Phase"
- DRL_the_second_phase_desc: "The Ural League's forces were smashed at Novotroitsk, drawn in by our deception, and this gives us an opportunity.\n\nTheir militias are depleted, their defensive lines breached, and their fortresses exposed. We will likely not see such momentary weakness again, and we must move to take advantage. Additional raids will be launched on these fortresses to ensure their destruction.\n\nAnother great raid approaches, and when it does, the League will not be able to interfere!"
-
- DRL_lessons_of_the_guard: "Lessons of the Guard"
- DRL_lessons_of_the_guard_desc: "We secured much loot from the League's fortresses, but we also took prisoners.\n\nThough we would usually hand them over to Lysenko, or just dispose of them altogether, we should not forget how useful the training our men previously received was. We'll give them a very simple choice: teach us how the League trains and fights, or die. Surely, some of them will be willing to give us lessons.\n\nAnd then we can, and will, use those lessons against their former friends."
-
- DRL_ural_expertise: "Ural Expertise"
- DRL_ural_expertise_desc: "The Ural League captives, those smart enough to take us up on our offer at least, have been very helpful.\n\nThe lands of the League are rugged and mountainous, and they've given us some useful instruction on how to best handle them. So useful, in fact, that some of the Brigade think they should be given an offer to stay, and join us more permanently.\n\nThey can always refuse, of course. It just means we need to dig a slightly bigger hole."
-
- DRL_homemade_body_armor: "Homemade Body Armor"
- DRL_homemade_body_armor_desc: "There is one thing that the men have been asking for, time and time again: body armor.\n\nThough we don't have the connections or resources to acquire proper, high-quality armor, we don't need to. Most of the weapons our enemies use are old or improvised, and so we can improvise a solution as well. We have lots of scrap metal lying around, from old or plundered equipment, and we can use it to fashion sets of crude armor.\n\nIt will be good enough. If a bit strange looking."
-
- DRL_rapid_assault: "Rapid Assault"
- DRL_rapid_assault_desc: "There's much to admire about wolves.\n\nThey hunt in packs. They identify the best targets of opportunity, targets that foolishly remove themselves from the larger herd. They move swiftly, achieve their goal, and then withdraw, ready to repeat the procedure all over again. We should act in the same fashion, using our trucks to move rapidly, bring down our prey, and take what we want.\n\nSoon, all will know the Brigade as the Wolves of the Urals."
-
- DRL_transfer_the_flesh: "Transfer the Flesh"
- DRL_transfer_the_flesh_desc: "Our raids in the Southern Urals, having expanded both in frequency and scale, have left us with many more captives than usual.\n\nWe don't have the space, or the desire, to hold onto them, and we certainly don't want to feed them. But, as always, Lysenko always wants more, and so we'll move to hand them off to him. For proper compensation, of course.\n\nLet's see what we can pressure him for this time."
-
- DRL_hand_them_over: "Hand Them Over"
- DRL_hand_them_over_desc: "As before, Lysenko has offered to provide us with a reasonable amount of equipment from the Black Mountain's stockpiles in exchange for the captives we can offer.\n\nWhile some within the Brigade claim we should push him for more, citing our strengthening position, others claim that Lysenko's realm isn't comparable to that of our usual targets, and that there is little purpose in killing a golden goose besides.\n\nTheir argument has merit. We'll stick to the deal. For now."
-
- DRL_good_friends_means_good_money: "Good Friends Means Good Money"
- DRL_good_friends_means_good_money_desc: "True to his word, and in response to our own actions, Lysenko has stuck to the deal as well.\n\nAlready, shipments of equipment, as agreed upon, approach our depots outside Orsk. Though it's not as much as some claim we should have gotten, it is a lot more than nothing, and can immediately be put to use in our future raids. That will have to be good enough for the moment.\n\nBut next time? Who knows?"
-
- DRL_the_deal_changed: "The Deal Changed"
- DRL_the_deal_changed_desc: "The last time we arranged a major deal with Lysenko, we weren't powerful enough to strong arm him. That is no longer the case.\n\nWe have more men than him. We have more experience than him. And, after all our previous deals, it's very possible that we now have more equipment than him as well. It's time to make this difference in position clear. He can give more. We'll tell him as much.\n\nAnd he had better do so."
-
- DRL_pray_we_dont_alter_it_further: "Pray We Don't Alter It Further"
- DRL_pray_we_dont_alter_it_further_desc: "Excellent news - Lysenko has realized he was in no position to bargain with the Brigade, and he backed down like the coward we know he is.\n\nAlready shipments of equipment, much more than we might have received otherwise, approach our depots outside Orsk. Our men are excited in the extreme to get their hands on them, to replace both old and worn out weapons and to equip our newest recruits as well. We've already begun planning more raids to make use of them.\n\nWhoever said intimidation couldn't work wonders?"
-
- DRL_a_second_great_raid: "A Second Great Raid"
- DRL_a_second_great_raid_desc: "With the Ural League humbled after their debacle at Novotroitsk, it's time to plan for another great raid. One that they won't be able to stop.\n\nThere are many questions to answer first, however. Where to target? What type of loot to concentrate on? When to attack? What to do with the captives - at least once the men are done with them?\n\nWe will, however, find answers. An abundance of choice is something we could get used to!"
-
- DRL_rally_the_lads: "Rally the Lads"
- DRL_rally_the_lads_desc: "If we're going to raid, we need to get the men pumped up!\n\nWe'll tell the officers to promise them whatever they want - money, women, liquor, blood, anything! Whether they get it or not is up to them, up to how aggressive, violent, and perceptive they are. And, of course, once they do find any such items, they'll have to put them in inventory, to be properly distributed.\n\nBut they'll get their share. The share they deserve."
-
- DRL_spread_the_spoils: "Spread the Spoils"
- DRL_spread_the_spoils_desc: "Our raid was a great success, and we've come away with even more plunder than we thought!\n\nIt's time to spread the wealth around, and maybe this time we increase their share a bit. Give them a little more liquor, a few more pieces of gold, one or two more women to use up, and free rein over some of the other prisoners and items.\n\nSome of our officers might be a little unhappy, but even they have to know that keeping the men happy is an important consideration!"
-
- DRL_lick_our_wounds: "Lick Our Wounds"
- DRL_lick_our_wounds_desc: "Our raids were successful, but that doesn't mean they were without cost.\n\nMen were lost, as they always are. Equipment was worn out, camps abandoned, and the like. We're going to be going out again soon, of course, but only a fool acts without preparation. So we'll take a break. We'll rest, repair, and identify new targets.\n\nAnd then we'll head right back out again."
-
- DRL_deep_in_the_west: "Deep in the West"
- DRL_deep_in_the_west_desc: "To the west lies Orenburg. A perfect target.\n\nTheir defenses are chaotic and uncoordinated, their militias are not nearly as effective as those of the Ural League, and their settlements are laden with loot ripe for harvest. With so many factors in our favor, why wouldn't we target them next? We will prepare our raiding party immediately.\n\nTime to ride!"
-
- DRL_penetrate_the_mountains: "Penetrate the Mountains"
- DRL_penetrate_the_mountains_desc: "Once again, we look at the lands of the Ural League for our next raid.\n\nThey still haven't recovered fully from their defeat at Novotroitsk, and they still oppose us at every turn. They remain our most formidable enemies, but the air of strength that they once possessed has dissipated considerably. We'll hit them again, while they're still down, and carry away whatever they have left.\n\nAnd we'll prove to the people of the Southern Urals that the League can't protect them from us!"
-
- DRL_the_pincer: "The Pincer"
- DRL_the_pincer_desc: "There exists a third option: strike Orenburg and the Ural League together, at the same time!\n\nSuch a move will be difficult, and a great risk besides, but if we win, if we defeat and scatter their forces both, we will have more plunder, of all kinds, than we will know what to do with. Not only that, we will strike fear into all of the Southern Urals.\n\nThe Brigade cannot be stopped, and we will prove it!"
+ 
+ DRL_preparing_to_strike: "Preparing to Strike"
+ DRL_preparing_to_strike_desc: ""
+ 
+ DRL_with_strength: "With Strength"
+ DRL_with_strength_desc: ""
+ 
+ DRL_with_power: "With Power"
+ DRL_with_power_desc: ""
+ 
+ DRL_with_glory: "With Glory"
+ DRL_with_glory_desc: ""
+ 
+ DRL_and_with_superiority: "And With Superiority"
+ DRL_and_with_superiority_desc: ""
+ 
+ DRL_with_fury: "With Fury"
+ DRL_with_fury_desc: ""
+ 
+ DRL_as_fast_as_we_must: "As Fast as We Must"
+ DRL_as_fast_as_we_must_desc: ""
+ 
+ DRL_to_conquer_the_south: "Conquer the South Urals"
+ DRL_to_conquer_the_south_desc: ""
+ 
+ DRL_strike_the_ural_league: "Strike the Ural League"
+ DRL_strike_the_ural_league_desc: ""
+ 
+ DRL_and_to_orenberg: "And To Orenburg"
+ DRL_and_to_orenberg_desc: ""
+ 
+ DRL_the_magnitogorsk_finale: "Magnitogorsk Finale"
+ DRL_the_magnitogorsk_finale_desc: ""
+ 
+ DRL_the_south_all_ours: "The South, All Ours!"
+ DRL_the_south_all_ours_desc: ""
 
  DRL_reap_the_spoils: "Reap the Spoils"
  #DRL_reap_the_spoils:1 "Punish the Failures"

@@ -100,4 +100,13 @@ spriteTypes = {
 		name = "GFX_focus_DRL_strike_ural_league"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_strike_ural_league.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_DRL_and_with_superiority"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_with_superiority.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_with_fury"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_fury.dds"
+	}
+	
 }

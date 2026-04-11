@@ -1,0 +1,44 @@
+## Hetmanate ##
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_FUK_Hetmanate_Ohloblyn"
+		texturefile = "gfx/event_pictures/news_event/FUK_Hetmanate_Ohloblyn.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_AMN_steppe"
+		texturefile = "gfx/event_pictures/news_event/Russia/After_Midnight/news_event_AMN_steppe.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_AMN_altay"
+		texturefile = "gfx/event_pictures/news_event/Russia/After_Midnight/news_event_AMN_altay.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_RUS_golovko"
+		texturefile = "gfx/event_pictures/news_event/news_event_RUS_golovko.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_russia_prc_mongol"
+		texturefile = "gfx/event_pictures/news_event/news_event_russia_prc_mongol.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_RUS_blokhin_regional"
+		texturefile = "gfx/event_pictures/news_event/news_event_RUS_blokhin_regional.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_RUS_blokhin"
+		texturefile = "gfx/event_pictures/news_event/news_event_RUS_blokhin.png"
+	}
+	spriteType = {
+		name = "GFX_RUS_nuke_test"
+		texturefile = "gfx/event_pictures/news_event/RUS_nuke_test.dds"
+	}
+	
+}

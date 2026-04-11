@@ -468,7 +468,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = DRL_preparing_to_strike
-	icon = GFX_focus_generic_military_contacts
+	icon = GFX_focus_DRL_preparing_to_strike
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -487,7 +487,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_with_strength
-	icon = GFX_focus_DRL_with_strength
+	icon = GFX_focus_DRL_with_strenght
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -495,7 +495,7 @@ shared_focus = {
 		focus = DRL_preparing_to_strike
 	}
 	x = 6
-	y = 8
+	y = 9
 	ai_will_do = {
 		factor = 60
 	}
@@ -539,7 +539,7 @@ shared_focus = {
 		focus = DRL_preparing_to_strike
 	}
 	x = 10
-	y = 8
+	y = 9
 	ai_will_do = {
 		factor = 60
 	}
@@ -561,7 +561,7 @@ shared_focus = {
 		focus = DRL_with_strength
 	}
 	x = 6
-	y = 9
+	y = 10
 	ai_will_do = {
 		factor = 60
 	}
@@ -605,7 +605,7 @@ shared_focus = {
 		focus = DRL_with_fury
 	}
 	x = 10
-	y = 9
+	y = 10
 	ai_will_do = {
 		factor = 60
 	}
@@ -633,7 +633,7 @@ shared_focus = {
 		focus = DRL_as_fast_as_we_must
 	}
 	x = 8
-	y = 10
+	y = 11
 	ai_will_do = {
 		factor = 60
 	}
@@ -647,7 +647,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_strike_the_ural_league
-	icon = GFX_focus_DRL_strike_the_ural_league
+	icon = GFX_focus_DRL_strike_ural_league
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -655,7 +655,7 @@ shared_focus = {
 		focus = DRL_to_conquer_the_south
 	}
 	x = 8
-	y = 11
+	y = 12
 	ai_will_do = {
 		factor = 60
 	}
@@ -669,15 +669,15 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_to_orenberg
-	icon = GFX_focus_DRL_and_to_orenberg
+	icon = GFX_focus_DRL_and_to_orenburg
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_strike_the_ural_league
+		focus = DRL_to_conquer_the_south
 	}
-	x = 8
-	y = 12
+	x = 6
+	y = 13
 	ai_will_do = {
 		factor = 60
 	}
@@ -691,14 +691,14 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_magnitogorsk_finale
-	icon = GFX_focus_DRL_the_magnitogorsk_finale
+	icon = GFX_focus_DRL_magnitogorsk_finale
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_and_to_orenberg
+		focus = DRL_to_conquer_the_south
 	}
-	x = 8
+	x = 10
 	y = 13
 	ai_will_do = {
 		factor = 60
@@ -713,10 +713,16 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_south_all_ours
-	icon = GFX_focus_DRL_the_south_all_ours
+	icon = GFX_focus_DRL_The_South_All_Ours
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
+	prerequisite = {
+		focus = DRL_strike_the_ural_league
+	}
+	prerequisite = {
+		focus = DRL_and_to_orenberg
+	}
 	prerequisite = {
 		focus = DRL_the_magnitogorsk_finale
 	}
