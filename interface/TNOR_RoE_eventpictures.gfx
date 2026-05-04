@@ -11,5 +11,32 @@ spriteTypes = {
 		name = "GFX_news_event_dirlewanger_reunification"
 		texturefile = "gfx/event_pictures/news_event/DRL/odirlewanger_reunification.png"
 	}
-	
+	spriteType = {
+		name = "GFX_report_event_dirlewanger_old_pic"
+		texturefile = "gfx/event_pictures/DRL/dirlewanger_old_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army"
+		texturefile = "gfx/event_pictures/DRL/generic_army.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army1"
+		texturefile = "gfx/event_pictures/news_event/DRL/generic_army1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army2"
+		texturefile = "gfx/event_pictures/DRL/generic_army2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army3"
+		texturefile = "gfx/event_pictures/news_event/DRL/generic_army3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army4"
+		texturefile = "gfx/event_pictures/DRL/generic_army4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_generic_army5"
+		texturefile = "gfx/event_pictures/news_event/DRL/generic_army5.dds"
+	}	
 }
