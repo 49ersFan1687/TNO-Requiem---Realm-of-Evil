@@ -119,7 +119,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_art_of_pillage"
-		set_temp_variable = { temp_econ_GDP_boost_percentage = -0.02 }
+		set_temp_variable = { temp_econ_GDP_boost_percentage = -0.06 }
 		econ_GDP_boost_once_percentage = yes
 		set_temp_variable = { gdp_growth_temp = 0.80 }
 		econ_gdp_growth_change = yes
@@ -432,14 +432,16 @@ shared_focus = {
 		econ_gdp_growth_change = yes
 		set_temp_variable = { inflation_temp = 1 }
 		econ_inflation_change = yes
-		set_temp_variable = { temp_econ_GDP_boost_percentage = 0.03 }
-		econ_GDP_boost_once_percentage = yes
+		846 = {
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
 	}
 }
 shared_focus = {
 	id = DRL_the_realm_begins
 	icon = GFX_focus_DRL_the_realm_begins
-	cost = 4.35
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -471,7 +473,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_preparing_to_strike
 	icon = GFX_focus_DRL_preparing_to_strike
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	allow_branch = {
@@ -484,13 +486,30 @@ shared_focus = {
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_preparing_to_strike"
+		set_temp_variable = { pus_temp = 1 }
+		econ_pus_change = yes
+		add_manpower = -750
+		add_resource = {
+			type = steel
+			amount = 3
+			state = 846
+		}
+		add_resource = {
+			type = tungsten
+			amount = 3
+			state = 846
+		}
+		846 = {
+			set_temp_variable = { state_value_multiplier_temp = 0.96 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
 	}
 }
 
 shared_focus = {
 	id = DRL_with_strength
 	icon = GFX_focus_DRL_with_strenght
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -506,13 +525,35 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_strength"
+		add_political_power = 20
+		add_stability = 0.02
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 375
+			producer = MGN
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 114
+			producer = PRM
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 25
+			producer = MCW
+		}
+		TNO_improve_conscription_policy_effectiveness_low = yes
+		swap_ideas = {
+			remove_idea = DRL_bandit_state_1
+			add_idea = DRL_bandit_state_warlord_1
+			}
 	}
 }
 
 shared_focus = {
 	id = DRL_with_glory
 	icon = GFX_focus_DRL_with_glory
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -528,13 +569,22 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_glory"
+		add_war_support = 0.025
+		army_funding_minimal_increase_low = yes
+		set_temp_variable = { inflation_temp = 0.5 }
+		econ_inflation_change = yes
+		TNO_improve_max_workhours_policy_effectiveness_monthly_low = yes
+		social_funding_minimal_decrease_low = yes
+		TNO_worsen_poverty_med = yes
+		set_temp_variable = { econ_centralization_temp = 2.5 }
+		econ_centralization_change = yes
 	}
 }
 
 shared_focus = {
 	id = DRL_with_fury
 	icon = GFX_focus_DRL_with_fury
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -550,13 +600,151 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_fury"
+		add_manpower = 15000
+		add_political_power = 15
+		army_experience = 15
+		TNO_worsen_training_policy_effectiveness_low = yes
+		TNO_improve_conscription_policy_effectiveness_low = yes
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+		if = {
+			limit = { NOT = {
+				OR = {
+				has_completed_focus = DRL_with_glory
+				has_completed_focus = DRL_and_with_superiority
+				has_completed_focus = DRL_with_strength
+				has_completed_focus = DRL_with_power
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 275
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_glory
+			NOT = {
+				OR = {
+				has_completed_focus = DRL_and_with_superiority
+				has_completed_focus = DRL_with_strength
+				has_completed_focus = DRL_with_power
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 260
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_strength
+			NOT = {
+				OR = {
+				has_completed_focus = DRL_with_glory
+				has_completed_focus = DRL_and_with_superiority
+				has_completed_focus = DRL_with_power
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 260
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_strength
+			has_completed_focus = DRL_with_power
+			NOT = {
+				OR = {
+				has_completed_focus = DRL_with_glory
+				has_completed_focus = DRL_and_with_superiority
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 245
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_glory
+			has_completed_focus = DRL_and_with_superiority
+			NOT = {
+				OR = {
+				has_completed_focus = DRL_with_strength
+				has_completed_focus = DRL_with_power
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 245
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_glory
+			has_completed_focus = DRL_with_strength
+			NOT = {
+				OR = {
+				has_completed_focus = DRL_with_strength
+				has_completed_focus = DRL_and_with_superiority
+				}
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 245
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_glory
+			has_completed_focus = DRL_and_with_superiority
+			has_completed_focus = DRL_with_strength
+			NOT = {
+				has_completed_focus = DRL_with_power
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 230
+				}
+			}
+		else_if = {
+			limit = {
+			has_completed_focus = DRL_with_glory
+			has_completed_focus = DRL_with_strength
+			has_completed_focus = DRL_with_power
+			NOT = {
+				has_completed_focus = DRL_and_with_superiority
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 230
+				}
+			}
+		else = {
+		add_timed_idea = {
+					idea = DRL_boosted_spirit
+					days = 215
+				}
+			}
 	}
 }
 
 shared_focus = {
 	id = DRL_with_power
 	icon = GFX_focus_DRL_with_power
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -572,13 +760,35 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_power"
+		swap_ideas = {
+			remove_idea = DRL_bandit_state_warlord_1
+			add_idea = DRL_bandit_state_warlord_2
+			}
+		846 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = barracks
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+		846 = {
+			damage_building = {
+							type = barracks
+							damage = 1
+							}
+						}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.025 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
 shared_focus = {
 	id = DRL_and_with_superiority
 	icon = GFX_focus_DRL_and_with_superiority
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -594,13 +804,21 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_with_superiority"
+		add_political_power = 25
+		add_war_support = 0.025
+		TNO_improve_training_policy_effectiveness_monthly_low = yes
+		TNO_improve_draft_exemptions_policy_effectiveness_med = yes
+		TNO_improve_slavery_policy_effectiveness_med = yes
+		TNO_improve_academic_base_low = yes
+		set_temp_variable = { inflation_temp = 0.25 }
+		econ_inflation_change = yes
 	}
 }
 
 shared_focus = {
 	id = DRL_as_fast_as_we_must
 	icon = GFX_focus_DRL_as_fast_as_we_must
-	cost = 4
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -616,13 +834,48 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_as_fast_as_we_must"
+		TNO_improve_regulations_policy_effectiveness_low = yes
+		TNO_improve_penal_system_policy_effectiveness_low = yes
+		add_tech_bonus = {
+			name = motorized_equipment
+			bonus = 0.50
+			uses = 1
+			category = motorized_equipment
+		}
+		division_template = {
+			name = "Arishe Motorization"
+			priority = 2
+			division_names_group = PRM_Light_Infantry
+			regiments = {
+				motorized = { x = 0 y = 0 }
+				motorized = { x = 0 y = 1 }
+				motorized = { x = 0 y = 2 }
+				motorized = { x = 0 y = 3 }
+			}
+			support = {
+				recon = { x = 0 y = 0 }
+				logistics_company = { x = 0 y = 1 }
+			}
+		}
+		846 = {
+			create_unit = {
+				division = "name = \"Arishe SS-Motorization\" division_template = \"Arishe Motorization\" start_experience_factor = 0.6 start_equipment_factor = 1"
+				owner = DRL
+			}
+		}
+		add_timed_idea = {
+					idea = DRL_faster_boi
+					days = 303
+				}
+		set_temp_variable = { temp_econ_spending_amount = 0.01 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
 shared_focus = {
 	id = DRL_to_conquer_the_south
 	icon = GFX_focus_DRL_to_conquer_the_south
-	cost = 4
+	cost = 1.53
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -644,13 +897,25 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_to_conquer_the_south"
+		country_event = {
+				id = DRL_beginning.10
+			}
+		modify_timed_idea = {
+				idea = DRL_boosted_spirit
+				days = 44
+			}
+		add_political_power = 50
+		add_command_power = 25
+		TNO_improve_security_policy_effectiveness_low = yes
+		TNO_improve_conscription_policy_effectiveness_monthly_low = yes
+		TNO_improve_draft_exemptions_policy_effectiveness_monthly_low = yes
 	}
 }
 
 shared_focus = {
 	id = DRL_strike_the_ural_league
 	icon = GFX_focus_DRL_strike_ural_league
-	cost = 4
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -666,13 +931,50 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_strike_the_ural_league"
+		effect_tooltip = {
+			declare_war_on = {
+				target = URL
+				type = annex_everything
+			}
+		}
+		URL = {
+			add_command_power = -25
+			add_stability = -0.025
+			add_war_support = -0.05
+			add_manpower = -2750
+			army_experience = -25
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -591
+			}
+			TNO_worsen_security_policy_effectiveness_med = yes
+			TNO_worsen_conscription_policy_effectiveness_med = yes
+		}
+		add_political_power = -20
+		TNO_worsen_army_professionalism_low = yes
+		set_temp_variable = { gdp_growth_temp = 0.1 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { money_reserves_temp = 0.02 }
+		econ_money_reserves_change_raw_money = yes
+		hidden_effect = {
+			declare_war_on = {
+				target = URL
+				type = russian_reclamation
+			}
+			ORE = {
+				remove_from_faction = URL
+				}
+			URL = {
+				remove_from_faction = ORE
+				}
+		}
 	}
 }
 
 shared_focus = {
 	id = DRL_and_to_orenberg
 	icon = GFX_focus_DRL_and_to_orenburg
-	cost = 4
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -685,16 +987,51 @@ shared_focus = {
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		NOT = {
+		has_war_with = MGN
+		country_exists = URL
+				}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_to_orenberg"
+		effect_tooltip = {
+			declare_war_on = {
+				target = ORE
+				type = annex_everything
+			}
+		}
+		ORE = {
+			add_command_power = -25
+			add_stability = -0.05
+			add_war_support = -0.08
+			add_manpower = -5000
+			army_experience = -20
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -231
+			}
+			TNO_worsen_training_policy_effectiveness_med = yes
+			TNO_worsen_draft_exemptions_policy_effectiveness_med = yes
+		}
+		add_political_power = -15
+		TNO_worsen_army_professionalism_low = yes
+		set_temp_variable = { gdp_growth_temp = 0.1 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { money_reserves_temp = 0.025 }
+		econ_money_reserves_change_raw_money = yes
+		hidden_effect = {
+			declare_war_on = {
+				target = ORE
+				type = russian_reclamation
+			}
+		}
 	}
 }
 
 shared_focus = {
 	id = DRL_the_magnitogorsk_finale
 	icon = GFX_focus_DRL_magnitogorsk_finale
-	cost = 4
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -707,16 +1044,53 @@ shared_focus = {
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		NOT = {
+		has_war_with = ORE
+		country_exists = URL
+							}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_magnitogorsk_finale"
+		effect_tooltip = {
+			declare_war_on = {
+				target = MGN
+				type = annex_everything
+			}
+		}
+		MGN = {
+			add_command_power = -25
+			add_stability = -0.05
+			add_war_support = -0.08
+			add_manpower = -5000
+			army_experience = -20
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -148
+				}
+			set_temp_variable = { temp_econ_spending_amount = 0.050 }
+			econ_spend_money_once_effect_raw_money = yes
+			TNO_worsen_military_supervision_policy_effectiveness_med = yes
+			TNO_worsen_security_policy_effectiveness_med = yes
+		}
+		add_political_power = -15
+		TNO_worsen_army_professionalism_low = yes
+		set_temp_variable = { gdp_growth_temp = 0.1 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { money_reserves_temp = 0.015 }
+		econ_money_reserves_change_raw_money = yes
+		hidden_effect = {
+			declare_war_on = {
+				target = MGN
+				type = russian_reclamation
+			}
+		}
 	}
 }
 
 shared_focus = {
 	id = DRL_the_south_all_ours
 	icon = GFX_focus_DRL_The_South_All_Ours
-	cost = 4
+	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -735,11 +1109,36 @@ shared_focus = {
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
+		NOT = {
+		country_exists = MGN
+		country_exists = URL
+		country_exists = ORE
+							}
+				}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_all_ours"
+		country_event = {
+				id = DRL_beginning.11
+				hours = 13
+			}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+		add_political_power = 15
+		add_manpower = -1350
+		add_stability = -0.05
+		set_temp_variable = { inflation_temp = -0.5 }
+		econ_inflation_change = yes
+		TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
+		TNO_improve_security_policy_effectiveness_low = yes
+		TNO_improve_army_professionalism_med = yes
+		set_temp_variable = { money_reserves_temp = 0.1 }
+		econ_money_reserves_change_raw_money = yes
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
+			TNO_worsen_draft_exemptions_policy_effectiveness_monthly_low = yes
+			TNO_worsen_conscription_policy_effectiveness_monthly_med = yes
 			set_country_flag = DRL_regional_smuta_prep
 		}
 	}
@@ -748,9 +1147,9 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_south_conquered
 	icon = GFX_focus_generic_military_contacts
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
-	cancelable = yesa
+	cancelable = yes
 	allow_branch = {
 		has_country_flag = DRL_regional_smuta_prep
 	}
@@ -770,7 +1169,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_strike_away_all_insurgency
 	icon = GFX_focus_DRL_with_strength
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -792,7 +1191,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_status_of_our_army
 	icon = GFX_focus_DRL_the_status_of_our_army
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -814,7 +1213,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_glorify_our_leader
 	icon = GFX_focus_DRL_glorify_our_leader
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -836,7 +1235,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_not_a_single_one_left
 	icon = GFX_focus_DRL_with_strength
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -858,7 +1257,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_lessons_from_the_ss
 	icon = GFX_focus_DRL_lessons_from_the_ss
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -880,7 +1279,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_his_realm
 	icon = GFX_focus_DRL_and_his_realm
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -902,7 +1301,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_bring_horror_to_their_hearts
 	icon = GFX_focus_DRL_with_strength
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -924,7 +1323,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_done_correctly
 	icon = GFX_focus_DRL_the_status_of_our_army
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -946,7 +1345,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_king_of_the_south
 	icon = GFX_focus_DRL_king_of_the_south
-	cost = 4
+	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -968,7 +1367,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_prepare_for_the_next_mission
 	icon = GFX_focus_DRL_the_status_of_our_army
-	cost = 4
+	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -990,6 +1389,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_prepare_for_the_next_mission"
+		RUS_Smuta_Enable = yes
+		set_temp_variable = { Y = 0.25 }
+		RUS_Smuta_Supplies_Add_Y = yes
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			set_country_flag = DRL_ready_for_smuta

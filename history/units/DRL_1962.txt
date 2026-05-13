@@ -20,43 +20,44 @@ division_template = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
-division_template = {
-	name = "Motorisierte Division"
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-	}
-}
-division_template = {
-	name = "Panzer-Division"
-	regiments = {
-		IFV = { x = 0 y = 0 }
-		IFV = { x = 0 y = 1 }
-		IFV = { x = 1 y = 0 }
-		IFV = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-	}
-	support = {
-	}
-}
+#division_template = {
+#	name = "Motorisierte Division"
+#	regiments = {
+#		motorized = { x = 0 y = 0 }
+#		motorized = { x = 0 y = 1 }
+#		motorized = { x = 0 y = 2 }
+#		motorized = { x = 1 y = 0 }
+#		motorized = { x = 1 y = 1 }
+#		motorized = { x = 1 y = 2 }
+#		motorized = { x = 2 y = 0 }
+#		motorized = { x = 2 y = 1 }
+#		motorized = { x = 2 y = 2 }
+#	}
+#	support = {
+#	}
+#}
+#division_template = {
+#	name = "Panzer-Division"
+#	regiments = {
+#		IFV = { x = 0 y = 0 }
+#		IFV = { x = 0 y = 1 }
+#		IFV = { x = 1 y = 0 }
+#		IFV = { x = 1 y = 1 }
+#		motorized = { x = 2 y = 0 }
+#		motorized = { x = 2 y = 1 }
+#	}
+#	support = {
+#	}
+#}
 
 units = {
 	division = {
@@ -80,8 +81,8 @@ units = {
 			name_order = 1
 		}
 		location = "4215"
-		division_template = "Russische Räuber Division"
-		start_experience_factor = 0.1
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
@@ -89,8 +90,8 @@ units = {
 			name_order = 2
 		}
 		location = "7281"
-		division_template = "Russische Räuber Division"
-		start_experience_factor = 0.1
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
@@ -112,7 +113,7 @@ instant_effect = {
 			creator = "DRL"
 		}
 		requested_factories = 1
-		progress = 0.3
+		progress = 0.5
 		efficiency = 50
 	}
 
@@ -122,7 +123,7 @@ instant_effect = {
 			creator = "DRL"
 		}
 		requested_factories = 1
-		progress = 0.2
+		progress = 0.5
 		efficiency = 50
 	}
 }

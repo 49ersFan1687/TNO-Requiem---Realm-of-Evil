@@ -1,0 +1,103 @@
+﻿l_english:
+ 
+ ### DB collapse - after russian reunification ###
+ 
+ KOM_UNITED_FRONT:0 "West Russian United Front"
+ KOM_UNITED_FRONT_DEF:0 "the West Russian United Front"
+ KOM_UNITED_FRONT_ADJ:0 "West Russian"
+ 
+ ONG_DBDRL:0 "Onega Anti-Soviet Government"
+ ONG_DBDRL_DEF:0 "the Onega Anti-Soviet Government"
+ ONG_DBDRL_ADJ:0 "Russian"
+ 
+ KOM_DBDRL:0 "West Russian National Soviet"
+ KOM_DBDRL_DEF:0 "the West Russian National Soviet"
+ KOM_DBDRL_ADJ:0 "Russian"
+ 
+ VOL_DBDRL:0 "Vologdan People's Republic"
+ VOL_DBDRL_DEF:0 "the Vologdan People's Republic"
+ VOL_DBDRL_ADJ:0 "Russian"
+ 
+ SAM_DBDRL:0 "West Russian Liberation Army"
+ SAM_DBDRL_DEF:0 "the West Russian Liberation Army"
+ SAM_DBDRL_ADJ:0 "Russian"
+ 
+ VYT_DBDRL:0 "Regency of Vyatka"
+ VYT_DBDRL_DEF:0 "the Regency of Vyatka"
+ VYT_DBDRL_ADJ:0 "Russian"
+ 
+ GAY_DBDRL:0 "Ural People's Regency"
+ GAY_DBDRL_DEF:0 "the Ural People's Regency"
+ GAY_DBDRL_ADJ:0 "Russian"
+ 
+ PRM_DBDRL:0 "SS State Of Perm"
+ PRM_DBDRL_DEF:0 "the SS State Of Perm"
+ PRM_DBDRL_ADJ:0 "German"
+ 
+ DRL_DBDRL:0 "Ordenstaat Orsk"
+ DRL_DBDRL_DEF:0 "the Ordenstaat Orsk"
+ DRL_DBDRL_ADJ:0 "German"
+ 
+ TAR_DBDRL:0 "Idel-Ural Republic"
+ TAR_DBDRL_DEF:0 "the Idel-Ural Republic"
+ TAR_DBDRL_ADJ:0 "Tatar"
+ 
+ VOR_DBDRL:0 "Ural State"
+ VOR_DBDRL_DEF:0 "the Ural State"
+ VOR_DBDRL_ADJ:0 "Russian"
+ 
+ SVR_DBDRL:0 "Ural Reconstruction District"
+ SVR_DBDRL_DEF:0 "the Ural Reconstruction District"
+ SVR_DBDRL_ADJ:0 "Russian"
+ 
+ TYM_DBDRL:0 "Red League"
+ TYM_DBDRL_DEF:0 "the Red League"
+ TYM_DBDRL_ADJ:0 "Russian"
+ 
+ OMS_DBDRL:0 "Reborn Black League"
+ OMS_DBDRL_DEF:0 "the Reborn Black League"
+ OMS_DBDRL_ADJ:0 "Russian"
+ 
+ TOM_DBDRL:0 "Second Republic Of Tomsk"
+ TOM_DBDRL_DEF:0 "the Second Republic Of Tomsk"
+ TOM_DBDRL_ADJ:0 "Russian"
+ 
+ ALT_DBDRL:0 "Southern Siberian State"
+ ALT_DBDRL_DEF:0 "the Southern Siberian State"
+ ALT_DBDRL_ADJ:0 "Russian"
+ 
+ SBA_DBDRL:0 "SS-Staat Sibirien"
+ SBA_DBDRL_DEF:0 "the SS-Staat Sibirien"
+ SBA_DBDRL_ADJ:0 "Russian"
+ 
+ KEM_DBDRL:0 "Mongol Restoration Front"
+ KEM_DBDRL_DEF:0 "the Mongol Restoration Front"
+ KEM_DBDRL_ADJ:0 "Mongolian"
+ 
+ ZLT_DBDRL:0 "Bratsk Refugee Rescue Zone"
+ ZLT_DBDRL_DEF:0 "the Bratsk Refugee Rescue Zone"
+ ZLT_DBDRL_ADJ:0 "Russian"
+ 
+ BRY_DBDRL:0 "Kirensk Soviet Commune"
+ BRY_DBDRL_DEF:0 "the Kirensk Soviet Commune"
+ BRY_DBDRL_ADJ:0 "Russian"
+ 
+ CHT_DBDRL:0 "White Forces of the Far East"
+ CHT_DBDRL_DEF:0 "the White Forces of the Far East"
+ CHT_DBDRL_ADJ:0 "Russian"
+ 
+ AMR_DBDRL:0 "Amur Reservation Government"
+ AMR_DBDRL_DEF:0 "the Amur Reservation Government"
+ AMR_DBDRL_ADJ:0 "Russian"
+ 
+ FAV_DBDRL:0 "Rossia Geukdong Protectorate"
+ FAV_DBDRL_DEF:0 "the Rossia Geukdong Protectorate"
+ FAV_DBDRL_ADJ:0 "Korean"
+ 
+ MAG_DBDRL:0 "Magadan Free Republic"
+ MAG_DBDRL_DEF:0 "the Magadan Free Republic"
+ MAG_DBDRL_ADJ:0 "Russian"
+ 
+ YGR_DBDRL:0 "Kamchatka Research Area"
+ YGR_DBDRL_DEF:0 "the Kamchatka Research Area"
+ YGR_DBDRL_ADJ:0 "Japanese"

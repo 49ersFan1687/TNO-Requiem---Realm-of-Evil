@@ -26,7 +26,7 @@ country_event = { ### Insurgency - purify orsk ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.2" }
 	title = DRL_beginning.2.t
 	desc = DRL_beginning.2.desc
-	picture = a
+	picture = GFX_report_event_DRL_generic_army1
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -41,7 +41,7 @@ country_event = { ### Dealing with rebels - Wipe out Insurgents ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.3" }
 	title = DRL_beginning.3.t
 	desc = DRL_beginning.3.desc
-	picture = a
+	picture = GFX_report_event_DRL_generic_army3
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -51,12 +51,12 @@ country_event = { ### Dealing with rebels - Wipe out Insurgents ###
 	}
 }
 
-country_event = { ### Their Fate - Spread the real horror ###
+country_event = { ### Their Fate - Their Fate event ###
 	id = DRL_beginning.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.4" }
 	title = DRL_beginning.4.t
 	desc = DRL_beginning.4.desc
-	picture = a
+	picture = GFX_report_event_DRL_generic_army2
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -66,18 +66,22 @@ country_event = { ### Their Fate - Spread the real horror ###
 	}
 }
 
-country_event = { ### Their End - Spread the real horror ###
+country_event = { ### Their End - Their End event ###
 	id = DRL_beginning.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.5" }
 	title = DRL_beginning.5.t
 	desc = DRL_beginning.5.desc
-	picture = a
+	picture = GFX_report_event_GNG_blood_on_ground
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 		name = DRL_beginning.5.a
+		add_manpower = -300
+		random_owned_controlled_state= {
+                    add_manpower = -1253
+                    }
 	}
 }
 
@@ -86,7 +90,7 @@ country_event = { ### True Power - aryan army in the dark ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.6" }
 	title = DRL_beginning.6.t
 	desc = DRL_beginning.6.desc
-	picture = a
+	picture = GFX_report_event_DRL_generic_army4
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -101,7 +105,7 @@ country_event = { ### The realm begins - the realm begins focus ###
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.7" }
 	title = DRL_beginning.7.t
 	desc = DRL_beginning.7.desc
-	picture = a
+	picture = GFX_report_event_DRL_Mountain_Realm
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -110,6 +114,7 @@ country_event = { ### The realm begins - the realm begins focus ###
 		name = DRL_beginning.7.a
 		add_war_support = 0.05
 		add_manpower = 5404
+		tno_vote_franchise_worsen = yes
 	}
 }
 
@@ -118,7 +123,7 @@ country_event = { ### The State of the Bandit Army - our army of bandits focus #
 	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.8" }
 	title = DRL_beginning.8.t
 	desc = DRL_beginning.8.desc
-	picture = a
+	picture = GFX_report_event_OMS_russian_national_army
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -143,6 +148,36 @@ country_event = { ### Our Leader - Our Great Leader ###
 		name = DRL_beginning.9.a
 		add_political_power = -25
 		add_stability = 0.025
+	}
+}
+
+country_event = { ### Conquer the South Urals - Its Time event ###
+	id = DRL_beginning.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.10" }
+	title = DRL_beginning.10.t
+	desc = DRL_beginning.10.desc
+	picture = GFX_report_event_generic_truck
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DRL_beginning.10.a
+	}
+}
+
+country_event = { ### The South, All Ours! - Victory event ###
+	id = DRL_beginning.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_beginning.11" }
+	title = DRL_beginning.11.t
+	desc = DRL_beginning.11.desc
+	picture = GFX_report_event_dirlewanger_old_pic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DRL_beginning.11.a
 	}
 }
 

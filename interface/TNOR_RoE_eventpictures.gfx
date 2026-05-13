@@ -17,26 +17,30 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army"
-		texturefile = "gfx/event_pictures/DRL/generic_army.dds"
+		texturefile = "gfx/event_pictures/DRL/report_event_DRL_generic_army.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army1"
-		texturefile = "gfx/event_pictures/news_event/DRL/generic_army1.dds"
+		texturefile = "gfx/event_pictures/news_event/DRL/report_event_DRL_generic_army1.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army2"
-		texturefile = "gfx/event_pictures/DRL/generic_army2.dds"
+		texturefile = "gfx/event_pictures/DRL/report_event_DRL_generic_army2.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army3"
-		texturefile = "gfx/event_pictures/news_event/DRL/generic_army3.dds"
+		texturefile = "gfx/event_pictures/news_event/DRL/report_event_DRL_generic_army3.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army4"
-		texturefile = "gfx/event_pictures/DRL/generic_army4.dds"
+		texturefile = "gfx/event_pictures/DRL/report_event_DRL_generic_army4.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_DRL_generic_army5"
-		texturefile = "gfx/event_pictures/news_event/DRL/generic_army5.dds"
-	}	
+		texturefile = "gfx/event_pictures/news_event/DRL/report_event_DRL_generic_army5.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_DRL_Mountain_Realm"
+		texturefile = "gfx/event_pictures/news_event/DRL/report_event_DRL_Mountain_Realm.dds"
+	}
 }

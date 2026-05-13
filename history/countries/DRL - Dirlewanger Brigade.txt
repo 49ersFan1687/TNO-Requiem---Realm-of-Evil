@@ -8,7 +8,7 @@ recruit_character = DRL_Generic_Vacant
 set_country_flag = is_russian_nation
 
 set_stability = 0.85
-set_war_support = 0.5
+set_war_support = 0.4
 add_manpower = 30000
 
 ###Playable
