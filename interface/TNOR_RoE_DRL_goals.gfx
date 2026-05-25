@@ -103,10 +103,37 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_DRL_and_with_superiority"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_with_superiority.dds"
-	}
+	}	
 	spriteType = {
 		name = "GFX_focus_DRL_with_fury"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_fury.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_focus_DRL_the_south_conquered"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_south_conquered.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_strike_away_all_insurgency"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_strike_away_all_insurgency.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_bring_horror_to_their_hearts"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_bring_horror_to_their_hearts.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_lessons_from_the_ss"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_lessons_from_the_ss.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_not_a_single_one_left"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_not_a_single_one_left.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_flawless_execution"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_flawless_execution.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_and_beyond_the_south"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_beyond_the_south.dds"
+	}	
 }

@@ -1161,7 +1161,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_south_conquered
-	icon = GFX_focus_generic_military_contacts
+	icon = GFX_focus_DRL_the_south_conquered
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1183,7 +1183,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_strike_away_all_insurgency
-	icon = GFX_focus_DRL_with_strength
+	icon = GFX_focus_DRL_strike_away_all_insurgency
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1205,7 +1205,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_bring_horror_to_their_hearts
-	icon = GFX_focus_DRL_with_strength
+	icon = GFX_focus_DRL_bring_horror_to_their_hearts
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1227,7 +1227,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_not_a_single_one_left
-	icon = GFX_focus_DRL_with_strength
+	icon = GFX_focus_DRL_not_a_single_one_left
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1275,7 +1275,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_flawless_execution
-	icon = GFX_focus_DRL_with_strength
+	icon = GFX_focus_DRL_flawless_execution
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1300,8 +1300,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_prepare_for_the_next_mission
-	icon = GFX_focus_DRL_the_status_of_our_army
+	id = DRL_and_beyond_the_south
+	icon = GFX_focus_DRL_and_beyond_the_south
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1320,14 +1320,14 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_prepare_for_the_next_mission"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_beyond_the_south"
 		RUS_Smuta_Enable = yes
 		set_temp_variable = { Y = 0.25 }
 		RUS_Smuta_Supplies_Add_Y = yes
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			set_country_flag = DRL_ready_for_smuta
-			load_focus_tree = dirlewanger_smuta		
+			load_focus_tree = dirlewanger_smuta 		
 		}
 	}
 }
