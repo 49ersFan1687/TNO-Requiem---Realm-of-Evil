@@ -36,6 +36,7 @@ focus_tree = {
 	default = no
 	shared_focus = DRL_the_brigades_rebranding
 	shared_focus = DRL_the_question_of_our_economy
+	shared_focus = DRL_our_ss_army
 }
 
 ### Starting Tree ###
@@ -1203,8 +1204,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_the_status_of_our_army
-	icon = GFX_focus_DRL_the_status_of_our_army
+	id = DRL_bring_horror_to_their_hearts
+	icon = GFX_focus_DRL_with_strength
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
@@ -1220,29 +1221,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_status_of_our_army"
-	}
-}
-
-shared_focus = {
-	id = DRL_glorify_our_leader
-	icon = GFX_focus_DRL_glorify_our_leader
-	cost = 3
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_the_south_conquered
-	}
-	x = 10
-	y = 16
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_glorify_our_leader"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_bring_horror_to_their_hearts"
 	}
 }
 
@@ -1255,8 +1234,12 @@ shared_focus = {
 	prerequisite = {
 		focus = DRL_strike_away_all_insurgency
 	}
-	x = 6
-	y = 17
+	prerequisite = {
+		focus = DRL_bring_horror_to_their_hearts
+	}	
+	x = 1
+	y = 1
+	relative_position_id = DRL_strike_away_all_insurgency	
 	ai_will_do = {
 		factor = 60
 	}
@@ -1275,10 +1258,10 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_status_of_our_army
+		focus = DRL_the_south_conquered
 	}
-	x = 8
-	y = 17
+	x = 10
+	y = 16
 	ai_will_do = {
 		factor = 60
 	}
@@ -1291,82 +1274,20 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_and_his_realm
-	icon = GFX_focus_DRL_and_his_realm
-	cost = 3
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_glorify_our_leader
-	}
-	x = 10
-	y = 17
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_his_realm"
-	}
-}
-
-shared_focus = {
-	id = DRL_bring_horror_to_their_hearts
+	id = DRL_flawless_execution
 	icon = GFX_focus_DRL_with_strength
-	cost = 3
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_not_a_single_one_left
-	}
-	x = 6
-	y = 18
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_bring_horror_to_their_hearts"
-	}
-}
-
-shared_focus = {
-	id = DRL_and_done_correctly
-	icon = GFX_focus_DRL_the_status_of_our_army
 	cost = 3
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
 		focus = DRL_lessons_from_the_ss
 	}
-	x = 8
-	y = 18
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_done_correctly"
-	}
-}
-
-shared_focus = {
-	id = DRL_king_of_the_south
-	icon = GFX_focus_DRL_king_of_the_south
-	cost = 3
-	available_if_capitulated = no
-	cancelable = yes
 	prerequisite = {
-		focus = DRL_and_his_realm
-	}
-	x = 10
-	y = 18
+		focus = DRL_bring_horror_to_their_hearts
+	}	
+	x = 1
+	y = 1
+	relative_position_id = DRL_bring_horror_to_their_hearts	
 	ai_will_do = {
 		factor = 60
 	}
@@ -1374,7 +1295,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_king_of_the_south"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_flawless_execution"
 	}
 }
 
@@ -1385,13 +1306,10 @@ shared_focus = {
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_bring_horror_to_their_hearts
+		focus = DRL_not_a_single_one_left
 	}
 	prerequisite = {
-		focus = DRL_and_done_correctly
-	}
-	prerequisite = {
-		focus = DRL_king_of_the_south
+		focus = DRL_flawless_execution
 	}
 	x = 8
 	y = 19
@@ -1409,6 +1327,7 @@ shared_focus = {
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			set_country_flag = DRL_ready_for_smuta
+			load_focus_tree = dirlewanger_smuta		
 		}
 	}
 }
@@ -2502,6 +2421,824 @@ shared_focus = {
 	}
 	x = 36
 	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = DRL_invite_moscovyite_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_burgundian_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 25
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_burgundian_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_moscovyite_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 27
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_bring_out_the_hammers
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 29
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_a_worker_like_no_other
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 31
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_launch_the_dark_industrialization
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_reliable_german_model
+		focus = DRL_open_staat_owned_industries
+	}
+	x = 36
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_moscovyite_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_burgundian_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 25
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_burgundian_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_moscovyite_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 27
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_bring_out_the_hammers
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 29
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_a_worker_like_no_other
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 31
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_launch_the_dark_industrialization
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_reliable_german_model
+		focus = DRL_open_staat_owned_industries
+	}
+	x = 36
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = DRL_invite_moscovyite_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_burgundian_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 25
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_burgundian_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_moscovyite_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 27
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_bring_out_the_hammers
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 29
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_a_worker_like_no_other
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 31
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_launch_the_dark_industrialization
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_reliable_german_model
+		focus = DRL_open_staat_owned_industries
+	}
+	x = 36
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = DRL_invite_moscovyite_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_burgundian_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 25
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_burgundian_economists
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_invite_moscovyite_economists
+	}
+	prerequisite = {
+		focus = DRL_adapt_their_experience_to_the_russian_context
+	}
+	x = 27
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_bring_out_the_hammers
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 29
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_a_worker_like_no_other
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_in_the_workforce
+	}
+	x = 31
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_launch_the_dark_industrialization
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_the_reliable_german_model
+		focus = DRL_open_staat_owned_industries
+	}
+	x = 36
+	y = 5
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_our_ss_army
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	x = 45
+	y = 1
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_copy_himmler_army
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	mutually_exclusive = {
+		focus = DRL_new_black_army
+	}
+	prerequisite = {
+		focus = DRL_our_ss_army
+	}
+	x = 1
+	y = 1
+	relative_position_id = DRL_our_ss_army	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_invite_burgundian_instructors
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_copy_himmler_army
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_copy_himmler_army		
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_sun_above_us
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_invite_burgundian_instructors
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_invite_burgundian_instructors		
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_new_black_army
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	mutually_exclusive = {
+		focus = DRL_copy_himmler_army
+	}
+	prerequisite = {
+		focus = DRL_our_ss_army
+	}
+	x = 3
+	y = 1
+	relative_position_id = DRL_our_ss_army		
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_new_aryan_solider
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_new_black_army
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_new_black_army		
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_twilight_above_us
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_new_aryan_solider
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_new_aryan_solider		
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_staat_air_force
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_our_ss_army
+	}
+	x = -3
+	y = 1
+	relative_position_id = DRL_our_ss_army	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_new_airforce_academies
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_staat_air_force
+	}
+	x = -2
+	y = 1
+	relative_position_id = DRL_staat_air_force	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_recruit_loyal_pilots
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_staat_air_force
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_staat_air_force	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_kiners_from_above
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_staat_air_force
+	}
+	x = 2
+	y = 1
+	relative_position_id = DRL_staat_air_force	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_airforce_in_darkness
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_new_airforce_academies
+	}
+	prerequisite = {
+		focus = DRL_recruit_loyal_pilots
+	}	
+	prerequisite = {
+		focus = DRL_kiners_from_above
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_recruit_loyal_pilots	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_jumpstart_our_navy
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_our_ss_army
+	}
+	x = 4
+	y = 0
+	relative_position_id = DRL_staat_air_force	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_new_ss_ship
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_jumpstart_our_navy
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_jumpstart_our_navy	
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_start_true_fleet
+	#icon
+	cost = 2
+	available_if_capitulated = no
+	cancelable = yes	
+	prerequisite = {
+		focus = DRL_new_ss_ship
+	}
+	x = 0
+	y = 1
+	relative_position_id = DRL_new_ss_ship	
 	ai_will_do = {
 		factor = 60
 	}

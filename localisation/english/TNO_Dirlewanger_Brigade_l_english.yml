@@ -377,6 +377,27 @@
  DRL_the_south_all_ours: "The South, All Ours!"
  DRL_the_south_all_ours_desc: ""
 
+ DRL_the_south_conquered: "The South, Conquered"
+ DRL_the_south_conquered_desc: ""
+
+ DRL_strike_away_all_insurgency: "Strike away all Insurgency"
+ DRL_strike_away_all_insurgency_desc: ""
+ 
+ DRL_bring_horror_to_their_hearts: "Bring horror to their hearts"
+ DRL_bring_horror_to_their_hearts_desc: ""
+ 
+ DRL_not_a_single_one_left: "Not a single one left!"
+ DRL_not_a_single_one_left_desc: ""
+ 
+ DRL_lessons_from_the_ss: "Lessons from the SS"
+ DRL_lessons_from_the_ss_desc: ""
+
+ DRL_flawless_execution: "Flawless execution"
+ DRL_flawless_execution_desc: ""
+
+ DRL_prepare_for_the_next_mission: "Expand the borders of our Realm"
+ DRL_prepare_for_the_next_mission_desc: ""
+
  DRL_reap_the_spoils: "Reap the Spoils"
  #DRL_reap_the_spoils:1 "Punish the Failures"
  DRL_reap_the_spoils_desc: "We've spent the last while taking everything in the Southern Urals that wasn't nailed down - and some things that were!\n\nIt's time to take a moment and enjoy what we've accomplished. Life is about more than raiding, after all - its also about enjoying the wine and women that come along with it! Make sure to use it, and them, all up!\n\nWe can, and will, always go and get more!"
