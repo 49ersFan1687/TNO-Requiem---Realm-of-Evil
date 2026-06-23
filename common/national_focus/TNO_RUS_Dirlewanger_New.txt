@@ -2463,7 +2463,7 @@ shared_focus = {
 	prerequisite = {
 		focus = DRL_our_ss_army
 	}
-	x = 1
+	x = 3
 	y = 1
 	relative_position_id = DRL_our_ss_army	
 	ai_will_do = {
@@ -2535,7 +2535,7 @@ shared_focus = {
 	prerequisite = {
 		focus = DRL_our_ss_army
 	}
-	x = 3
+	x = 5
 	y = 1
 	relative_position_id = DRL_our_ss_army		
 	ai_will_do = {
