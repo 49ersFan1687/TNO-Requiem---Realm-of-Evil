@@ -1,0 +1,5 @@
+l_english:
+ RUS_Decision_Smuta_Occupation_DRL: "Occupy [DRL.GetFlag] [DRL.GetName]"
+ RUS_Decision_Smuta_Occupation_DRL_desc: "$RUS_Decision_Smuta_Occupation_desc$"
+ RUS_Decision_Smuta_Occupation_BZI: "Occupy [BZI.GetFlag] [BZI.GetName]"
+ RUS_Decision_Smuta_Occupation_BZI_desc: "$RUS_Decision_Smuta_Occupation_desc$"
