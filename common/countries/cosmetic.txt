@@ -963,52 +963,52 @@ RPO_protectorate = {
 }
 
 VYT_ANARCHY = {
-	color = rgb { 110 120 110 }
-	color_ui = rgb { 110 120 110 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 VOL_ANARCHY = {
-	color = rgb { 124 176 167 }
-	color_ui = rgb { 124 176 167 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 SAM_ANARCHY = {
-	color = rgb { 140 166 175 }
-	color_ui = rgb { 140 166 175 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 PRM_ANARCHY = {
-	color = rgb { 151 104 147 }
-	color_ui = rgb { 151 104 147 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 GOR_ANARCHY = {
-	color = rgb { 151 104 117 }
-	color_ui = rgb { 151 104 117 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 OMS_ANARCHY = {
-	color = rgb { 201 124 167 }
-	color_ui = rgb { 201 104 117 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 ZLT_ANARCHY = {
-	color = rgb { 231 235 239 }
-	color_ui = rgb { 231 235 239 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 SVR_ANARCHY = {
-	color = rgb { 255 210 155 }
-	color_ui = rgb { 255 210 155 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 TYM_ANARCHY = {
-	color = rgb { 71 114 117 }
-	color_ui = rgb { 71 114 117 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 VOR_ANARCHY = {
-	color = rgb { 120 140 90 }
-	color_ui = rgb { 120 140 90 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 
 BHU_AZH = {

@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_national_socialism_bandit_nazism_subtype"
+		texturefile = "gfx/interface/ideologies/national_socialism_bandit_nazism_subtype.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_national_socialism_bandit_nazism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/NatSoc/BanditNatSoc.png"
+		legacy_lazy_load = no
+	}
+}

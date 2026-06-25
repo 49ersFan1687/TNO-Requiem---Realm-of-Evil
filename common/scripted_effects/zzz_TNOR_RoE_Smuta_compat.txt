@@ -1,0 +1,239 @@
+RUS_Smuta_Contenders_Setup = {
+	hidden_effect = {
+		set_variable = { Smuta_ContendersReal_Num = 0 }
+		if = {
+			limit = { is_central_russian_nation = yes }
+			add_to_array = { Smuta_Contenders = WRS }
+			if = {
+				limit = { WRS = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = KOM }
+			if = {
+				limit = { KOM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = SAM }
+			if = {
+				limit = { SAM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = GOR }
+			if = {
+				limit = { GOR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = VOL }
+			if = {
+				limit = { VOL = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = VYT }
+			if = {
+				limit = { VYT = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = TAR }
+			if = {
+				limit = { TAR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = PRM }
+			if = {
+				limit = { PRM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = BKR }
+			if = {
+				limit = { BKR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			if = {
+				limit = {
+					DRL = {
+						exists = yes
+						has_country_flag = DRL_ready_for_smuta
+					}
+				}
+				add_to_array = { Smuta_Contenders = DRL }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			if = {
+				limit = { GAY = { exists = yes } }
+				add_to_array = { Smuta_Contenders = GAY }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			if = {
+				limit = { BZI = { exists = yes } }
+				add_to_array = { Smuta_Contenders = BZI }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+		}
+		else_if = {
+			limit = { is_west_siberian_nation = yes }
+			add_to_array = { Smuta_Contenders = OMS }
+			if = {
+				limit = { OMS = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = FAV }
+			if = {
+				limit = { FAV = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = ZLT }
+			if = {
+				limit = { ZLT = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = SVR }
+			if = {
+				limit = { SVR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = TYM }
+			if = {
+				limit = { TYM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = YGR }
+			if = {
+				limit = { YGR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = VOR }
+			if = {
+				limit = { VOR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = NTG }
+			if = {
+				limit = { NTG = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+		}
+		else_if = {
+			limit = { is_central_siberian_nation = yes }
+			add_to_array = { Smuta_Contenders = TOM }
+			if = {
+				limit = { TOM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = SBA }
+			if = {
+				limit = { SBA = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = ALT }
+			if = {
+				limit = { ALT = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = KEM }
+			if = {
+				limit = { KEM = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = NOV }
+			if = {
+				limit = { NOV = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = PRC }
+			if = {
+				limit = { PRC = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = KRS }
+			if = {
+				limit = { KRS = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+		}
+		else_if = {
+			limit = { is_far_eastern_nation = yes }
+			add_to_array = { Smuta_Contenders = IRK }
+			if = {
+				limit = { IRK = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = BRY }
+			if = {
+				limit = { BRY = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = CHT }
+			if = {
+				limit = { CHT = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = AMR }
+			if = {
+				limit = { AMR = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = MAG }
+			if = {
+				limit = { MAG = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			add_to_array = { Smuta_Contenders = YAK }
+			if = {
+				limit = { YAK = { exists = yes } }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			if = {
+				limit = {
+					AND = {
+						KMC = { 
+							exists = yes 
+						}
+						has_game_rule = {
+							rule = PONY_BUKHARIN_STATUS
+							option = PONY_BUKHARIN_DISABLED
+						} 
+					}
+				}
+				add_to_array = { Smuta_Contenders = KMC }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+			if = {
+				limit = {
+					AND = {
+						OMO = { 
+							exists = yes 
+						}
+						has_game_rule = {
+							rule = PONY_BUKHARIN_STATUS
+							option = PONY_BUKHARIN_DISABLED
+						} 
+					}
+				}
+				add_to_array = { Smuta_Contenders = OMO }
+				add_to_variable = { Smuta_ContendersReal_Num = 1 }
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					CHT = {
+						is_ai = yes
+					}
+					OR = {
+						IRK = {
+							is_ai = yes
+						}
+						BRY = {
+							is_ai = yes
+						}
+					}
+					check_variable = { global.smuta_decider = 0 }
+				}
+			}
+			ZZZ = { 
+				country_event = { id = RUS.smuta.debug.1 }	
+				add_to_variable = { global.smuta_decider = 1 }
+			}
+		}
+	}
+}

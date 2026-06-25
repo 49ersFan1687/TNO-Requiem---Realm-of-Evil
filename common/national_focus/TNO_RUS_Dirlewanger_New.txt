@@ -144,14 +144,14 @@ shared_focus = {
 			}
 		random_owned_state = {
 			add_manpower = -2688
-		damage_building = {
-				add_extra_state_shared_building_slots = 1
-					type = infrastructure
-					damage = 1
-				}
+			add_extra_state_shared_building_slots = 1
+			damage_building = {
+				type = infrastructure
+				damage = 1
 			}
-	set_temp_variable = { money_reserves_temp = -0.04 }
-	econ_money_reserves_change_raw_money = yes
+		}
+		set_temp_variable = { money_reserves_temp = -0.04 }
+		econ_money_reserves_change_raw_money = yes
 	}
 }
 shared_focus = {
@@ -788,12 +788,12 @@ shared_focus = {
 			}
 		}
 		hidden_effect = {
-		846 = {
-			damage_building = {
-							type = barracks
-							damage = 1
-							}
-						}
+			846 = {
+				damage_building = {
+					type = barracks
+					damage = 1
+				}
+			}
 		}
 		set_temp_variable = { temp_econ_spending_amount = 0.025 }
 		econ_spend_money_once_effect_raw_money = yes
@@ -1321,12 +1321,14 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_beyond_the_south"
+		hidden_effect = {
+			set_country_flag = DRL_ready_for_smuta
+		}
 		RUS_Smuta_Enable = yes
 		set_temp_variable = { Y = 0.25 }
 		RUS_Smuta_Supplies_Add_Y = yes
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
-			set_country_flag = DRL_ready_for_smuta
 			load_focus_tree = dirlewanger_smuta 		
 		}
 	}
@@ -1937,7 +1939,7 @@ shared_focus = {
 	}
 	mutually_exclusive = {
 		focus = DRL_into_control
-		focus = DRL_make_him_number_1
+		focus = DRL_the_ss_staats_new_face
 	}
 	x = 17
 	y = 4

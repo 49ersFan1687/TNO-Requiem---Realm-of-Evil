@@ -10,6 +10,11 @@ is_russian_unifier = {
 		original_tag = KOM
 		original_tag = PRM
 		original_tag = URL
+		AND = {
+			original_tag = DRL
+			has_country_flag = DRL_ready_for_smuta
+		}
+		original_tag = BZI
 
 		original_tag = OMS
 		original_tag = TYM
@@ -44,6 +49,11 @@ is_central_russian_nation = {
 		original_tag = GAY
 		original_tag = BKR
 		original_tag = URL
+		AND = {
+			original_tag = DRL
+			has_country_flag = DRL_ready_for_smuta
+		}
+		original_tag = BZI
 	}
 }
 
@@ -1371,6 +1381,92 @@ RUS_can_diplomatize_with_finland_or_whatever = {
 				has_government = anocracy
 				has_government = despotism
 			}
+		}
+	}
+}
+
+## Foreign buying triggers ##
+
+RUS_foreign_buying_support_very_low = {
+	if = {
+		limit = {
+			has_country_flag = RUS_USA_foreign_buying_category_visible
+		}
+		check_variable = { RUS_USA_support > 0 }
+	}
+	else = {
+		check_variable = { RUS_JAP_support > 0 }
+	}
+}
+
+RUS_foreign_buying_support_low = {
+	if = {
+		limit = {
+			has_country_flag = RUS_USA_foreign_buying_category_visible
+		}
+		custom_trigger_tooltip = {
+			tooltip = RUS_USA_20_support_tp
+			check_variable = { RUS_USA_support > 19 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_JAP_20_support_tp
+			check_variable = { RUS_JAP_support > 19 }
+		}
+	}
+}
+
+RUS_foreign_buying_support_medium = {
+	if = {
+		limit = {
+			has_country_flag = RUS_USA_foreign_buying_category_visible
+		}
+		custom_trigger_tooltip = {
+			tooltip = RUS_USA_40_support_tp
+			check_variable = { RUS_USA_support > 39 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_JAP_40_support_tp
+			check_variable = { RUS_JAP_support > 39 }
+		}
+	}
+}
+
+RUS_foreign_buying_support_high = {
+	if = {
+		limit = {
+			has_country_flag = RUS_USA_foreign_buying_category_visible
+		}
+		custom_trigger_tooltip = {
+			tooltip = RUS_USA_60_support_tp
+			check_variable = { RUS_USA_support > 59 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_JAP_60_support_tp
+			check_variable = { RUS_JAP_support > 59 }
+		}
+	}
+}
+
+RUS_foreign_buying_support_very_high = {
+	if = {
+		limit = {
+			has_country_flag = RUS_USA_foreign_buying_category_visible
+		}
+		custom_trigger_tooltip = {
+			tooltip = RUS_USA_80_support_tp
+			check_variable = { RUS_USA_support > 79 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RUS_JAP_80_support_tp
+			check_variable = { RUS_JAP_support > 79 }
 		}
 	}
 }
