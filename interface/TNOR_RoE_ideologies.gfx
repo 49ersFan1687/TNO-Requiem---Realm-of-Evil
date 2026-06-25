@@ -6,7 +6,19 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ideology_national_socialism_bandit_nazism_bar"
-		textureFile = "gfx/interface/ideologies/ideology_bars/NatSoc/BanditNatSoc.png"
+		texturefile = "gfx/interface/ideologies/ideology_bars/NatSoc/BanditNatSoc.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anocracy_corporate_anocracy_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/Anocracy/CorporatePaternalism.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_national_socialism_idiosyncratic_nazism_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/NatSoc/Natzees.png"
 		legacy_lazy_load = no
 	}
 }

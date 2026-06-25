@@ -305,6 +305,11 @@ CRO_normal = {
 	color_ui = rgb { 167 136 155 }
 }
 
+CRO_ustase = {
+	color = rgb { 128 105 119 }
+	color_ui = rgb { 128 105 119 }
+}
+
 PAL_Levant_Union = {
 	color = rgb { 127 184 172 }
 	color_ui = rgb { 127 184 172 }
@@ -1139,7 +1144,7 @@ PRM_sec_warlord = {
 	color = rgb { 104 124 69 }
 	color_ui = rgb { 84 114 69 }
 }
-MAR_sec_warlord = {
+BZI_sec_warlord = {
 	color = rgb { 94 118 69 }
 	color_ui = rgb { 84 114 69 }
 }
@@ -3328,6 +3333,12 @@ LIT_omolon = {
 	color = rgb { 216 224 223 }
 	color_ui = rgb { 216 224 223 }
 }
+
+RUS_anarchy = {
+	color = rgb { 35 51 33 }
+	color_ui = rgb { 0 0 0 }
+}
+
 ### END 2WRW ###
 
 ## RUSKAZ GERMAN COLOR SUFFERING ##
@@ -3387,6 +3398,798 @@ BRG_GER = {
 	color_ui = rgb { 69 41 74 }
 }
 
+### TSAR AND SOVIETS ###
+BZI_VYT_1 = {
+	color = rgb { 65 100 42 }
+	color_ui = rgb { 65 100 42 }
+}
+BZI_VYT_2 = {
+	color = rgb { 70 90 65 }
+    color_ui = rgb { 70 90 65 }
+}
+BZI_VYT_3 = {
+	color = rgb { 77 115 109 }
+    color_ui = rgb { 77 115 109 }
+}
+
+BZI_ser_bel = {
+    color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+BZI_ser_bel_superreg = {
+    color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+BZI_ser_bel_RUS = {
+    color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+BZI_Maria_I_reg = {
+	color = rgb { 56 104 48 }
+	color_ui = rgb { 56 104 48 }
+}
+BZI_Maria_I_superreg = {
+	color = rgb { 56 104 48 }
+	color_ui = rgb { 56 104 48 }
+}
+BZI_Maria_I_RUS = {
+	color = rgb { 56 104 48 }
+	color_ui = rgb { 56 104 48 }
+}
+BZI_Kosygin_reg = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+BZI_Kosygin_superreg = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+BZI_Kosygin_RUS = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+BZI_KIR = {
+	color = rgb { 65 100 42 }
+	color_ui = rgb { 65 100 42 }
+}
+AUS_ITA = {
+	color = rgb { 104 133 84 }
+	color_ui = rgb { 104 133 84 }
+}
+KUR_Zhirik = {
+    color = rgb { 64 98 120 }
+    color_ui = rgb { 764 98 120 }
+}
+KUR_Saddam = {
+    color = rgb { 210 203 75 }
+    color_ui = rgb { 210 203 75 }
+}
+MTR_govern = {
+    color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+MTR_autonomy = {
+	color = rgb { 79 148 215 }
+	color_ui = rgb { 79 148 215 }
+}
+PAV_BZI_collapse = {
+    color = rgb { 5 113 139 }
+    color_ui = rgb { 5 113 139 }
+}
+MAG_BZI_collapse = {
+    color = rgb { 159 155 139 }
+    color_ui = rgb { 159 155 139 }
+}
+YAK_BZI_collapse = {
+    color = rgb { 65 86 73 }
+    color_ui = rgb { 65 86 73 }
+}
+BRY_BZI_collapse = {
+    color = rgb { 145 171 65 }
+    color_ui = rgb { 100 120 137 }
+}
+NOV_BZI_collapse = {
+    color = rgb { 74 84 86 }
+    color_ui = rgb { 74 84 86 }
+}
+OMS_BZI_collapse = {
+    color = rgb { 175 22 38 }
+    color_ui = rgb { 175 22 38 }
+}
+SVR_BZI_collapse = {
+    color = rgb { 95 159 105 }
+    color_ui = rgb { 95 159 105 }
+}
+KOM_BZI_collapse = {
+    color = rgb { 67 71 101 }
+    color_ui = rgb { 67 71 101 }
+}
+TAR_BZI_collapse = {
+    color = rgb { 57 93 41 }
+    color_ui = rgb { 57 93 41 }
+}
+MJP_JAP_autonomy = {
+    color = rgb { 140 72 89}
+    color_ui = rgb { 140 72 89 }
+}
+MAN_Second_CW = {
+    color = rgb { 210 189 186 }
+    color_ui = rgb { 210 189 186 }
+}
+MJP_Second_CW = {
+    color = rgb { 140 72 89}
+    color_ui = rgb { 140 72 89 }
+}
+HAN_Second_CW = {
+	color = rgb { 254 205 33 }
+	color_ui = rgb { 254 205 33 }
+}
+PFF_Second_CW = {
+    color = rgb { 121 24 24 }
+    color_ui = rgb { 121 24 24 }
+}
+PFF_cw_victory = {
+    color = rgb { 121 24 24 }
+    color_ui = rgb { 121 24 24 }
+}
+MAN_katastrophe = {
+    color = rgb { 0 0 0 }
+    color_ui = rgb { 0 0 0 }
+}
+
+MilZones_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+
+ONG_kosygin_collapse_cleanesed = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+ONG_kosygin_collapse = {
+	color = rgb { 87 128 106 }
+	color_ui = rgb {87 128 106 }
+}
+WRS_kosygin_collapse_cleanesed = {
+	color = rgb { 99 155 189 }
+	color_ui = rgb { 99 155 189 }
+}
+WRS_kosygin_collapse = {
+	color = rgb { 46 39 23 }
+	color_ui = rgb { 46 39 23 }
+}
+KOM_kosygin_collapse_cleanesed = {
+	color = rgb { 135 60 52 }
+	color_ui = rgb { 135 60 52 }
+}
+KOM_kosygin_collapse = {
+	color = rgb { 90 29 88 }
+	color_ui = rgb { 90 29 88 }
+}
+SAM_kosygin_collapse_cleanesed = {
+	color = rgb { 114 31 37 }
+	color_ui = rgb {114 31 37 }
+}
+SAM_kosygin_collapse = {
+	color = rgb { 150 177 149 }
+	color_ui = rgb { 150 177 149 }
+}
+GOR_kosygin_collapse_cleanesed = {
+	color = rgb { 159 148 155 }
+	color_ui = rgb {159 148 155 }
+}
+GOR_kosygin_collapse = {
+	color = rgb { 131 75 72 }
+	color_ui = rgb { 131 75 72 }
+}
+PRM_kosygin_collapse_cleanesed = {
+	color = rgb { 75 65 80 }
+	color_ui = rgb {75 65 80 }
+}
+VOL_kosygin_collapse = {
+	color = rgb { 115 113 125 }
+	color_ui = rgb { 115 113 125  }
+}
+BZI_kosygin_collapse = {
+	color = rgb { 79 4 11 }
+	color_ui = rgb { 79 4 11 }
+}
+GAY_kosygin_collapse = {
+	color = rgb { 83 102 90 }
+	color_ui = rgb {83 102 90 }
+}
+TAR_kosygin_collapse = {
+	color = rgb { 36 50 40 }
+	color_ui = rgb {36 50 40 }
+}
+TMQ_kosygin_collapse = {
+	color = rgb { 115 95 79 }
+	color_ui = rgb {115 95 79 }
+}
+BKR_kosygin_collapse = {
+	color = rgb { 200 151 120 }
+	color_ui = rgb {200 151 120 }
+}
+
+ZNE_Kosygin = {
+	color = rgb { 95 57 58 }
+	color_ui = rgb { 95 57 58 }
+}
+GRH_Kosygin = {
+	color = rgb { 108 156 101 }
+	color_ui = rgb { 108 156 101  }
+}
+GBV_Kosygin = {
+	color = rgb { 171 80 72 }
+	color_ui = rgb { 171 80 72 }
+}
+GCZ_Kosygin = {
+	color = rgb { 68 126 177 }
+	color_ui = rgb { 68 126 177 }
+}
+
+MTR_BZI_collapse_reunified = {
+	color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+PAV_BZI_collapse_reunified = {
+    color = rgb { 5 113 139 }
+    color_ui = rgb { 5 113 139 }
+}
+MAG_BZI_collapse_reunified = {
+    color = rgb { 159 155 139 }
+    color_ui = rgb { 159 155 139 }
+}
+YAK_BZI_collapse_reunified = {
+    color = rgb { 65 86 73 }
+    color_ui = rgb { 65 86 73 }
+}
+BRY_BZI_collapse_reunified = {
+    color = rgb { 145 171 65 }
+    color_ui = rgb { 100 120 137 }
+}
+NOV_BZI_collapse_reunified = {
+    color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+OMS_BZI_collapse_reunified = {
+    color = rgb { 175 22 38 }
+    color_ui = rgb { 175 22 38 }
+}
+SVR_BZI_collapse_reunified = {
+    color = rgb { 92 118 186 }
+    color_ui = rgb { 92 118 186 }
+}
+KOM_BZI_collapse_reunified = {
+    color = rgb { 67 71 101 }
+    color_ui = rgb { 67 71 101 }
+}
+TAR_BZI_collapse_reunified = {
+    color = rgb { 57 93 41 }
+    color_ui = rgb { 57 93 41 }
+}
+
+VOR_Eser_warlord = {
+    color = rgb { 185 48 60 }
+    color_ui = rgb { 185 48 60 }
+}
+
+VOR_Eser_reg = {
+    color = rgb { 185 48 60 }
+    color_ui = rgb { 185 48 60 }
+}
+GER_DEM = {
+    color = rgb { 160 160 160 }
+    color_ui = rgb { 160 160 160 }
+}
+BRL_usa = {
+    color = rgb { 100 138 190 }
+    color_ui = rgb { 100 138 190 }
+}
+ZNE_usa = {
+    color = rgb { 160 160 160 }
+    color_ui = rgb { 160 160 160 }
+}
+GCZ_usa = {
+    color = rgb { 100 138 190 }
+    color_ui = rgb { 100 138 190 }
+}
+GSG_usa = {
+    color = rgb { 161 116 113 }
+    color_ui = rgb { 161 116 113 }
+}
+
+GFR_usa = {
+    color = rgb { 185 163 0 }
+    color_ui = rgb { 185 163 0 }
+}
+
+FIN_MIL = {
+	color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+FIN_MIL_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+FIN_autonomy = {
+	color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+FIN_autonomy_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+
+GRM_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+GRM_autonomy = {
+	color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+GRM_autonomy_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+GRM_Independence = {
+	color = rgb { 160 160 160 }
+    color_ui = rgb { 160 160 160 }
+}
+
+AAG_RUS = {
+	color = rgb { 100 120 137 }
+    color_ui = rgb { 100 120 137 }
+}
+AAG_RUS_Kosygin = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+
+KZR_JAP = {
+	color = rgb { 5 113 139 }
+    color_ui = rgb { 5 113 139 }
+}
+UZB_JAP = {
+	color = rgb { 145 171 65 }
+	color_ui = rgb { 145 171 65 }
+}
+UZB_JAP_Legion = {
+	color = rgb { 5 113 139 }
+    color_ui = rgb { 5 113 139 }
+}
+UZB_JAP_Islamist = {
+	color = rgb { 171 172 172 }
+    color_ui = rgb { 171 172 172 }
+}
+
+KRS_JAP = {
+	color = rgb { 59 106 73 }
+    color_ui = rgb { 59 106 73 }
+}
+
+KRS_JAP_dark = {
+	color = rgb { 44 76 49 }
+    color_ui = rgb { 44 76 49 }
+}
+
+AMR_JAP = {
+    color = rgb { 151 71 68 }
+    color_ui = rgb { 151 71 68 }
+}
+YAK_JAP = {
+    color = rgb { 65 86 73 }
+    color_ui = rgb { 65 86 73 }
+}
+BRY_JAP = {
+    color = rgb { 178 98 68 }
+    color_ui = rgb { 178 98 68 }
+}
+TAR_JAP = {
+    color = rgb { 114 16 8 }
+    color_ui = rgb { 114 16 8 }
+}
+
+MCW_SGR_reichsland = {
+	color = rgb { 67 85 58 }
+	color_ui = rgb { 67 85 58 }
+}
+
+MCW_SGR_collab = {
+	color = rgb { 76 106 42 }
+	color_ui = rgb { 76 106 42 }
+}
+
+BUL_GBU_Kosygin = {
+	color = rgb { 181 92 76 }
+	color_ui = rgb { 181 92 76 }
+}
+
+BUL_GBU_Belooz = {
+	color = rgb { 151 106 76 }
+	color_ui = rgb { 151 106 76 }
+}
+
+ROM_GRM_Kosygin = {
+	color = rgb { 225 113 80 }
+	color_ui = rgb { 225 113 80 }
+}
+
+ROM_GRM_Belooz = {
+	color = rgb { 225 218 112 }
+	color_ui = rgb { 225 218 112 }
+}
+
+HUN_GHU_Kosygin = {
+	color = rgb { 186 131 131 }
+    color_ui = rgb { 186 131 131 }
+}
+HUN_GHU_Belooz = {
+	color = rgb { 135 180 131 }
+    color_ui = rgb { 135 180 131 }
+}
+
+SER_GSE_Kosygin = {
+	color = rgb { 168 107 102 }
+    color_ui = rgb { 168 107 102 }
+}
+SER_GSE_Belooz = {
+	color = rgb { 102 106 137 }
+    color_ui = rgb { 102 106 137 }
+}
+
+ENG_Dissapearance = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+FZL_Iberian_spring = {
+	color = rgb { 198 172 130 }
+	color_ui = rgb { 198 172 130 }
+}
+GNS_Iberian_spring = {
+	color = rgb { 178 89 89 }
+	color_ui = rgb { 178 89 89 }
+}
+GRO_free = {
+	color = rgb { 0 78 159 }
+	color_ui = rgb { 0 78 159 }
+}
+
+SAM_BZI_collapse = {
+    color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+SAM_BZI_collapse_reunified = {
+    color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+ZNE_Germany = {
+	color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+###ALT POSTGER
+POL_PostSWRW_socialist = {
+	color = rgb { 255 79 109 }
+    color_ui = rgb { 255 79 109 }
+}
+POL_PostSWRW_liberalism = {
+	color = rgb { 255 79 109 }
+    color_ui = rgb { 255 79 109 }
+}
+FSP_PostSWRW = { 
+	color = rgb { 75 65 80 }
+    color_ui = rgb { 75 65 80 }
+}
+FHH_PostSWRW = {
+	color = rgb { 124 149 175 }
+    color_ui = rgb { 124 149 175 }
+}
+FHH_PostSWRW_socialist = {
+	color = rgb { 95 57 58 }
+	color_ui = rgb { 95 57 58 }
+}
+DSG_PostSWRW = {
+	color = rgb { 124 149 175 }
+    color_ui = rgb { 124 149 175 }
+}
+SSW_PostSWRW = {
+	color = rgb { 86 39 35 }
+    color_ui = rgb { 86 39 35 }
+}
+ISS_PostSWRW = {
+	color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+CZE_PostSWRW = {
+	color = rgb { 16 75 104 }
+    color_ui = rgb { 16 75 104 }
+}
+CZE_PostSWRW_socialist = {
+	color = rgb { 68 126 177 }
+	color_ui = rgb { 68 126 177 }
+}
+LHH_PostSWRW = {
+	color = rgb { 66 94 69 }
+    color_ui = rgb { 66 94 69 }
+}
+LHH_PostSWRW_progressivism = {
+	color = rgb { 108 156 101 }
+	color_ui = rgb { 108 156 101 }
+}
+SSL_PostSWRW = {
+	color = rgb { 135 47 29 }
+    color_ui = rgb { 135 47 29 }
+}
+DSH_PostSWRW = {
+	color = rgb { 68 63 114 }
+    color_ui = rgb { 135 47 29 }
+}
+DSH_PostSWRW_communist = {
+	color = rgb { 171 80 72 }
+	color_ui = rgb { 171 80 72 }
+}
+AUS_PostSWRW = {
+	color = rgb { 193 184 187 }
+	color_ui = rgb { 171 80 72 }
+}
+AUS_PostSWRW_progressivism = {
+	color = rgb { 193 184 187 }
+	color_ui = rgb { 193 184 187 }
+}
+PRK_PostSWRW = {
+	color = rgb { 103 10 0 }
+	color_ui = rgb { 103 10 0 }
+}
+OER_PostSWRW = {
+	color = rgb { 10 10 0 }
+	color_ui = rgb { 10 10 0 }
+}
+APF_PostSWRW = {
+	color = rgb { 149 82 53 }
+	color_ui = rgb { 149 82 53 }
+}
+HOL_PostSWRW = {
+	color = rgb { 193 158 129 }
+	color_ui = rgb { 193 158 129 }
+}
+NOR_PostSWRW = {
+	color = rgb { 129 1 1 }
+	color_ui = rgb { 129 1 1 }
+}
+###
+ISS_PostSWRW_Unified = {
+	color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+SSW_PostSWRW_Unified = {
+	color = rgb { 124 149 175 }
+    color_ui = rgb { 124 149 175 }
+}
+CZE_PostSWRW_Unified = {
+	color = rgb { 16 75 104 }
+    color_ui = rgb { 16 75 104 }
+}
+LHH_PostSWRW_Unified = {
+	color = rgb { 66 94 69 }
+    color_ui = rgb { 66 94 69 }
+}
+SSL_PostSWRW_Unified = {
+	color = rgb { 135 47 29 }
+    color_ui = rgb { 135 47 29 }
+}
+DSH_PostSWRW_Unified = {
+	color = rgb { 68 63 114 }
+    color_ui = rgb { 68 63 114 }
+}
+AUS_PostSWRW_Unified = {
+	color = rgb { 193 184 187 }
+	color_ui = rgb { 193 184 187 }
+}
+PRK_PostSWRW_Unified = {
+	color = rgb { 103 10 0 }
+	color_ui = rgb { 103 10 0 }
+}
+OER_PostSWRW_Unified = {
+	color = rgb { 10 10 0 }
+	color_ui = rgb { 10 10 0 }
+}
+APF_PostSWRW_Unified = {
+	color = rgb { 149 82 53 }
+	color_ui = rgb { 149 82 53 }
+}
+###
+AUS_czech = {
+    color = rgb { 16 75 104 }
+    color_ui = rgb { 16 75 104 }
+}
+SSL_czech = {
+    color = rgb { 16 75 104 }
+    color_ui = rgb { 16 75 104 }
+}
+SSW_czech = {
+    color = rgb { 16 75 104 }
+    color_ui = rgb { 16 75 104 }
+}
+CZE_ssr = {
+    color = rgb { 103 10 0 }
+    color_ui = rgb { 103 10 0 }
+}
+###
+ORL_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+ORL_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+OKB_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+OKB_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+UPO_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UPO_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+ADY_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+ADY_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+FUK_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+FUK_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+UKS_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UKS_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+BLR_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+BLR_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+KZR_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+KZR_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+UZB_berezniki_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UZB_berezniki_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+###
+UZB_berezniki_governorate_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UZB_berezniki_governorate_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+###
+UPO_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+BLR_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+FUK_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UKS_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+ADY_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+KZR_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UZB_berezniki_autonomy_despotism = {
+	color = rgb { 100 120 137 }
+	color_ui = rgb { 100 120 137 }
+}
+UPO_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+BLR_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+FUK_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+UKS_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+ADY_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+KZR_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+UZB_berezniki_autonomy_socialist = {
+	color = rgb { 114 16 8 }
+	color_ui = rgb {114 16 8 }
+}
+###
+EST_berezniki_freedom = {
+    color = rgb { 76 157 195 }
+    color_ui = rgb { 76 157 195 }
+}
+LAT_berezniki_freedom = {
+    color = rgb { 112 90 87 }
+    color_ui = rgb { 112 90 87 }
+}
+LIT_berezniki_freedom = {
+    color = rgb { 219 219 119 }
+    color_ui = rgb { 219 219 119 }
+}
+BLR_berezniki_freedom = {
+    color = rgb { 151 72 88 }
+    color_ui = rgb { 151 72 88 }
+}
+FUK_berezniki_freedom = {
+    color = rgb { 76 98 216 }
+    color_ui = rgb { 76 98 216 }
+}
+ADY_berezniki_freedom = {
+	color = rgb { 117 92 128 }
+	color_ui = rgb { 117 92 128 }
+}
+DAG_berezniki_freedom = {
+	color = rgb { 82 103 97 }
+	color_ui = rgb { 82 103 97 }
+}
+
+ISS_SecondGCW = {
+	color = rgb { 135 153 157 }
+    color_ui = rgb { 135 153 157 }
+}
+### END T&S ###
+
 ZZZ_RED = {
 	color = rgb { 255 0 0 }
 	color_ui = rgb { 255 0 0 }
@@ -3406,8 +4209,106 @@ ZZZ_BLACK = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
 }
-##RoE Countries
+
+## TNOR: RoE compatibility cosmetics
+MAR_sec_warlord = {
+	color = rgb { 94 118 69 }
+	color_ui = rgb { 84 114 69 }
+}
+
+ONG_DBDRL = {
+	color = rgb { 81 135 91 }
+	color_ui = rgb { 81 135 91 }
+}
+KOM_DBDRL = {
+	color = rgb { 92 146 174 }
+	color_ui = rgb { 92 146 174 }
+}
+VOL_DBDRL = {
+	color = rgb { 110 110 133 }
+	color_ui = rgb { 110 110 133 }
+}
+SAM_DBDRL = {
+	color = rgb { 194 169 148 }
+	color_ui = rgb { 194 169 148 }
+}
+VYT_DBDRL = {
+	color = rgb { 65 100 42 }
+	color_ui = rgb { 65 100 42 }
+}
+GAY_DBDRL = {
+	color = rgb { 75 65 80 }
+	color_ui = rgb { 75 65 80 }
+}
 PRM_DBDRL = {
 	color = rgb { 32 28 28 }
 	color_ui = rgb { 32 28 28 }
+}
+DRL_DBDRL = {
+	color = rgb { 55 55 55 }
+	color_ui = rgb { 55 55 55 }
+}
+TAR_DBDRL = {
+	color = rgb { 150 205 217 }
+	color_ui = rgb { 150 205 217 }
+}
+VOR_DBDRL = {
+	color = rgb { 60 115 110 }
+	color_ui = rgb { 60 115 110 }
+}
+SVR_DBDRL = {
+	color = rgb { 150 120 134 }
+	color_ui = rgb { 150 120 134 }
+}
+TYM_DBDRL = {
+	color = rgb { 130 61 61 }
+	color_ui = rgb { 130 61 61 }
+}
+OMS_DBDRL = {
+	color = rgb { 43 50 43 }
+	color_ui = rgb { 43 50 43 }
+}
+TOM_DBDRL = {
+	color = rgb { 84 114 69 }
+	color_ui = rgb { 84 114 69 }
+}
+ALT_DBDRL = {
+	color = rgb { 126 136 125 }
+	color_ui = rgb { 126 136 125 }
+}
+SBA_DBDRL = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+KEM_DBDRL = {
+	color = rgb { 60 90 138 }
+	color_ui = rgb { 60 90 138 }
+}
+ZLT_DBDRL = {
+	color = rgb { 169 88 56 }
+	color_ui = rgb { 169 88 56 }
+}
+BRY_DBDRL = {
+	color = rgb { 175 15 28 }
+	color_ui = rgb { 175 15 28 }
+}
+CHT_DBDRL = {
+	color = rgb { 142 170 138 }
+	color_ui = rgb { 142 170 138 }
+}
+AMR_DBDRL = {
+	color = rgb { 166 138 138 }
+	color_ui = rgb { 166 138 138 }
+}
+FAV_DBDRL = {
+	color = rgb { 184 109 120 }
+	color_ui = rgb { 184 109 120 }
+}
+MAG_DBDRL = {
+	color = rgb { 205 200 150 }
+	color_ui = rgb { 205 200 150 }
+}
+YGR_DBDRL = {
+	color = rgb { 193 196 150 }
+	color_ui = rgb { 193 196 150 }
 }
