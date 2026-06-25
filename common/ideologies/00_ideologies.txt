@@ -1,0 +1,1235 @@
+#Dskod1 (Dylan) now claims this file in the name of the AI... may the AI empire forever expan
+#All ideologies have been clumped into 3 groups for the AI. No one will ever see these, so we are hijacking them for our own purposes. The three AI groups are Democracy, Facist, and Communist
+#there is a 4th ai group called neutral, but that works differently.
+
+#hey guys my name is tex and i made the subideologies
+
+#Note: Because of hard coded features, democracies now use the fascist AI and the ol fascists use the neutral AI
+#Note: AI changed back to all neutral ai. This is because the other AI doesn't want to be apart of things if the tension is so low (IE at game start)
+
+ideologies = {
+	########################################
+	#          Esoteric Totalitarianism    #
+	########################################
+	esoteric_totalitarianism = {
+		types = {
+
+			esoteric_totalitarianism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			esoteric_totalitarianism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			esoteric_totalitarianism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			esoteric_totalitarianism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			esoteric_totalitarianism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			esoteric_totalitarianism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			esoteric_totalitarianism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			esoteric_totalitarianism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			esoteric_totalitarianism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			esoteric_totalitarianism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			esoteric_totalitarianism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			esoteric_totalitarianism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			esoteric_totalitarianism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			esoteric_totalitarianism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			esoteric_totalitarianism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			esoteric_totalitarianism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			esoteric_totalitarianism_subtype = {}
+
+			esoteric_totalitarianism_agrarian_spartanism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_aristocratic_nazism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_burgundian_system_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_deep_ecology_nazism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_esoteric_nazism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_imperial_cult_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_machinist_revivalism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_new_life_occultism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_slavo_aryanism_subtype = { can_be_randomly_selected = no }
+			esoteric_totalitarianism_spartanism_subtype = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {}
+		color = { 50 42 50 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	########################################
+	#          National Socialism          #
+	########################################
+	national_socialism_1 = {
+		types = {
+			national_socialism_1_subtype = {}
+			national_socialism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			national_socialism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			national_socialism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			national_socialism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			national_socialism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			national_socialism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			national_socialism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			national_socialism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			national_socialism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			national_socialism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			national_socialism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			national_socialism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			national_socialism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			national_socialism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			national_socialism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			national_socialism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 30 13 10 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	national_socialism_2 = {
+		types = {
+			national_socialism_2_subtype = {}
+			national_socialism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			national_socialism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			national_socialism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			national_socialism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			national_socialism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			national_socialism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			national_socialism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			national_socialism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			national_socialism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			national_socialism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			national_socialism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			national_socialism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			national_socialism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			national_socialism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			national_socialism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			national_socialism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 40 23 20 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	national_socialism = {
+		types = {
+			national_socialism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			national_socialism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			national_socialism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			national_socialism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			national_socialism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			national_socialism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			national_socialism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			national_socialism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			national_socialism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			national_socialism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			national_socialism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			national_socialism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			national_socialism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			national_socialism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			national_socialism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			national_socialism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			national_socialism_subtype = {}
+
+			national_socialism_naturalised_nazism_subtype = { can_be_randomly_selected = no } # Credits to the FtA team
+			national_socialism_bandit_nazism_subtype = { can_be_randomly_selected = no }
+			national_socialism_rosenbergite_tendency_subtype = { can_be_randomly_selected = no }
+			national_socialism_reformed_national_socialism_subtype = { can_be_randomly_selected = no }
+			national_socialism_revolutionary_nazism_subtype = { can_be_randomly_selected = no }
+			national_socialism_idiosyncratic_nazism_subtype = { can_be_randomly_selected = no } #added in ODF
+			national_socialism_technocratic_nazism_subtype = { can_be_randomly_selected = no }
+			national_socialism_deep_ecology_nazism_subtype = { can_be_randomly_selected = no } #removed in ODF
+			national_socialism_clerical_fascism_subtype = { can_be_randomly_selected = no }
+			national_socialism_ariocriollismo_subtype = { can_be_randomly_selected = no }
+			national_socialism_stratocratic_nazism_subtype = { can_be_randomly_selected = no }
+			national_socialism_proletarian_nationalism_subtype = { can_be_randomly_selected = no }
+			national_socialism_securocratic_nazism_subtype = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {}
+		color = { 50 33 30 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	national_socialism_3 = {
+		types = {
+			national_socialism_3_subtype = {}
+			national_socialism_3_purple_subtype = { can_be_randomly_selected = no color = { 60 52 60 } }
+			national_socialism_3_brown_subtype = { can_be_randomly_selected = no color = { 60 43 40 } }
+			national_socialism_3_orange_subtype = { can_be_randomly_selected = no color = { 120 55 45 } }
+			national_socialism_3_black_subtype = { can_be_randomly_selected = no color = { 32 32 32 } }
+			national_socialism_3_dark_grey_subtype = { can_be_randomly_selected = no color = { 75 75 75 } }
+			national_socialism_3_grey_subtype = { can_be_randomly_selected = no color = { 121 121 121 } }
+			national_socialism_3_dark_blue_subtype = { can_be_randomly_selected = no color = { 36 36 111 } }
+			national_socialism_3_blue_subtype = { can_be_randomly_selected = no color = { 57 64 137 } }
+			national_socialism_3_light_blue_subtype = { can_be_randomly_selected = no color = { 98 111 157 } }
+			national_socialism_3_yellow_subtype = { can_be_randomly_selected = no color = { 211 204 76 } }
+			national_socialism_3_pink_subtype = { can_be_randomly_selected = no color = { 178 49 90 } }
+			national_socialism_3_red_subtype = { can_be_randomly_selected = no color = { 143 43 43 } }
+			national_socialism_3_dark_red_subtype = { can_be_randomly_selected = no color = { 100 35 35 } }
+			national_socialism_3_dark_green_subtype = { can_be_randomly_selected = no color = { 10 91 54 } }
+			national_socialism_3_burgundian_subtype = { can_be_randomly_selected = no color = { 62 35 90 } }
+			national_socialism_3_white_subtype = { can_be_randomly_selected = no color = { 222 222 222 } }
+		}
+		dynamic_faction_names = {}
+		color = { 60 43 40 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	national_socialism_4 = {
+		types = {
+			national_socialism_4_subtype = {}
+			national_socialism_4_purple_subtype = { can_be_randomly_selected = no color = { 70 62 70 } }
+			national_socialism_4_brown_subtype = { can_be_randomly_selected = no color = { 70 53 50 } }
+			national_socialism_4_orange_subtype = { can_be_randomly_selected = no color = { 130 65 55 } }
+			national_socialism_4_black_subtype = { can_be_randomly_selected = no color = { 40 40 40 } }
+			national_socialism_4_dark_grey_subtype = { can_be_randomly_selected = no color = { 85 85 85 } }
+			national_socialism_4_grey_subtype = { can_be_randomly_selected = no color = { 131 131 131 } }
+			national_socialism_4_dark_blue_subtype = { can_be_randomly_selected = no color = { 46 46 121 } }
+			national_socialism_4_blue_subtype = { can_be_randomly_selected = no color = { 67 74 147 } }
+			national_socialism_4_light_blue_subtype = { can_be_randomly_selected = no color = { 108 121 167 } }
+			national_socialism_4_yellow_subtype = { can_be_randomly_selected = no color = { 229 222 82 } }
+			national_socialism_4_pink_subtype = { can_be_randomly_selected = no color = { 204 57 103 } }
+			national_socialism_4_red_subtype = { can_be_randomly_selected = no color = { 153 53 53 } }
+			national_socialism_4_dark_red_subtype = { can_be_randomly_selected = no color = { 110 45 45 } }
+			national_socialism_4_dark_green_subtype = { can_be_randomly_selected = no color = { 20 101 64 } }
+			national_socialism_4_burgundian_subtype = { can_be_randomly_selected = no color = { 72 45 100 } }
+			national_socialism_4_white_subtype = { can_be_randomly_selected = no color = { 255 255 255 } }
+		}
+		dynamic_faction_names = {}
+		color = { 70 53 50 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#                Fascism               #
+	########################################
+	fascism_1 = {
+		types = {
+			fascism_1_subtype = {}
+			fascism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			fascism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			fascism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			fascism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			fascism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			fascism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			fascism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			fascism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			fascism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			fascism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			fascism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			fascism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			fascism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			fascism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			fascism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			fascism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 90 25 15 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	fascism_2 = {
+		types = {
+			fascism_2_subtype = {}
+			fascism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			fascism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			fascism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			fascism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			fascism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			fascism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			fascism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			fascism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			fascism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			fascism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			fascism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			fascism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			fascism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			fascism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			fascism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			fascism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 100 35 25 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	fascism = {
+		types = {
+			fascism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			fascism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			fascism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			fascism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			fascism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			fascism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			fascism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			fascism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			fascism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			fascism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			fascism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			fascism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			fascism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			fascism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			fascism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			fascism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			fascism_subtype = {}
+
+			fascism_corporatism_subtype = { can_be_randomly_selected = no }
+			fascism_statist_corporatocracy_subtype = { can_be_randomly_selected = no }
+			fascism_sansepolcrismo_subtype = { can_be_randomly_selected = no }
+			fascism_fascist_mysticism_subtype = { can_be_randomly_selected = no }
+			fascism_national_syndicalism_subtype = { can_be_randomly_selected = no }
+			fascism_fascist_populism_subtype = { can_be_randomly_selected = no }
+			fascism_revolutionary_nationalism_subtype = { can_be_randomly_selected = no }
+			fascism_reform_bureaucracy_subtype = { can_be_randomly_selected = no }
+			fascism_neosocialism_subtype = { can_be_randomly_selected = no }
+			fascism_ordosocialism_subtype = { can_be_randomly_selected = no }
+			fascism_integralism_subtype = { can_be_randomly_selected = no }
+			fascism_neofascism_subtype = { can_be_randomly_selected = no }
+			fascism_falangism_subtype = { can_be_randomly_selected = no }
+			fascism_clerical_fascism_subtype = { can_be_randomly_selected = no }
+			fascism_aristocratic_fascism_subtype = { can_be_randomly_selected = no }
+			fascism_social_credit_subtype = { can_be_randomly_selected = no }
+			fascism_british_fascism_1_subtype = { can_be_randomly_selected = no }
+			fascism_british_fascism_2_subtype = { can_be_randomly_selected = no }
+			fascism_british_fascism_hamm_subtype = { can_be_randomly_selected = no }
+			fascism_british_fascism_bean_subtype = { can_be_randomly_selected = no }
+			### T&S ###
+			fascism_mladosocialism_subtype = { can_be_randomly_selected = no }
+			### END T&S ###
+		}
+		dynamic_faction_names = {}
+		color = { 110 45 35 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	fascism_3 = {
+		types = {
+			fascism_3_subtype = {}
+			fascism_3_purple_subtype = { can_be_randomly_selected = no color = { 60 52 60 } }
+			fascism_3_brown_subtype = { can_be_randomly_selected = no color = { 60 43 40 } }
+			fascism_3_orange_subtype = { can_be_randomly_selected = no color = { 120 55 45 } }
+			fascism_3_black_subtype = { can_be_randomly_selected = no color = { 32 32 32 } }
+			fascism_3_dark_grey_subtype = { can_be_randomly_selected = no color = { 75 75 75 } }
+			fascism_3_grey_subtype = { can_be_randomly_selected = no color = { 121 121 121 } }
+			fascism_3_dark_blue_subtype = { can_be_randomly_selected = no color = { 36 36 111 } }
+			fascism_3_blue_subtype = { can_be_randomly_selected = no color = { 57 64 137 } }
+			fascism_3_light_blue_subtype = { can_be_randomly_selected = no color = { 98 111 157 } }
+			fascism_3_yellow_subtype = { can_be_randomly_selected = no color = { 211 204 76 } }
+			fascism_3_pink_subtype = { can_be_randomly_selected = no color = { 178 49 90 } }
+			fascism_3_red_subtype = { can_be_randomly_selected = no color = { 143 43 43 } }
+			fascism_3_dark_red_subtype = { can_be_randomly_selected = no color = { 100 35 35 } }
+			fascism_3_dark_green_subtype = { can_be_randomly_selected = no color = { 10 91 54 } }
+			fascism_3_burgundian_subtype = { can_be_randomly_selected = no color = { 62 35 90 } }
+			fascism_3_white_subtype = { can_be_randomly_selected = no color = { 222 222 222 } }
+		}
+		dynamic_faction_names = {}
+		color = { 120 55 45 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	fascism_4 = {
+		types = {
+			fascism_4_subtype = {}
+			fascism_4_purple_subtype = { can_be_randomly_selected = no color = { 70 62 70 } }
+			fascism_4_brown_subtype = { can_be_randomly_selected = no color = { 70 53 50 } }
+			fascism_4_orange_subtype = { can_be_randomly_selected = no color = { 130 65 55 } }
+			fascism_4_black_subtype = { can_be_randomly_selected = no color = { 40 40 40 } }
+			fascism_4_dark_grey_subtype = { can_be_randomly_selected = no color = { 85 85 85 } }
+			fascism_4_grey_subtype = { can_be_randomly_selected = no color = { 131 131 131 } }
+			fascism_4_dark_blue_subtype = { can_be_randomly_selected = no color = { 46 46 121 } }
+			fascism_4_blue_subtype = { can_be_randomly_selected = no color = { 67 74 147 } }
+			fascism_4_light_blue_subtype = { can_be_randomly_selected = no color = { 108 121 167 } }
+			fascism_4_yellow_subtype = { can_be_randomly_selected = no color = { 229 222 82 } }
+			fascism_4_pink_subtype = { can_be_randomly_selected = no color = { 204 57 103 } }
+			fascism_4_red_subtype = { can_be_randomly_selected = no color = { 153 53 53 } }
+			fascism_4_dark_red_subtype = { can_be_randomly_selected = no color = { 110 45 45 } }
+			fascism_4_dark_green_subtype = { can_be_randomly_selected = no color = { 20 101 64 } }
+			fascism_4_burgundian_subtype = { can_be_randomly_selected = no color = { 72 45 100 } }
+			fascism_4_white_subtype = { can_be_randomly_selected = no color = { 255 255 255 } }
+		}
+		dynamic_faction_names = {}
+		color = { 130 65 55 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#           Ultranationalism           #
+	########################################
+	ultranationalism = {
+		types = {
+			ultranationalism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			ultranationalism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			ultranationalism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			ultranationalism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			ultranationalism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			ultranationalism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			ultranationalism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			ultranationalism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			ultranationalism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			ultranationalism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			ultranationalism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			ultranationalism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			ultranationalism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			ultranationalism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			ultranationalism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			ultranationalism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			ultranationalism_subtype = {}
+
+			ultranationalism_ultramilitarism_subtype = { can_be_randomly_selected = no }
+			ultranationalism_eurasianism_subtype = { can_be_randomly_selected = no }
+			ultranationalism_fundamentalism_subtype = { can_be_randomly_selected = no }
+			ultranationalism_reactionary_nationalism_subtype = { can_be_randomly_selected = no }
+			ultranationalism_black_league_thought_subtype = { can_be_randomly_selected = no }
+			ultranationalism_stratocratic_corporatism_subtype = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {}
+		color = { 25 25 25 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#               Despotism              #
+	########################################
+	despotism_1 = {
+		types = {
+			despotism_1_subtype = {}
+			despotism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			despotism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			despotism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			despotism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			despotism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			despotism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			despotism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			despotism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			despotism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			despotism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			despotism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			despotism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			despotism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			despotism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			despotism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			despotism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 45 45 45 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	despotism_2 = {
+		types = {
+			despotism_2_subtype = {}
+			despotism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			despotism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			despotism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			despotism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			despotism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			despotism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			despotism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			despotism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			despotism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			despotism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			despotism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			despotism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			despotism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			despotism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			despotism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			despotism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 55 55 55 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	despotism = {
+		types = {
+			despotism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			despotism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			despotism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			despotism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			despotism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			despotism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			despotism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			despotism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			despotism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			despotism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			despotism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			despotism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			despotism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			despotism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			despotism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			despotism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			despotism_subtype = {}
+
+			despotism_absolute_monarchy_subtype = { can_be_randomly_selected = no }
+			despotism_military_junta_subtype = { can_be_randomly_selected = no }
+			despotism_civilian_dictatorship_subtype = { can_be_randomly_selected = no }
+			despotism_theocracy_subtype = { can_be_randomly_selected = no }
+			despotism_papacy_subtype = { can_be_randomly_selected = no }
+			despotism_interim_government_subtype = { can_be_randomly_selected = no }
+			despotism_colonial_government_subtype = { can_be_randomly_selected = no }
+			despotism_baathism_subtype = { can_be_randomly_selected = no }
+			despotism_corporatocracy_subtype = { can_be_randomly_selected = no }
+			despotism_vanguard_anarchism_subtype = { can_be_randomly_selected = no }
+			despotism_aristocratic_conservatism_subtype = { can_be_randomly_selected = no }
+			despotism_warlordism_subtype = { can_be_randomly_selected = no }
+			despotism_personalistic_dictatorship_subtype = { can_be_randomly_selected = no }
+			despotism_partisan_movement_subtype = { can_be_randomly_selected = no }
+			despotism_national_catholicism_subtype = { can_be_randomly_selected = no }
+			despotism_managerial_state_subtype = { can_be_randomly_selected = no }
+			despotism_institutional_despotism_subtype = { can_be_randomly_selected = no }
+			despotism_aristocratic_republicanism_subtype = { can_be_randomly_selected = no }
+			despotism_islamic_nationalism_subtype = { can_be_randomly_selected = no } #added in ODF
+			despotism_technocratic_corporatism_subtype = { can_be_randomly_selected = no } #added in ODF
+			despotism_radical_kemalism_subtype = { can_be_randomly_selected = no } #added in ODF
+			despotism_wang_jingwei_thought_subtype = { can_be_randomly_selected = no } #added in ODF
+			despotism_chiang_kai_shek_thought_subtype = { can_be_randomly_selected = no } #added in ODF
+			### T&S ###
+			despotism_mladorossi_autocracy_subtype = { can_be_randomly_selected = no }
+			### END T&S ###
+		}
+		dynamic_faction_names = {}
+		color = { 65 65 65 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	despotism_3 = {
+		types = {
+			despotism_3_subtype = {}
+			despotism_3_purple_subtype = { can_be_randomly_selected = no color = { 60 52 60 } }
+			despotism_3_brown_subtype = { can_be_randomly_selected = no color = { 60 43 40 } }
+			despotism_3_orange_subtype = { can_be_randomly_selected = no color = { 120 55 45 } }
+			despotism_3_black_subtype = { can_be_randomly_selected = no color = { 32 32 32 } }
+			despotism_3_dark_grey_subtype = { can_be_randomly_selected = no color = { 75 75 75 } }
+			despotism_3_grey_subtype = { can_be_randomly_selected = no color = { 121 121 121 } }
+			despotism_3_dark_blue_subtype = { can_be_randomly_selected = no color = { 36 36 111 } }
+			despotism_3_blue_subtype = { can_be_randomly_selected = no color = { 57 64 137 } }
+			despotism_3_light_blue_subtype = { can_be_randomly_selected = no color = { 98 111 157 } }
+			despotism_3_yellow_subtype = { can_be_randomly_selected = no color = { 211 204 76 } }
+			despotism_3_pink_subtype = { can_be_randomly_selected = no color = { 178 49 90 } }
+			despotism_3_red_subtype = { can_be_randomly_selected = no color = { 143 43 43 } }
+			despotism_3_dark_red_subtype = { can_be_randomly_selected = no color = { 100 35 35 } }
+			despotism_3_dark_green_subtype = { can_be_randomly_selected = no color = { 10 91 54 } }
+			despotism_3_burgundian_subtype = { can_be_randomly_selected = no color = { 62 35 90 } }
+			despotism_3_white_subtype = { can_be_randomly_selected = no color = { 222 222 222 } }
+		}
+		dynamic_faction_names = {}
+		color = { 75 75 75 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	despotism_4 = {
+		types = {
+			despotism_4_subtype = {}
+			despotism_4_purple_subtype = { can_be_randomly_selected = no color = { 70 62 70 } }
+			despotism_4_brown_subtype = { can_be_randomly_selected = no color = { 70 53 50 } }
+			despotism_4_orange_subtype = { can_be_randomly_selected = no color = { 130 65 55 } }
+			despotism_4_black_subtype = { can_be_randomly_selected = no color = { 40 40 40 } }
+			despotism_4_dark_grey_subtype = { can_be_randomly_selected = no color = { 85 85 85 } }
+			despotism_4_grey_subtype = { can_be_randomly_selected = no color = { 131 131 131 } }
+			despotism_4_dark_blue_subtype = { can_be_randomly_selected = no color = { 46 46 121 } }
+			despotism_4_blue_subtype = { can_be_randomly_selected = no color = { 67 74 147 } }
+			despotism_4_light_blue_subtype = { can_be_randomly_selected = no color = { 108 121 167 } }
+			despotism_4_yellow_subtype = { can_be_randomly_selected = no color = { 229 222 82 } }
+			despotism_4_pink_subtype = { can_be_randomly_selected = no color = { 204 57 103 } }
+			despotism_4_red_subtype = { can_be_randomly_selected = no color = { 153 53 53 } }
+			despotism_4_dark_red_subtype = { can_be_randomly_selected = no color = { 110 45 45 } }
+			despotism_4_dark_green_subtype = { can_be_randomly_selected = no color = { 20 101 64 } }
+			despotism_4_burgundian_subtype = { can_be_randomly_selected = no color = { 72 45 100 } }
+			despotism_4_white_subtype = { can_be_randomly_selected = no color = { 255 255 255 } }
+		}
+		dynamic_faction_names = {}
+		color = { 85 85 85 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#              Anocracy             #
+	########################################
+	anocracy_1 = {
+		types = {
+			anocracy_1_subtype = {}
+			anocracy_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			anocracy_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			anocracy_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			anocracy_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			anocracy_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			anocracy_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			anocracy_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			anocracy_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			anocracy_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			anocracy_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			anocracy_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			anocracy_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			anocracy_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			anocracy_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			anocracy_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			anocracy_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 101 101 101 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	anocracy = {
+		types = {
+			anocracy_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			anocracy_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			anocracy_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			anocracy_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			anocracy_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			anocracy_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			anocracy_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			anocracy_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			anocracy_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			anocracy_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			anocracy_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			anocracy_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			anocracy_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			anocracy_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			anocracy_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			anocracy_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			anocracy_subtype = {}
+
+			anocracy_national_conservatism_subtype = { can_be_randomly_selected = no }
+			anocracy_social_nationalism_subtype = { can_be_randomly_selected = no }
+			anocracy_controlled_democracy_subtype = { can_be_randomly_selected = no }
+			anocracy_stratocracy_subtype = { can_be_randomly_selected = no }
+			anocracy_oligarchy_subtype = { can_be_randomly_selected = no }
+			anocracy_solidarism_subtype = { can_be_randomly_selected = no }
+			anocracy_military_mandate_subtype = { can_be_randomly_selected = no }
+			anocracy_dixiecrat_subtype = { can_be_randomly_selected = no }
+			anocracy_social_credit_subtype = { can_be_randomly_selected = no }
+			anocracy_corporate_paternalism_subtype = { can_be_randomly_selected = no }
+			anocracy_kemalism_subtype = { can_be_randomly_selected = no }
+			anocracy_semi_constitutional_monarchy_subtype = { can_be_randomly_selected = no }
+			anocracy_dominant_party_democracy_subtype = { can_be_randomly_selected = no }
+			anocracy_peronism_subtype = { can_be_randomly_selected = no }
+			anocracy_provisional_government_subtype = { can_be_randomly_selected = no }
+			anocracy_right_wing_populism_subtype = { can_be_randomly_selected = no }
+			anocracy_xunzheng_subtype = { can_be_randomly_selected = no }
+			anocracy_left_wing_corporatism_subtype = { can_be_randomly_selected = no }
+			anocracy_technocratic_corporatism_subtype = { can_be_randomly_selected = no }
+			anocracy_transitioning_democracy_subtype = { can_be_randomly_selected = no }
+			anocracy_paleoconservatism_subtype = { can_be_randomly_selected = no }
+			anocracy_poujadism_subtype = { can_be_randomly_selected = no }
+			anocracy_idiosyncratic_communism_subtype = { can_be_randomly_selected = no }
+			anocracy_idiosyncratic_communism_postwar_subtype = { can_be_randomly_selected = no }
+			anocracy_developmentalism_subtype = { can_be_randomly_selected = no }
+			### 2WRW ###
+			anocracy_thalassocracy_subtype = { can_be_randomly_selected = no }
+			### END 2WRW ###
+			### T&S ###
+			anocracy_mladorossi_idea_subtype = { can_be_randomly_selected = no }
+			### END T&S ###
+		}
+		dynamic_faction_names = {}
+		color = { 111 111 111 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	anocracy_2 = {
+		types = {
+			anocracy_2_subtype = {}
+			anocracy_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			anocracy_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			anocracy_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			anocracy_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			anocracy_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			anocracy_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			anocracy_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			anocracy_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			anocracy_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			anocracy_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			anocracy_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			anocracy_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			anocracy_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			anocracy_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			anocracy_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			anocracy_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 121 121 121 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#             Conservatism             #
+	########################################
+	conservatism_1 = {
+		types = {
+			conservatism_1_subtype = {}
+			conservatism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			conservatism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			conservatism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			conservatism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			conservatism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			conservatism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			conservatism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			conservatism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			conservatism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			conservatism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			conservatism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			conservatism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			conservatism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			conservatism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			conservatism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			conservatism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 16 16 91 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	conservatism = {
+		types = {
+			conservatism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			conservatism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			conservatism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			conservatism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			conservatism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			conservatism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			conservatism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			conservatism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			conservatism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			conservatism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			conservatism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			conservatism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			conservatism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			conservatism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			conservatism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			conservatism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			conservatism_subtype = {}
+
+			conservatism_agrarianism_subtype = { can_be_randomly_selected = no }
+			conservatism_paternalistic_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_islamic_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_populist_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_christian_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_progressive_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_silent_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_natural_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_urban_populism_subtype = { can_be_randomly_selected = no }
+			conservatism_prairie_populism_subtype = { can_be_randomly_selected = no }
+			conservatism_goken_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_liberal_corporatism_subtype = { can_be_randomly_selected = no }
+			conservatism_oligarchic_conservatism_subtype = { can_be_randomly_selected = no } #added in ODF
+			conservatism_right_kemalism_subtype = { can_be_randomly_selected = no } #added in ODF
+			conservatism_free_market_conservatism_subtype = { can_be_randomly_selected = no }
+			### 2WRW ###
+			conservatism_fusion_conservatism_subtype = { can_be_randomly_selected = no }
+			conservatism_congress_conservatism_subtype = { can_be_randomly_selected = no }
+			### END 2WRW ###
+		}
+		dynamic_faction_names = {}
+		color = { 26 26 101 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	conservatism_2 = {
+		types = {
+			conservatism_2_subtype = {}
+			conservatism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			conservatism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			conservatism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			conservatism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			conservatism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			conservatism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			conservatism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			conservatism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			conservatism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			conservatism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			conservatism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			conservatism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			conservatism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			conservatism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			conservatism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			conservatism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 36 36 111 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#         Liberal Conservatism         #
+	########################################
+	liberal_conservatism = {
+		types = {
+			liberal_conservatism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			liberal_conservatism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			liberal_conservatism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			liberal_conservatism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			liberal_conservatism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			liberal_conservatism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			liberal_conservatism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			liberal_conservatism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			liberal_conservatism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			liberal_conservatism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			liberal_conservatism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			liberal_conservatism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			liberal_conservatism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			liberal_conservatism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			liberal_conservatism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			liberal_conservatism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			liberal_conservatism_subtype = {}
+
+			liberal_conservatism_market_liberalism_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_christian_democracy_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_big_tent_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_moderate_technocracy_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_oligarchic_liberalism_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_islamic_modernism_subtype = { can_be_randomly_selected = no }
+			liberal_conservatism_centrist_progressivism_subtype = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {}
+		color = { 47 54 127 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#              Liberalism              #
+	########################################
+	liberalism_1 = {
+		types = {
+			liberalism_1_subtype = {}
+			liberalism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			liberalism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			liberalism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			liberalism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			liberalism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			liberalism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			liberalism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			liberalism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			liberalism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			liberalism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			liberalism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			liberalism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			liberalism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			liberalism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			liberalism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			liberalism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 78 91 137 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	liberalism = {
+		types = {
+			liberalism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			liberalism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			liberalism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			liberalism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			liberalism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			liberalism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			liberalism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			liberalism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			liberalism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			liberalism_yellow_subtype = { can_be_randomly_selected = no color = { 178 173 82 } }
+			liberalism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			liberalism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			liberalism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			liberalism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			liberalism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			liberalism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			liberalism_subtype = {}
+
+			liberalism_national_liberal_subtype = { can_be_randomly_selected = no }
+			liberalism_liberal_radicalism_subtype = { can_be_randomly_selected = no }
+			liberalism_christian_liberalism_subtype = { can_be_randomly_selected = no }
+			liberalism_liberal_agrarianism_subtype = { can_be_randomly_selected = no }
+			liberalism_progressive_liberalism_subtype = { can_be_randomly_selected = no } #removed in ODF
+			liberalism_social_liberalism_subtype = { can_be_randomly_selected = no } #added in ODF
+			liberalism_classical_liberalism_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_kennedy_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_lbj_subtype = { can_be_randomly_selected = no }	
+			liberalism_dynastic_liberalism_hart_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_gabor_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_chep_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_kirk_subtype = { can_be_randomly_selected = no }
+			liberalism_liberal_technocracy_subtype = { can_be_randomly_selected = no }
+			### 2WRW ###
+			liberalism_pacifism_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_carter_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_bayh_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_ted_kennedy_subtype = { can_be_randomly_selected = no }
+			### END 2WRW ###
+		}
+		dynamic_faction_names = {}
+		color = { 88 101 147 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	liberalism_2 = {
+		types = {
+			liberalism_2_subtype = {}
+			liberalism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			liberalism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			liberalism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			liberalism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			liberalism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			liberalism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			liberalism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			liberalism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			liberalism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			liberalism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			liberalism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			liberalism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			liberalism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			liberalism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			liberalism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			liberalism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 98 111 157 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#             Progressivism            #
+	########################################
+	progressivism_1 = {
+		types = {
+			progressivism_1_subtype = {}
+			progressivism_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			progressivism_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			progressivism_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			progressivism_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			progressivism_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			progressivism_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			progressivism_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			progressivism_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			progressivism_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			progressivism_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			progressivism_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			progressivism_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			progressivism_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			progressivism_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			progressivism_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			progressivism_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 138 45 73 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	progressivism = {
+		types = {
+			progressivism_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			progressivism_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			progressivism_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			progressivism_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			progressivism_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			progressivism_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			progressivism_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			progressivism_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			progressivism_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			progressivism_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			progressivism_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			progressivism_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			progressivism_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			progressivism_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			progressivism_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			progressivism_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			progressivism_subtype = {}
+
+			progressivism_reformist_socialism_subtype = { can_be_randomly_selected = no }
+			progressivism_liberal_socialism_subtype = { can_be_randomly_selected = no }
+			progressivism_left_wing_populism_subtype = { can_be_randomly_selected = no }
+			progressivism_left_kemalism_subtype = { can_be_randomly_selected = no }
+			progressivism_labor_zionism_subtype = { can_be_randomly_selected = no }
+			progressivism_popular_front_subtype = { can_be_randomly_selected = no }
+			progressivism_social_radicalism_subtype = { can_be_randomly_selected = no }
+			progressivism_christian_progressivism_subtype = { can_be_randomly_selected = no }
+			progressivism_left_wing_agrarianism_subtype = { can_be_randomly_selected = no }
+			progressivism_utopian_socialism_subtype = { can_be_randomly_selected = no }
+			progressivism_eastern_progressivism_subtype = { can_be_randomly_selected = no }
+			progressivism_western_progressivism_subtype = { can_be_randomly_selected = no }
+			progressivism_gaitanismo_subtype = { can_be_randomly_selected = no }
+			progressivism_neocorporatism_subtype = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {}
+		color = { 154 43 77 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	progressivism_2 = {
+		types = {
+			progressivism_2_subtype = {}
+			progressivism_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			progressivism_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			progressivism_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			progressivism_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			progressivism_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			progressivism_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			progressivism_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			progressivism_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			progressivism_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			progressivism_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			progressivism_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			progressivism_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			progressivism_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			progressivism_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			progressivism_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			progressivism_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 145 36 54 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#               Socialism              #
+	########################################
+	socialist_1 = {
+		types = {
+			socialist_1_subtype = {}
+			socialist_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			socialist_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			socialist_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			socialist_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			socialist_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			socialist_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			socialist_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			socialist_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			socialist_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			socialist_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			socialist_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			socialist_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			socialist_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			socialist_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			socialist_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			socialist_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 123 23 23 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	socialist = {
+		types = {
+			socialist_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			socialist_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			socialist_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			socialist_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			socialist_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			socialist_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			socialist_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			socialist_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			socialist_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			socialist_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			socialist_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			socialist_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			socialist_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			socialist_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			socialist_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			socialist_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			socialist_subtype = {}
+
+			socialist_anarcho_communist_subtype = { can_be_randomly_selected = no }
+			socialist_christian_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_revolutionary_frontism_subtype = { can_be_randomly_selected = no }
+			socialist_ultravisionary_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_ultravisionary_socialism_pink_subtype = { can_be_randomly_selected = no }
+			socialist_agrarian_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_syndicalism_subtype = { can_be_randomly_selected = no }
+			socialist_panafricanism_subtype = { can_be_randomly_selected = no }
+			socialist_baathism_subtype = { can_be_randomly_selected = no }
+			socialist_left_wing_nationalism_subtype = { can_be_randomly_selected = no }
+			socialist_african_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_islamic_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_social_democracy_subtype = { can_be_randomly_selected = no }
+			socialist_buddhist_socialism_subtype = { can_be_randomly_selected = no }
+			socialist_revolutionary_gaitanismo_subtype = { can_be_randomly_selected = no }
+			### T&S ###
+			socialist_social_monarchist_subtype  = { can_be_randomly_selected = no }
+			socialist_social_monarchist_but_worse_subtype  = { can_be_randomly_selected = no }
+			### END T&S ###
+		}
+		dynamic_faction_names = {}
+		color = { 133 33 33 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	socialist_2 = {
+		types = {
+			socialist_2_subtype = {}
+			socialist_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			socialist_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			socialist_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			socialist_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			socialist_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			socialist_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			socialist_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			socialist_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			socialist_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			socialist_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			socialist_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			socialist_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			socialist_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			socialist_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			socialist_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			socialist_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 143 43 43 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	########################################
+	#               Communism              #
+	########################################
+	communist_1 = {
+		types = {
+			communist_1_subtype = {}
+			communist_1_purple_subtype = { can_be_randomly_selected = no color = { 30 22 30 } }
+			communist_1_brown_subtype = { can_be_randomly_selected = no color = { 30 13 10 } }
+			communist_1_orange_subtype = { can_be_randomly_selected = no color = { 90 25 15 } }
+			communist_1_black_subtype = { can_be_randomly_selected = no color = { 10 10 10 } }
+			communist_1_dark_grey_subtype = { can_be_randomly_selected = no color = { 45 45 45 } }
+			communist_1_grey_subtype = { can_be_randomly_selected = no color = { 91 91 91 } }
+			communist_1_dark_blue_subtype = { can_be_randomly_selected = no color = { 6 6 81 } }
+			communist_1_blue_subtype = { can_be_randomly_selected = no color = { 27 34 107 } }
+			communist_1_light_blue_subtype = { can_be_randomly_selected = no color = { 68 81 127 } }
+			communist_1_yellow_subtype = { can_be_randomly_selected = no color = { 153 148 55 } }
+			communist_1_pink_subtype = { can_be_randomly_selected = no color = { 122 47 69 } }
+			communist_1_red_subtype = { can_be_randomly_selected = no color = { 113 13 13 } }
+			communist_1_dark_red_subtype = { can_be_randomly_selected = no color = { 77 15 15 } }
+			communist_1_dark_green_subtype = { can_be_randomly_selected = no color = { 0 61 24 } }
+			communist_1_burgundian_subtype = { can_be_randomly_selected = no color = { 32 5 60 } }
+			communist_1_white_subtype = { can_be_randomly_selected = no color = { 160 160 160 } }
+		}
+		dynamic_faction_names = {}
+		color = { 77 15 15 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	communist_2 = {
+		types = {
+			communist_2_subtype = {}
+			communist_2_purple_subtype = { can_be_randomly_selected = no color = { 40 32 40 } }
+			communist_2_brown_subtype = { can_be_randomly_selected = no color = { 40 23 20 } }
+			communist_2_orange_subtype = { can_be_randomly_selected = no color = { 100 35 25 } }
+			communist_2_black_subtype = { can_be_randomly_selected = no color = { 18 18 18 } }
+			communist_2_dark_grey_subtype = { can_be_randomly_selected = no color = { 55 55 55 } }
+			communist_2_grey_subtype = { can_be_randomly_selected = no color = { 101 101 101 } }
+			communist_2_dark_blue_subtype = { can_be_randomly_selected = no color = { 16 16 91 } }
+			communist_2_blue_subtype = { can_be_randomly_selected = no color = { 37 44 117 } }
+			communist_2_light_blue_subtype = { can_be_randomly_selected = no color = { 78 91 137 } }
+			communist_2_yellow_subtype = { can_be_randomly_selected = no color = { 173 167 62 } }
+			communist_2_pink_subtype = { can_be_randomly_selected = no color = { 138 45 73 } }
+			communist_2_red_subtype = { can_be_randomly_selected = no color = { 123 23 23 } }
+			communist_2_dark_red_subtype = { can_be_randomly_selected = no color = { 80 20 20 } }
+			communist_2_dark_green_subtype = { can_be_randomly_selected = no color = { 0 71 34 } }
+			communist_2_burgundian_subtype = { can_be_randomly_selected = no color = { 42 15 70 } }
+			communist_2_white_subtype = { can_be_randomly_selected = no color = { 180 180 180 } }
+		}
+		dynamic_faction_names = {}
+		color = { 80 20 20 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	communist_3 = {
+		types = {
+			communist_3_subtype = {}
+			communist_3_purple_subtype = { can_be_randomly_selected = no color = { 60 52 60 } }
+			communist_3_brown_subtype = { can_be_randomly_selected = no color = { 60 43 40 } }
+			communist_3_orange_subtype = { can_be_randomly_selected = no color = { 120 55 45 } }
+			communist_3_black_subtype = { can_be_randomly_selected = no color = { 32 32 32 } }
+			communist_3_dark_grey_subtype = { can_be_randomly_selected = no color = { 75 75 75 } }
+			communist_3_grey_subtype = { can_be_randomly_selected = no color = { 121 121 121 } }
+			communist_3_dark_blue_subtype = { can_be_randomly_selected = no color = { 36 36 111 } }
+			communist_3_blue_subtype = { can_be_randomly_selected = no color = { 57 64 137 } }
+			communist_3_light_blue_subtype = { can_be_randomly_selected = no color = { 98 111 157 } }
+			communist_3_yellow_subtype = { can_be_randomly_selected = no color = { 211 204 76 } }
+			communist_3_pink_subtype = { can_be_randomly_selected = no color = { 178 49 90 } }
+			communist_3_red_subtype = { can_be_randomly_selected = no color = { 143 43 43 } }
+			communist_3_dark_red_subtype = { can_be_randomly_selected = no color = { 100 35 35 } }
+			communist_3_dark_green_subtype = { can_be_randomly_selected = no color = { 10 91 54 } }
+			communist_3_burgundian_subtype = { can_be_randomly_selected = no color = { 62 35 90 } }
+			communist_3_white_subtype = { can_be_randomly_selected = no color = { 222 222 222 } }
+		}
+		dynamic_faction_names = {}
+		color = { 100 35 35 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	communist_4 = {
+		types = {
+			communist_4_subtype = {}
+			communist_4_purple_subtype = { can_be_randomly_selected = no color = { 70 62 70 } }
+			communist_4_brown_subtype = { can_be_randomly_selected = no color = { 70 53 50 } }
+			communist_4_orange_subtype = { can_be_randomly_selected = no color = { 130 65 55 } }
+			communist_4_black_subtype = { can_be_randomly_selected = no color = { 40 40 40 } }
+			communist_4_dark_grey_subtype = { can_be_randomly_selected = no color = { 85 85 85 } }
+			communist_4_grey_subtype = { can_be_randomly_selected = no color = { 131 131 131 } }
+			communist_4_dark_blue_subtype = { can_be_randomly_selected = no color = { 46 46 121 } }
+			communist_4_blue_subtype = { can_be_randomly_selected = no color = { 67 74 147 } }
+			communist_4_light_blue_subtype = { can_be_randomly_selected = no color = { 108 121 167 } }
+			communist_4_yellow_subtype = { can_be_randomly_selected = no color = { 229 222 82 } }
+			communist_4_pink_subtype = { can_be_randomly_selected = no color = { 204 57 103 } }
+			communist_4_red_subtype = { can_be_randomly_selected = no color = { 153 53 53 } }
+			communist_4_dark_red_subtype = { can_be_randomly_selected = no color = { 110 45 45 } }
+			communist_4_dark_green_subtype = { can_be_randomly_selected = no color = { 20 101 64 } }
+			communist_4_burgundian_subtype = { can_be_randomly_selected = no color = { 72 45 100 } }
+			communist_4_white_subtype = { can_be_randomly_selected = no color = { 255 255 255 } }
+		}
+		dynamic_faction_names = {}
+		color = { 110 45 45 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	communist = {
+		types = {
+			communist_purple_subtype = { can_be_randomly_selected = no color = { 50 42 50 } }
+			communist_brown_subtype = { can_be_randomly_selected = no color = { 50 33 30 } }
+			communist_orange_subtype = { can_be_randomly_selected = no color = { 110 45 35 } }
+			communist_black_subtype = { can_be_randomly_selected = no color = { 25 25 25 } }
+			communist_dark_grey_subtype = { can_be_randomly_selected = no color = { 65 65 65 } }
+			communist_grey_subtype = { can_be_randomly_selected = no color = { 111 111 111 } }
+			communist_dark_blue_subtype = { can_be_randomly_selected = no color = { 26 26 101 } }
+			communist_blue_subtype = { can_be_randomly_selected = no color = { 47 54 127 } }
+			communist_light_blue_subtype = { can_be_randomly_selected = no color = { 88 101 147 } }
+			communist_yellow_subtype = { can_be_randomly_selected = no color = { 192 186 68 } }
+			communist_pink_subtype = { can_be_randomly_selected = no color = { 154 43 77 } }
+			communist_red_subtype = { can_be_randomly_selected = no color = { 133 33 33 } }
+			communist_dark_red_subtype = { can_be_randomly_selected = no color = { 97 23 23 } }
+			communist_dark_green_subtype = { can_be_randomly_selected = no color = { 0 81 44 } }
+			communist_burgundian_subtype = { can_be_randomly_selected = no color = { 52 25 80 } }
+			communist_white_subtype = { can_be_randomly_selected = no color = { 200 200 200 } }
+
+			communist_subtype = {}
+
+			communist_bolshevism_subtype = { can_be_randomly_selected = no }
+			communist_marxism_leninism_subtype = { can_be_randomly_selected = no }
+			communist_left_communist_subtype = { can_be_randomly_selected = no }
+			communist_mao_zedong_thought_subtype = { can_be_randomly_selected = no }
+			communist_amazonism_subtype = { can_be_randomly_selected = no }
+			communist_arab_communism_subtype = { can_be_randomly_selected = no }  #Removed in ODF
+			communist_national_communism_subtype = { can_be_randomly_selected = no }
+			communist_workerism_subtype = { can_be_randomly_selected = no }
+			communist_revolutionary_baathism_subtype = { can_be_randomly_selected = no }  #Removed in ODF
+			communist_stratocratic_communism_subtype = { can_be_randomly_selected = no }
+			communist_trotskyism_subtype = { can_be_randomly_selected = no }
+			communist_securocratism_subtype = { can_be_randomly_selected = no }  #Removed in ODF
+			communist_guevarism_subtype = { can_be_randomly_selected = no } #Added in ODF
+			communist_peoples_democracy_subtype = { can_be_randomly_selected = no } #Added in ODF
+			communist_harmonism_subtype = { can_be_randomly_selected = no } # The funny
+		}
+		dynamic_faction_names = {}
+		color = { 97 23 23 }
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+}
