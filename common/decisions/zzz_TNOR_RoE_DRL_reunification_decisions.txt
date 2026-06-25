@@ -1,0 +1,266 @@
+RUS_reunification_category = {
+
+	DRL_west_russia_reunification = {
+		icon = GFX_decision_diplo_western_russia
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = DRL_ready_for_smuta
+			NOT = { has_country_flag = RUS_regional_stage }
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			can_form_west_russia = yes
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 200 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
+			if = {
+				limit = { has_country_flag = RUS_Smuta_Enabled }
+				RUS_Smuta_Disable = yes
+			}
+			set_global_flag = RUS_West_Russian_unification
+			save_global_event_target_as = RUS_western_unifier
+			RUS_calculate_prestige_value = yes
+			set_variable = { RUS_diplo_prestige_bonus = 2 }
+			add_research_slot = 1
+			clr_country_flag = is_warlord
+			set_country_flag = RUS_regional_stage
+			set_country_flag = RUS_Smuta_Ended
+			set_country_flag = W_RUSSIA_UNIFIED
+			navy_experience = 30
+			add_ideas = RUS_administrative_overload_1
+			generate_russia_state_gdp = yes
+			set_cosmetic_tag = DIR_BEST
+			custom_effect_tooltip = RUS_end_warlord_tt
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
+				country_event = { id = RUS.2 days = 30 }
+				country_event = { id = RUS.3 days = 60 }
+				add_manpower = 150000
+				if = {
+					limit = { has_idea = tno_income_taxation_not_applicable }
+					swap_ideas = {
+						remove_idea = tno_income_taxation_not_applicable
+						add_idea = tno_income_taxation_flat_taxes
+					}
+				}
+				if = {
+					limit = { has_idea = RUS_warlord_manpower }
+					swap_ideas = {
+						remove_idea = RUS_warlord_manpower
+						add_idea = RUS_regional_manpower
+					}
+				}
+				if = {
+					limit = { has_idea = RUS_warlord_econ }
+					swap_ideas = {
+						remove_idea = RUS_warlord_econ
+						add_idea = RUS_regional_econ
+					}
+				}
+				if = {
+					limit = { NOT = { has_idea = tno_research_facilities_outdated } }
+					remove_ideas = {
+						tno_research_facilities_basic
+						tno_research_facilities_makeshift
+					}
+					add_ideas = tno_research_facilities_outdated
+					set_variable = { research_facilities_counter = -240 }
+					multiply_variable = { research_facilities_monthly_change = 0.25 }
+				}
+				for_each_scope_loop = {
+					array = global.russian_warlords
+					if = {
+						limit = {
+							NOT = { tag = ROOT }
+							exists = no
+							is_central_russian_nation = yes
+						}
+						every_state = {
+							limit = { is_core_of = PREV }
+							PREV = { remove_state_core = PREV }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	DRL_absorb_west_siberia = {
+		icon = GFX_decision_diplo_western_siberia
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = RUS_regional_stage
+			NOT = { has_country_flag = RUS_superregional_stage }
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			can_form_west_russia = yes
+			OR = {
+				can_form_west_siberia = yes
+				any_country = {
+					NOT = { tag = ROOT }
+					is_west_siberian_nation = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 200 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_west_siberia"
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						is_west_siberian_nation = yes
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+			set_global_flag = RUS_Russia_unification
+			set_country_flag = RUS_superregional_stage
+			save_global_event_target_as = RUS_russian_unifier
+			set_country_flag = RUS_RUSSIA_UNIFIED
+			add_stability = 0.20
+			navy_experience = 20
+			set_cosmetic_tag = DIR_BEST
+			econ_raise_max_credit_rating = yes
+			hidden_effect = {
+				add_manpower = 250000
+				country_event = { id = RUS_wonder.0 days = 15 }
+				if = {
+					limit = {
+						has_idea = RUS_regional_manpower
+						NOT = { has_idea = RUS_superregional_manpower }
+					}
+					swap_ideas = {
+						remove_idea = RUS_regional_manpower
+						add_idea = RUS_superregional_manpower
+					}
+				}
+				if = {
+					limit = {
+						has_idea = RUS_regional_econ
+						NOT = { has_idea = RUS_superregional_econ }
+					}
+					swap_ideas = {
+						remove_idea = RUS_regional_econ
+						add_idea = RUS_superregional_econ
+					}
+				}
+				for_each_scope_loop = {
+					array = global.russian_warlords
+					if = {
+						limit = {
+							NOT = { tag = ROOT }
+							exists = no
+							OR = {
+								is_central_russian_nation = yes
+								is_west_siberian_nation = yes
+							}
+						}
+						every_state = {
+							limit = { is_core_of = PREV }
+							PREV = { remove_state_core = PREV }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	DRL_absorb_siberia = {
+		icon = GFX_decision_diplo_russia_superregional
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = RUS_superregional_stage
+			NOT = { has_global_flag = RUS_national_unification }
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			OR = {
+				AND = {
+					can_form_central_siberia = yes
+					can_form_far_east = yes
+				}
+				any_country = {
+					NOT = { tag = ROOT }
+					OR = {
+						is_central_siberian_nation = yes
+						is_far_eastern_nation = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 200 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_siberia"
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						OR = {
+							is_central_siberian_nation = yes
+							is_far_eastern_nation = yes
+						}
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = { country_exists = NRL }
+					annex_country = {
+						target = NRL
+						transfer_troops = no
+					}
+				}
+			}
+			set_global_flag = RUS_national_unification
+			save_global_event_target_as = RUS_total_unifier
+			if = {
+				limit = { amount_research_slots < 4 }
+				add_research_slot = 1
+			}
+			add_stability = 0.20
+			add_manpower = 500000
+			set_cosmetic_tag = DIR_BEST
+			set_country_flag = RUS_hide_superregional_war_decisions
+			set_country_flag = RUS_hide_superregional_peace_decisions
+			remove_ideas = RUS_superregional_manpower
+			remove_ideas = RUS_superregional_econ
+			hidden_effect = {
+				for_each_scope_loop = {
+					array = global.russian_warlords
+					if = {
+						limit = {
+							NOT = { tag = ROOT }
+							exists = no
+						}
+						every_state = {
+							limit = { is_core_of = PREV }
+							PREV = { remove_state_core = PREV }
+						}
+					}
+				}
+			}
+		}
+	}
+}
