@@ -8,7 +8,7 @@ guiTypes = {
         iconType = {
             name = "TNOR_ideology_icon"
             position = { x = 359 y = 272 }
-            spriteType = "GFX_blank"
+            spriteType = "GFX_pol_factions_strip"
             centerposition = yes
             scale = 0.64
             pdx_tooltip = "TNOR_ideology_icon_tt"
@@ -23,7 +23,7 @@ guiTypes = {
         iconType = {
             name = "TNOR_ideology_icon"
             position = { x = 190 y = 67 }
-            spriteType = "GFX_blank"
+            spriteType = "GFX_pol_factions_strip"
             centerposition = yes
             pdx_tooltip = "TNOR_ideology_icon_tt"
             pdx_tooltip_delayed = "TNOR_ideology_icon_tt_delayed"
@@ -47,7 +47,7 @@ guiTypes = {
             position = { x = 251 y = 144 } #y = 27
             #position = { x = -5000 y = 27 }
             font = "invisiblefont"
-            text = " "
+            text = "IDEOLOGY"
             maxWidth = 245
             maxHeight = 26
             fixedsize = yes
