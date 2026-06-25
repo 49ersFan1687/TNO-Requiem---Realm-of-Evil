@@ -1,0 +1,22 @@
+scripted_gui = {
+
+	TNOR_ideology_icon_diplomacy = {
+		context_type = selected_country_context
+		window_name = TNOR_ideology_icon_diplomacy
+		parent_window_token = selected_country_view
+
+        properties = {
+            TNOR_ideology_icon = { image = "[GetSubIdeologyIcon]" }
+        }
+	}
+
+	TNOR_ideology_icon_politics_gui = {
+		context_type = player_context
+		window_name = TNOR_ideology_icon_politics
+		parent_window_token = politics_tab
+
+        properties = {
+            TNOR_ideology_icon = { image = "[GetSubIdeologyIcon]" }
+        }
+	}
+}

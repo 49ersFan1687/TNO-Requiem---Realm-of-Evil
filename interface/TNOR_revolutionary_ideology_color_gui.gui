@@ -1,0 +1,70 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "TNOR_ideology_icon_politics"
+        position = { x = 0 y = 0 }
+
+
+        iconType = {
+            name = "TNOR_ideology_icon"
+            position = { x = 359 y = 272 }
+            spriteType = "GFX_blank"
+            centerposition = yes
+            scale = 0.64
+            pdx_tooltip = "TNOR_ideology_icon_tt"
+            pdx_tooltip_delayed = "TNOR_ideology_icon_tt_delayed"
+        }
+    }
+
+    containerWindowType = {
+        name = "TNOR_ideology_icon_diplomacy"
+        position = { x = 0 y = 0 }
+
+        iconType = {
+            name = "TNOR_ideology_icon"
+            position = { x = 190 y = 67 }
+            spriteType = "GFX_blank"
+            centerposition = yes
+            pdx_tooltip = "TNOR_ideology_icon_tt"
+            pdx_tooltip_delayed = "TNOR_ideology_icon_tt_delayed"
+        }
+        
+        instantTextboxType = {
+            name = "TNOR_party_name"
+            position = { x = 251 y = 120 }
+            font = "invisiblefont"
+            text = " "
+            maxWidth = 273
+            maxHeight = 20
+            fixedsize = yes
+            pdx_tooltip = TNOR_diplomacy_tt
+            pdx_tooltip_delayed = TNOR_diplomacy_tt_delayed
+        }
+        
+
+        instantTextboxType = {
+            name = "TNOR_ideology_name"
+            position = { x = 251 y = 144 } #y = 27
+            #position = { x = -5000 y = 27 }
+            font = "invisiblefont"
+            text = " "
+            maxWidth = 245
+            maxHeight = 26
+            fixedsize = yes
+            pdx_tooltip = TNOR_diplomacy_tt
+            pdx_tooltip_delayed = TNOR_diplomacy_tt_delayed
+        }
+
+        instantTextboxType = {
+            name = "TNOR_elections"
+            position = { x = 251 y = 167 }
+            font = "invisiblefont"
+            text = " "
+            maxWidth = 275
+            maxHeight = 20
+            fixedsize = yes
+            pdx_tooltip = TNOR_diplomacy_tt
+            pdx_tooltip_delayed = TNOR_diplomacy_tt_delayed
+        }
+    }
+}
