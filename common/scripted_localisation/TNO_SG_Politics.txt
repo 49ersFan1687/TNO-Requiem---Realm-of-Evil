@@ -4,8 +4,19 @@ defined_text = {
 	text = {
 		trigger = {
 			TNO_is_anarchy_visible = yes
+			NOT = { is_southern_urals_nation = yes }
 		}
 		localization_key = rule_blank
+	}
+
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = DRL_Oskar_Dirlewanger
+				ruling_only = yes
+			}
+		}
+		localization_key = national_socialism_bandit_nazism_subtype
 	}
 
 	text = { # cool but probably cost heavier variant
@@ -76,6 +87,16 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyIcon
 
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = DRL_Oskar_Dirlewanger
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_ideology_national_socialism_bandit_nazism_subtype"
+	}
+
 	text = { # cool but probably cost heavier variant
 		trigger = {
 			meta_trigger = {
@@ -144,6 +165,16 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyDesc
 	
+
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = DRL_Oskar_Dirlewanger
+				ruling_only = yes
+			}
+		}
+		localization_key = national_socialism_bandit_nazism_subtype_desc
+	}
 
 	text = { # cool but probably cost heavier variant
 		trigger = {

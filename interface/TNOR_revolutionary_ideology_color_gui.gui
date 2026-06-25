@@ -46,7 +46,7 @@ guiTypes = {
             name = "TNOR_ideology_name"
             position = { x = 251 y = 144 } #y = 27
             #position = { x = -5000 y = 27 }
-            font = "invisiblefont"
+            font = "aldrich_20_outline"
             text = "IDEOLOGY"
             maxWidth = 245
             maxHeight = 26

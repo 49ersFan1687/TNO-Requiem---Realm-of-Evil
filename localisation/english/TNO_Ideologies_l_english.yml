@@ -636,8 +636,8 @@ communist_4_desc:0 "$communist$"
 communist_4_subtype_desc:0 "$communist_subtype_desc$"
 communist_4_drift:0 "Daily §Y[?communist_4_var.GetTokenLocalizedKey]§! Support"
 
-TNOR_ideology_icon_tt: "§Y[THIS.GetRulingPartyLong] ([?current_party_ideology_group.GetTokenLocalizedKey])§!"
+TNOR_ideology_icon_tt: "§Y[THIS.GetRulingPartyLong] ([GetSubIdeologyLoc])§!"
 TNOR_ideology_icon_tt_delayed: "[GetSubIdeologyDesc]"
 
-TNOR_diplomacy_tt: "[THIS.GetRulingParty]\n§BParty ideology:§! §Y[?current_party_ideology_group.GetTokenLocalizedKey]§!"
+TNOR_diplomacy_tt: "[THIS.GetRulingParty]\n§BParty ideology:§! §Y[GetSubIdeologyLoc]§!"
 TNOR_diplomacy_tt_delayed: "[GetSubIdeologyDesc]"
