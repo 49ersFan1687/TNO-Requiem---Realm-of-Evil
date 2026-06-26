@@ -1178,6 +1178,7 @@ shared_focus = {
 	y = 15
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_conquered"
+		add_political_power = 50
 	}
 }
 
@@ -1200,6 +1201,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_strength"
+		add_stability = 0.1
 	}
 }
 
@@ -1222,6 +1224,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_bring_horror_to_their_hearts"
+		country_event = { id = DRL_west_conquest.1 }
 	}
 }
 
@@ -1248,6 +1251,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_not_a_single_one_left"
+		country_event = { id = DRL_west_conquest.2 }
 	}
 }
 

@@ -164,7 +164,7 @@ is_southern_urals_nation = {
 	OR = {
 		original_tag = ORE
 		original_tag = MGN
-		original_tag = DRL
+		original_tag = URL
 	}
 }
 
