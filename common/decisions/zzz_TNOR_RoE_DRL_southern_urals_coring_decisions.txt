@@ -1,0 +1,105 @@
+RUS_coring_category = {
+
+	DRL_core_orenburg_states = {
+		icon = GFX_decision_generic_document_building
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			original_tag = DRL
+			OR = {
+				849 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+				652 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+				852 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			owns_state = 849
+			owns_state = 652
+			owns_state = 852
+		}
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_orenburg_states"
+			849 = { add_core_of = ROOT }
+			652 = { add_core_of = ROOT }
+			852 = { add_core_of = ROOT }
+		}
+		ai_will_do = { factor = 1000 }
+	}
+
+	DRL_core_ural_league_states = {
+		icon = GFX_decision_generic_document_building
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			original_tag = DRL
+			OR = {
+				847 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+				848 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			owns_state = 847
+			owns_state = 848
+		}
+		cost = 35
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_ural_league_states"
+			847 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT }
+		}
+		ai_will_do = { factor = 1000 }
+	}
+
+	DRL_core_magnitogorsk_state = {
+		icon = GFX_decision_generic_document_building
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			original_tag = DRL
+			OR = {
+				582 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+				754 = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			owns_state = 582
+		}
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_magnitogorsk_state"
+			582 = { add_core_of = ROOT }
+			if = {
+				limit = {
+					754 = { is_owned_by = ROOT }
+				}
+				754 = { add_core_of = ROOT }
+			}
+		}
+		ai_will_do = { factor = 1000 }
+	}
+}
