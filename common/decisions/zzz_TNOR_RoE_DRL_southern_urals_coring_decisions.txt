@@ -5,6 +5,9 @@ RUS_coring_category = {
 		allowed = {
 			original_tag = DRL
 		}
+		available = {
+			original_tag = DRL
+		}
 		visible = {
 			original_tag = DRL
 			OR = {
@@ -42,6 +45,9 @@ RUS_coring_category = {
 		allowed = {
 			original_tag = DRL
 		}
+		available = {
+			original_tag = DRL
+		}
 		visible = {
 			original_tag = DRL
 			OR = {
@@ -71,6 +77,9 @@ RUS_coring_category = {
 	DRL_core_magnitogorsk_state = {
 		icon = GFX_decision_generic_document_building
 		allowed = {
+			original_tag = DRL
+		}
+		available = {
 			original_tag = DRL
 		}
 		visible = {

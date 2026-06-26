@@ -905,8 +905,37 @@ country_event = {
 	option = {
 		name = DRL.202.a
 		ai_chance = { factor = 80 }
-		ORE = {
-			country_event = { id = ORE.1 days = 2 }
+		hidden_effect = {
+			random_list = {
+				6 = {
+					ORE = {
+						add_manpower = -3000
+						add_political_power = 50
+					}
+					country_event = { id = DRL.204 days = 2 }
+				}
+				14 = {
+					ORE = {
+						add_manpower = -3000
+						add_political_power = 50
+					}
+					country_event = { id = DRL.203 days = 2 }
+				}
+				8 = {
+					ORE = {
+						add_manpower = -500
+						add_political_power = -25
+					}
+					country_event = { id = DRL.204 days = 2 }
+				}
+				72 = {
+					ORE = {
+						add_manpower = -500
+						add_political_power = -25
+					}
+					country_event = { id = DRL.203 days = 2 }
+				}
+			}
 		}
 	}
 }
@@ -966,8 +995,37 @@ country_event = {
 	option = {
 		name = DRL.205.a
 		ai_chance = { factor = 80 }
-		URL = {
-			country_event = { id = URL.22 days = 2 }
+		hidden_effect = {
+			random_list = {
+				16 = {
+					URL = {
+						add_manpower = -1000
+						add_political_power = 50
+					}
+					country_event = { id = DRL.207 days = 2 }
+				}
+				24 = {
+					URL = {
+						add_manpower = -1000
+						add_political_power = 50
+					}
+					country_event = { id = DRL.206 days = 2 }
+				}
+				16 = {
+					URL = {
+						add_political_power = -50
+						army_experience = 10
+					}
+					country_event = { id = DRL.207 days = 2 }
+				}
+				64 = {
+					URL = {
+						add_political_power = -50
+						army_experience = 10
+					}
+					country_event = { id = DRL.206 days = 2 }
+				}
+			}
 		}
 	}
 }
@@ -1031,8 +1089,12 @@ country_event = {
 	option = {
 		name = DRL.208.a
 		ai_chance = { factor = 80 }
-		MGN = {
-			country_event = { id = MGN.1 days = 2 }
+		hidden_effect = {
+			MGN = {
+				add_manpower = 1000
+				add_political_power = 50
+			}
+			country_event = { id = DRL.209 days = 2 }
 		}
 	}
 }

@@ -1,0 +1,70 @@
+add_namespace = TNOR_DRL_raiding
+
+country_event = {
+	id = TNOR_DRL_raiding.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TNOR_DRL_raiding.1" }
+
+	option = {
+		name = TNOR_DRL_raiding.1.a
+		if = {
+			limit = { NOT = { original_tag = DRL } }
+			if = {
+				limit = { check_variable = { loot_amount > 0 } }
+				subtract_from_variable = { loot_amount = 1 }
+				if = {
+					limit = { has_country_flag = RUS_Smuta_Enabled }
+					set_temp_variable = { Y = -0.1 }
+					RUS_Smuta_Supplies_Add_Y = yes
+				}
+			}
+			random_list = {
+				20 = {
+					add_political_power = -50
+					add_stability = -0.02
+					add_manpower = -200
+					set_temp_variable = { temp_month_income_spent = 2 }
+					econ_spend_money_once_effect_month_income = yes
+				}
+				20 = {
+					add_political_power = -25
+					add_manpower = -350
+					add_stability = -0.02
+					add_war_support = -0.02
+					set_temp_variable = { temp_month_income_paid = 2 }
+					econ_spend_money_once_effect_raw_money = yes
+				}
+				20 = {
+					add_political_power = -25
+					add_manpower = -150
+					add_stability = -0.03
+				}
+				20 = {
+					add_political_power = -25
+					add_manpower = -150
+					add_stability = -0.01
+					add_war_support = -0.02
+					set_temp_variable = { temp_month_income_paid = 4 }
+					econ_spend_money_once_effect_raw_money = yes
+				}
+				20 = {
+					add_political_power = -50
+					add_stability = -0.03
+					random_owned_controlled_state = {
+						add_manpower = -3000
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = TNO_KD_raiding_target }
+					clr_state_flag = TNO_KD_raiding_target
+					set_temp_variable = { state_value_multiplier_temp = 0.94 }
+					econ_state_value_change_multiply = yes
+				}
+			}
+		}
+	}
+}

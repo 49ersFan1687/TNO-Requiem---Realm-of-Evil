@@ -974,6 +974,7 @@ guiTypes = {
 				position = { x = 7 y = 55 }
 				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
+				text = ""
 				maxWidth = 340
 				format = left
 			}
