@@ -1343,7 +1343,7 @@ shared_focus = {
 ### Regional Smuta Tree ###
 shared_focus = {
 	id = DRL_it_begins_here
-	#icon
+	icon = GFX_focus_DRL_it_begins_here
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1362,7 +1362,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_way_of_the_brigade
-	#icon
+	icon = GFX_focus_DRL_the_way_of_the_brigade
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1384,7 +1384,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_let_them_all_know
-	#icon
+	icon = GFX_focus_DRL_let_them_all_know
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1406,7 +1406,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_our_strength
-	#icon
+	icon = GFX_focus_DRL_our_strength
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1428,7 +1428,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_our_power
-	#icon
+	icon = GFX_focus_DRL_our_power
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1450,7 +1450,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_who_i_am
-	#icon
+	icon = GFX_focus_DRL_who_i_am
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1472,7 +1472,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_who_are_we
-	#icon
+	icon = GFX_focus_DRL_who_are_we
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1494,7 +1494,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_with_the_most_brutal_ways
-	#icon
+	icon = GFX_focus_DRL_with_the_most_brutal_ways
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1516,7 +1516,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_fury
-	#icon
+	icon = GFX_focus_DRL_and_fury
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1538,7 +1538,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_who_i_must_be
-	#icon
+	icon = GFX_focus_DRL_who_i_must_be
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1560,7 +1560,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_who_we_truly_are
-	#icon
+	icon = GFX_focus_DRL_who_we_truly_are
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1582,7 +1582,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_the_most_fearful
-	#icon
+	icon = GFX_focus_DRL_and_the_most_fearful
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1604,7 +1604,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_burgundian_tactics
-	#icon
+	icon = GFX_focus_DRL_burgundian_tactics
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1626,7 +1626,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_who_i_shall_be
-	#icon
+	icon = GFX_focus_DRL_and_who_i_shall_be
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1648,7 +1648,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_with_our_aryan_blood
-	#icon
+	icon = GFX_focus_DRL_with_our_aryan_blood
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1670,7 +1670,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_ss_power_supreme
-	#icon
+	icon = GFX_focus_DRL_ss_power_supreme
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1695,7 +1695,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_we_shall_dominate_all
-	#icon
+	icon = GFX_focus_DRL_we_shall_dominate_all
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1720,7 +1720,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_triumph_of_the_dark_will
-	#icon
+	icon = GFX_focus_DRL_triumph_of_the_dark_will
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
@@ -1737,9 +1737,16 @@ shared_focus = {
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		DRL_is_only_smuta_contender = yes
 	}
 	completion_reward = {
-
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_triumph_of_the_dark_will"
+		if = {
+			limit = { has_country_flag = RUS_Smuta_Enabled }
+			RUS_Smuta_Disable = yes
+		}
+		set_country_flag = RUS_Smuta_Ended
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 

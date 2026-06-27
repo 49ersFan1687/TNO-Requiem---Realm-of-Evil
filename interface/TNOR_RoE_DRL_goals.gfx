@@ -136,4 +136,76 @@ spriteTypes = {
 		name = "GFX_focus_DRL_and_beyond_the_south"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_beyond_the_south.dds"
 	}	
+	spriteType = {
+		name = "GFX_focus_DRL_it_begins_here"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_it_begins_here.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_way_of_the_brigade"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_way_of_the_brigade.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_let_them_all_know"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_let_them_all_know.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_our_strength"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_strength.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_our_power"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_power.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_who_i_am"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_who_i_am.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_who_are_we"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_who_are_we.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_with_the_most_brutal_ways"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_the_most_brutal_ways.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_and_fury"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_fury.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_who_i_must_be"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_who_i_must_be.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_who_we_truly_are"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_who_we_truly_are.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_and_the_most_fearful"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_the_most_fearful.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_burgundian_tactics"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_burgundian_tactics.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_and_who_i_shall_be"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_who_i_shall_be.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_with_our_aryan_blood"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_our_aryan_blood.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_ss_power_supreme"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_ss_power_supreme.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_we_shall_dominate_all"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_we_shall_dominate_all.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_triumph_of_the_dark_will"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_triumph_of_the_dark_will.dds"
+	}	
 }
