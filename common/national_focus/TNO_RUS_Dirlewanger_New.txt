@@ -1741,12 +1741,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_triumph_of_the_dark_will"
-		if = {
-			limit = { has_country_flag = RUS_Smuta_Enabled }
-			RUS_Smuta_Disable = yes
-		}
-		set_country_flag = RUS_Smuta_Ended
-		mark_focus_tree_layout_dirty = yes
+		DRL_end_smuta_cleanup = yes
 	}
 }
 

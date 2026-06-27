@@ -1,0 +1,13 @@
+DRL_end_smuta_cleanup = {
+	if = {
+		limit = { has_country_flag = RUS_Smuta_Enabled }
+		RUS_Smuta_Disable = yes
+	}
+	clr_country_flag = RUS_Smuta_Enabled
+	set_country_flag = RUS_Smuta_Ended
+	clr_country_flag = RUS_Smuta_preparing_expansion
+	remove_from_array = { Smuta_PrepareWarOn = DRL }
+	remove_decision = RUS_Decision_Smuta_Expansion_DRL_Generic
+	remove_decision = RUS_Decision_Smuta_Occupation_DRL
+	mark_focus_tree_layout_dirty = yes
+}
