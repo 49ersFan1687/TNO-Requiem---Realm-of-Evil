@@ -4,6 +4,8 @@
  RUS_Decision_Smuta_Expansion_DRL_Generic: "Attack [DRL.GetFlag] §R[DRL.GetName]§!"
  RUS_Decision_Smuta_Occupation_BZI: "Occupy [BZI.GetFlag] [BZI.GetName]"
  RUS_Decision_Smuta_Occupation_BZI_desc: "$RUS_Decision_Smuta_Occupation_desc$"
+ DRL_southern_urals_reunification: "Proclaim Dirlewanger's Realm"
+ DRL_southern_urals_reunification_desc: "The Southern Urals have been dragged beneath the Brigade's banner. Orenburg, the Ural League, and Magnitogorsk are broken; what remains will be named for its master."
  DRL_west_russia_reunification: "Proclaim West Russian Dominion"
  DRL_west_russia_reunification_desc: "The Brigade has clawed its way out of the Urals and over the corpse of West Russia. The time has come to formalize what everyone already knows."
  DRL_war_with_west_siberia: "Storm West Siberia"

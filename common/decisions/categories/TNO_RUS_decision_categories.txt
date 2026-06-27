@@ -72,6 +72,7 @@ RUS_reunification_category = {
 				is_russian_nation = yes
 				is_russian_unifier = yes
 			}
+			original_tag = DRL
 		}
 	}
 

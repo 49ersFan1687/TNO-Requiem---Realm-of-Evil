@@ -1,5 +1,29 @@
 RUS_reunification_category = {
 
+	DRL_southern_urals_reunification = {
+		icon = GFX_decision_diplo_western_russia
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = DRL_regional_smuta_prep
+			NOT = { has_country_flag = DRL_southern_urals_unified }
+			NOT = { has_country_flag = RUS_regional_stage }
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			can_form_southern_urals = yes
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 200 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_southern_urals_reunification"
+			set_country_flag = DRL_southern_urals_unified
+			set_cosmetic_tag = DIR_BEST
+		}
+	}
+
 	DRL_west_russia_reunification = {
 		icon = GFX_decision_diplo_western_russia
 		allowed = {
@@ -7,11 +31,13 @@ RUS_reunification_category = {
 		}
 		visible = {
 			has_country_flag = DRL_ready_for_smuta
+			has_country_flag = DRL_southern_urals_unified
 			NOT = { has_country_flag = RUS_regional_stage }
 		}
 		available = {
 			is_subject = no
 			has_war = no
+			has_country_flag = DRL_southern_urals_unified
 			can_form_west_russia = yes
 		}
 		fire_only_once = yes
@@ -156,7 +182,6 @@ RUS_reunification_category = {
 		available = {
 			is_subject = no
 			has_war = no
-			can_form_west_russia = yes
 			OR = {
 				can_form_west_siberia = yes
 				AND = {
