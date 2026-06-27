@@ -34,7 +34,7 @@ RUS_reunification_category = {
 			navy_experience = 30
 			add_ideas = RUS_administrative_overload_1
 			generate_russia_state_gdp = yes
-			set_cosmetic_tag = DIR_BEST
+			set_cosmetic_tag = DIR_WESTRUSSIA
 			custom_effect_tooltip = RUS_end_warlord_tt
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
@@ -90,6 +90,50 @@ RUS_reunification_category = {
 		}
 	}
 
+	DRL_war_with_west_siberia = {
+		icon = GFX_decision_diplo_western_siberia
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = RUS_regional_stage
+			NOT = { has_country_flag = RUS_superregional_stage }
+			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
+			can_form_west_siberia = no
+			any_country = {
+				NOT = { tag = ROOT }
+				is_west_siberian_nation = yes
+			}
+		}
+		available = {
+			date > 1969.1.1
+			is_subject = no
+			has_war = no
+			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_west_siberia"
+			set_country_flag = DRL_west_siberia_war_decisions
+			country_event = { id = russia_unification.1 days = 1 }
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						is_west_siberian_nation = yes
+					}
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+	}
+
 	DRL_absorb_west_siberia = {
 		icon = GFX_decision_diplo_western_siberia
 		allowed = {
@@ -98,6 +142,16 @@ RUS_reunification_category = {
 		visible = {
 			has_country_flag = RUS_regional_stage
 			NOT = { has_country_flag = RUS_superregional_stage }
+			OR = {
+				can_form_west_siberia = yes
+				AND = {
+					is_debug = yes
+					any_country = {
+						NOT = { tag = ROOT }
+						is_west_siberian_nation = yes
+					}
+				}
+			}
 		}
 		available = {
 			is_subject = no
@@ -105,9 +159,12 @@ RUS_reunification_category = {
 			can_form_west_russia = yes
 			OR = {
 				can_form_west_siberia = yes
-				any_country = {
-					NOT = { tag = ROOT }
-					is_west_siberian_nation = yes
+				AND = {
+					is_debug = yes
+					any_country = {
+						NOT = { tag = ROOT }
+						is_west_siberian_nation = yes
+					}
 				}
 			}
 		}
@@ -134,7 +191,7 @@ RUS_reunification_category = {
 			set_country_flag = RUS_RUSSIA_UNIFIED
 			add_stability = 0.20
 			navy_experience = 20
-			set_cosmetic_tag = DIR_BEST
+			set_cosmetic_tag = DIR_RUSSIA
 			econ_raise_max_credit_rating = yes
 			hidden_effect = {
 				add_manpower = 250000
@@ -180,6 +237,59 @@ RUS_reunification_category = {
 		}
 	}
 
+	DRL_war_with_siberia = {
+		icon = GFX_decision_diplo_siberia_superregional
+		allowed = {
+			original_tag = DRL
+		}
+		visible = {
+			has_country_flag = RUS_superregional_stage
+			NOT = { has_global_flag = RUS_national_unification }
+			NOT = { has_country_flag = DRL_siberia_war_decisions }
+			OR = {
+				can_form_central_siberia = no
+				can_form_far_east = no
+			}
+			any_country = {
+				NOT = { tag = ROOT }
+				OR = {
+					is_central_siberian_nation = yes
+					is_far_eastern_nation = yes
+				}
+			}
+		}
+		available = {
+			date > 1971.1.1
+			is_subject = no
+			has_war = no
+			NOT = { has_country_flag = DRL_siberia_war_decisions }
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_siberia"
+			set_country_flag = DRL_siberia_war_decisions
+			country_event = { id = russia_unification.17 days = 1 }
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						OR = {
+							is_central_siberian_nation = yes
+							is_far_eastern_nation = yes
+						}
+					}
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+	}
+
 	DRL_absorb_siberia = {
 		icon = GFX_decision_diplo_russia_superregional
 		allowed = {
@@ -188,6 +298,22 @@ RUS_reunification_category = {
 		visible = {
 			has_country_flag = RUS_superregional_stage
 			NOT = { has_global_flag = RUS_national_unification }
+			OR = {
+				AND = {
+					can_form_central_siberia = yes
+					can_form_far_east = yes
+				}
+				AND = {
+					is_debug = yes
+					any_country = {
+						NOT = { tag = ROOT }
+						OR = {
+							is_central_siberian_nation = yes
+							is_far_eastern_nation = yes
+						}
+					}
+				}
+			}
 		}
 		available = {
 			is_subject = no
@@ -197,11 +323,14 @@ RUS_reunification_category = {
 					can_form_central_siberia = yes
 					can_form_far_east = yes
 				}
-				any_country = {
-					NOT = { tag = ROOT }
-					OR = {
-						is_central_siberian_nation = yes
-						is_far_eastern_nation = yes
+				AND = {
+					is_debug = yes
+					any_country = {
+						NOT = { tag = ROOT }
+						OR = {
+							is_central_siberian_nation = yes
+							is_far_eastern_nation = yes
+						}
 					}
 				}
 			}
@@ -241,11 +370,19 @@ RUS_reunification_category = {
 			}
 			add_stability = 0.20
 			add_manpower = 500000
-			set_cosmetic_tag = DIR_BEST
+			set_cosmetic_tag = DIR_RUSSIA
 			set_country_flag = RUS_hide_superregional_war_decisions
 			set_country_flag = RUS_hide_superregional_peace_decisions
 			remove_ideas = RUS_superregional_manpower
 			remove_ideas = RUS_superregional_econ
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = { id = DRL_wnews.1 days = 1 }
+				}
+			}
 			hidden_effect = {
 				for_each_scope_loop = {
 					array = global.russian_warlords

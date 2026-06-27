@@ -30,7 +30,7 @@ RUS_coring_category = {
 			owns_state = 652
 			owns_state = 852
 		}
-		cost = 50
+		cost = 25
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_orenburg_states"
 			849 = { add_core_of = ROOT }
@@ -65,7 +65,7 @@ RUS_coring_category = {
 			owns_state = 847
 			owns_state = 848
 		}
-		cost = 35
+		cost = 25
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_ural_league_states"
 			847 = { add_core_of = ROOT }
@@ -96,12 +96,20 @@ RUS_coring_category = {
 			}
 		}
 		available = {
-			owns_state = 582
+			OR = {
+				owns_state = 582
+				owns_state = 754
+			}
 		}
 		cost = 25
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_magnitogorsk_state"
-			582 = { add_core_of = ROOT }
+			if = {
+				limit = {
+					582 = { is_owned_by = ROOT }
+				}
+				582 = { add_core_of = ROOT }
+			}
 			if = {
 				limit = {
 					754 = { is_owned_by = ROOT }

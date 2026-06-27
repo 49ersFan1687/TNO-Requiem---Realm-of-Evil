@@ -68,6 +68,9 @@
  DRL_boosted_spirit:0 "Unbreakable Spirit"
  DRL_boosted_spirit_desc:0 ""
  
+ DRL_SS_spirit:0 "SS Spirit"
+ DRL_SS_spirit_desc:0 ""
+ 
  DRL_Weak_Bandits_100:0 "Untrained & Understaffed Bandits"
  DRL_Weak_Bandits_100_desc:0 ""
  

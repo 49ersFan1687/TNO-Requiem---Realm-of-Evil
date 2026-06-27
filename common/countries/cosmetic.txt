@@ -777,6 +777,16 @@ DIR_BEST = {
 	color_ui = rgb { 10 10 10 }
 }
 
+DIR_WESTRUSSIA = {
+	color = rgb { 10 10 10 }
+	color_ui = rgb { 10 10 10 }
+}
+
+DIR_RUSSIA = {
+	color = rgb { 10 10 10 }
+	color_ui = rgb { 10 10 10 }
+}
+
 TAJ_ssr = {
 	color = rgb { 163 66 76 }
 	color_ui = rgb { 163 66 76 }

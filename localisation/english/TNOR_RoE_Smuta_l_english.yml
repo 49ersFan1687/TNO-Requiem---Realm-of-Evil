@@ -1,12 +1,17 @@
-l_english:
+﻿l_english:
  RUS_Decision_Smuta_Occupation_DRL: "Occupy [DRL.GetFlag] [DRL.GetName]"
  RUS_Decision_Smuta_Occupation_DRL_desc: "$RUS_Decision_Smuta_Occupation_desc$"
+ RUS_Decision_Smuta_Expansion_DRL_Generic: "Attack [DRL.GetFlag] §R[DRL.GetName]§!"
  RUS_Decision_Smuta_Occupation_BZI: "Occupy [BZI.GetFlag] [BZI.GetName]"
  RUS_Decision_Smuta_Occupation_BZI_desc: "$RUS_Decision_Smuta_Occupation_desc$"
  DRL_west_russia_reunification: "Proclaim West Russian Dominion"
  DRL_west_russia_reunification_desc: "The Brigade has clawed its way out of the Urals and over the corpse of West Russia. The time has come to formalize what everyone already knows."
+ DRL_war_with_west_siberia: "Storm West Siberia"
+ DRL_war_with_west_siberia_desc: "The next prey waits beyond the Urals. If West Siberia will not fall into our hands by collapse, it will fall by force."
  DRL_absorb_west_siberia: "Devour West Siberia"
  DRL_absorb_west_siberia_desc: "The western half of Russia belongs to the Brigade. West Siberia will be swallowed next."
+ DRL_war_with_siberia: "Begin the Final Hunt"
+ DRL_war_with_siberia_desc: "Only the Siberian remnants remain outside Dirlewanger's grasp. Their last borders will be crossed in blood."
  DRL_absorb_siberia: "Consume the Rest of Russia"
  DRL_absorb_siberia_desc: "No more fragments. No more rival claimants. The whole Russian ruin will belong to Dirlewanger's realm."
  DRL_core_orenburg_states: "Secure Orenburg"

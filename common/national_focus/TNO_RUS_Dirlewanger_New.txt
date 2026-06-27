@@ -1200,7 +1200,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus DRL_with_strength"
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_strike_away_all_insurgency"
 		add_stability = 0.1
 	}
 }
@@ -1274,6 +1274,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_lessons_from_the_ss"
+		add_ideas = DRL_SS_spirit
 	}
 }
 
@@ -1300,6 +1301,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_flawless_execution"
+		TNO_improve_army_professionalism_med = yes
 	}
 }
 

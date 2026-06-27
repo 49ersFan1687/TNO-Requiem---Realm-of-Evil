@@ -47,7 +47,7 @@ guiTypes = {
             position = { x = 251 y = 144 } #y = 27
             #position = { x = -5000 y = 27 }
             font = "aldrich_20_outline"
-            text = " "
+            text = "[GetSubIdeologyLoc]"
             maxWidth = 245
             maxHeight = 26
             fixedsize = yes

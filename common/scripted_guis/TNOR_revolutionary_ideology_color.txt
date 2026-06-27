@@ -7,7 +7,6 @@ scripted_gui = {
 
         properties = {
             TNOR_ideology_icon = { image = "[GetSubIdeologyIcon]" }
-			TNOR_ideology_name = { text = "[GetSubIdeologyLoc]" }
         }
 	}
 

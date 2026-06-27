@@ -699,5 +699,23 @@ ideas = {
 				offensive_war_stability_factor = 0.15
 			}
 		}
+		
+		DRL_SS_spirit = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_SS_spirit" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SSN_a_grip_of_ebon_steel
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_professionalism_monthly_rate = 0.25
+			}
+		}
 	}
 }
