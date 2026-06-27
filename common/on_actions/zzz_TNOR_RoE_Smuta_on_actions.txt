@@ -3,6 +3,7 @@ on_actions = {
 	on_weekly_DRL = {
 		effect = {
 			RUS_Smuta_Chaos_Weekly = yes
+			DRL_update_reunification_cosmetic_tag = yes
 		}
 	}
 

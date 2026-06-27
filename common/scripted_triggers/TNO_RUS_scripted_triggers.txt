@@ -12,6 +12,7 @@ is_russian_unifier = {
 		AND = {
 			original_tag = DRL
 			has_country_flag = DRL_ready_for_smuta
+			has_country_flag = DRL_southern_urals_unified
 		}
 		original_tag = BZI
 
@@ -50,6 +51,7 @@ is_central_russian_nation = {
 		AND = {
 			original_tag = DRL
 			has_country_flag = DRL_ready_for_smuta
+			has_country_flag = DRL_southern_urals_unified
 		}
 		original_tag = BZI
 	}

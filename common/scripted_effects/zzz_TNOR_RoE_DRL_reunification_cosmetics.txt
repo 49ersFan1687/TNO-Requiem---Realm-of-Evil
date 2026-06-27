@@ -1,0 +1,30 @@
+DRL_update_reunification_cosmetic_tag = {
+	if = {
+		limit = {
+			original_tag = DRL
+			has_global_flag = RUS_national_unification
+		}
+		set_cosmetic_tag = DIR_RUSSIA
+	}
+	else_if = {
+		limit = {
+			original_tag = DRL
+			has_country_flag = RUS_superregional_stage
+		}
+		set_cosmetic_tag = DIR_RUSSIA
+	}
+	else_if = {
+		limit = {
+			original_tag = DRL
+			has_country_flag = RUS_regional_stage
+		}
+		set_cosmetic_tag = DIR_WESTRUSSIA
+	}
+	else_if = {
+		limit = {
+			original_tag = DRL
+			has_country_flag = DRL_southern_urals_unified
+		}
+		set_cosmetic_tag = DIR_BEST
+	}
+}

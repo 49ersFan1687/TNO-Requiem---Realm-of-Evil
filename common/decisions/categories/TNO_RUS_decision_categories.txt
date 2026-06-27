@@ -68,11 +68,11 @@ RUS_reunification_category = {
 	allowed = {
 		OR = {
 			is_kazakh_nation = yes
+			original_tag = DRL
 			AND = {
 				is_russian_nation = yes
 				is_russian_unifier = yes
 			}
-			original_tag = DRL
 		}
 	}
 
