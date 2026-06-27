@@ -197,6 +197,20 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = DRL_west_conquest.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.2" }
+	title = DRL_west_conquest.2.t
+	desc = DRL_west_conquest.2.desc
+	picture = GFX_report_event_DRL_dirlewanger
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.2.a
+	}
+}
+
 #### WORLD NEWS EVENTS - RoE ###
 add_namespace = DRL_wnews
 
