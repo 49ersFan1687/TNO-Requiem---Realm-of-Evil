@@ -237,3 +237,320 @@ RUS_Smuta_Contenders_Setup = {
 		}
 	}
 }
+
+DRL_drop_west_russia_anarchy_cosmetic = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = RUS_anarchy
+					has_cosmetic_tag = GOR_ANARCHY
+					has_cosmetic_tag = VYT_ANARCHY
+					has_cosmetic_tag = VOL_ANARCHY
+					has_cosmetic_tag = PRM_ANARCHY
+					has_cosmetic_tag = SAM_ANARCHY
+				}
+			}
+			drop_cosmetic_tag = yes
+		}
+		clr_country_flag = RUS_anarchy_flag
+		clear_array = can_see_me
+	}
+}
+
+DRL_restore_west_russia_smuta_interregnum = {
+	hidden_effect = {
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				BKR = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+					}
+				}
+			}
+			BKR = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = BKR_ONG_Faizrakhman_Zagafuranov ruling_only = yes } }
+					}
+					promote_character = BKR_ONG_Faizrakhman_Zagafuranov
+				}
+				set_politics = { ruling_party = conservatism }
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				GOR = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+						has_cosmetic_tag = GOR_ANARCHY
+					}
+				}
+			}
+			GOR = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = GOR_ONG_Konstantin_Katushev ruling_only = yes } }
+					}
+					promote_character = GOR_ONG_Konstantin_Katushev
+				}
+				set_politics = { ruling_party = liberalism }
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				GAY = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+					}
+				}
+			}
+			GAY = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = GAY_ONG_Yakov_Panteleev ruling_only = yes } }
+					}
+					promote_character = GAY_ONG_Yakov_Panteleev
+				}
+				set_politics = { ruling_party = liberal_conservatism }
+				add_popularity = {
+					ideology = liberal_conservatism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				VYT = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+						has_cosmetic_tag = VYT_ANARCHY
+					}
+				}
+			}
+			VYT = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = VYT_Boris_I ruling_only = yes } }
+					}
+					promote_character = VYT_Boris_I
+				}
+				set_politics = { ruling_party = conservatism }
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.25
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				VOL = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+						has_cosmetic_tag = VOL_ANARCHY
+					}
+				}
+			}
+			VOL = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = VOL_ONG_Miklay_Kazakov ruling_only = yes } }
+					}
+					add_country_leader_role = {
+						character = VOL_ONG_Miklay_Kazakov
+						promote_leader = yes
+						country_leader = {
+							desc = "POLITICS_MIKLAY_KAZAKOV_DESC"
+							expire = "1999.1.1"
+							ideology = liberal_conservatism_subtype
+							traits = { }
+							id = -1
+						}
+					}
+					VOL_ONG_Miklay_Kazakov = { update_leader_ideology_vars = yes }
+				}
+				set_politics = { ruling_party = liberal_conservatism }
+				add_popularity = {
+					ideology = liberal_conservatism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				PRM = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+						has_cosmetic_tag = PRM_ANARCHY
+					}
+				}
+			}
+			PRM = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = PRM_Alexander_Medvedev ruling_only = yes } }
+					}
+					add_country_leader_role = {
+						character = PRM_Alexander_Medvedev
+						promote_leader = yes
+						country_leader = {
+							desc = "POLITICS_ALEXANDER_MEDVEDEV_DESC"
+							expire = "1999.1.1"
+							ideology = anocracy_stratocracy_subtype
+							traits = { }
+							id = -1
+						}
+					}
+					PRM_Alexander_Medvedev = { update_leader_ideology_vars = yes }
+				}
+				set_politics = { ruling_party = anocracy }
+				add_popularity = {
+					ideology = anocracy
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				SAM = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+						has_cosmetic_tag = SAM_ANARCHY
+					}
+				}
+			}
+			SAM = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = SAM_Viktor_Polyakov ruling_only = yes } }
+					}
+					add_country_leader_role = {
+						character = SAM_Viktor_Polyakov
+						promote_leader = yes
+						country_leader = {
+							desc = "POLITICS_VIKTOR_POLYAKOV_DESC"
+							expire = "1999.1.1"
+							ideology = progressivism_left_wing_populism_subtype
+							traits = { }
+							id = -1
+						}
+					}
+					SAM_Viktor_Polyakov = { update_leader_ideology_vars = yes }
+				}
+				set_politics = { ruling_party = progressivism }
+				add_popularity = {
+					ideology = progressivism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				TAR = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+					}
+				}
+			}
+			TAR = {
+				if = {
+					limit = {
+						NOT = { has_country_leader = { character = TAR_Ibragim_Mingazeyev ruling_only = yes } }
+					}
+					promote_character = TAR_Ibragim_Mingazeyev
+				}
+				set_politics = { ruling_party = liberalism }
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.5
+				}
+				DRL_drop_west_russia_anarchy_cosmetic = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				ONG = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+					}
+				}
+			}
+			ONG = { DRL_drop_west_russia_anarchy_cosmetic = yes }
+		}
+		if = {
+			limit = {
+				original_tag = DRL
+				has_country_flag = DRL_ready_for_smuta
+				has_country_flag = DRL_southern_urals_unified
+				WRS = {
+					exists = yes
+					OR = {
+						has_country_flag = RUS_anarchy_flag
+						has_cosmetic_tag = RUS_anarchy
+					}
+				}
+			}
+			WRS = { DRL_drop_west_russia_anarchy_cosmetic = yes }
+		}
+	}
+}
