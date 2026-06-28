@@ -39,6 +39,18 @@ focus_tree = {
 	shared_focus = DRL_our_ss_army
 }
 
+focus_tree = {
+	id = dirleawnger_superregional
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DRL
+		}
+	}
+	default = no
+}
+
 ### Starting Tree ###
 shared_focus = {
 	id = DRL_the_black_bandits_of_the_orsk
