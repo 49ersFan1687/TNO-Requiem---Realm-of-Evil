@@ -68,3 +68,34 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = TNOR_DRL_raiding.2
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event TNOR_DRL_raiding.2"
+		if = {
+			limit = { RUS_raiding_strat_swiftness = yes }
+			set_country_flag = { flag = russia_raid_succeeded days = 45 value = 1 }
+		}
+		else = {
+			set_country_flag = { flag = russia_raid_succeeded days = 60 value = 1 }
+		}
+	}
+
+	option = {
+		name = raiding.1.a
+		if = {
+			limit = {
+				original_tag = MGN
+				has_completed_focus = MGN_acquirement_of_subjects
+			}
+			custom_effect_tooltip = MGN_Gain_Subjects
+			add_to_variable = { lysenko_subjects = 150 }
+		}
+		RUS_fire_raid_victory_event = yes
+		clear_variable = raid_target
+	}
+}
