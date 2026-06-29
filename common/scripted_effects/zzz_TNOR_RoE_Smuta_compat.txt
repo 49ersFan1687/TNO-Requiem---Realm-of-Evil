@@ -238,6 +238,32 @@ RUS_Smuta_Contenders_Setup = {
 	}
 }
 
+DRL_reveal_west_russia_smuta_interregnum = {
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_country_flag = RUS_anarchy_flag
+				OR = {
+					original_tag = WRS
+					original_tag = ONG
+					original_tag = KOM
+					original_tag = BZI
+					original_tag = BKR
+					original_tag = TAR
+					original_tag = GOR
+					original_tag = GAY
+					original_tag = VYT
+					original_tag = VOL
+					original_tag = PRM
+					original_tag = SAM
+				}
+			}
+			drop_cosmetic_tag = yes
+			clr_country_flag = RUS_anarchy_flag
+		}
+	}
+}
+
 DRL_restore_west_russia_smuta_interregnum = {
 	hidden_effect = {
 		if = {
@@ -246,63 +272,7 @@ DRL_restore_west_russia_smuta_interregnum = {
 				has_country_flag = DRL_ready_for_smuta
 				has_country_flag = DRL_southern_urals_unified
 			}
-			every_country = {
-				limit = {
-					is_ai = yes
-					OR = {
-						original_tag = WRS
-						original_tag = ONG
-						original_tag = KOM
-						original_tag = BZI
-						original_tag = BKR
-						original_tag = TAR
-					}
-				}
-				set_country_flag = RUS_anarchy_flag
-				set_cosmetic_tag = RUS_anarchy
-			}
-			GOR = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
-			GAY = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
-			VYT = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
-			VOL = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
-			PRM = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
-			SAM = {
-				if = {
-					limit = { exists = yes is_ai = yes }
-					set_country_flag = RUS_anarchy_flag
-					set_cosmetic_tag = RUS_anarchy
-				}
-			}
+			DRL_reveal_west_russia_smuta_interregnum = yes
 		}
 		if = {
 			limit = {

@@ -24,6 +24,7 @@ RUS_reunification_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_southern_urals_reunification"
 			set_country_flag = DRL_southern_urals_unified
 			set_cosmetic_tag = DIR_BEST
+			DRL_reveal_west_russia_smuta_interregnum = yes
 		}
 	}
 
@@ -49,6 +50,7 @@ RUS_reunification_category = {
 		ai_will_do = { factor = 200 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
+			DRL_reveal_west_russia_smuta_interregnum = yes
 			if = {
 				limit = { has_country_flag = RUS_Smuta_Enabled }
 				RUS_Smuta_Disable = yes
