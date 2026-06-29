@@ -1344,8 +1344,8 @@ shared_focus = {
 			set_country_flag = DRL_southern_urals_unified
 			set_cosmetic_tag = DIR_BEST
 		}
-		DRL_restore_west_russia_smuta_interregnum = yes
 		RUS_Smuta_Enable = yes
+		DRL_restore_west_russia_smuta_interregnum = yes
 		set_country_flag = DRL_west_russia_smuta_interregnum_restored
 		set_temp_variable = { Y = 0.25 }
 		RUS_Smuta_Supplies_Add_Y = yes
