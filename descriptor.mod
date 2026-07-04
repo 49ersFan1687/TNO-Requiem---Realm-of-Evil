@@ -8,4 +8,4 @@ tags={
 	"National Focuses"
 }
 name="TNOR: Realm of Evil"
-supported_version="1.17.*"
+supported_version="1.18.*"

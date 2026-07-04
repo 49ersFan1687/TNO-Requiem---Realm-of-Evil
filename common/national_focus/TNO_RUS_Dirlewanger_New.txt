@@ -1905,7 +1905,7 @@ shared_focus = {
 	}
 	mutually_exclusive = {
 		focus = DRL_the_ss_staats_new_face
-		focus = DRL_make_him_number_1
+		focus = DRL_make_him_number_one
 	}
 	x = 13
 	y = 4
@@ -1934,7 +1934,7 @@ shared_focus = {
 	}
 	mutually_exclusive = {
 		focus = DRL_into_control
-		focus = DRL_make_him_number_1
+		focus = DRL_make_him_number_one
 	}
 	x = 15
 	y = 4
@@ -1950,7 +1950,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_make_him_number_1
+	id = DRL_make_him_number_one
 	#icon =
 	cost = 4
 	available_if_capitulated = no
@@ -2009,7 +2009,7 @@ shared_focus = {
 	prerequisite = {
 		focus = DRL_into_control
 		focus = DRL_the_ss_staats_new_face
-		focus = DRL_make_him_number_1
+		focus = DRL_make_him_number_one
 	}
 	x = 15
 	y = 5
@@ -2146,7 +2146,7 @@ shared_focus = {
 	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
-	x = 34
+	x = 32.50
 	y = 1
 	ai_will_do = {
 		factor = 60
@@ -2691,7 +2691,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_kiners_from_above
+	id = DRL_killers_from_above
 	#icon
 	cost = 2
 	available_if_capitulated = no
@@ -2726,7 +2726,7 @@ shared_focus = {
 		focus = DRL_recruit_loyal_pilots
 	}	
 	prerequisite = {
-		focus = DRL_kiners_from_above
+		focus = DRL_killers_from_above
 	}
 	x = 0
 	y = 1

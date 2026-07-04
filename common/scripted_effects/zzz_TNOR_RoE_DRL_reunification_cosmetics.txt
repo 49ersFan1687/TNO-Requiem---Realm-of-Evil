@@ -28,3 +28,4 @@ DRL_update_reunification_cosmetic_tag = {
 		set_cosmetic_tag = DIR_BEST
 	}
 }
+

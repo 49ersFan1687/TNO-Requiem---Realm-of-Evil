@@ -71,6 +71,7 @@ RUS_reunification_category = {
 			set_cosmetic_tag = DIR_WESTRUSSIA
 			custom_effect_tooltip = RUS_end_warlord_tt
 			hidden_effect = {
+				load_focus_tree = dirlewanger_regional keep_completed = no
 				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
 				country_event = { id = RUS.2 days = 30 }
 				country_event = { id = RUS.3 days = 60 }
