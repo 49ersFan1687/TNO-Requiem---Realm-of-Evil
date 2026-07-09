@@ -1,0 +1,233 @@
+on_actions = {
+	#### PEACE/WAR VICTORY ON_CAPITULATION BLOCK ####
+	#### PUT YOUR SHIT HERE
+	# At the end of each global block, set the skip_default_capitulation GLOBAL flag
+	# Otherwise shit will just get annexed
+	# Really
+	# It will.
+
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+	
+	# Anytime y'all are triggering the popup manually, please add 1 to the dirty variable, `global.peace_popup_dirty`
+	
+	#See TNO_economy_scripted_effects regarding how transfer_GDP works
+
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			add_to_variable = { global.peace_popup_dirty = 1 }
+
+			FROM = { # winner simply gets GDP recalculated :)
+				recalculate_GDP_and_PUs_on_demand = yes
+			}
+
+			#Annexation block
+			#This if block will only fire if FROM (capitulator) and ROOT (country being capitulated)
+			#That is to say, if one side has completely lost (nobody left to fight on)
+
+			###The Race for the Southern Urals for Both Russian Regional Contenders in the Event of Dirlivanger's Defeat
+				if = {
+					limit = {
+						FROM = {
+							has_country_flag = is_warlord
+							OR = {
+								original_tag = WRS
+								original_tag = VYT
+								original_tag = SAM
+								original_tag = KOM
+								original_tag = PRM
+								original_tag = BZI
+							}
+						}
+						ROOT = {
+						original_tag = DRL
+						}
+						NOT = { has_global_flag = RUS_West_Russian_unification }
+					}
+					849 = { remove_core_of = DRL add_core_of = ORE add_manpower = 3000 }
+					652 = { remove_core_of = DRL add_core_of = ORE add_manpower = 3000 }
+					852 = { remove_core_of = DRL add_core_of = ORE add_manpower = 3000 }
+					847 = { remove_core_of = DRL add_core_of = URL add_manpower = 3000 }
+					848 = { remove_core_of = DRL add_core_of = URL add_manpower = 3000 }
+					582 = { remove_core_of = DRL add_core_of = URL add_manpower = 3000 }
+					846 = { remove_core_of = DRL add_core_of = URL add_manpower = 5500 }
+					ROOT = {
+						kill_ideology_leader = national_socialism_bandit_nazism_subtype
+						retire_character = DRL_Oskar_Dirlewanger
+						set_cosmetic_tag = DRL_DED
+					add_country_leader_role = {
+						character = DRL_Anarchic
+						promote_leader = yes
+						country_leader = {
+								expire = "1999.12.25"
+								ideology = socialist_subtype
+								traits = {
+								}	
+							
+							}
+						}
+					set_politics = {
+							ruling_party = socialist
+						}
+
+						set_popularities = {
+							communist = 0
+							socialist = 100
+							progressivism = 0
+							liberalism = 0
+							conservatism = 0
+							anocracy = 0
+							despotism = 0
+							fascism = 0
+							national_socialism = 0
+							ultranationalism = 0
+				
+						}
+						set_party_name = {
+							ideology = socialist
+							long_name = DRL_DED_socialist_party_long
+							name = DRL_DED_socialist_party
+						}
+					if = {
+						limit = {
+							has_template = "Infanterie-Division"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Infanterie-Division"
+						}
+					}
+					if = {
+						limit = {
+							has_template = "Russische Räuber Division"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Russische Räuber Division"
+						}
+					}
+					remove_all_ministers = yes
+						remove_ideas = {
+							DRL_cornered_dog
+							DRL_new_raids
+							DRL_recently_raided
+							DRL_enemies_on_all_sides
+							DRL_bandit_state_1
+							DRL_bandit_state_2
+							DRL_bandit_state_3
+							DRL_bandit_state_4
+							DRL_bandit_state_5
+							DRL_to_the_slaughter
+							DRL_band_exhausted
+							DRL_think_tank_idea
+							DRL_band_collapsed
+							DRL_homemade_body_armor_idea
+							DRL_Soldiers_Extra_Discontent_Idea
+							DRL_Soldiers_Discontent_Idea
+							DRL_Soldiers_Okay_Idea
+							DRL_Soldiers_A_Bit_Happy_Idea
+							DRL_Soldiers_Happy_Idea
+							DRL_Officers_Disloyal_Idea
+							DRL_Officers_Disrespectful_Idea
+							DRL_Officers_Normal_Idea
+							DRL_Officers_Respect_Idea
+							DRL_Officers_Unswayingly_Loyal_Idea
+							DRL_Officer_Purge
+							DRL_Rage_Inducing_Hormones
+							DRL_Steroids
+							DRL_Bandits_Arms
+							DRL_Aryan_Army_in_the_Dark_idea
+							DRL_bandit_state_warlord_1
+							DRL_bandit_state_warlord_2
+							DRL_bandit_state_warlord_3
+							DRL_boosted_spirit
+							DRL_faster_boi
+							DRL_SS_spirit
+						}
+						remove_unit_leader_role = DRL_Fritz_Schmedes
+						remove_unit_leader_role = DRL_Gennady_Karkov
+						remove_unit_leader_role = DRL_Kallistros_Thielecke
+						load_focus_tree = ZZZ_blank_focus
+						add_war_support = -1
+						add_political_power = -2000
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+								target = ROOT
+								transfer_troops = no	
+							}
+						
+						ORE = {
+							transfer_state = 849
+							transfer_state = 652
+							transfer_state = 852
+							set_capital = { state = 652 remember_old_capital = no }
+							add_manpower = 75000
+							every_owned_state = {
+									add_core_of = ORE
+								}
+							set_temp_variable = { money_reserves_temp = 0.5 }
+							econ_money_reserves_change_raw_money = yes
+						}
+						URL = {
+							transfer_state = 847
+							transfer_state = 848
+							transfer_state = 582
+							transfer_state = 846
+							set_capital = { state = 848 remember_old_capital = no }
+							add_manpower = 75000
+							every_owned_state = {
+									add_core_of = URL
+								}
+							set_temp_variable = { money_reserves_temp = 0.5 }
+							econ_money_reserves_change_raw_money = yes
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				#Capitulation block
+				set_global_flag = war_continuing
+			}
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+	#don't mind me just logging wars
+	on_declare_war = {
+		effect = {
+			log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
+		}
+	}
+}

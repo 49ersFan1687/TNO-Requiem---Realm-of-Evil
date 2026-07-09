@@ -178,17 +178,20 @@ set_technology = {
 	#
 	basic_infantry_equipment = 1
 	support_weapons = 1
+	support_weapons_hmg_1 = 1
+	combat_support_equipment_1 = 1
 	infantry_at = 1
 	infantry_at_upgrade_1 = 1
 	motorized_infantry = 1
+	motorized_infantry_1 = 1
 	#infantry_aa = 1
 	#infantry_aa2 = 1
 	##SUPPORT##
 	tech_support = 1
 	tech_engineers = 1
 	assault_weapons_1 = 1
+	assault_weapons_2 = 1
 	tech_recon = 1
-	tech_recon2 = 1
 	##ARTY##
 	##see NSB section##
 	##ARMOR##
@@ -214,12 +217,15 @@ set_technology = {
 	radio = 1
 	mechanical_computing = 1
 	computing_machine = 1
+	improved_computing_machine = 1
 	basic_encryption = 1
 	basic_decryption = 1
+	improved_encryption = 1
 	##INDUSTRY##
 	ww2_line_production = 1
-	batch_production_1 = 1
+	mass_production_1 = 1
 	building_construction_1 = 1
+	military_construction_1 = 1
 	resource_extraction_methods = 1
 	excavation0 = 1
 	energy_technology_1 = 1

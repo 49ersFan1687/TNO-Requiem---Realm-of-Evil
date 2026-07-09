@@ -401,7 +401,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_aryan_army_in_the_dark
 	icon = GFX_focus_DRL_the_aryan_army_in_dark
-	cost = 2.90
+	cost = 3.63
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -432,7 +432,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_securing_our_bedrock_first
 	icon = GFX_focus_DRL_securing_our_bedrock_first
-	cost = 2.90
+	cost = 3.63
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -468,7 +468,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_realm_begins
 	icon = GFX_focus_DRL_the_realm_begins
-	cost = 2.90
+	cost = 3.63
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -500,7 +500,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_preparing_to_strike
 	icon = GFX_focus_DRL_preparing_to_strike
-	cost = 2.90
+	cost = 3.63
 	available_if_capitulated = no
 	cancelable = yes
 	allow_branch = {
@@ -990,6 +990,11 @@ shared_focus = {
 	ai_will_do = {
 		factor = 60
 	}
+	bypass = {
+		NOT = {
+		country_exists = URL
+		}
+	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
@@ -1060,12 +1065,20 @@ shared_focus = {
 	ai_will_do = {
 		factor = 60
 	}
+	bypass = {
+		NOT = {
+		country_exists = ORE
+		}
+	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 		NOT = {
 		has_war_with = MGN
-		country_exists = URL
-				}
+		}
+		OR = {
+			NOT = { country_exists = URL }
+			ORE = { has_capitulated = yes }
+		}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_to_orenberg"
@@ -1133,6 +1146,11 @@ shared_focus = {
 	y = 13
 	ai_will_do = {
 		factor = 60
+	}
+	bypass = {
+		NOT = {
+		country_exists = MGN
+		}
 	}
 	available = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
@@ -1803,7 +1821,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-
+		tno_healthcare_improve = yes
 	}
 }
 
@@ -1828,7 +1846,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-
+		tno_research_facilities_improve = yes
 	}
 }
 

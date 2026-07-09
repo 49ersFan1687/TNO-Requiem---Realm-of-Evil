@@ -4,8 +4,6 @@ RUS_DecisionCategory_Smuta = {
 		icon = GFX_decision_generic_assault
 
 		visible = {
-			is_russian_unifier = yes
-			is_neighbor_of = DRL
 			DRL = {
 				exists = yes
 				has_country_flag = DRL_ready_for_smuta
@@ -21,6 +19,11 @@ RUS_DecisionCategory_Smuta = {
 				}
 			}
 			NOT = { has_non_aggression_pact_with = DRL }
+			AND = {
+			is_russian_unifier = yes
+			is_neighbor_of = DRL
+			NOT = { is_west_siberian_nation = yes }
+			}
 		}
 		available = {
 			RUS_Smuta_ScriptedTrigger_Expansion_AI_available = yes
