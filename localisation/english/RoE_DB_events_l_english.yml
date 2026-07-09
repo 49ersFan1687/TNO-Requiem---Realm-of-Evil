@@ -136,90 +136,96 @@
  DRL_the_ss_staat_endures:0 "SS-Staat Endures"
  DRL_the_ss_staat_endures_desc:0 ""
  
- DRL_the_question_of_our_economy:0 "Money Must Flow"
- DRL_the_question_of_our_economy_desc:0 ""
+ DRL_money_must_flow:0 "Money Must Flow"
+ DRL_money_must_flow_desc:0 ""
  
- DRL_road_to_the_perfect_eastern_workshop:0 "The Golden Gease In Our Hand"
- DRL_road_to_the_perfect_eastern_workshop_desc:0 ""
+ DRL_golden_gease_in_our_hand:0 "The Golden Gease In Our Hand"
+ DRL_golden_gease_in_our_hand_desc:0 ""
  
- DRL_restricted_factory_areas:0 "Re-open the Factories"
- DRL_restricted_factory_areas_desc:0 ""
+ DRL_reopen_the_factories:0 "Re-open the Factories"
+ DRL_reopen_the_factories_desc:0 ""
  
- DRL_lessons_from_burgundy:0 "A Lesson of Economy"
- DRL_lessons_from_burgundy_desc:0 ""
+ DRL_lessons_of_economy:0 "A Lesson of Economy"
+ DRL_lessons_of_economy_desc:0 ""
  
- DRL_the_might_of_the_man:0 "The Forces of Servitude"
- DRL_the_might_of_the_man_desc:0 ""
+ DRL_the_forces_of_servitude:0 "The Forces of Servitude"
+ DRL_the_forces_of_servitude_desc:0 ""
  
- DRL_adapt_their_experience_to_the_russian_context:0 "A Meeting with Corporations"
- DRL_adapt_their_experience_to_the_russian_context_desc:0 ""
+ DRL_meeting_with_corporations:0 "A Meeting with Corporations"
+ DRL_meeting_with_corporations_desc:0 ""
  
- DRL_in_the_workforce:0 "And Its Masses"
- DRL_in_the_workforce_desc:0 ""
+ DRL_and_its_masses:0 "And Its Masses"
+ DRL_and_its_masses_desc:0 ""
  
- DRL_the_reliable_german_model:0 "Letting the Corporations do"
- DRL_the_reliable_german_model_desc:0 ""
+ DRL_letting_the_corporations_do:0 "Letting the Corporations do"
+ DRL_letting_the_corporations_do_desc:0 ""
  
- DRL_open_staat_owned_industries:0 "Build Our Very Own Assets"
- DRL_open_staat_owned_industries_desc:0 ""
+ DRL_build_our_very_own_assets:0 "Build Our Very Own Assets"
+ DRL_build_our_very_own_assets_desc:0 ""
  
- DRL_invite_moscovyite_economists:0 "As Long As The Money Flows"
- DRL_invite_moscovyite_economists_desc:0 ""
+ DRL_as_long_as_the_money_flows:0 "As Long As the Money Flows"
+ DRL_as_long_as_the_money_flows_desc:0 ""
  
- DRL_bring_out_the_hammers:0 "To Every Hand a Hammer"
- DRL_bring_out_the_hammers_desc:0 ""
+ DRL_to_every_hand_a_hammer:0 "To Every Hand a Hammer"
+ DRL_to_every_hand_a_hammer_desc:0 ""
  
- DRL_a_worker_like_no_other:0 "Work to Its Greatest Efficiency"
- DRL_a_worker_like_no_other_desc:0 ""
+ DRL_the_tresures_that_lie_bellow:0 "The Tresures That Lie Bellow"
+ DRL_the_tresures_that_lie_bellow_desc:0 ""
  
- DRL_launch_the_dark_industrialization:0 "And Gold Will Rain..."
- DRL_launch_the_dark_industrialization_desc:0 ""
+ DRL_work_to_its_greatest_efficiency:0 "Work to Its Greatest Efficiency"
+ DRL_work_to_its_greatest_efficiency_desc:0 ""
  
- DRL_invite_burgundian_economists:0 "Just to Make Sure"
- DRL_invite_burgundian_economists_desc:0 ""
+ DRL_and_gold_will_rain:0 "And Gold Will Rain..."
+ DRL_and_gold_will_rain_desc:0 ""
  
- DRL_our_ss_army:0 "A Brigade Once, an Army Now"
- DRL_our_ss_army_desc:0 ""
+ DRL_just_to_make_sure:0 "Just to Make Sure"
+ DRL_just_to_make_sure_desc:0 ""
  
- DRL_copy_himmler_army:0 "Turn To The Russian Soldiers"
- DRL_copy_himmler_army_desc:0 ""
+ DRL_even_if_nature_shall_bleed:0 "Even If Nature Shall Bleed"
+ DRL_even_if_nature_shall_bleed_desc:0 ""
  
- DRL_invite_burgundian_instructors:0 "With New Warfare"
- DRL_invite_burgundian_instructors_desc:0 ""
+ DRL_brigade_once_army_now:0 "A Brigade Once, an Army Now"
+ DRL_brigade_once_army_now_desc:0 ""
  
- DRL_sun_above_us:0 "And a New Kind of War"
- DRL_sun_above_us_desc:0 ""
+ DRL_a_little_reshaping:0 "A Little Reshaping"
+ DRL_a_little_reshaping_desc:0 ""
  
- DRL_new_black_army:0 "Keeping Things as They Are"
- DRL_new_black_army_desc:0 ""
+ DRL_turn_to_the_russian_soldiers:0 "Turn To the Russian Soldiers"
+ DRL_turn_to_the_russian_soldiers_desc:0 ""
  
- DRL_new_aryan_solider:0 "Comes New Training"
- DRL_new_aryan_solider_desc:0 ""
+ DRL_with_new_warfare:0 "With New Warfare"
+ DRL_with_new_warfare_desc:0 ""
  
- DRL_twilight_above_us:0 "My Profession - Bandit"
- DRL_twilight_above_us_desc:0 ""
+ DRL_a_new_kind_of_war:0 "...a New Kind of War"
+ DRL_a_new_kind_of_war_desc:0 ""
  
- DRL_staat_air_force:0 "Learning to Fly"
- DRL_staat_air_force_desc:0 ""
+ DRL_keeping_things_as_they_are:0 "Keeping Things as They Are"
+ DRL_keeping_things_as_they_are_desc:0 ""
  
- DRL_new_airforce_academies:0 "Opening of New Air Force Academies"
- DRL_new_airforce_academies_desc:0 ""
+ DRL_comes_new_training:0 "Comes New Training"
+ DRL_comes_new_training_desc:0 ""
  
- DRL_recruit_loyal_pilots:0 "Recruit Loyal Pilots"
- DRL_recruit_loyal_pilots_desc:0 ""
+ DRL_my_profession_bandit:0 "My Profession - Bandit"
+ DRL_my_profession_bandit_desc:0 ""
  
- DRL_killers_from_above:0 "Killers From Above"
- DRL_killers_from_above_desc:0 ""
+ DRL_learning_to_fly:0 "Learning to Fly"
+ DRL_learning_to_fly_desc:0 ""
  
- DRL_airforce_in_darkness:0 "Air Forces in the Dark"
- DRL_airforce_in_darkness_desc:0 ""
+ DRL_through_steel_and_flesh:0 "Through Steel And Flesh to..."
+ DRL_through_steel_and_flesh_desc:0 ""
  
- DRL_jumpstart_our_navy:0 "The Seas At Our Mercy"
- DRL_jumpstart_our_navy_desc:0 ""
+ DRL_waging_war_above:0 "Waging War Above?"
+ DRL_waging_war_above_desc:0 ""
  
- DRL_new_ss_ship:0 "True Ships"
- DRL_new_ss_ship_desc:0 ""
+ DRL_the_seas_at_our_mercy:0 "The Seas at Our Mercy"
+ DRL_the_seas_at_our_mercy_desc:0 ""
  
- DRL_start_true_fleet:0 "And The True Sailors"
- DRL_start_true_fleet_desc:0 ""
+ DRL_new_army_new_man:0 "New Army, New Man"
+ DRL_new_army_new_man_desc:0 ""
+ 
+ DRL_finding_boats:0 "Finding Boats..."
+ DRL_finding_boats_desc:0 ""
+ 
+ DRL_how_does_a_boat_work:0 "How Does a Boat Work?"
+ DRL_how_does_a_boat_work_desc:0 ""
  

@@ -22,3 +22,7 @@
  DRL_core_ural_league_states_desc: "The Ural League's holdouts have lost their shield. Their lands will be folded into the Brigade's dominion."
  DRL_core_magnitogorsk_state: "Secure Magnitogorsk"
  DRL_core_magnitogorsk_state_desc: "Black Mountain is broken. Magnitogorsk will serve the Brigade now."
+ DRL_intervene_in_kazakhstan: "§jMilitary Intervention§! in §YKazakhstan§!"
+ DRL_intervene_in_kazakhstan_desc: "In recent months, a weakened Kazakhstan has been plagued by internal conflicts. Now is the best time for us to intervene in their internal affairs.\n\nThis Bolshevik threat, along with growing nationalist sentiments in Kazakh society, is a potential enemy to our insatiable bandit gangs and must therefore be eliminated. Moreover, no country in the world will come to their defense, so let's drive them into a herd of submissive slaves - which is exactly where they belong!"
+ DRL_southern_urals_unified: "§RWe have eliminated all other challengers to our dominance in the Southern Urals§!"
+ 

@@ -35,8 +35,8 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = DRL_the_brigades_rebranding
-	shared_focus = DRL_the_question_of_our_economy
-	shared_focus = DRL_our_ss_army
+	shared_focus = DRL_money_must_flow
+	shared_focus = DRL_brigade_once_army_now
 }
 
 focus_tree = {
@@ -468,7 +468,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_realm_begins
 	icon = GFX_focus_DRL_the_realm_begins
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -500,7 +500,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_preparing_to_strike
 	icon = GFX_focus_DRL_preparing_to_strike
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	allow_branch = {
@@ -931,18 +931,55 @@ shared_focus = {
 				idea = DRL_boosted_spirit
 				days = 44
 			}
-		add_political_power = 50
+		add_political_power = 25
 		add_command_power = 25
 		TNO_improve_security_policy_effectiveness_low = yes
 		TNO_improve_conscription_policy_effectiveness_monthly_low = yes
 		TNO_improve_draft_exemptions_policy_effectiveness_monthly_low = yes
+		hidden_effect = {
+		if = {
+			limit = { is_ai = yes }
+		division_template = {
+			name = "Pekhotnaya-SS Diviziya"
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				anti_tank = { x = 0 y = 1 }
+				recon = { x = 0 y = 2 }
+			}
+		}
+			846 = {
+			create_unit = {
+				division = "name = \"1ya Pekhotnaya-SS Diviziya\" division_template = \"Pekhotnaya-SS Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				owner = DRL
+			}
+			create_unit = {
+				division = "name = \"2ya Pekhotnaya-SS Diviziya\" division_template = \"Pekhotnaya-SS Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				owner = DRL
+			}
+			}
+			}
+		}
 	}
 }
 
 shared_focus = {
 	id = DRL_strike_the_ural_league
 	icon = GFX_focus_DRL_strike_ural_league
-	cost = 1
+	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -958,6 +995,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_strike_the_ural_league"
+		add_political_power = 20
+		add_command_power = -10
 		effect_tooltip = {
 			declare_war_on = {
 				target = URL
@@ -1001,7 +1040,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_to_orenberg
 	icon = GFX_focus_DRL_and_to_orenburg
-	cost = 1
+	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1021,6 +1060,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_to_orenberg"
+		add_political_power = 20
+		add_command_power = -10
 		effect_tooltip = {
 			declare_war_on = {
 				target = ORE
@@ -1058,7 +1099,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_magnitogorsk_finale
 	icon = GFX_focus_DRL_magnitogorsk_finale
-	cost = 1
+	cost = 2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1078,6 +1119,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_magnitogorsk_finale"
+		add_political_power = 20
+		add_command_power = -10
 		effect_tooltip = {
 			declare_war_on = {
 				target = MGN
@@ -1117,7 +1160,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_south_all_ours
 	icon = GFX_focus_DRL_The_South_All_Ours
-	cost = 2
+	cost = 2.20
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1152,7 +1195,6 @@ shared_focus = {
 			ideology = national_socialism
 			popularity = 0.05
 		}
-		add_political_power = 15
 		add_manpower = -1350
 		add_stability = -0.05
 		set_temp_variable = { inflation_temp = -0.5 }
@@ -1160,7 +1202,7 @@ shared_focus = {
 		TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
 		TNO_improve_security_policy_effectiveness_low = yes
 		TNO_improve_army_professionalism_med = yes
-		set_temp_variable = { money_reserves_temp = 0.1 }
+		set_temp_variable = { money_reserves_temp = 0.25 }
 		econ_money_reserves_change_raw_money = yes
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
@@ -1174,7 +1216,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_south_conquered
 	icon = GFX_focus_DRL_the_south_conquered
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	allow_branch = {
@@ -1185,6 +1227,10 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = DRL_the_south_all_ours
+	}
+	available = {
+		has_country_flag = DRL_southern_urals_unified
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	x = 8
 	y = 15
@@ -1197,7 +1243,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_strike_away_all_insurgency
 	icon = GFX_focus_DRL_strike_away_all_insurgency
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1220,7 +1266,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_bring_horror_to_their_hearts
 	icon = GFX_focus_DRL_bring_horror_to_their_hearts
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1243,7 +1289,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_not_a_single_one_left
 	icon = GFX_focus_DRL_not_a_single_one_left
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1270,7 +1316,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_lessons_from_the_ss
 	icon = GFX_focus_DRL_lessons_from_the_ss
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1293,7 +1339,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_flawless_execution
 	icon = GFX_focus_DRL_flawless_execution
-	cost = 3
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1320,7 +1366,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_beyond_the_south
 	icon = GFX_focus_DRL_and_beyond_the_south
-	cost = 2
+	cost = 2.90
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1341,7 +1387,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_and_beyond_the_south"
 		hidden_effect = {
 			set_country_flag = DRL_ready_for_smuta
-			set_country_flag = DRL_southern_urals_unified
 			set_cosmetic_tag = DIR_BEST
 		}
 		RUS_Smuta_Enable = yes
@@ -1360,7 +1405,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_it_begins_here
 	icon = GFX_focus_DRL_it_begins_here
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	x = 12
@@ -1379,7 +1424,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_way_of_the_brigade
 	icon = GFX_focus_DRL_the_way_of_the_brigade
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1401,7 +1446,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_let_them_all_know
 	icon = GFX_focus_DRL_let_them_all_know
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1423,7 +1468,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_our_strength
 	icon = GFX_focus_DRL_our_strength
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1445,7 +1490,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_our_power
 	icon = GFX_focus_DRL_our_power
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1467,7 +1512,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_who_i_am
 	icon = GFX_focus_DRL_who_i_am
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1489,7 +1534,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_who_are_we
 	icon = GFX_focus_DRL_who_are_we
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1511,7 +1556,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_with_the_most_brutal_ways
 	icon = GFX_focus_DRL_with_the_most_brutal_ways
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1533,7 +1578,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_fury
 	icon = GFX_focus_DRL_and_fury
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1555,7 +1600,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_who_i_must_be
 	icon = GFX_focus_DRL_who_i_must_be
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1577,7 +1622,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_who_we_truly_are
 	icon = GFX_focus_DRL_who_we_truly_are
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1599,7 +1644,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_the_most_fearful
 	icon = GFX_focus_DRL_and_the_most_fearful
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1621,7 +1666,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_burgundian_tactics
 	icon = GFX_focus_DRL_burgundian_tactics
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1643,7 +1688,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_and_who_i_shall_be
 	icon = GFX_focus_DRL_and_who_i_shall_be
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1665,7 +1710,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_with_our_aryan_blood
 	icon = GFX_focus_DRL_with_our_aryan_blood
-	cost = 2
+	cost = 2.2
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1687,7 +1732,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_ss_power_supreme
 	icon = GFX_focus_DRL_ss_power_supreme
-	cost = 2
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1712,7 +1757,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_we_shall_dominate_all
 	icon = GFX_focus_DRL_we_shall_dominate_all
-	cost = 2
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1737,7 +1782,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_triumph_of_the_dark_will
 	icon = GFX_focus_DRL_triumph_of_the_dark_will
-	cost = 2
+	cost = 1
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
@@ -1765,7 +1810,7 @@ shared_focus = {
 shared_focus = {
 	id = DRL_the_brigades_rebranding
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	x = 15
@@ -2141,9 +2186,9 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_the_question_of_our_economy
+	id = DRL_money_must_flow
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	x = 32.50
@@ -2160,13 +2205,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_road_to_the_perfect_eastern_workshop
+	id = DRL_golden_gease_in_our_hand
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_question_of_our_economy
+		focus = DRL_money_must_flow
 	}
 	x = 29
 	y = 2
@@ -2182,13 +2227,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_restricted_factory_areas
+	id = DRL_reopen_the_factories
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_question_of_our_economy
+		focus = DRL_money_must_flow
 	}
 	x = 36
 	y = 2
@@ -2204,13 +2249,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_lessons_from_burgundy
+	id = DRL_lessons_of_economy
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_road_to_the_perfect_eastern_workshop
+		focus = DRL_golden_gease_in_our_hand
 	}
 	x = 27
 	y = 3
@@ -2226,13 +2271,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_the_might_of_the_man
+	id = DRL_the_forces_of_servitude
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_road_to_the_perfect_eastern_workshop
+		focus = DRL_golden_gease_in_our_hand
 	}
 	x = 30
 	y = 3
@@ -2248,13 +2293,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_adapt_their_experience_to_the_russian_context
+	id = DRL_meeting_with_corporations
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_lessons_from_burgundy
+		focus = DRL_lessons_of_economy
 	}
 	x = 27
 	y = 4
@@ -2270,13 +2315,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_in_the_workforce
+	id = DRL_and_its_masses
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_might_of_the_man
+		focus = DRL_the_forces_of_servitude
 	}
 	x = 30
 	y = 4
@@ -2292,16 +2337,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_the_reliable_german_model
+	id = DRL_letting_the_corporations_do
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	mutually_exclusive = {
-		focus = DRL_open_staat_owned_industries
+		focus = DRL_build_our_very_own_assets
 	}
 	prerequisite = {
-		focus = DRL_restricted_factory_areas
+		focus = DRL_reopen_the_factories
 	}
 	x = 35
 	y = 4
@@ -2317,16 +2362,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_open_staat_owned_industries
+	id = DRL_build_our_very_own_assets
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	mutually_exclusive = {
-		focus = DRL_the_reliable_german_model
+		focus = DRL_letting_the_corporations_do
 	}
 	prerequisite = {
-		focus = DRL_restricted_factory_areas
+		focus = DRL_reopen_the_factories
 	}
 	x = 37
 	y = 4
@@ -2342,16 +2387,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_invite_moscovyite_economists
+	id = DRL_as_long_as_the_money_flows
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	mutually_exclusive = {
-		focus = DRL_invite_burgundian_economists
+		focus = DRL_just_to_make_sure
 	}
 	prerequisite = {
-		focus = DRL_adapt_their_experience_to_the_russian_context
+		focus = DRL_meeting_with_corporations
 	}
 	x = 25
 	y = 5
@@ -2367,13 +2412,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_bring_out_the_hammers
+	id = DRL_to_every_hand_a_hammer
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_in_the_workforce
+		focus = DRL_and_its_masses
 	}
 	x = 29
 	y = 5
@@ -2389,13 +2434,38 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_a_worker_like_no_other
+	id = DRL_the_tresures_that_lie_bellow
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_in_the_workforce
+		focus = DRL_just_to_make_sure
+		focus = DRL_as_long_as_the_money_flows
+	}
+	prerequisite = { focus = DRL_to_every_hand_a_hammer }
+	prerequisite = { focus = DRL_work_to_its_greatest_efficiency }
+	x = 28
+	y = 6
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_work_to_its_greatest_efficiency
+	#icon
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_and_its_masses
 	}
 	x = 31
 	y = 5
@@ -2411,14 +2481,14 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_launch_the_dark_industrialization
+	id = DRL_and_gold_will_rain
 	#icon
-	cost = 2
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	prerequisite = {
-		focus = DRL_the_reliable_german_model
-		focus = DRL_open_staat_owned_industries
+		focus = DRL_letting_the_corporations_do
+		focus = DRL_build_our_very_own_assets
 	}
 	x = 36
 	y = 5
@@ -2434,16 +2504,38 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_invite_burgundian_economists
+	id = DRL_even_if_nature_shall_bleed
 	#icon
-	cost = 2
+	cost = 4
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = {
+		focus = DRL_and_gold_will_rain
+	}
+	x = 36
+	y = 6
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+	}
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = DRL_just_to_make_sure
+	#icon
+	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
 	mutually_exclusive = {
-		focus = DRL_invite_moscovyite_economists
+		focus = DRL_as_long_as_the_money_flows
 	}
 	prerequisite = {
-		focus = DRL_adapt_their_experience_to_the_russian_context
+		focus = DRL_meeting_with_corporations
 	}
 	x = 27
 	y = 5
@@ -2459,354 +2551,307 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = DRL_our_ss_army
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	x = 45
-	y = 1
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_brigade_once_army_now
+        #icon
+		cost = 4
+		x = 45
+		y = 1
+		available_if_capitulated = no
+		cancelable = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_copy_himmler_army
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	mutually_exclusive = {
-		focus = DRL_new_black_army
-	}
-	prerequisite = {
-		focus = DRL_our_ss_army
-	}
-	x = 3
-	y = 1
-	relative_position_id = DRL_our_ss_army	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_a_little_reshaping
+        #icon
+		cost = 4
+		x = 45
+        y = 2
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_brigade_once_army_now }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_invite_burgundian_instructors
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_copy_himmler_army
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_copy_himmler_army		
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_turn_to_the_russian_soldiers
+        #icon
+        x = 47
+        y = 3
+        cost = 4
+        available_if_capitulated = no
+		cancelable = yes
+        mutually_exclusive = { focus = DRL_keeping_things_as_they_are }
+        prerequisite = { focus = DRL_a_little_reshaping }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_sun_above_us
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_invite_burgundian_instructors
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_invite_burgundian_instructors		
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_keeping_things_as_they_are
+        #icon
+        x = 43
+        y = 3
+        cost = 4
+        available_if_capitulated = no
+		cancelable = yes
+        mutually_exclusive = { focus = DRL_turn_to_the_russian_soldiers }
+        prerequisite = { focus = DRL_a_little_reshaping }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_new_black_army
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	mutually_exclusive = {
-		focus = DRL_copy_himmler_army
-	}
-	prerequisite = {
-		focus = DRL_our_ss_army
-	}
-	x = 5
-	y = 1
-	relative_position_id = DRL_our_ss_army		
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_comes_new_training
+        #icon
+        x = 45
+        y = 5
+        cost = 4
+        available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_with_new_warfare }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_new_aryan_solider
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_new_black_army
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_new_black_army		
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_with_new_warfare
+        #icon
+        x = 45
+        y = 4
+        cost = 4
+        available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_keeping_things_as_they_are focus = DRL_turn_to_the_russian_soldiers }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_twilight_above_us
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes
-	prerequisite = {
-		focus = DRL_new_aryan_solider
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_new_aryan_solider		
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_learning_to_fly
+        #icon
+        x = 50
+        y = 3
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_a_little_reshaping }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_staat_air_force
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_our_ss_army
-	}
-	x = -3
-	y = 1
-	relative_position_id = DRL_our_ss_army	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_the_seas_at_our_mercy
+        #icon
+        x = 40
+        y = 3
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_a_little_reshaping }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_new_airforce_academies
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_staat_air_force
-	}
-	x = -2
-	y = 1
-	relative_position_id = DRL_staat_air_force	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_finding_boats
+        #icon
+        x = 41
+        y = 4
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_the_seas_at_our_mercy }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_recruit_loyal_pilots
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_staat_air_force
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_staat_air_force	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_waging_war_above
+        #icon
+        x = 49
+        y = 4
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_learning_to_fly }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_killers_from_above
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_staat_air_force
-	}
-	x = 2
-	y = 1
-	relative_position_id = DRL_staat_air_force	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_how_does_a_boat_work
+        #icon
+        x = 42
+        y = 5
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_finding_boats }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_airforce_in_darkness
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_new_airforce_academies
-	}
-	prerequisite = {
-		focus = DRL_recruit_loyal_pilots
-	}	
-	prerequisite = {
-		focus = DRL_killers_from_above
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_recruit_loyal_pilots	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_new_army_new_man
+        #icon
+        x = 48
+        y = 5
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_waging_war_above }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_jumpstart_our_navy
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_our_ss_army
-	}
-	x = 4
-	y = 0
-	relative_position_id = DRL_staat_air_force	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_through_steel_and_flesh
+        #icon
+        x = 44
+        y = 6
+		cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_comes_new_training }
+        prerequisite = { focus = DRL_how_does_a_boat_work }
+        prerequisite = { focus = DRL_new_army_new_man }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_new_ss_ship
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_jumpstart_our_navy
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_jumpstart_our_navy	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
+        id = DRL_a_new_kind_of_war
+        #icon
+        x = 46
+        y = 6
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_comes_new_training }
+        prerequisite = { focus = DRL_new_army_new_man }
+        prerequisite = { focus = DRL_how_does_a_boat_work }
 
-	}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }
 
 shared_focus = {
-	id = DRL_start_true_fleet
-	#icon
-	cost = 2
-	available_if_capitulated = no
-	cancelable = yes	
-	prerequisite = {
-		focus = DRL_new_ss_ship
-	}
-	x = 0
-	y = 1
-	relative_position_id = DRL_new_ss_ship	
-	ai_will_do = {
-		factor = 60
-	}
-	available = {
-		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-	}
-	completion_reward = {
-
-	}
+        id = DRL_my_profession_bandit
+        #icon
+        x = 45
+        y = 7
+        cost = 4
+		available_if_capitulated = no
+		cancelable = yes
+        prerequisite = { focus = DRL_through_steel_and_flesh }
+        prerequisite = { focus = DRL_a_new_kind_of_war }
+		
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+		completion_reward = {
+		}
 }

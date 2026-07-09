@@ -10,6 +10,7 @@ RUS_coring_category = {
 		}
 		visible = {
 			original_tag = DRL
+			has_country_flag = is_warlord
 			OR = {
 				849 = {
 					is_owned_by = ROOT
@@ -31,11 +32,19 @@ RUS_coring_category = {
 			owns_state = 852
 		}
 		cost = 25
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 652
+			}
+		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_orenburg_states"
-			849 = { add_core_of = ROOT }
-			652 = { add_core_of = ROOT }
-			852 = { add_core_of = ROOT }
+			849 = { remove_core_of = ORE add_core_of = ROOT add_manpower = -2983 damage_building = { type = infrastructure damage = 0.50 } }
+			652 = { remove_core_of = ORE add_core_of = ROOT add_manpower = -5018 damage_building = { type = infrastructure damage = 0.50 } }
+			852 = { remove_core_of = ORE add_core_of = ROOT add_manpower = -3470 damage_building = { type = infrastructure damage = 0.50 } }
+			add_war_support = 0.025
+			TNO_improve_admin_efficiency_low = yes
 		}
 		ai_will_do = { factor = 1000 }
 	}
@@ -50,6 +59,7 @@ RUS_coring_category = {
 		}
 		visible = {
 			original_tag = DRL
+			has_country_flag = is_warlord
 			OR = {
 				847 = {
 					is_owned_by = ROOT
@@ -66,10 +76,18 @@ RUS_coring_category = {
 			owns_state = 848
 		}
 		cost = 25
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 848
+			}
+		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_ural_league_states"
-			847 = { add_core_of = ROOT }
-			848 = { add_core_of = ROOT }
+			847 = { remove_core_of = URL add_core_of = ROOT add_manpower = -1721 damage_building = { type = infrastructure damage = 0.50 } }
+			848 = { remove_core_of = URL add_core_of = ROOT add_manpower = -2169 damage_building = { type = infrastructure damage = 0.50 } }
+			add_war_support = 0.025
+			TNO_improve_admin_efficiency_low = yes
 		}
 		ai_will_do = { factor = 1000 }
 	}
@@ -84,38 +102,34 @@ RUS_coring_category = {
 		}
 		visible = {
 			original_tag = DRL
+			has_country_flag = is_warlord
 			OR = {
 				582 = {
-					is_owned_by = ROOT
-					NOT = { is_core_of = ROOT }
-				}
-				754 = {
 					is_owned_by = ROOT
 					NOT = { is_core_of = ROOT }
 				}
 			}
 		}
 		available = {
-			OR = {
 				owns_state = 582
-				owns_state = 754
-			}
 		}
 		cost = 25
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 582
+			}
+		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_core_magnitogorsk_state"
 			if = {
 				limit = {
 					582 = { is_owned_by = ROOT }
 				}
-				582 = { add_core_of = ROOT }
+				582 = { remove_core_of = MGN add_core_of = ROOT add_manpower = -4013 damage_building = { type = infrastructure damage = 0.50 } }
 			}
-			if = {
-				limit = {
-					754 = { is_owned_by = ROOT }
-				}
-				754 = { add_core_of = ROOT }
-			}
+			add_war_support = 0.025
+			TNO_improve_admin_efficiency_low = yes
 		}
 		ai_will_do = { factor = 1000 }
 	}

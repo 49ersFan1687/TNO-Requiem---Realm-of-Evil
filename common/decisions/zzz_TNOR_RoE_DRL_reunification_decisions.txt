@@ -1,12 +1,15 @@
 RUS_reunification_category = {
 
 	DRL_southern_urals_reunification = {
-		icon = GFX_decision_diplo_western_russia
+		icon = GFX_decision_diplo_south_urals
 		allowed = {
 			original_tag = DRL
 		}
 		visible = {
+			OR = {
 			has_country_flag = DRL_regional_smuta_prep
+			has_completed_focus = DRL_to_conquer_the_south
+			}
 			NOT = { has_country_flag = DRL_southern_urals_unified }
 			NOT = { has_country_flag = RUS_regional_stage }
 		}
@@ -17,14 +20,64 @@ RUS_reunification_category = {
 				can_form_southern_urals = yes
 				is_debug = yes
 			}
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+			849 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
+			652 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
+			852 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
+			847 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
+			848 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
+			582 = {
+					is_owned_by = ROOT
+					is_core_of = ROOT
+				}
 		}
 		fire_only_once = yes
 		ai_will_do = { factor = 200 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_southern_urals_reunification"
+			save_global_event_target_as = RUS_southern_urals_unifier
 			set_country_flag = DRL_southern_urals_unified
-			set_cosmetic_tag = DIR_BEST
-			DRL_reveal_west_russia_smuta_interregnum = yes
+			DRL_update_reunification_cosmetic_tag = yes
+			# DRL_reveal_west_russia_smuta_interregnum = yes
+			generate_russia_state_gdp = yes
+			clr_country_flag = is_warlord
+			if = {
+				limit = { amount_research_slots < 2 }
+				add_research_slot = 1
+			}
+			hidden_effect = {
+				for_each_scope_loop = {
+					array = global.russian_warlords
+					if = {
+						limit = {
+							NOT = { tag = ROOT }
+							exists = no
+							is_southern_urals_nation = yes
+						}
+						every_state = {
+							limit = {
+								is_core_of = PREV
+							}
+							PREV = { remove_state_core = PREV }
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -35,21 +88,23 @@ RUS_reunification_category = {
 		}
 		visible = {
 			has_country_flag = DRL_ready_for_smuta
-			has_country_flag = DRL_southern_urals_unified
 			NOT = { has_country_flag = RUS_regional_stage }
 		}
 		available = {
+			date > 1965.2.2
 			is_subject = no
 			has_war = no
 			OR = {
 				can_form_west_russia = yes
 				is_debug = yes
 			}
+			has_country_flag = RUS_Smuta_Ended
 		}
 		fire_only_once = yes
 		ai_will_do = { factor = 200 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
+			RUS_drop_russian_anarchy = yes
 			DRL_reveal_west_russia_smuta_interregnum = yes
 			if = {
 				limit = { has_country_flag = RUS_Smuta_Enabled }
@@ -59,23 +114,31 @@ RUS_reunification_category = {
 			save_global_event_target_as = RUS_western_unifier
 			RUS_calculate_prestige_value = yes
 			set_variable = { RUS_diplo_prestige_bonus = 2 }
-			add_research_slot = 1
+			if = {
+				limit = { amount_research_slots < 3 }
+				add_research_slot = 1
+			}
 			clr_country_flag = is_warlord
-			set_country_flag = DRL_southern_urals_unified
 			set_country_flag = RUS_regional_stage
-			set_country_flag = RUS_Smuta_Ended
 			set_country_flag = W_RUSSIA_UNIFIED
+			clear_variable = loot_amount
 			navy_experience = 30
 			add_ideas = RUS_administrative_overload_1
 			generate_russia_state_gdp = yes
-			set_cosmetic_tag = DIR_WESTRUSSIA
-			custom_effect_tooltip = RUS_end_warlord_tt
+			DRL_update_reunification_cosmetic_tag = yes
+			custom_effect_tooltip = WSR_uprising_stirs
 			hidden_effect = {
 				load_focus_tree = dirlewanger_regional keep_completed = no
 				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
 				country_event = { id = RUS.2 days = 30 }
 				country_event = { id = RUS.3 days = 60 }
 				add_manpower = 150000
+				FIN = {
+						country_event = {
+							id = murmansk.1
+							days = 150
+						}
+					}
 				if = {
 					limit = { has_idea = tno_income_taxation_not_applicable }
 					swap_ideas = {
@@ -97,6 +160,7 @@ RUS_reunification_category = {
 						add_idea = RUS_regional_econ
 					}
 				}
+				
 				if = {
 					limit = { NOT = { has_idea = tno_research_facilities_outdated } }
 					remove_ideas = {
@@ -218,12 +282,12 @@ RUS_reunification_category = {
 						}
 					}
 				}
+			DRL_update_reunification_cosmetic_tag = yes
 			}
 			set_global_flag = RUS_Russia_unification
 			set_country_flag = RUS_superregional_stage
 			save_global_event_target_as = RUS_russian_unifier
 			set_country_flag = RUS_RUSSIA_UNIFIED
-			add_stability = 0.20
 			navy_experience = 20
 			set_cosmetic_tag = DIR_RUSSIA
 			econ_raise_max_credit_rating = yes
@@ -269,6 +333,67 @@ RUS_reunification_category = {
 				}
 			}
 		}
+	}
+	
+	DRL_intervene_in_kazakhstan = {
+
+		icon = GFX_decision_diplo_kazakhstan
+
+		visible = {
+			has_country_flag = RUS_superregional_stage
+			has_country_leader = {
+				character = DRL_Oskar_Dirlewanger
+				ruling_only = yes
+			}
+			original_tag = DRL
+			NOT = { has_global_flag = RUS_national_unification }
+		}
+		
+		available = {
+			is_subject = no
+			has_war = no
+		}
+
+		days_re_enable = 0
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 50
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 404
+			}
+		}
+		
+		modifier = {
+			command_power_gain = -0.5
+			political_power_gain = -0.75
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan remove"
+			every_country = {
+				limit = {
+					is_kazakh_nation = yes
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+		
+		cancel_trigger = { hidden_trigger = { has_war = yes } }
 	}
 
 	DRL_war_with_siberia = {
@@ -325,7 +450,7 @@ RUS_reunification_category = {
 	}
 
 	DRL_absorb_siberia = {
-		icon = GFX_decision_diplo_russia_superregional
+		icon = GFX_decision_diplo_russia
 		allowed = {
 			original_tag = DRL
 		}
@@ -373,7 +498,18 @@ RUS_reunification_category = {
 		ai_will_do = { factor = 200 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_siberia"
+			set_global_flag = RUS_national_unification
+			save_global_event_target_as = RUS_total_unifier
+			if = {
+				limit = { amount_research_slots < 4 }
+				add_research_slot = 1
+			}
 			hidden_effect = {
+				### 2WRW ###
+				SWRW_select_generic_focus_tree = yes
+				WRW_RUS_add_forpo_tab = yes
+				country_event = { id = RUS_chain_of_command.1 days = 30 }
+				### END 2WRW ###
 				every_other_country = {
 					limit = {
 						OR = {
@@ -388,36 +524,19 @@ RUS_reunification_category = {
 						}
 					}
 				}
-				if = {
+				add_manpower = 450000
+				add_stability = 0.15
+				if = { #Kills North Siberian Anarchy if AI sucks
 					limit = { country_exists = NRL }
 					annex_country = {
 						target = NRL
 						transfer_troops = no
 					}
-				}
-			}
-			set_global_flag = RUS_national_unification
-			save_global_event_target_as = RUS_total_unifier
-			if = {
-				limit = { amount_research_slots < 4 }
-				add_research_slot = 1
-			}
-			add_stability = 0.20
-			add_manpower = 500000
-			set_cosmetic_tag = DIR_RUSSIA
-			set_country_flag = RUS_hide_superregional_war_decisions
-			set_country_flag = RUS_hide_superregional_peace_decisions
-			remove_ideas = RUS_superregional_manpower
-			remove_ideas = RUS_superregional_econ
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_ai = no
+					every_state = {
+						limit = { is_core_of = NRL }
+						remove_core_of = NRL
 					}
-					news_event = { id = DRL_wnews.1 days = 1 }
 				}
-			}
-			hidden_effect = {
 				for_each_scope_loop = {
 					array = global.russian_warlords
 					if = {
@@ -426,12 +545,27 @@ RUS_reunification_category = {
 							exists = no
 						}
 						every_state = {
-							limit = { is_core_of = PREV }
+							limit = {
+								is_core_of = PREV
+							}
 							PREV = { remove_state_core = PREV }
 						}
 					}
 				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = { id = DRL_wnews.1 days = 1 }
+				}
+				set_country_flag = RUS_hide_superregional_war_decisions
+				set_country_flag = RUS_hide_superregional_peace_decisions
+				remove_ideas = RUS_superregional_manpower
+				remove_ideas = RUS_superregional_econ
+				DRL_update_reunification_cosmetic_tag = yes
 			}
+			set_cosmetic_tag = DIR_RUSSIA
+			econ_raise_max_credit_rating = yes
 		}
 	}
 }

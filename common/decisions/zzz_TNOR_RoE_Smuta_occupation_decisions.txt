@@ -37,8 +37,8 @@ RUS_DecisionCategory_Smuta = {
 		custom_cost_text = decision_cost_N_smuta_supplies
 
 		modifier = {
-			command_power_gain = -0.5
-			political_power_gain = -1
+			command_power_gain = -0.25
+			political_power_gain = -0.5
 		}
 
 		complete_effect = {
@@ -100,7 +100,7 @@ RUS_DecisionCategory_Smuta = {
 			log = "[GetDateText]: [Root.GetName]: Decision Complete RUS_Decision_Smuta_Occupation_DRL"
 			set_temp_variable = { TargetTag = DRL }
 			custom_effect_tooltip = RUS_Smuta_Occupation_TargetTag_Tt
-			add_command_power = DRL.command_power
+			add_command_power = 15
 			hidden_effect = {
 				FROM = {
 					every_owned_state = {

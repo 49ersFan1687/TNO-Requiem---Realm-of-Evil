@@ -2,28 +2,27 @@ on_actions = {
 
 	on_weekly_DRL = {
 		effect = {
-			if = {
-				limit = {
-					original_tag = DRL
-					has_country_flag = RUS_Smuta_Enabled
-					has_country_flag = DRL_ready_for_smuta
-					NOT = { has_country_flag = DRL_west_russia_smuta_interregnum_restored }
-				}
-				set_country_flag = DRL_southern_urals_unified
-				set_cosmetic_tag = DIR_BEST
-				DRL_restore_west_russia_smuta_interregnum = yes
-				set_country_flag = DRL_west_russia_smuta_interregnum_restored
-			}
-			if = {
-				limit = {
-					original_tag = DRL
-					has_country_flag = RUS_Smuta_Enabled
-					has_country_flag = DRL_ready_for_smuta
-				}
-				DRL_reveal_west_russia_smuta_interregnum = yes
-			}
-			RUS_Smuta_Chaos_Weekly = yes
-			DRL_update_reunification_cosmetic_tag = yes
+			#if = {
+			#	limit = {
+			#		original_tag = DRL
+			#		has_country_flag = RUS_Smuta_Enabled
+			#		has_country_flag = DRL_ready_for_smuta
+			#		NOT = { has_country_flag = DRL_west_russia_smuta_interregnum_restored }
+			#	}
+			#	set_country_flag = DRL_southern_urals_unified
+			#	set_cosmetic_tag = DIR_BEST
+			#	DRL_restore_west_russia_smuta_interregnum = yes
+			#	set_country_flag = DRL_west_russia_smuta_interregnum_restored
+			#}
+			#if = {
+			#	limit = {
+			#		original_tag = DRL
+			#		has_country_flag = RUS_Smuta_Enabled
+			#		has_country_flag = DRL_ready_for_smuta
+			#	}
+			#	DRL_reveal_west_russia_smuta_interregnum = yes
+			#}
+			RUS_DRL_RoE_Smuta_Chaos_Weekly = yes
 		}
 	}
 

@@ -388,3 +388,27 @@ DRL_restore_west_russia_smuta_interregnum = {
 		}
 	}
 }
+
+RUS_DRL_RoE_Smuta_Chaos_Weekly = {
+	if = {
+		limit = {
+			has_country_flag = RUS_Smuta_Enabled
+			NOT = { has_decision = RUS_Decision_Smuta_Chaos_Decrease }
+			NOT = { has_decision = RUS_Decision_Smuta_Chaos_Decrease_FuckFuckFUck }
+		}
+		if = {
+			limit = { RUS_Smuta_ScriptedTrigger_OnlyOneContenderLeft = yes }
+			set_temp_variable = { Y = 2 }
+			RUS_Smuta_Chaos_Add_Y = yes
+		}
+		else_if = {
+			limit = { RUS_Smuta_ScriptedTrigger_Chaos_Bad = yes }
+			set_temp_variable = { Y = 4 }
+			RUS_Smuta_Chaos_Add_Y = yes
+		}
+		else = {
+			set_temp_variable = { Y = 8 }
+			RUS_Smuta_Chaos_Add_Y = yes
+		}
+	}
+}

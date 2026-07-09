@@ -1,8 +1,14 @@
 DRL_update_reunification_cosmetic_tag = {
+
+	hidden_effect = {
+		drop_cosmetic_tag = yes
+	}
+	
 	if = {
 		limit = {
 			original_tag = DRL
 			has_global_flag = RUS_national_unification
+			NOT = { has_country_flag = RUS_regional_stage }
 		}
 		set_cosmetic_tag = DIR_RUSSIA
 	}
@@ -10,6 +16,8 @@ DRL_update_reunification_cosmetic_tag = {
 		limit = {
 			original_tag = DRL
 			has_country_flag = RUS_superregional_stage
+			NOT = { has_country_flag = RUS_regional_stage }
+			NOT = { has_global_flag = RUS_national_unification }
 		}
 		set_cosmetic_tag = DIR_RUSSIA
 	}
@@ -17,13 +25,19 @@ DRL_update_reunification_cosmetic_tag = {
 		limit = {
 			original_tag = DRL
 			has_country_flag = RUS_regional_stage
+			NOT = { has_country_flag = RUS_superregional_stage }
+			NOT = { has_global_flag = RUS_national_unification }
 		}
-		set_cosmetic_tag = DIR_WESTRUSSIA
+		set_cosmetic_tag = DRL_Westrussia
 	}
 	else_if = {
 		limit = {
 			original_tag = DRL
 			has_country_flag = DRL_southern_urals_unified
+			NOT = { has_country_flag = RUS_regional_stage }
+			NOT = { has_country_flag = RUS_superregional_stage }
+			NOT = { has_global_flag = RUS_national_unification }
+			NOT = { has_global_flag = RUS_West_Russian_unification }
 		}
 		set_cosmetic_tag = DIR_BEST
 	}
