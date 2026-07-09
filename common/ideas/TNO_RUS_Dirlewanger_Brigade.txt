@@ -661,6 +661,31 @@ ideas = {
 			}
 		}
 		
+		DRL_bandit_state_warlord_3 = { #Realm Of Evil Ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_bandit_state_warlord_3" }
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DRL_bandit_state
+			modifier = {
+				army_org_factor = 0.20
+				army_morale_factor = 0.1
+				army_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+				war_support_factor = 0.20
+				production_factory_max_efficiency_factor = -0.075
+				research_speed_factor = -0.05
+				ai_focus_aggressive_factor = 0.40
+				ai_badass_factor = 0.40
+				political_power_factor = -0.15
+			}
+		}
+		
 		DRL_faster_boi = { #Realm Of Evil Ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_faster_boi" }
 			allowed = {

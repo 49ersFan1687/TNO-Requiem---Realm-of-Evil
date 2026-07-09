@@ -86,7 +86,7 @@ add_ideas = {
 	tno_vote_franchise_no_voting
 	##MILITARY LAWS###
 	tno_conscription_broadened_conscription
-	tno_military_supervision_kill_em_all
+	tno_military_supervision_no_supervision
 	tno_training_basic_training
 	tno_draft_exemptions_none
 	##SOCIAL LAWS##
