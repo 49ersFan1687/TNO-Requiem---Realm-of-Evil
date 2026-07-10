@@ -70,6 +70,13 @@ on_actions = {
 								original_tag = KOM
 								original_tag = PRM
 								original_tag = BZI
+								
+								original_tag = ONG
+								original_tag = GOR
+								original_tag = VOL
+								original_tag = TAR
+								original_tag = GAY
+								original_tag = BKR
 							}
 						}
 						ROOT = {

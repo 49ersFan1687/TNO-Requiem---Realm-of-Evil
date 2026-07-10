@@ -52,6 +52,7 @@ RUS_reunification_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_southern_urals_reunification"
 			save_global_event_target_as = RUS_southern_urals_unifier
 			set_country_flag = DRL_southern_urals_unified
+			custom_effect_tooltip = DRL_southern_urals_reunification_tt
 			DRL_update_reunification_cosmetic_tag = yes
 			# DRL_reveal_west_russia_smuta_interregnum = yes
 			generate_russia_state_gdp = yes
@@ -129,6 +130,14 @@ RUS_reunification_category = {
 			custom_effect_tooltip = WSR_uprising_stirs
 			hidden_effect = {
 				load_focus_tree = dirlewanger_regional keep_completed = no
+				DRL_Oskar_Dirlewanger = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }
+					army = {
+						large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png"
+						}
+					}
+				}
 				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
 				country_event = { id = RUS.2 days = 30 }
 				country_event = { id = RUS.3 days = 60 }
