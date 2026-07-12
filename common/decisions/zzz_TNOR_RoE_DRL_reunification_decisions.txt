@@ -53,7 +53,7 @@ RUS_reunification_category = {
 			save_global_event_target_as = RUS_southern_urals_unifier
 			set_country_flag = DRL_southern_urals_unified
 			custom_effect_tooltip = DRL_southern_urals_reunification_tt
-			DRL_update_reunification_cosmetic_tag = yes
+			set_cosmetic_tag = DIR_BEST
 			# DRL_reveal_west_russia_smuta_interregnum = yes
 			generate_russia_state_gdp = yes
 			clr_country_flag = is_warlord
@@ -126,7 +126,7 @@ RUS_reunification_category = {
 			navy_experience = 30
 			add_ideas = RUS_administrative_overload_1
 			generate_russia_state_gdp = yes
-			DRL_update_reunification_cosmetic_tag = yes
+			set_cosmetic_tag = DRL_Westrussia
 			custom_effect_tooltip = WSR_uprising_stirs
 			hidden_effect = {
 				load_focus_tree = dirlewanger_regional keep_completed = no
