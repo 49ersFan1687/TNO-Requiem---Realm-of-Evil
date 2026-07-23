@@ -4,8 +4,10 @@ bookmarks = {
 		desc = "THENEWORDER_DESC"
 		date = 1962.1.1.1
 		picture = "GFX_select_date_1939"
-		default_country = "DRL" 
+		default_country = "DRL"
 		default = yes
+		filters = { }
+		sort_unplayed_first = no
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
@@ -32,6 +34,7 @@ bookmarks = {
 		"GER" = {
 			history = "GER_THENEWORDER_DESC"
 			ideology = national_socialism
+			version = base_game
 			ideas = {
 				to_banish_want
 				the_two_principles

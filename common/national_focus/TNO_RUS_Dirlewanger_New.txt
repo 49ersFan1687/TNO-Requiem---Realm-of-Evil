@@ -1290,7 +1290,7 @@ shared_focus = {
 		set_temp_variable = { pus_temp = 1 }
 		econ_pus_change = yes
 		army_funding_minimal_increase_low = yes
-		tno_research_facilities_improve = yes
+		tno_improve_research_facilities = yes
 		TNO_worsen_conscription_policy_effectiveness_med = yes
 		TNO_improve_training_policy_effectiveness_monthly_low = yes
 		set_temp_variable = { temp_econ_spending_amount = 0.1 }
@@ -2297,7 +2297,7 @@ shared_focus = {
 		econ_inflation_change = yes
 		set_temp_variable = { Y = 0.90 }
         RUS_Smuta_Smuta_CoringCost_MultiplyBy_Y = yes
-		tno_healthcare_improve = yes
+		tno_improve_healthcare = yes
 		set_temp_variable = { temp_econ_spending_amount = 0.084 }
 		econ_spend_money_once_effect_raw_money = yes
 	}
@@ -2335,7 +2335,7 @@ shared_focus = {
 		set_temp_variable = { Y = -50 }
 		RUS_Smuta_Chaos_Add_Y = yes
 		RUS_integration_cost_days_decrease = yes
-		tno_research_facilities_improve = yes
+		tno_improve_research_facilities = yes
 		remove_ideas = { DRL_partisans_smuta_weak }
 	}
 }
@@ -2367,7 +2367,7 @@ shared_focus = {
 		DRL_end_smuta_cleanup = yes
 		set_temp_variable = { inflation_temp = -1 }
 		econ_inflation_change = yes
-		TNO_training_improve = yes
+		tno_training_improve = yes
 		clr_country_flag = war_taxes_enabled
 		add_political_power = 50
 		tno_slavery_improve = yes
