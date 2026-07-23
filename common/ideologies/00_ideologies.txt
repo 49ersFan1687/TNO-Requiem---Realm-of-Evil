@@ -1224,7 +1224,6 @@ ideologies = {
 			communist_trotskyism_subtype = { can_be_randomly_selected = no }
 			communist_securocratism_subtype = { can_be_randomly_selected = no }  #Removed in ODF
 			communist_guevarism_subtype = { can_be_randomly_selected = no } #Added in ODF
-			communist_peoples_democracy_subtype = { can_be_randomly_selected = no } #Added in ODF
 			communist_harmonism_subtype = { can_be_randomly_selected = no } # The funny
 		}
 		dynamic_faction_names = {}
