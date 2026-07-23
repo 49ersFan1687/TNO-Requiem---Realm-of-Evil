@@ -220,7 +220,6 @@ RUS_reunification_category = {
 			date > 1969.1.1
 			is_subject = no
 			has_war = no
-			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
 		}
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }

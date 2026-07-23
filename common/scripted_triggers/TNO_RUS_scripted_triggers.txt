@@ -62,17 +62,6 @@ DRL_is_only_smuta_contender = {
 	exists = yes
 	has_country_flag = DRL_ready_for_smuta
 	has_country_flag = RUS_Smuta_Enabled
-	NOT = { country_exists = WRS }
-	NOT = { country_exists = KOM }
-	NOT = { country_exists = SAM }
-	NOT = { country_exists = GOR }
-	NOT = { country_exists = VOL }
-	NOT = { country_exists = VYT }
-	NOT = { country_exists = TAR }
-	NOT = { country_exists = PRM }
-	NOT = { country_exists = BKR }
-	NOT = { country_exists = GAY }
-	NOT = { country_exists = BZI }
 }
 
 is_west_siberian_nation = {
