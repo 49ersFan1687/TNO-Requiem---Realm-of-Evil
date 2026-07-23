@@ -130,7 +130,7 @@ guiTypes = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_blank"
 			position = { x = -2500 y = -2500 }
-			scale=0.01
+			hide = yes
 		}
 
 		iconType = {
@@ -148,19 +148,20 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 
+		iconType = {
+			name = "new_content"
+			position = { x = 110 y = 180 }
+			spriteType = "GFX_blank"
+			alwaystransparent = yes
+			hide = yes
+		}
+
 		iconType ={
 			name ="country_frame"
 			spriteType = "GFX_large_flag_frame_menu"
 			position = { x = 22 y = 20 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-		}
-		
-		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_country_selection_entry_shine"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
 		}
 
 		instantTextBoxType = {
@@ -179,6 +180,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "country_entry_medium"
 
+
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
@@ -193,12 +195,13 @@ guiTypes = {
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
-		
-		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_minor_country_selector_shine"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
+
+		iconType = {
+			name = "new_content"
+			position = { x = 100 y = 15 }
+			spriteType = "GFX_blank"
+			alwaystransparent = yes
+			hide = yes
 		}
 	}
 
@@ -213,22 +216,38 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
-
+		
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_mini_country_selector"
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
-		
-		buttonType = {
-			name = "country_shine"
-			quadTextureSprite = "GFX_mini_country_selector_shine"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
+
+		iconType = {
+			name = "new_content"
+			position = { x = 42 y = 0 }
+			spriteType = "GFX_blank"
+			alwaystransparent = yes
+			hide = yes
 		}
 	}
 
+	### country filter
+	containerWindowType = {
+		name = "country_filter"
+		size = { width = 149 height = 33 }
+
+		buttonType = {
+			name = "button"
+			quadTextureSprite = "GFX_blank"
+			buttonText = "FILTER"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+			hide = yes
+		}
+	}
 
 	### LOAD GAME
 	containerWindowType = {
@@ -248,12 +267,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		#iconType = {
-		#	name ="menu_bottom"
-		#	spriteType = "GFX_load_save_bottom_screen"
-		#	position = { x= 0 y = 446 }
-		#	Orientation = "UPPER_LEFT"
-		#}
+		iconType = {
+			name ="menu_bottom"
+			spriteType = "GFX_load_save_bottom_screen"
+			position = { x= 0 y = 446 }
+			Orientation = "UPPER_LEFT"
+			hide = yes
+		}
 
 		instantTextBoxType = {
 			name = "saves_dirs"
@@ -662,6 +682,15 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
+
+		OverlappingElementsBoxType = { # bro what
+			name = "filters"
+			position = { x = 22 y = 321 }
+			size = { x = 1181 y = 32 }
+			format = center
+			spacing = 14.0
+			hide = yes
+		}
 		
 		#Minor countries section
 		containerWindowType = {
@@ -974,7 +1003,6 @@ guiTypes = {
 				position = { x = 7 y = 55 }
 				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
-				text = ""
 				maxWidth = 340
 				format = left
 			}
@@ -1167,6 +1195,35 @@ guiTypes = {
 			maxHeight = 210
 			format = left
 			scrollbarType = standardtext_slider
+		}
+
+		dropDownBoxType = {
+			name = "more_countries"
+			position = { x = 10 y = 412 }
+
+			expandButton = {
+				name = "expand_button"
+				position = { x = 1168 y = -4 }
+				quadTextureSprite = "GFX_blank"
+				clicksound = click_default
+				alwaystransparent = yes
+				hide = yes
+			}
+
+			expandedWindow = {
+				name = "expanded_window"
+
+				gridBoxType = {
+					name = "countries_mini_expanded"
+					position = { x = 8 y = 0 }
+					size = { width = 199 height = 100%% }
+					slotsize = { width = 52 height = 38 }
+					add_horizontal = yes
+					max_slots_horizontal = 22
+					format = "UPPER_LEFT"
+					hide = yes
+				}
+			}
 		}
 	}
 
