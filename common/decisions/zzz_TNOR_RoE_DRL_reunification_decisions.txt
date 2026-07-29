@@ -210,35 +210,77 @@ RUS_reunification_category = {
 			has_country_flag = RUS_regional_stage
 			NOT = { has_country_flag = RUS_superregional_stage }
 			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
-			can_form_west_siberia = no
-			any_country = {
-				NOT = { tag = ROOT }
-				is_west_siberian_nation = yes
+			NOT = {
+				has_country_flag = WSR_war_decisions
 			}
+			can_form_west_siberia = no
 		}
 		available = {
 			date > 1969.1.1
 			is_subject = no
 			has_war = no
+			NOT = {
+				has_country_flag = WSR_peace_decisions
+			}
+			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = WSR_WSB_war_or_peace option = WSR_WSB_WAR_OR_PEACE_PEACE }
+				WSR_WSB_is_compatible = yes
+				NOT = {
+					has_country_flag = RUS_fucked_up_horribly_war_time
+				}
+			}
 		}
 		fire_only_once = yes
-		ai_will_do = { factor = 100 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_west_siberia"
 			set_country_flag = DRL_west_siberia_war_decisions
-			country_event = { id = russia_unification.1 days = 1 }
+			set_country_flag = WSR_war_decisions
+			country_event = {
+				id = russia_unification.1
+				days = 1
+			}
+			WSB = {
+				country_event = {
+					id = russia_unification.0
+					days = 7
+				}
+			}
 			hidden_effect = {
 				every_country = {
 					limit = {
-						NOT = { tag = ROOT }
+
 						is_west_siberian_nation = yes
 					}
-					ROOT = {
-						declare_war_on = {
-							target = PREV
-							type = annex_everything
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = WSR
+						value = 200
+					}
+					WSR = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = PREV
+							value = 200
 						}
 					}
+				}
+			}
+			set_variable = { RUSWarPreparedness = 0 }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = RUSSIA_UNIFICATION_OUTCOME
+						option = RUSSIA_UNIFICATION_OUTCOME_WSR
+					}
+				}
+				country_event = {
+					id = russia_unification.200
+					days = 365
 				}
 			}
 		}
@@ -414,18 +456,16 @@ RUS_reunification_category = {
 		}
 		visible = {
 			has_country_flag = RUS_superregional_stage
-			NOT = { has_global_flag = RUS_national_unification }
+			NOT = {
+				has_global_flag = RUS_national_unification
+			}
 			NOT = { has_country_flag = DRL_siberia_war_decisions }
+			NOT = {
+				has_country_flag = RWS_war_decisions
+			}
 			OR = {
 				can_form_central_siberia = no
 				can_form_far_east = no
-			}
-			any_country = {
-				NOT = { tag = ROOT }
-				OR = {
-					is_central_siberian_nation = yes
-					is_far_eastern_nation = yes
-				}
 			}
 		}
 		available = {
@@ -434,27 +474,77 @@ RUS_reunification_category = {
 			has_war = no
 			NOT = { has_country_flag = DRL_siberia_war_decisions }
 		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				AND = {
+					OR = {
+						has_game_rule = {
+							rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
+							option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_RWS
+						}
+						has_game_rule = {
+							rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
+							option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_SIB
+						}
+					}
+					RWS_SIB_is_compatible = yes
+					NOT = {
+						has_country_flag = RUS_fucked_up_horribly_war_time_superregional
+					}
+				}
+			}
+		}
 		fire_only_once = yes
-		ai_will_do = { factor = 100 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_siberia"
 			set_country_flag = DRL_siberia_war_decisions
-			country_event = { id = russia_unification.17 days = 1 }
+			set_country_flag = RWS_war_decisions
+			country_event = {
+				id = russia_unification.19
+				days = 1
+			}
+			SIB = {
+				country_event = {
+					id = russia_unification.0
+					days = 1
+				}
+			}
 			hidden_effect = {
 				every_country = {
 					limit = {
-						NOT = { tag = ROOT }
+
 						OR = {
 							is_central_siberian_nation = yes
 							is_far_eastern_nation = yes
 						}
 					}
-					ROOT = {
-						declare_war_on = {
-							target = PREV
-							type = annex_everything
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = RWS
+						value = 200
+					}
+					RWS = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = PREV
+							value = 200
 						}
 					}
+				}
+			}
+			set_variable = { RUSWarPreparedness = 0 }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = RUSSIA_TOTAL_UNIFICATION_OUTCOME
+						option = RUSSIA_TOTAL_UNIFICATION_OUTCOME_RWS
+					}
+				}
+				country_event = {
+					id = russia_unification.200
+					days = 365
 				}
 			}
 		}
