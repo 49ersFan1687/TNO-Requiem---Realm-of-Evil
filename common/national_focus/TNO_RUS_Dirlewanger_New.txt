@@ -2762,7 +2762,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_money_must_flow
-	#icon
+	icon = GFX_focus_DRL_money_Must_Flow
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2781,7 +2781,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_golden_gease_in_our_hand
-	#icon
+	icon = GFX_focus_DRL_the_golden_geese_in_our_hands
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2803,7 +2803,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_reopen_the_factories
-	#icon
+	icon = GFX_focus_DRL_Re-Open_the_factories
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2825,7 +2825,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_lessons_of_economy
-	#icon
+	icon = GFX_focus_DRL_a_lesson_of_economy
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2847,7 +2847,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_forces_of_servitude
-	#icon
+	icon = GFX_focus_DRL_the_force_to_servitude
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2869,7 +2869,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_meeting_with_corporations
-	#icon
+	icon = GFX_focus_DRL_a_meeting_with_corporations
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2891,7 +2891,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_its_masses
-	#icon
+	icon = GFX_focus_DRL_and_its_masses
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2913,7 +2913,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_letting_the_corporations_do
-	#icon
+	icon = GFX_focus_DRL_letting_the_corporations_do
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2938,7 +2938,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_build_our_very_own_assets
-	#icon
+	icon = GFX_focus_DRL_build_our_very_own_assets
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2963,7 +2963,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_as_long_as_the_money_flows
-	#icon
+	icon = GFX_focus_DRL_as_long_as_the_money_flows
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2988,7 +2988,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_to_every_hand_a_hammer
-	#icon
+	icon = GFX_focus_DRL_to_every_hand_a_hammer
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3010,7 +3010,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_tresures_that_lie_bellow
-	#icon
+	icon = GFX_focus_DRL_the_Tresures_that_lie_bellow
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3035,7 +3035,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_work_to_its_greatest_efficiency
-	#icon
+	icon = GFX_focus_DRL_work_to_its_greates_efficency
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3057,7 +3057,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_and_gold_will_rain
-	#icon
+	icon = GFX_focus_DRL_and_gold_will_rain
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3080,7 +3080,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_even_if_nature_shall_bleed
-	#icon
+	icon = GFX_focus_DRL_Our_Methods_of_Mineral_Extractions
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3102,7 +3102,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_just_to_make_sure
-	#icon
+	icon = GFX_focus_DRL_just_to_make_sure
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -3127,7 +3127,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_brigade_once_army_now
-        #icon
+        icon = GFX_focus_DRL_a_brigade_once_an_army_now
 		cost = 4
 		x = 45
 		y = 1
@@ -3146,7 +3146,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_a_little_reshaping
-        #icon
+        icon = GFX_focus_DRL_a_litle_reshaping
 		cost = 4
 		x = 45
         y = 2
@@ -3166,7 +3166,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_turn_to_the_russian_soldiers
-        #icon
+        icon = GFX_focus_DRL_Turn_to_the_Russian_Soldiers
         x = 47
         y = 3
         cost = 4
@@ -3187,7 +3187,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_keeping_things_as_they_are
-        #icon
+        icon = GFX_focus_DRL_keeping_things_as_they_are
         x = 43
         y = 3
         cost = 4
@@ -3208,7 +3208,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_comes_new_training
-        #icon
+        icon = GFX_focus_DRL_comes_New_Training
         x = 45
         y = 5
         cost = 4
@@ -3228,7 +3228,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_with_new_warfare
-        #icon
+        icon = GFX_focus_DRL_with_new_warfare
         x = 45
         y = 4
         cost = 4
@@ -3248,7 +3248,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_learning_to_fly
-        #icon
+        icon = GFX_focus_DRL_learning_to_Fly
         x = 50
         y = 3
         cost = 4
@@ -3268,7 +3268,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_the_seas_at_our_mercy
-        #icon
+        icon = GFX_focus_DRL_the_seas_at_our_mercy
         x = 40
         y = 3
         cost = 4
@@ -3288,7 +3288,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_finding_boats
-        #icon
+        icon = GFX_focus_DRL_finding_boats
         x = 41
         y = 4
         cost = 4
@@ -3308,7 +3308,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_waging_war_above
-        #icon
+        icon = GFX_focus_DRL_Waging_War_Above
         x = 49
         y = 4
         cost = 4
@@ -3328,7 +3328,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_how_does_a_boat_work
-        #icon
+        icon = GFX_focus_DRL_how_does_a_boat_work
         x = 42
         y = 5
         cost = 4
@@ -3348,7 +3348,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_new_army_new_man
-        #icon
+        icon = GFX_focus_DRL_New_Army_New_Man
         x = 48
         y = 5
         cost = 4
@@ -3368,7 +3368,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_through_steel_and_flesh
-        #icon
+        icon = GFX_focus_DRL_Through_Steel_and_Flesh
         x = 44
         y = 6
 		cost = 4
@@ -3390,7 +3390,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_a_new_kind_of_war
-        #icon
+        icon = GFX_focus_DRL_a_new_kind_of_war
         x = 46
         y = 6
         cost = 4
@@ -3412,7 +3412,7 @@ shared_focus = {
 
 shared_focus = {
         id = DRL_my_profession_bandit
-        #icon
+        icon = GFX_focus_DRL_my_profession_bandit
         x = 45
         y = 7
         cost = 4
