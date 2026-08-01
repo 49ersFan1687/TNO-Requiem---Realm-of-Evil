@@ -208,4 +208,128 @@ spriteTypes = {
 		name = "GFX_focus_DRL_triumph_of_the_dark_will"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_triumph_of_the_dark_will.dds"
 	}	
+	spriteType = {
+		name = "GFX_focus_DRL_a_brigade_once_an_army_now"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_brigade_once_an_army_now.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_a_lesson_of_economy"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_lesson_of_economy.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_a_litle_reshaping"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_litle_reshaping.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_a_meeting_with_corporations"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_meeting_with_corporations.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_a_new_kind_of_war"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_new_kind_of_war.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_and_gold_will_rain"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_gold_will_rain.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_and_its_masses"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_and_its_masses.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_as_long_as_the_money_flows"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_as_long_as_the_money_flows.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_build_our_very_own_assets"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_build_our_very_own_assets.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_comes_New_Training"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_comes_New_Training.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_finding_boats"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_finding_boats.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_how_does_a_boat_work"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_how_does_a_boat_work.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_just_to_make_sure"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_just_to_make_sure.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_keeping_things_as_they_are"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_keeping_things_as_they_are.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_learning_to_Fly"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_learning_to_Fly.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_letting_the_corporations_do"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_letting_the_corporations_do.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_money_Must_Flow"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_money_Must_Flow.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_my_profession_bandit"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_my_profession_bandit.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_New_Army_New_Man"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_New_Army_New_Man.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_Our_Methods_of_Mineral_Extractions"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_Our_Methods_of_Mineral_Extractions.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_Re-Open_the_factories"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_Re-Open_the_factories.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_force_to_servitude"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_force_to_servitude.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_golden_geese_in_our_hands"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_golden_geese_in_our_hands.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_seas_at_our_mercy"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_seas_at_our_mercy.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_Tresures_that_lie_bellow"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_Tresures_that_lie_bellow.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_Through_Steel_and_Flesh"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_Through_Steel_and_Flesh.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_Turn_to_the_Russian_Soldiers"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_Turn_to_the_Russian_Soldiers.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_Waging_War_Above"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_Waging_War_Above.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_with_new_warfare"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_with_new_warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_to_every_hand_a_hammer"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_to_every_hand_a_hammer.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_work_to_its_greates_efficency"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_work_to_its_greates_efficency.dds"
+	}
 }
