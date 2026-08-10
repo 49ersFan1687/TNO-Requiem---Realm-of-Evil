@@ -209,6 +209,70 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_triumph_of_the_dark_will.dds"
 	}	
 	spriteType = {
+		name = "GFX_focus_DRL_the_brigade_rebranding"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_brigade_rebranding.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_a_conquest_to_remember"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_conquest_to_remember.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_a_great_brewing"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_great_brewing.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_the_best_healthcare_there_is"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_best_healthcare_there_is.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_from_behind_the_curtains"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_from_behind_the_curtains.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_puppeteers"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_puppeteers.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_our_puppet_dirlewanger"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_puppet_dirlewanger.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_into_control"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_into_control.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_ss_staats_new_face"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_ss_staats_new_face.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_make_him_number_1"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_make_him_number_1.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_all_under_control"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_all_under_control.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_DRL_give_him_the_best"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_give_him_the_best.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_seize_critical_positions"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_seize_critical_positions.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_treat_him_the_best"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_treat_him_the_best.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_our_leader_endures"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_our_leader_endures.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_DRL_the_ss_staat_endures"
+		texturefile = "gfx/interface/goals/DRL/focus_DRL_the_ss_staat_endures.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_DRL_a_brigade_once_an_army_now"
 		texturefile = "gfx/interface/goals/DRL/focus_DRL_a_brigade_once_an_army_now.dds"
 	}	

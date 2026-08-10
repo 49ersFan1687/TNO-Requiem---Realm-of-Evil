@@ -2384,7 +2384,7 @@ shared_focus = {
 ### Regional Tree ###
 shared_focus = {
 	id = DRL_the_brigades_rebranding
-	#icon
+	icon = GFX_focus_DRL_the_brigade_rebranding
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2403,7 +2403,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_a_conquest_to_remember
-	#icon =
+	icon = GFX_focus_DRL_a_conquest_to_remember
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2425,7 +2425,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_a_great_brewing
-	#icon =
+	icon = GFX_focus_DRL_a_great_brewing
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2447,7 +2447,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_puppeteers
-	#icon =
+	icon = GFX_focus_DRL_the_puppeteers
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2469,7 +2469,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_our_puppet_dirlewanger
-	#icon =
+	icon = GFX_focus_DRL_our_puppet_dirlewanger
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2491,7 +2491,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_from_behind_the_curtains
-	#icon =
+	icon = GFX_focus_DRL_from_behind_the_curtains
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2513,7 +2513,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_into_control
-	#icon =
+	icon = GFX_focus_DRL_into_control
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2542,7 +2542,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_ss_staats_new_face
-	#icon =
+	icon = GFX_focus_DRL_the_ss_staats_new_face
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2571,7 +2571,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_make_him_number_one
-	#icon =
+	icon = GFX_focus_DRL_make_him_number_1
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2600,7 +2600,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_best_healthcare_there_is
-	#icon =
+	icon = GFX_focus_DRL_the_best_healthcare_there_is
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2622,7 +2622,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_all_under_control
-	#icon =
+	icon = GFX_focus_DRL_all_under_control
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2646,7 +2646,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_give_him_the_best
-	#icon =
+	icon = GFX_focus_DRL_give_him_the_best
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2668,7 +2668,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_sieze_critical_positions
-	#icon =
+	icon = GFX_focus_DRL_seize_critical_positions
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2690,7 +2690,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_treat_him_the_best
-	#icon =
+	icon = GFX_focus_DRL_treat_him_the_best
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2712,7 +2712,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_our_leader_endures
-	#icon =
+	icon = GFX_focus_DRL_our_leader_endures
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
@@ -2740,7 +2740,7 @@ shared_focus = {
 
 shared_focus = {
 	id = DRL_the_ss_staat_endures
-	#icon =
+	icon = GFX_focus_DRL_the_ss_staat_endures
 	cost = 4
 	available_if_capitulated = no
 	cancelable = yes
