@@ -1,0 +1,164 @@
+add_namespace = DRL_regional
+
+# So I Have Conquered - "I Came, I Saw, I Conquered"
+country_event = { 
+	id = DRL_regional.1 
+	title = DRL_regional.1.t 
+	desc = DRL_regional.1.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		name = DRL_regional.1.a 
+	} 
+}
+
+# Thus I Shall Rule - "The Truth of Conquest"
+country_event = { 
+	id = DRL_regional.2 
+	title = DRL_regional.2.t 
+	desc = DRL_regional.2.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		name = DRL_regional.2.a 
+	} 
+}
+
+# A Madman's Kingdom - "Pen and Paper"
+country_event = {
+	id = DRL_regional.3 
+	title = DRL_regional.3.t 
+	desc = DRL_regional.3.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		name = DRL_regional.3.a
+	} 
+}
+
+# Politics of the Bandits? - "Time and Order"
+country_event = { 
+	id = DRL_regional.4 
+	title = DRL_regional.4.t 
+	desc = DRL_regional.4.desc 
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = {
+		name = DRL_regional.4.a
+	}
+}
+
+# A Question Beyond Our Reach - "A Dawnless Struggle"
+country_event = { 
+	id = DRL_regional.5 
+	title = DRL_regional.5.t 
+	desc = DRL_regional.5.desc 
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { 
+		name = DRL_regional.5.a
+	}
+}
+
+# An Offer We Can't Refuse - "A Favourable Turn of Events"
+country_event = { 
+	id = DRL_regional.6 
+	title = DRL_regional.6.t 
+	desc = DRL_regional.6.desc
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		ame = DRL_regional.6.a
+	} 
+}
+
+# A People For Servitude - "A Life of Slavery?"
+country_event = {
+	id = DRL_regional.7
+	title = DRL_regional.7.t
+	desc = DRL_regional.7.desc
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { 
+		name = DRL_regional.7.a 
+		set_country_flag = DRL_people_status_servitude
+	}
+	option = { 
+		name = DRL_regional.7.b 
+		set_country_flag = DRL_people_status_subjects 
+	}
+	option = {
+		name = DRL_regional.7.c 
+		set_country_flag = DRL_people_status_protected
+	}
+}
+
+# Down to the Core - "A Toast to Old Friends"
+country_event = {
+	id = DRL_regional.8
+	title = DRL_regional.8.t
+	desc = DRL_regional.8.desc
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { 
+		name = DRL_regional.8.a
+	}
+}
+
+# To Our Soldiers - "A Tour in the Barracks"
+country_event = { 
+	id = DRL_regional.9 
+	title = DRL_regional.9.t 
+	desc = DRL_regional.9.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = {
+		name = DRL_regional.9.a
+	} 
+}
+
+# Our New Friends - "Acquaintances of Fortune"
+country_event = { 
+	id = DRL_regional.10 
+	title = DRL_regional.10.t 
+	desc = DRL_regional.10.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		name = DRL_regional.10.a 
+	}
+}
+
+# Foreign Army, Russian Hands - "For Whom We Fight"
+country_event = { 
+	id = DRL_regional.11 
+	title = DRL_regional.11.t 
+	desc = DRL_regional.11.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = { 
+		name = DRL_regional.11.a
+	} 
+}
+
+# The Tip In Balance - "The Difficult Road"
+country_event = { 
+	id = DRL_regional.12 
+	title = DRL_regional.12.t 
+	desc = DRL_regional.12.desc 
+	picture = GFX_report_event_DRL_dirlewanger 
+	is_triggered_only = yes 
+	option = {
+		name = DRL_regional.12.a
+	} 
+}
+
+# To Our Image - "A Morning Walk"
+country_event = {
+	id = DRL_regional.13
+	title = DRL_regional.13.t
+	desc = DRL_regional.13.desc
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { name = DRL_regional.13.a }
+}

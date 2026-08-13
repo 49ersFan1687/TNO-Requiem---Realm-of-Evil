@@ -1,5 +1,16 @@
 ideas = {
 	country = {
+		DRL_unwilling_land = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_strikes
+			modifier = {
+				stability_factor = -0.25
+				recruitable_population_factor = -0.50
+			}
+		}
+
 		DRL_cornered_dog = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DRL_cornered_dog" }
 			allowed = {

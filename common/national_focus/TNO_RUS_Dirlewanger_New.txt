@@ -2397,7 +2397,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-
+		country_event = { id = DRL_regional.1 hours = 6 }
 	}
 }
 
@@ -2419,7 +2419,9 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		add_ideas = DRL_unwilling_land
+		set_country_flag = DRL_political_power_struggle_active
+		country_event = { id = DRL_regional.2 hours = 6 }
 	}
 }
 
@@ -2441,7 +2443,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_administration_established
+		country_event = { id = DRL_regional.3 hours = 6 }
 	}
 }
 
@@ -2463,7 +2466,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_german_influence_decisions_unlocked
+		country_event = { id = DRL_regional.8 hours = 6 }
 	}
 }
 
@@ -2485,7 +2489,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_russian_influence_decisions_unlocked
+		country_event = { id = DRL_regional.9 hours = 6 }
 	}
 }
 
@@ -2507,7 +2512,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		country_event = { id = DRL_regional.4 hours = 6 }
 	}
 }
 
@@ -2536,7 +2541,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_ss_influence_decisions_unlocked
 	}
 }
 
@@ -2565,7 +2570,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_corporate_influence_decisions_unlocked
+		country_event = { id = DRL_regional.10 hours = 6 }
 	}
 }
 
@@ -2594,7 +2600,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_russian_soldiers_organised
+		country_event = { id = DRL_regional.11 hours = 6 }
 	}
 }
 
@@ -2616,7 +2623,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_administrative_decisions_unlocked
 	}
 }
 
@@ -2640,7 +2647,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		country_event = { id = DRL_regional.12 hours = 6 }
 	}
 }
 
@@ -2662,7 +2669,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		country_event = { id = DRL_regional.5 hours = 6 }
 	}
 }
 
@@ -2684,7 +2691,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		country_event = { id = DRL_regional.7 hours = 6 }
 	}
 }
 
@@ -2706,7 +2713,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		country_event = { id = DRL_regional.6 hours = 6 }
 	}
 }
 
@@ -2734,7 +2741,7 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_administration_improved
 	}
 }
 
@@ -2756,7 +2763,8 @@ shared_focus = {
 		NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
 	}
 	completion_reward = {
-		
+		set_country_flag = DRL_administration_reshaped
+		country_event = { id = DRL_regional.13 hours = 6 }
 	}
 }
 
