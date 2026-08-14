@@ -1,0 +1,30 @@
+add_namespace = DRL_insurgency
+
+# Operation completions are deliberately separate events so the GUI locks globally for 30 days.
+country_event = { id = DRL_insurgency.2 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.3 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.4 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.5 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.6 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.7 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.8 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.9 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.12 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+
+country_event = {
+	id = DRL_insurgency.10
+	title = DRL_insurgency.10.t
+	desc = DRL_insurgency.10.desc
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { name = DRL_insurgency.10.a set_country_flag = DRL_national_insurgency_ended }
+}
+
+country_event = {
+	id = DRL_insurgency.11
+	title = DRL_insurgency.11.t
+	desc = DRL_insurgency.11.desc
+	picture = GFX_report_event_DRL_dirlewanger
+	is_triggered_only = yes
+	option = { name = DRL_insurgency.11.a set_country_flag = DRL_national_insurgency_ended set_country_flag = DRL_national_insurgency_collapse }
+}

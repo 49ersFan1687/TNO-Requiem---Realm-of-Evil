@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = { name = "GFX_DRL_insurgency_base" texturefile = "gfx/interface/DRL_insurgency_gui/West_Russia_BASE.dds" }
+	spriteType = { name = "GFX_DRL_insurgency_arkhangelsk" texturefile = "gfx/interface/DRL_insurgency_gui/Arkhangelsk.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_bashkiria" texturefile = "gfx/interface/DRL_insurgency_gui/Bashkiria.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_kazan" texturefile = "gfx/interface/DRL_insurgency_gui/Kazan.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_komi" texturefile = "gfx/interface/DRL_insurgency_gui/Komi.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_orsk" texturefile = "gfx/interface/DRL_insurgency_gui/Orsk.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_perm" texturefile = "gfx/interface/DRL_insurgency_gui/Perm.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_samara" texturefile = "gfx/interface/DRL_insurgency_gui/Samara.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_vologda" texturefile = "gfx/interface/DRL_insurgency_gui/Vologda.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_vyatka" texturefile = "gfx/interface/DRL_insurgency_gui/Vyatka.dds" transparencecheck = yes }
+}

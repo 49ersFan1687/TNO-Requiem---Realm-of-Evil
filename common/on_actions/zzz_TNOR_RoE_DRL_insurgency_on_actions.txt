@@ -1,0 +1,14 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { original_tag = DRL has_country_flag = DRL_national_insurgency_active NOT = { has_country_flag = DRL_national_insurgency_ended } date > 1967.12.31 }
+				if = {
+					limit = { check_variable = { DRL_national_insurgency > 40 } }
+					country_event = { id = DRL_insurgency.11 }
+				}
+				else = { country_event = { id = DRL_insurgency.10 } }
+			}
+		}
+	}
+}

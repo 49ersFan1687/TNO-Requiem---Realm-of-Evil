@@ -2421,6 +2421,8 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = DRL_unwilling_land
 		set_country_flag = DRL_political_power_struggle_active
+		set_variable = { DRL_national_insurgency = 80 }
+		set_country_flag = DRL_national_insurgency_active
 		country_event = { id = DRL_regional.2 hours = 6 }
 	}
 }
