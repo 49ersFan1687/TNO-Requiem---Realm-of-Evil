@@ -2422,6 +2422,8 @@ shared_focus = {
 		add_ideas = DRL_unwilling_land
 		set_country_flag = DRL_political_power_struggle_active
 		set_variable = { DRL_national_insurgency = 80 }
+		set_variable = { DRL_insurgency_operation_days_left = 0 }
+		set_variable = { DRL_last_monthly_insurgency_growth = 0 }
 		set_country_flag = DRL_national_insurgency_active
 		country_event = { id = DRL_regional.2 hours = 6 }
 	}

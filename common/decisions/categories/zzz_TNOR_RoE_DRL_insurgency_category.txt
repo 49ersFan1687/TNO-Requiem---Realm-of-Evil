@@ -1,10 +1,9 @@
 DRL_national_insurgency_category = {
 	icon = GFX_decision_generic_prepare_civil_war
-	visible_when_empty = yes
+	visible_when_empty = no
 	allowed = { original_tag = DRL }
 	visible = {
 		has_country_flag = DRL_national_insurgency_active
 		NOT = { has_country_flag = DRL_national_insurgency_ended }
 	}
-	scripted_gui = DRL_national_insurgency_gui
 }

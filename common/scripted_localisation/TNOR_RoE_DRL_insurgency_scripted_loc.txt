@@ -1,0 +1,21 @@
+defined_text = {
+	name = GetDRLInsurgencyBar
+
+	text = { trigger = { check_variable = { DRL_national_insurgency > 79 } } localization_key = DRL_INSURGENCY_BAR_80 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 74 } } localization_key = DRL_INSURGENCY_BAR_75 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 69 } } localization_key = DRL_INSURGENCY_BAR_70 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 64 } } localization_key = DRL_INSURGENCY_BAR_65 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 59 } } localization_key = DRL_INSURGENCY_BAR_60 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 54 } } localization_key = DRL_INSURGENCY_BAR_55 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 49 } } localization_key = DRL_INSURGENCY_BAR_50 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 44 } } localization_key = DRL_INSURGENCY_BAR_45 }
+	text = { trigger = { check_variable = { DRL_national_insurgency > 39 } } localization_key = DRL_INSURGENCY_BAR_40 }
+	text = { localization_key = DRL_INSURGENCY_BAR_35 }
+}
+
+defined_text = {
+	name = GetDRLInsurgencyOperationStatus
+	text = { trigger = { has_country_flag = DRL_insurgency_operation_running } localization_key = DRL_INSURGENCY_STATUS_RUNNING }
+	text = { trigger = { DRL_can_begin_insurgency_operation = yes } localization_key = DRL_INSURGENCY_STATUS_READY }
+	text = { localization_key = DRL_INSURGENCY_STATUS_BLOCKED }
+}

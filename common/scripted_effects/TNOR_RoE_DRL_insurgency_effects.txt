@@ -1,0 +1,10 @@
+DRL_begin_insurgency_operation = {
+	add_political_power = -25
+	add_command_power = -5
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -250
+	}
+	set_variable = { DRL_insurgency_operation_days_left = 30 }
+	set_country_flag = DRL_insurgency_operation_running
+}

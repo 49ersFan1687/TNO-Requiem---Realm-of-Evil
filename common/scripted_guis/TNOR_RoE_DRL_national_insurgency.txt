@@ -1,36 +1,73 @@
 scripted_gui = {
+	DRL_national_insurgency_gui_opener = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "DRL_national_insurgency_gui_opener"
+
+		visible = {
+			original_tag = DRL
+		}
+
+		triggers = {
+			DRL_national_insurgency_open_button_visible = {
+				has_country_flag = DRL_national_insurgency_active
+				NOT = { has_country_flag = DRL_national_insurgency_ended }
+			}
+			gui_alert_visible = {
+				NOT = { has_country_flag = DRL_national_insurgency_gui_seen }
+				has_country_flag = DRL_national_insurgency_active
+				NOT = { has_country_flag = DRL_national_insurgency_ended }
+			}
+		}
+
+			effects = {
+			DRL_national_insurgency_open_button_click = {
+				if = {
+					limit = { has_country_flag = DRL_national_insurgency_gui_visible }
+					clr_country_flag = DRL_national_insurgency_gui_visible
+				}
+				else = { set_country_flag = DRL_national_insurgency_gui_visible }
+				set_country_flag = DRL_national_insurgency_gui_seen
+			}
+		}
+	}
+
 	DRL_national_insurgency_gui = {
-		context_type = decision_category
+		context_type = player_context
 		window_name = "DRL_national_insurgency_window"
 
 		visible = {
 			original_tag = DRL
 			has_country_flag = DRL_national_insurgency_active
+			has_country_flag = DRL_national_insurgency_gui_visible
 			NOT = { has_country_flag = DRL_national_insurgency_ended }
 		}
 
 		effects = {
-			DRL_operation_vyt_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_vyt_done country_event = { id = DRL_insurgency.2 days = 30 } }
-			DRL_operation_kom_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_kom_done country_event = { id = DRL_insurgency.3 days = 30 } }
-			DRL_operation_sam_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_sam_done country_event = { id = DRL_insurgency.4 days = 30 } }
-			DRL_operation_ong_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_ong_done country_event = { id = DRL_insurgency.5 days = 30 } }
-			DRL_operation_vol_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_vol_done country_event = { id = DRL_insurgency.6 days = 30 } }
-			DRL_operation_gay_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_gay_done country_event = { id = DRL_insurgency.7 days = 30 } }
-			DRL_operation_prm_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_prm_done country_event = { id = DRL_insurgency.8 days = 30 } }
-			DRL_operation_tar_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_tar_done country_event = { id = DRL_insurgency.9 days = 30 } }
-			DRL_operation_orsk_click = { set_country_flag = DRL_insurgency_operation_running set_country_flag = DRL_operation_orsk_done country_event = { id = DRL_insurgency.12 days = 30 } }
+			DRL_national_insurgency_close_click = { clr_country_flag = DRL_national_insurgency_gui_visible }
+			DRL_operation_vyt_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_vyt_done country_event = { id = DRL_insurgency.2 days = 30 } }
+			DRL_operation_nen_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_nen_done country_event = { id = DRL_insurgency.13 days = 30 } }
+			DRL_operation_kom_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_kom_done country_event = { id = DRL_insurgency.3 days = 30 } }
+			DRL_operation_sam_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_sam_done country_event = { id = DRL_insurgency.4 days = 30 } }
+			DRL_operation_ong_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_ong_done country_event = { id = DRL_insurgency.5 days = 30 } }
+			DRL_operation_vol_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_vol_done country_event = { id = DRL_insurgency.6 days = 30 } }
+			DRL_operation_gay_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_gay_done country_event = { id = DRL_insurgency.7 days = 30 } }
+			DRL_operation_prm_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_prm_done country_event = { id = DRL_insurgency.8 days = 30 } }
+			DRL_operation_tar_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_tar_done country_event = { id = DRL_insurgency.9 days = 30 } }
+			DRL_operation_orsk_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_orsk_done country_event = { id = DRL_insurgency.12 days = 30 } }
 		}
 
 		triggers = {
-			DRL_operation_vyt_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_vyt_done } date < 1968.1.1 }
-			DRL_operation_kom_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_kom_done } date < 1968.1.1 }
-			DRL_operation_sam_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_sam_done } date < 1968.1.1 }
-			DRL_operation_ong_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_ong_done } date < 1968.1.1 }
-			DRL_operation_vol_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_vol_done } date < 1968.1.1 }
-			DRL_operation_gay_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_gay_done } date < 1968.1.1 }
-			DRL_operation_prm_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_prm_done } date < 1968.1.1 }
-			DRL_operation_tar_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_tar_done } date < 1968.1.1 }
-			DRL_operation_orsk_click_enabled = { NOT = { has_country_flag = DRL_insurgency_operation_running } NOT = { has_country_flag = DRL_operation_orsk_done } date < 1968.1.1 }
+			DRL_operation_vyt_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_vyt_done } }
+			DRL_operation_nen_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_nen_done } }
+			DRL_operation_kom_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_kom_done } }
+			DRL_operation_sam_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_sam_done } }
+			DRL_operation_ong_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_ong_done } }
+			DRL_operation_vol_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_vol_done } }
+			DRL_operation_gay_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_gay_done } }
+			DRL_operation_prm_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_prm_done } }
+			DRL_operation_tar_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_tar_done } }
+			DRL_operation_orsk_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_orsk_done } }
 		}
 	}
 }

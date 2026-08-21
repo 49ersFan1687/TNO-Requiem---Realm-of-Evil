@@ -1,0 +1,7 @@
+DRL_can_begin_insurgency_operation = {
+	NOT = { has_country_flag = DRL_insurgency_operation_running }
+	date < 1968.1.1
+	has_political_power > 24.99
+	command_power > 4.99
+	has_equipment = { infantry_equipment > 249 }
+}

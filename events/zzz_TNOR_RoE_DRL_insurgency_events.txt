@@ -1,15 +1,16 @@
 add_namespace = DRL_insurgency
 
 # Operation completions are deliberately separate events so the GUI locks globally for 30 days.
-country_event = { id = DRL_insurgency.2 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.3 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.4 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.5 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.6 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.7 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.8 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.9 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
-country_event = { id = DRL_insurgency.12 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.2 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.3 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.4 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.5 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.6 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.7 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.8 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.9 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.12 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
+country_event = { id = DRL_insurgency.13 hidden = yes is_triggered_only = yes immediate = { subtract_from_variable = { DRL_national_insurgency = 5 } set_variable = { DRL_insurgency_operation_days_left = 0 } clr_country_flag = DRL_insurgency_operation_running } }
 
 country_event = {
 	id = DRL_insurgency.10

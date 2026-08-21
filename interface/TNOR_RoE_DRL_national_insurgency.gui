@@ -1,25 +1,119 @@
 guiTypes = {
 	containerWindowType = {
+		name = "DRL_national_insurgency_gui_opener"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+
+		buttonType = {
+			name = "DRL_national_insurgency_open_button"
+			quadTextureSprite = "GFX_DRL_insurgency_gui_opener_button"
+			position = { x = 275 y = 64 }
+			centerposition = yes
+			pdx_tooltip = "DRL_NATIONAL_INSURGENCY_OPEN_TT"
+		}
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x = 189 y = -16 }
+		}
+	}
+
+	containerWindowType = {
 		name = "DRL_national_insurgency_window"
-		position = { x = 8 y = 8 }
-		size = { width = 560 height = 705 }
+		position = { x = -1000 y = 77 }
+		show_position = { x = 538 y = 77 }
+		size = { width = 1160 height = 900 }
+		show_sound = "open_sub_window"
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 400
+		moveable = yes
 
-		instantTextboxType = { name = "DRL_insurgency_title" position = { x = 15 y = 8 } font = "hoi_24header" text = "DRL_NATIONAL_INSURGENCY_TITLE" maxWidth = 530 maxHeight = 32 fixedsize = yes format = centre }
-		instantTextboxType = { name = "DRL_insurgency_value" position = { x = 15 y = 48 } font = "hoi_22b" text = "DRL_NATIONAL_INSURGENCY_VALUE" maxWidth = 530 maxHeight = 30 fixedsize = yes format = centre }
-		instantTextboxType = { name = "DRL_insurgency_deadline" position = { x = 20 y = 82 } font = "hoi_18b" text = "DRL_NATIONAL_INSURGENCY_DEADLINE" maxWidth = 520 maxHeight = 55 fixedsize = yes format = centre }
-		instantTextboxType = { name = "DRL_insurgency_desc" position = { x = 25 y = 143 } font = "hoi_16mbs" text = "DRL_NATIONAL_INSURGENCY_DESC" maxWidth = 510 maxHeight = 105 fixedsize = yes }
-		instantTextboxType = { name = "DRL_insurgency_operations" position = { x = 15 y = 245 } font = "hoi_20b" text = "DRL_NATIONAL_INSURGENCY_OPERATIONS" maxWidth = 530 maxHeight = 28 fixedsize = yes format = centre }
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_1b_no_border"
+		}
 
-		iconType = { name = "DRL_insurgency_map_base" position = { x = 98 y = 270 } spriteType = "GFX_DRL_insurgency_base" }
-		buttonType = { name = "DRL_operation_ong" position = { x = 98 y = 324 } spriteType = "GFX_DRL_insurgency_arkhangelsk" pdx_tooltip = "DRL_OPERATION_ONG" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_kom" position = { x = 204 y = 270 } spriteType = "GFX_DRL_insurgency_komi" pdx_tooltip = "DRL_OPERATION_KOM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_prm" position = { x = 282 y = 384 } spriteType = "GFX_DRL_insurgency_perm" pdx_tooltip = "DRL_OPERATION_PRM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_vyt" position = { x = 207 y = 401 } spriteType = "GFX_DRL_insurgency_vyatka" pdx_tooltip = "DRL_OPERATION_VYT" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_vol" position = { x = 136 y = 451 } spriteType = "GFX_DRL_insurgency_vologda" pdx_tooltip = "DRL_OPERATION_VOL" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_tar" position = { x = 251 y = 480 } spriteType = "GFX_DRL_insurgency_syzran" pdx_tooltip = "DRL_OPERATION_TAR" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_gay" position = { x = 370 y = 517 } spriteType = "GFX_DRL_insurgency_bashkiria" pdx_tooltip = "DRL_OPERATION_GAY" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_sam" position = { x = 217 y = 528 } spriteType = "GFX_DRL_insurgency_samara" pdx_tooltip = "DRL_OPERATION_SAM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_orsk" position = { x = 371 y = 562 } spriteType = "GFX_DRL_insurgency_orsk" pdx_tooltip = "DRL_OPERATION_ORSK" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		instantTextboxType = { name = "DRL_insurgency_footer" position = { x = 25 y = 640 } font = "hoi_16mbs" text = "DRL_NATIONAL_INSURGENCY_FOOTER" maxWidth = 510 maxHeight = 55 fixedsize = yes format = centre }
+		instantTextboxType = {
+			name = "DRL_insurgency_title"
+			position = { x = 15 y = -6 }
+			font = "vt323_72_WT_outline"
+			text = "DRL_NATIONAL_INSURGENCY_TITLE"
+			maxWidth = 1060
+			maxHeight = 58
+			fixedsize = yes
+			format = centre
+		}
+
+		iconType = {
+			name = "DRL_insurgency_info"
+			spriteType = "GFX_ParliamentMechanic_InfoButton"
+			position = { x = -123 y = 23 }
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "DRL_NATIONAL_INSURGENCY_INFO_TT"
+		}
+		buttonType = {
+			name = "DRL_national_insurgency_close"
+			position = { x = -70 y = 22 }
+			quadTextureSprite = "GFX_Kartenhaus_CloseButton"
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			orientation = UPPER_RIGHT
+		}
+
+		# DRL insurgency status strip.
+		containerWindowType = {
+			name = "DRL_insurgency_top_bar"
+			size = { width = 482 height = 82 }
+			position = { x = 13 y = 77 }
+			background = { name = "DRL_insurgency_top_bar_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "DRL_insurgency_value" position = { x = 0 y = 8 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_VALUE" maxWidth = 482 maxHeight = 26 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_bar" position = { x = 45 y = 42 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_BAR" maxWidth = 392 maxHeight = 28 fixedsize = yes format = centre }
+		}
+
+		# Left-hand operational map.
+		containerWindowType = {
+			name = "DRL_insurgency_map"
+			size = { width = 462 height = 452 }
+			position = { x = 23 y = 180 }
+			iconType = { name = "DRL_insurgency_map_base" position = { x = 0 y = 0 } spriteType = "GFX_DRL_insurgency_base" }
+			buttonType = { name = "DRL_operation_ong" position = { x = 3 y = 27 } spriteType = "GFX_DRL_insurgency_arkhangelsk" pdx_tooltip = "DRL_OPERATION_ONG" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_nen" position = { x = 180 y = 2 } spriteType = "GFX_DRL_insurgency_nenets" pdx_tooltip = "DRL_OPERATION_NEN" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_kom" position = { x = 124 y = 160 } spriteType = "GFX_DRL_insurgency_komi" pdx_tooltip = "DRL_OPERATION_KOM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_prm" position = { x = 319 y = 278 } spriteType = "GFX_DRL_insurgency_perm" pdx_tooltip = "DRL_OPERATION_PRM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_vyt" position = { x = 216 y = 228 } spriteType = "GFX_DRL_insurgency_vyatka" pdx_tooltip = "DRL_OPERATION_VYT" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_vol" position = { x = 63 y = 222 } spriteType = "GFX_DRL_insurgency_vologda" pdx_tooltip = "DRL_OPERATION_VOL" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_tar" position = { x = 167 y = 353 } spriteType = "GFX_DRL_insurgency_syzran" pdx_tooltip = "DRL_OPERATION_TAR" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_gay" position = { x = 332 y = 321 } spriteType = "GFX_DRL_insurgency_bashkiria" pdx_tooltip = "DRL_OPERATION_GAY" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_sam" position = { x = 181 y = 288 } spriteType = "GFX_DRL_insurgency_samara" pdx_tooltip = "DRL_OPERATION_SAM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			buttonType = { name = "DRL_operation_orsk" position = { x = 357 y = 361 } spriteType = "GFX_DRL_insurgency_orsk" pdx_tooltip = "DRL_OPERATION_ORSK" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			iconType = { name = "DRL_insurgency_map_borders" position = { x = 0 y = 0 } spriteType = "GFX_DRL_insurgency_base" alwaystransparent = yes }
+		}
+
+		containerWindowType = {
+			name = "DRL_insurgency_field_ledger"
+			size = { width = 462 height = 205 }
+			position = { x = 23 y = 650 }
+			background = { name = "DRL_insurgency_field_ledger_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "DRL_insurgency_ledger_title" position = { x = 10 y = 10 } font = "aldrich_24_outline" text = "DRL_INSURGENCY_LEDGER_TITLE" maxWidth = 442 maxHeight = 28 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_operation_status" position = { x = 15 y = 45 } font = "aldrich_20_outline" text = "DRL_INSURGENCY_OPERATION_STATUS" maxWidth = 432 maxHeight = 30 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_costs" position = { x = 15 y = 82 } font = "aldrich_18_outline" text = "DRL_INSURGENCY_OPERATION_COSTS" maxWidth = 432 maxHeight = 48 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_field_report" position = { x = 18 y = 138 } font = "aldrich_16_outline" text = "DRL_INSURGENCY_FIELD_REPORT" maxWidth = 426 maxHeight = 58 fixedsize = yes format = centre }
+		}
+
+		# Right-hand briefing and operation panel.
+		containerWindowType = {
+			name = "DRL_insurgency_operations_panel"
+			size = { width = 640 height = 790 }
+			position = { x = 505 y = 75 }
+			background = { name = "DRL_insurgency_operations_panel_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "DRL_insurgency_operations" position = { x = 0 y = 20 } font = "aldrich_28_outline" text = "DRL_NATIONAL_INSURGENCY_OPERATIONS" maxWidth = 640 maxHeight = 34 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_desc" position = { x = 25 y = 72 } font = "aldrich_16_outline" text = "DRL_NATIONAL_INSURGENCY_DESC" maxWidth = 590 maxHeight = 175 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_deadline" position = { x = 25 y = 245 } font = "aldrich_20_outline" text = "DRL_NATIONAL_INSURGENCY_DEADLINE" maxWidth = 590 maxHeight = 150 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_operation_list_left" position = { x = 25 y = 365 } font = "aldrich_18_outline" text = "DRL_OPERATION_LIST_LEFT" maxWidth = 285 maxHeight = 315 fixedsize = yes format = left }
+			instantTextboxType = { name = "DRL_operation_list_right" position = { x = 330 y = 365 } font = "aldrich_18_outline" text = "DRL_OPERATION_LIST_RIGHT" maxWidth = 285 maxHeight = 315 fixedsize = yes format = left }
+			instantTextboxType = { name = "DRL_insurgency_footer" position = { x = 25 y = 710 } font = "aldrich_18_outline" text = "DRL_NATIONAL_INSURGENCY_FOOTER" maxWidth = 590 maxHeight = 60 fixedsize = yes format = centre }
+		}
 	}
 }

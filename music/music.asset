@@ -1,0 +1,8 @@
+# Realm of Evil title theme override.
+# Requiem defines the same maintheme key as Burgundian Lullaby; defining it in
+# the submod ensures the shipped Dirlewanger theme is used on the main menu.
+music = {
+	name = "maintheme"
+	file = "tll_theme.ogg"
+	volume = 1.0
+}
