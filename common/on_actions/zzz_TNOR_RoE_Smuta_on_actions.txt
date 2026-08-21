@@ -2,6 +2,15 @@ on_actions = {
 
 	on_weekly_DRL = {
 		effect = {
+			# Debug reunification can bypass the normal Smuta cleanup ordering.
+			# Once West Russia is unified, never allow Onega to remain hidden as anarchy.
+			if = {
+				limit = {
+					has_global_flag = RUS_West_Russian_unification
+					ONG = { has_country_flag = RUS_anarchy_flag }
+				}
+				ONG = { RUS_drop_russian_anarchy = yes }
+			}
 			#if = {
 			#	limit = {
 			#		original_tag = DRL

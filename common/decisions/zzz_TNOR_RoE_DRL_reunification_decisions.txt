@@ -106,6 +106,9 @@ RUS_reunification_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
 			RUS_drop_russian_anarchy = yes
+			# Onega is outside DRL's active Smuta contender array, so explicitly
+			# remove its anarchy overlay when West Russia is declared unified.
+			ONG = { RUS_drop_russian_anarchy = yes }
 			DRL_reveal_west_russia_smuta_interregnum = yes
 			if = {
 				limit = { has_country_flag = RUS_Smuta_Enabled }
@@ -122,17 +125,19 @@ RUS_reunification_category = {
 			clr_country_flag = is_warlord
 			set_country_flag = RUS_regional_stage
 			set_country_flag = W_RUSSIA_UNIFIED
+			# Keep this transition outside the flavor/setup block so the debug
+			# reunification path always receives the proper DRL regional tree.
+			load_focus_tree = dirlewanger_regional
+			mark_focus_tree_layout_dirty = yes
+			# Re-evaluate the staged DRL cosmetics after the regional flags are set;
+			# this selects DRL_Westrussia in both normal and debug reunification.
+			DRL_update_reunification_cosmetic_tag = yes
 			clear_variable = loot_amount
 			navy_experience = 30
 			add_ideas = RUS_administrative_overload_1
 			generate_russia_state_gdp = yes
-			set_cosmetic_tag = DRL_Westrussia
 			custom_effect_tooltip = WSR_uprising_stirs
 			hidden_effect = {
-				load_focus_tree = {
-					tree = dirlewanger_regional
-					keep_completed = no
-				}
 				DRL_Oskar_Dirlewanger = {
 					set_portraits = {
 						civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }

@@ -81,13 +81,15 @@ guiTypes = {
 			buttonType = { name = "DRL_operation_ong" position = { x = 3 y = 27 } spriteType = "GFX_DRL_insurgency_arkhangelsk" pdx_tooltip = "DRL_OPERATION_ONG" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_nen" position = { x = 180 y = 2 } spriteType = "GFX_DRL_insurgency_nenets" pdx_tooltip = "DRL_OPERATION_NEN" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_kom" position = { x = 124 y = 160 } spriteType = "GFX_DRL_insurgency_komi" pdx_tooltip = "DRL_OPERATION_KOM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-			buttonType = { name = "DRL_operation_prm" position = { x = 319 y = 278 } spriteType = "GFX_DRL_insurgency_perm" pdx_tooltip = "DRL_OPERATION_PRM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			# Perm is a loyal prefecture under Evgeny Golovin, not an insurgent sector.
+			iconType = { name = "DRL_operation_prm" position = { x = 319 y = 278 } spriteType = "GFX_DRL_insurgency_perm" pdx_tooltip = "DRL_OPERATION_PRM" }
 			buttonType = { name = "DRL_operation_vyt" position = { x = 216 y = 228 } spriteType = "GFX_DRL_insurgency_vyatka" pdx_tooltip = "DRL_OPERATION_VYT" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_vol" position = { x = 63 y = 222 } spriteType = "GFX_DRL_insurgency_vologda" pdx_tooltip = "DRL_OPERATION_VOL" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_tar" position = { x = 167 y = 353 } spriteType = "GFX_DRL_insurgency_syzran" pdx_tooltip = "DRL_OPERATION_TAR" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_gay" position = { x = 332 y = 321 } spriteType = "GFX_DRL_insurgency_bashkiria" pdx_tooltip = "DRL_OPERATION_GAY" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_sam" position = { x = 181 y = 288 } spriteType = "GFX_DRL_insurgency_samara" pdx_tooltip = "DRL_OPERATION_SAM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-			buttonType = { name = "DRL_operation_orsk" position = { x = 357 y = 361 } spriteType = "GFX_DRL_insurgency_orsk" pdx_tooltip = "DRL_OPERATION_ORSK" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+			# Orsk is the Realm's loyal home prefecture under Kallistros Thielecke, not an insurgent sector.
+			iconType = { name = "DRL_operation_orsk" position = { x = 357 y = 361 } spriteType = "GFX_DRL_insurgency_orsk" pdx_tooltip = "DRL_OPERATION_ORSK_LOYAL" }
 			iconType = { name = "DRL_insurgency_map_borders" position = { x = 0 y = 0 } spriteType = "GFX_DRL_insurgency_base" alwaystransparent = yes }
 		}
 

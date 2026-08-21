@@ -2,13 +2,19 @@ spriteTypes = {
 	spriteType = { name = "GFX_DRL_insurgency_gui_opener_button" texturefile = "gfx/interface/goals/DRL/focus_DRL_strike_away_all_insurgency.dds" }
 	spriteType = { name = "GFX_DRL_insurgency_base" texturefile = "gfx/interface/DRL_insurgency_GUI/West_Russia_BASE.dds" }
 	spriteType = { name = "GFX_DRL_insurgency_arkhangelsk" texturefile = "gfx/interface/DRL_insurgency_GUI/Arkhangelsk.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_nikolai_omelin_onega" texturefile = "gfx/interface/DRL_insurgency_GUI/Nikolai_Omelin_ONEGA.dds" transparencecheck = yes legacy_lazy_load = no }
 	spriteType = { name = "GFX_DRL_insurgency_bashkiria" texturefile = "gfx/interface/DRL_insurgency_GUI/Bashkiria.dds" transparencecheck = yes }
 	spriteType = { name = "GFX_DRL_insurgency_syzran" texturefile = "gfx/interface/DRL_insurgency_GUI/Syzran.dds" transparencecheck = yes }
 	spriteType = { name = "GFX_DRL_insurgency_komi" texturefile = "gfx/interface/DRL_insurgency_GUI/Komi.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_ivan_serov_komi" texturefile = "gfx/interface/DRL_insurgency_GUI/Ivan_Serov_KOMI.dds" transparencecheck = yes legacy_lazy_load = no }
 	spriteType = { name = "GFX_DRL_insurgency_nenets" texturefile = "gfx/interface/DRL_insurgency_GUI/Nenets.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_anastasia_lapsui_nenets" texturefile = "gfx/interface/DRL_insurgency_GUI/Anastasia_Lapsui_NENETS.dds" transparencecheck = yes legacy_lazy_load = no }
 	spriteType = { name = "GFX_DRL_insurgency_orsk" texturefile = "gfx/interface/DRL_insurgency_GUI/Orsk.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_kallistros_thielecke_orsk" texturefile = "gfx/interface/DRL_insurgency_GUI/Kallistros_Thielecke_ORSK.dds" transparencecheck = yes legacy_lazy_load = no }
 	spriteType = { name = "GFX_DRL_insurgency_perm" texturefile = "gfx/interface/DRL_insurgency_GUI/Perm.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_evgeny_golovin_perm" texturefile = "gfx/interface/DRL_insurgency_GUI/Evgeny_Golovin_PERM.dds" transparencecheck = yes legacy_lazy_load = no }
 	spriteType = { name = "GFX_DRL_insurgency_samara" texturefile = "gfx/interface/DRL_insurgency_GUI/Samara.dds" transparencecheck = yes }
 	spriteType = { name = "GFX_DRL_insurgency_vologda" texturefile = "gfx/interface/DRL_insurgency_GUI/Vologda.dds" transparencecheck = yes }
 	spriteType = { name = "GFX_DRL_insurgency_vyatka" texturefile = "gfx/interface/DRL_insurgency_GUI/Vyatka.dds" transparencecheck = yes }
+	spriteType = { name = "GFX_DRL_insurgency_boris_smyslovsky_vyatka" texturefile = "gfx/interface/DRL_insurgency_GUI/Boris_Smyslovsky_VYATKA.dds" transparencecheck = yes legacy_lazy_load = no }
 }

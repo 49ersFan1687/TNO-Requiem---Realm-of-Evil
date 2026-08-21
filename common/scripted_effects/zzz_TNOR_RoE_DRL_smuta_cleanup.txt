@@ -6,6 +6,9 @@ DRL_end_smuta_cleanup = {
 	hidden_effect = {
 	clr_country_flag = RUS_Smuta_Enabled
 	set_country_flag = RUS_Smuta_Ended
+	# Onega is not part of DRL's active Smuta contender array, so the generic
+	# shutdown can leave it hidden behind the Russian-anarchy overlay.
+	ONG = { RUS_drop_russian_anarchy = yes }
 	clr_country_flag = RUS_Smuta_preparing_expansion
 	remove_from_array = { Smuta_PrepareWarOn = DRL }
 	remove_decision = RUS_Decision_Smuta_Expansion_DRL_Generic

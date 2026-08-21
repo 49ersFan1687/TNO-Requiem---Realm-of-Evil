@@ -52,9 +52,7 @@ scripted_gui = {
 			DRL_operation_ong_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_ong_done country_event = { id = DRL_insurgency.5 days = 30 } }
 			DRL_operation_vol_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_vol_done country_event = { id = DRL_insurgency.6 days = 30 } }
 			DRL_operation_gay_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_gay_done country_event = { id = DRL_insurgency.7 days = 30 } }
-			DRL_operation_prm_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_prm_done country_event = { id = DRL_insurgency.8 days = 30 } }
 			DRL_operation_tar_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_tar_done country_event = { id = DRL_insurgency.9 days = 30 } }
-			DRL_operation_orsk_click = { DRL_begin_insurgency_operation = yes set_country_flag = DRL_operation_orsk_done country_event = { id = DRL_insurgency.12 days = 30 } }
 		}
 
 		triggers = {
@@ -65,9 +63,7 @@ scripted_gui = {
 			DRL_operation_ong_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_ong_done } }
 			DRL_operation_vol_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_vol_done } }
 			DRL_operation_gay_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_gay_done } }
-			DRL_operation_prm_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_prm_done } }
 			DRL_operation_tar_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_tar_done } }
-			DRL_operation_orsk_click_enabled = { DRL_can_begin_insurgency_operation = yes NOT = { has_country_flag = DRL_operation_orsk_done } }
 		}
 	}
 }
