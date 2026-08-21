@@ -16,7 +16,7 @@ guiTypes = {
 		buttonType = { name = "DRL_operation_prm" position = { x = 282 y = 384 } spriteType = "GFX_DRL_insurgency_perm" pdx_tooltip = "DRL_OPERATION_PRM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 		buttonType = { name = "DRL_operation_vyt" position = { x = 207 y = 401 } spriteType = "GFX_DRL_insurgency_vyatka" pdx_tooltip = "DRL_OPERATION_VYT" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 		buttonType = { name = "DRL_operation_vol" position = { x = 136 y = 451 } spriteType = "GFX_DRL_insurgency_vologda" pdx_tooltip = "DRL_OPERATION_VOL" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
-		buttonType = { name = "DRL_operation_tar" position = { x = 251 y = 480 } spriteType = "GFX_DRL_insurgency_kazan" pdx_tooltip = "DRL_OPERATION_TAR" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
+		buttonType = { name = "DRL_operation_tar" position = { x = 251 y = 480 } spriteType = "GFX_DRL_insurgency_syzran" pdx_tooltip = "DRL_OPERATION_TAR" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 		buttonType = { name = "DRL_operation_gay" position = { x = 370 y = 517 } spriteType = "GFX_DRL_insurgency_bashkiria" pdx_tooltip = "DRL_OPERATION_GAY" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 		buttonType = { name = "DRL_operation_sam" position = { x = 217 y = 528 } spriteType = "GFX_DRL_insurgency_samara" pdx_tooltip = "DRL_OPERATION_SAM" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 		buttonType = { name = "DRL_operation_orsk" position = { x = 371 y = 562 } spriteType = "GFX_DRL_insurgency_orsk" pdx_tooltip = "DRL_OPERATION_ORSK" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
