@@ -7,7 +7,9 @@ bookmarks = {
 		default_country = "DRL"
 		default = yes
 		filters = { }
+		# Preserve the authored country layout regardless of previous playthroughs.
 		sort_unplayed_first = no
+		include_majors_in_minor_list = no
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
@@ -445,7 +447,7 @@ bookmarks = {
 		# Buffer
 		"ZZZ" = { minor = yes history = "" }
 		### ROW 1 ###
-
+		
 		### ROW 2 ###
 		# Buffer
 		"ZZZ" = { minor = yes history = "" }

@@ -344,6 +344,8 @@ RUS_reunification_category = {
 			}
 			set_global_flag = RUS_Russia_unification
 			set_country_flag = RUS_superregional_stage
+			load_focus_tree = dirlewanger_superregional
+			mark_focus_tree_layout_dirty = yes
 			save_global_event_target_as = RUS_russian_unifier
 			set_country_flag = RUS_RUSSIA_UNIFIED
 			navy_experience = 20

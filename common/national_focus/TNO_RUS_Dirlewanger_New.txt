@@ -40,7 +40,7 @@ focus_tree = {
 }
 
 focus_tree = {
-	id = dirleawnger_superregional
+	id = dirlewanger_superregional
 	country = {
 		factor = 0
 		modifier = {
@@ -49,6 +49,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	shared_focus = DRL_beyond_the_urals
 }
 
 ### Starting Tree ###
@@ -3441,4 +3442,19 @@ shared_focus = {
 		}
 		completion_reward = {
 		}
+}
+
+### Superregional Tree ###
+shared_focus = {
+	id = DRL_beyond_the_urals
+	icon = GFX_focus_DRL_the_realm_begins
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	x = 8
+	y = 0
+	ai_will_do = { factor = 80 }
+	completion_reward = {
+		add_political_power = 50
+	}
 }

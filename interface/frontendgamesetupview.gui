@@ -236,12 +236,16 @@ guiTypes = {
 	### country filter
 	containerWindowType = {
 		name = "country_filter"
+		# The engine can show these filters again when rebuilding the country list.
+		position = { x = -10000 y = -10000 }
 		size = { width = 149 height = 33 }
+		hide = yes
 
 		buttonType = {
 			name = "button"
+			position = { x = -10000 y = -10000 }
 			quadTextureSprite = "GFX_blank"
-			buttonText = "FILTER"
+			buttonText = ""
 			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -683,9 +687,10 @@ guiTypes = {
 			}
 		}
 
-		OverlappingElementsBoxType = { # bro what
+		# Keep the vanilla played/not played filters outside the bookmark screen.
+		OverlappingElementsBoxType = {
 			name = "filters"
-			position = { x = 22 y = 321 }
+			position = { x = -10000 y = -10000 }
 			size = { x = 1181 y = 32 }
 			format = center
 			spacing = 14.0
