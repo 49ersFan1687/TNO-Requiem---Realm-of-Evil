@@ -191,4 +191,12 @@ characters = {
 			legacy_id = 3524
 		}
 	}
+	DRL_Gerhard_Sommer = {
+		name = DRL_Gerhard_Sommer
+		portraits = {
+			army = {
+				large = "gfx/leaders/DRL/Portrait_DRL_Gerhard_sommer.png"
+			}
+		}
+	}
 }

@@ -59,6 +59,7 @@ recruit_character = DRL_Hermann_Erich_Bauer
 ### Generals ###
 recruit_character = DRL_Gennady_Karkov
 recruit_character = DRL_Kallistros_Thielecke
+recruit_character = DRL_Gerhrd_sommer
 
 add_ideas = {
 	##STANDARD##
