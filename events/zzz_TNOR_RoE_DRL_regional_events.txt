@@ -8,7 +8,8 @@ country_event = {
 	picture = GFX_report_event_DRL_dirlewanger 
 	is_triggered_only = yes 
 	option = { 
-		name = DRL_regional.1.a 
+		name = DRL_regional.1.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -20,7 +21,8 @@ country_event = {
 	picture = GFX_report_event_DRL_dirlewanger 
 	is_triggered_only = yes 
 	option = { 
-		name = DRL_regional.2.a 
+		name = DRL_regional.2.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -33,6 +35,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = { 
 		name = DRL_regional.3.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -45,6 +48,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = DRL_regional.4.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -57,6 +61,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { 
 		name = DRL_regional.5.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -68,7 +73,8 @@ country_event = {
 	picture = GFX_report_event_DRL_dirlewanger 
 	is_triggered_only = yes 
 	option = { 
-		ame = DRL_regional.6.a
+		name = DRL_regional.6.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -80,15 +86,18 @@ country_event = {
 	picture = GFX_report_event_DRL_dirlewanger
 	is_triggered_only = yes
 	option = { 
-		name = DRL_regional.7.a 
+		name = DRL_regional.7.a
+		ai_chance = { factor = 1 }
 		set_country_flag = DRL_people_status_servitude
 	}
 	option = { 
-		name = DRL_regional.7.b 
+		name = DRL_regional.7.b
+		ai_chance = { factor = 1 }
 		set_country_flag = DRL_people_status_subjects 
 	}
 	option = {
-		name = DRL_regional.7.c 
+		name = DRL_regional.7.c
+		ai_chance = { factor = 1 }
 		set_country_flag = DRL_people_status_protected
 	}
 }
@@ -102,6 +111,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { 
 		name = DRL_regional.8.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -114,6 +124,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = {
 		name = DRL_regional.9.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -126,6 +137,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = { 
 		name = DRL_regional.10.a 
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -138,6 +150,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = { 
 		name = DRL_regional.11.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -150,6 +163,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = {
 		name = DRL_regional.12.a
+		ai_chance = { factor = 1 }
 	} 
 }
 
@@ -160,5 +174,39 @@ country_event = {
 	desc = DRL_regional.13.desc
 	picture = GFX_report_event_DRL_dirlewanger
 	is_triggered_only = yes
-	option = { name = DRL_regional.13.a }
+	option = { name = DRL_regional.13.a ai_chance = { factor = 1 } }
+}
+
+# Money Must Flow - "Choice of economic reforms"
+country_event = {
+	id = DRL_regional.33
+	title = DRL_regional.33.t
+	desc = DRL_regional.33.desc
+	picture = GFX_report_event_CAU_factory
+	is_triggered_only = yes
+	option = { 
+		name = DRL_regional.33.a
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = DRL_regional.33.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = DRL_regional.34 #Economic reform action cooldown = 90 days
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DRL_regional.34"}
+	title = DRL_regional.34.t
+	desc = DRL_regional.34.desc
+	picture = GFX_report_event_russian_democracy
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event DRL_regional.34"
+		clr_country_flag = DRL_Economic_reforms_cooldown
+	}
+	option = {
+		name = DRL_regional.34.a
+	}
 }

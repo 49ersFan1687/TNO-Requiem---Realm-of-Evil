@@ -18,6 +18,7 @@ country_event = { ### The Bandit's Relief - bandits of the orsk ###
 
 	option = {
 		name = DRL_beginning.1.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -33,6 +34,7 @@ country_event = { ### Insurgency - purify orsk ###
 
 	option = {
 		name = DRL_beginning.2.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -48,6 +50,7 @@ country_event = { ### Dealing with rebels - Wipe out Insurgents ###
 
 	option = {
 		name = DRL_beginning.3.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -63,6 +66,7 @@ country_event = { ### Their Fate - Their Fate event ###
 
 	option = {
 		name = DRL_beginning.4.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -78,6 +82,7 @@ country_event = { ### Their End - Their End event ###
 
 	option = {
 		name = DRL_beginning.5.a
+		ai_chance = { factor = 1 }
 		add_manpower = -300
 		random_owned_controlled_state= {
                     add_manpower = -1253
@@ -97,6 +102,7 @@ country_event = { ### True Power - aryan army in the dark ###
 
 	option = {
 		name = DRL_beginning.6.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -112,6 +118,7 @@ country_event = { ### The realm begins - the realm begins focus ###
 
 	option = {
 		name = DRL_beginning.7.a
+		ai_chance = { factor = 1 }
 		add_war_support = 0.05
 		add_manpower = 5404
 		tno_vote_franchise_worsen = yes
@@ -130,6 +137,7 @@ country_event = { ### The State of the Bandit Army - our army of bandits focus #
 
 	option = {
 		name = DRL_beginning.8.a
+		ai_chance = { factor = 1 }
 		add_war_support = 0.02
 	}
 }
@@ -146,6 +154,7 @@ country_event = { ### Our Leader - Our Great Leader ###
 
 	option = {
 		name = DRL_beginning.9.a
+		ai_chance = { factor = 1 }
 		add_political_power = -25
 		add_stability = 0.025
 	}
@@ -163,6 +172,7 @@ country_event = { ### Conquer the South Urals - Its Time event ###
 
 	option = {
 		name = DRL_beginning.10.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -178,10 +188,11 @@ country_event = { ### The South, All Ours! - Victory event ###
 
 	option = {
 		name = DRL_beginning.11.a
+		ai_chance = { factor = 1 }
 	}
 }
 
-#### SOUTHERN URALS SMUTA EVENTS - RoE ###
+#### SOUTHERN URALS & SMUTA EVENTS - RoE ###
 add_namespace = DRL_west_conquest
 country_event = {
 	id = DRL_west_conquest.1
@@ -194,6 +205,7 @@ country_event = {
 
 	option = {
 		name = DRL_west_conquest.1.a
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -208,6 +220,120 @@ country_event = {
 
 	option = {
 		name = DRL_west_conquest.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # Who I Am - The Spread Of Partisans
+	id = DRL_west_conquest.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.3" }
+	title = DRL_west_conquest.3.t
+	desc = DRL_west_conquest.3.desc
+	picture = GFX_report_event_ENG_partisan_photo_with_bullet_hole
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.3.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.04
+		every_owned_state = {
+				limit = { NOT = { is_core_of = DRL } }
+				add_resistance = 40
+			}
+		tno_worsen_admin_efficiency_low = yes
+		set_temp_variable = { temp_month_income_gained = 0.60 }
+		econ_money_reserves_change_month_income = yes
+	}
+}
+
+country_event = { # Let Them All Know - Eyes on the west
+	id = DRL_west_conquest.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.4" }
+	title = DRL_west_conquest.4.t
+	desc = DRL_west_conquest.4.desc
+	picture = GFX_report_event_dirlewanger_pic
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.4.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+				ideology = national_socialism
+				popularity = 0.10
+		}
+	}
+}
+
+country_event = { # Let Them All Know - Eyes on the west
+	id = DRL_west_conquest.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.5" }
+	title = DRL_west_conquest.5.t
+	desc = DRL_west_conquest.5.desc
+	picture = GFX_report_event_DRL_Mountain_Realm
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.5.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { # Who I Must Be - One Big Dream
+	id = DRL_west_conquest.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.6" }
+	title = DRL_west_conquest.6.t
+	desc = DRL_west_conquest.6.desc
+	picture = GFX_report_event_ENG_Military_Parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.6.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { # Who I Must Be - One Big Dream
+	id = DRL_west_conquest.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DRL_west_conquest.7" }
+	title = DRL_west_conquest.7.t
+	desc = DRL_west_conquest.7.desc
+	picture = GFX_report_event_GNG_Russian_city
+
+	is_triggered_only = yes
+
+	option = {
+		name = DRL_west_conquest.7.a
+		ai_chance = { factor = 1 }
+		if = { limit = { owns_state = 753 }
+			set_capital = {
+				state = 753
+				remember_old_capital = no
+			}
+		}
+		else_if = { limit = { NOT = { owns_state = 753 } owns_state = 850 }
+			set_capital = {
+				state = 850
+				remember_old_capital = no
+			}
+		}
+		else_if = { limit = { NOT = { owns_state = 753 } NOT = { owns_state = 850 } owns_state = 400 }
+			set_capital = {
+				state = 400
+				remember_old_capital = no
+			}
+		}
+		else = {
+			set_capital = {
+				state = 652
+				remember_old_capital = no
+			}
+		}
 	}
 }
 
