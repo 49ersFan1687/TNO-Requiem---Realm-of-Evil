@@ -81,599 +81,599 @@ RUS_reunification_category = {
 			}
 		}
 	}
+	###### It was decided to remove the effects of these decisions, since they are repetitive and appear alongside the usual TNO ones ######
+	#DRL_west_russia_reunification = {
+	#	icon = GFX_decision_diplo_western_russia
+	#	allowed = {
+	#		original_tag = DRL
+	#	}
+	#	visible = {
+	#		has_country_flag = DRL_ready_for_smuta
+	#		NOT = { has_country_flag = RUS_regional_stage }
+	#	}
+	#	available = {
+	#		date > 1965.2.2
+	#		is_subject = no
+	#		has_war = no
+	#		OR = {
+	#			can_form_west_russia = yes
+	#			is_debug = yes
+	#		}
+	#		has_country_flag = RUS_Smuta_Ended
+	#	}
+	#	fire_only_once = yes
+	#	ai_will_do = { factor = 200 }
+	#	complete_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
+	#		RUS_drop_russian_anarchy = yes
+	#		# Onega is outside DRL's active Smuta contender array, so explicitly
+	#		# remove its anarchy overlay when West Russia is declared unified.
+	#		ONG = { RUS_drop_russian_anarchy = yes }
+	#		DRL_reveal_west_russia_smuta_interregnum = yes
+	#		if = {
+	#			limit = { has_country_flag = RUS_Smuta_Enabled }
+	#			RUS_Smuta_Disable = yes
+	#		}
+	#		set_global_flag = RUS_West_Russian_unification
+	#		save_global_event_target_as = RUS_western_unifier
+	#		RUS_calculate_prestige_value = yes
+	#		set_variable = { RUS_diplo_prestige_bonus = 2 }
+	#		if = {
+	#			limit = { amount_research_slots < 3 }
+	#			add_research_slot = 1
+	#		}
+	#		clr_country_flag = is_warlord
+	#		set_country_flag = RUS_regional_stage
+	#		set_country_flag = W_RUSSIA_UNIFIED
+	#		# Keep this transition outside the flavor/setup block so the debug
+	#		# reunification path always receives the proper DRL regional tree.
+	#		load_focus_tree = dirlewanger_regional
+	#		mark_focus_tree_layout_dirty = yes
+	#		# Re-evaluate the staged DRL cosmetics after the regional flags are set;
+	#		# this selects DRL_Westrussia in both normal and debug reunification.
+	#		DRL_update_reunification_cosmetic_tag = yes
+	#		clear_variable = loot_amount
+	#		navy_experience = 30
+	#		add_ideas = RUS_administrative_overload_1
+	#		generate_russia_state_gdp = yes
+	#		custom_effect_tooltip = WSR_uprising_stirs
+	#		hidden_effect = {
+	#			DRL_Oskar_Dirlewanger = {
+	#				set_portraits = {
+	#					civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }
+	#				army = {
+	#					large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png"
+	#					}
+	#				}
+	#			}
+	#			add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
+	#			country_event = { id = RUS.2 days = 30 }
+	#			country_event = { id = RUS.3 days = 60 }
+	#			add_manpower = 150000
+	#			FIN = {
+	#					country_event = {
+	#						id = murmansk.1
+	#						days = 150
+	#					}
+	#				}
+	#			if = {
+	#				limit = { has_idea = tno_income_taxation_not_applicable }
+	#				swap_ideas = {
+	#					remove_idea = tno_income_taxation_not_applicable
+	#					add_idea = tno_income_taxation_flat_taxes
+	#				}
+	#			}
+	#			if = {
+	#				limit = { has_idea = RUS_warlord_manpower }
+	#				swap_ideas = {
+	#					remove_idea = RUS_warlord_manpower
+	#					add_idea = RUS_regional_manpower
+	#				}
+	#			}
+	#			if = {
+	#				limit = { has_idea = RUS_warlord_econ }
+	#				swap_ideas = {
+	#					remove_idea = RUS_warlord_econ
+	#					add_idea = RUS_regional_econ
+	#				}
+	#			}
+	#			
+	#			if = {
+	#				limit = { NOT = { has_idea = tno_research_facilities_outdated } }
+	#				remove_ideas = {
+	#					tno_research_facilities_basic
+	#					tno_research_facilities_makeshift
+	#				}
+	#				add_ideas = tno_research_facilities_outdated
+	#				set_variable = { research_facilities_counter = -240 }
+	#				multiply_variable = { research_facilities_monthly_change = 0.25 }
+	#			}
+	#			for_each_scope_loop = {
+	#				array = global.russian_warlords
+	#				if = {
+	#					limit = {
+	#						NOT = { tag = ROOT }
+	#						exists = no
+	#						is_central_russian_nation = yes
+	#					}
+	#					every_state = {
+	#						limit = { is_core_of = PREV }
+	#						PREV = { remove_state_core = PREV }
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
 
-	DRL_west_russia_reunification = {
-		icon = GFX_decision_diplo_western_russia
-		allowed = {
-			original_tag = DRL
-		}
-		visible = {
-			has_country_flag = DRL_ready_for_smuta
-			NOT = { has_country_flag = RUS_regional_stage }
-		}
-		available = {
-			date > 1965.2.2
-			is_subject = no
-			has_war = no
-			OR = {
-				can_form_west_russia = yes
-				is_debug = yes
-			}
-			has_country_flag = RUS_Smuta_Ended
-		}
-		fire_only_once = yes
-		ai_will_do = { factor = 200 }
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
-			RUS_drop_russian_anarchy = yes
-			# Onega is outside DRL's active Smuta contender array, so explicitly
-			# remove its anarchy overlay when West Russia is declared unified.
-			ONG = { RUS_drop_russian_anarchy = yes }
-			DRL_reveal_west_russia_smuta_interregnum = yes
-			if = {
-				limit = { has_country_flag = RUS_Smuta_Enabled }
-				RUS_Smuta_Disable = yes
-			}
-			set_global_flag = RUS_West_Russian_unification
-			save_global_event_target_as = RUS_western_unifier
-			RUS_calculate_prestige_value = yes
-			set_variable = { RUS_diplo_prestige_bonus = 2 }
-			if = {
-				limit = { amount_research_slots < 3 }
-				add_research_slot = 1
-			}
-			clr_country_flag = is_warlord
-			set_country_flag = RUS_regional_stage
-			set_country_flag = W_RUSSIA_UNIFIED
-			# Keep this transition outside the flavor/setup block so the debug
-			# reunification path always receives the proper DRL regional tree.
-			load_focus_tree = dirlewanger_regional
-			mark_focus_tree_layout_dirty = yes
-			# Re-evaluate the staged DRL cosmetics after the regional flags are set;
-			# this selects DRL_Westrussia in both normal and debug reunification.
-			DRL_update_reunification_cosmetic_tag = yes
-			clear_variable = loot_amount
-			navy_experience = 30
-			add_ideas = RUS_administrative_overload_1
-			generate_russia_state_gdp = yes
-			custom_effect_tooltip = WSR_uprising_stirs
-			hidden_effect = {
-				DRL_Oskar_Dirlewanger = {
-					set_portraits = {
-						civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }
-					army = {
-						large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png"
-						}
-					}
-				}
-				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
-				country_event = { id = RUS.2 days = 30 }
-				country_event = { id = RUS.3 days = 60 }
-				add_manpower = 150000
-				FIN = {
-						country_event = {
-							id = murmansk.1
-							days = 150
-						}
-					}
-				if = {
-					limit = { has_idea = tno_income_taxation_not_applicable }
-					swap_ideas = {
-						remove_idea = tno_income_taxation_not_applicable
-						add_idea = tno_income_taxation_flat_taxes
-					}
-				}
-				if = {
-					limit = { has_idea = RUS_warlord_manpower }
-					swap_ideas = {
-						remove_idea = RUS_warlord_manpower
-						add_idea = RUS_regional_manpower
-					}
-				}
-				if = {
-					limit = { has_idea = RUS_warlord_econ }
-					swap_ideas = {
-						remove_idea = RUS_warlord_econ
-						add_idea = RUS_regional_econ
-					}
-				}
-				
-				if = {
-					limit = { NOT = { has_idea = tno_research_facilities_outdated } }
-					remove_ideas = {
-						tno_research_facilities_basic
-						tno_research_facilities_makeshift
-					}
-					add_ideas = tno_research_facilities_outdated
-					set_variable = { research_facilities_counter = -240 }
-					multiply_variable = { research_facilities_monthly_change = 0.25 }
-				}
-				for_each_scope_loop = {
-					array = global.russian_warlords
-					if = {
-						limit = {
-							NOT = { tag = ROOT }
-							exists = no
-							is_central_russian_nation = yes
-						}
-						every_state = {
-							limit = { is_core_of = PREV }
-							PREV = { remove_state_core = PREV }
-						}
-					}
-				}
-			}
-		}
-	}
+	#	DRL_war_with_west_siberia = {
+	#		icon = GFX_decision_diplo_western_siberia
+	#		allowed = {
+	#			original_tag = DRL
+	#		}
+	#		visible = {
+	#			has_country_flag = RUS_regional_stage
+	#			NOT = { has_country_flag = RUS_superregional_stage }
+	#			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
+	#			NOT = {
+	#				has_country_flag = WSR_war_decisions
+	#			}
+	#			can_form_west_siberia = no
+	#		}
+	#		available = {
+	#			date > 1969.1.1
+	#			is_subject = no
+	#			has_war = no
+	#			NOT = {
+	#				has_country_flag = WSR_peace_decisions
+	#			}
+	#			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
+	#		}
+	#		ai_will_do = {
+	#			factor = 100
+	#			modifier = {
+	#				factor = 0
+	#				has_game_rule = { rule = WSR_WSB_war_or_peace option = WSR_WSB_WAR_OR_PEACE_PEACE }
+	#				WSR_WSB_is_compatible = yes
+	#				NOT = {
+	#					has_country_flag = RUS_fucked_up_horribly_war_time
+	#				}
+	#			}
+	#		}
+	#		fire_only_once = yes
+	#		complete_effect = {
+	#			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_west_siberia"
+	#			set_country_flag = DRL_west_siberia_war_decisions
+	#			set_country_flag = WSR_war_decisions
+	#			country_event = {
+	#				id = russia_unification.1
+	#				days = 1
+	#			}
+	#			WSB = {
+	#				country_event = {
+	#					id = russia_unification.0
+	#					days = 7
+	#				}
+	#			}
+	#			hidden_effect = {
+	#				every_country = {
+	#					limit = {
+	#
+	#					is_west_siberian_nation = yes
+	#				}
+	#				add_ai_strategy = {
+	#					type = prepare_for_war
+	#					id = WSR
+	#					value = 200
+	#				}
+	#				WSR = {
+	#					add_ai_strategy = {
+	#						type = prepare_for_war
+	#						id = PREV
+	#						value = 200
+	#					}
+	#				}
+	#			}
+	#		}
+	#		set_variable = { RUSWarPreparedness = 0 }
+	#		if = {
+	#			limit = {
+	#				has_game_rule = {
+	#					rule = RUSSIA_UNIFICATION_OUTCOME
+	#					option = RUSSIA_UNIFICATION_OUTCOME_WSR
+	#				}
+	#			}
+	#			country_event = {
+	#				id = russia_unification.200
+	#				days = 365
+	#			}
+	#		}
+	#	}
+	#}
 
-	DRL_war_with_west_siberia = {
-		icon = GFX_decision_diplo_western_siberia
-		allowed = {
-			original_tag = DRL
-		}
-		visible = {
-			has_country_flag = RUS_regional_stage
-			NOT = { has_country_flag = RUS_superregional_stage }
-			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
-			NOT = {
-				has_country_flag = WSR_war_decisions
-			}
-			can_form_west_siberia = no
-		}
-		available = {
-			date > 1969.1.1
-			is_subject = no
-			has_war = no
-			NOT = {
-				has_country_flag = WSR_peace_decisions
-			}
-			NOT = { has_country_flag = DRL_west_siberia_war_decisions }
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				has_game_rule = { rule = WSR_WSB_war_or_peace option = WSR_WSB_WAR_OR_PEACE_PEACE }
-				WSR_WSB_is_compatible = yes
-				NOT = {
-					has_country_flag = RUS_fucked_up_horribly_war_time
-				}
-			}
-		}
-		fire_only_once = yes
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_west_siberia"
-			set_country_flag = DRL_west_siberia_war_decisions
-			set_country_flag = WSR_war_decisions
-			country_event = {
-				id = russia_unification.1
-				days = 1
-			}
-			WSB = {
-				country_event = {
-					id = russia_unification.0
-					days = 7
-				}
-			}
-			hidden_effect = {
-				every_country = {
-					limit = {
-
-						is_west_siberian_nation = yes
-					}
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = WSR
-						value = 200
-					}
-					WSR = {
-						add_ai_strategy = {
-							type = prepare_for_war
-							id = PREV
-							value = 200
-						}
-					}
-				}
-			}
-			set_variable = { RUSWarPreparedness = 0 }
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = RUSSIA_UNIFICATION_OUTCOME
-						option = RUSSIA_UNIFICATION_OUTCOME_WSR
-					}
-				}
-				country_event = {
-					id = russia_unification.200
-					days = 365
-				}
-			}
-		}
-	}
-
-	DRL_absorb_west_siberia = {
-		icon = GFX_decision_diplo_western_siberia
-		allowed = {
-			original_tag = DRL
-		}
-		visible = {
-			has_country_flag = RUS_regional_stage
-			NOT = { has_country_flag = RUS_superregional_stage }
-			OR = {
-				can_form_west_siberia = yes
-				AND = {
-					is_debug = yes
-					any_country = {
-						NOT = { tag = ROOT }
-						is_west_siberian_nation = yes
-					}
-				}
-			}
-		}
-		available = {
-			is_subject = no
-			has_war = no
-			OR = {
-				can_form_west_siberia = yes
-				AND = {
-					is_debug = yes
-					any_country = {
-						NOT = { tag = ROOT }
-						is_west_siberian_nation = yes
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-		ai_will_do = { factor = 200 }
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_west_siberia"
-			hidden_effect = {
-				every_other_country = {
-					limit = {
-						is_west_siberian_nation = yes
-					}
-					ROOT = {
-						annex_country = {
-							target = PREV
-							transfer_troops = yes
-						}
-					}
-				}
-			DRL_update_reunification_cosmetic_tag = yes
-			}
-			set_global_flag = RUS_Russia_unification
-			set_country_flag = RUS_superregional_stage
-			load_focus_tree = dirlewanger_superregional
-			mark_focus_tree_layout_dirty = yes
-			save_global_event_target_as = RUS_russian_unifier
-			set_country_flag = RUS_RUSSIA_UNIFIED
-			navy_experience = 20
-			set_cosmetic_tag = DIR_RUSSIA
-			econ_raise_max_credit_rating = yes
-			hidden_effect = {
-				add_manpower = 250000
-				country_event = { id = RUS_wonder.0 days = 15 }
-				if = {
-					limit = {
-						has_idea = RUS_regional_manpower
-						NOT = { has_idea = RUS_superregional_manpower }
-					}
-					swap_ideas = {
-						remove_idea = RUS_regional_manpower
-						add_idea = RUS_superregional_manpower
-					}
-				}
-				if = {
-					limit = {
-						has_idea = RUS_regional_econ
-						NOT = { has_idea = RUS_superregional_econ }
-					}
-					swap_ideas = {
-						remove_idea = RUS_regional_econ
-						add_idea = RUS_superregional_econ
-					}
-				}
-				for_each_scope_loop = {
-					array = global.russian_warlords
-					if = {
-						limit = {
-							NOT = { tag = ROOT }
-							exists = no
-							OR = {
-								is_central_russian_nation = yes
-								is_west_siberian_nation = yes
-							}
-						}
-						every_state = {
-							limit = { is_core_of = PREV }
-							PREV = { remove_state_core = PREV }
-						}
-					}
-				}
-			}
-		}
-	}
+	#DRL_absorb_west_siberia = {
+	#	icon = GFX_decision_diplo_western_siberia
+	#	allowed = {
+	#		original_tag = DRL
+	#	}
+	#	visible = {
+	#		has_country_flag = RUS_regional_stage
+	#		NOT = { has_country_flag = RUS_superregional_stage }
+	#		OR = {
+	#			can_form_west_siberia = yes
+	#			AND = {
+	#				is_debug = yes
+	#				any_country = {
+	#					NOT = { tag = ROOT }
+	#					is_west_siberian_nation = yes
+	#				}
+	#			}
+	#		}
+	#	}
+	#	available = {
+	#		is_subject = no
+	#		has_war = no
+	#		OR = {
+	#			can_form_west_siberia = yes
+	#			AND = {
+	#				is_debug = yes
+	#				any_country = {
+	#					NOT = { tag = ROOT }
+	#					is_west_siberian_nation = yes
+	#				}
+	#			}
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	ai_will_do = { factor = 200 }
+	#	complete_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_west_siberia"
+	#		hidden_effect = {
+	#			every_other_country = {
+	#				limit = {
+	#					is_west_siberian_nation = yes
+	#				}
+	#				ROOT = {
+	#					annex_country = {
+	#						target = PREV
+	#						transfer_troops = yes
+	#					}
+	#				}
+	#			}
+	#		DRL_update_reunification_cosmetic_tag = yes
+	#		}
+	#		set_global_flag = RUS_Russia_unification
+	#		set_country_flag = RUS_superregional_stage
+	#		load_focus_tree = dirlewanger_superregional
+	#		mark_focus_tree_layout_dirty = yes
+	#		save_global_event_target_as = RUS_russian_unifier
+	#		set_country_flag = RUS_RUSSIA_UNIFIED
+	#		navy_experience = 20
+	#		set_cosmetic_tag = DIR_RUSSIA
+	#		econ_raise_max_credit_rating = yes
+	#		hidden_effect = {
+	#			add_manpower = 250000
+	#			country_event = { id = RUS_wonder.0 days = 15 }
+	#			if = {
+	#				limit = {
+	#					has_idea = RUS_regional_manpower
+	#					NOT = { has_idea = RUS_superregional_manpower }
+	#				}
+	#				swap_ideas = {
+	#					remove_idea = RUS_regional_manpower
+	#					add_idea = RUS_superregional_manpower
+	#				}
+	#			}
+	#			if = {
+	#				limit = {
+	#					has_idea = RUS_regional_econ
+	#					NOT = { has_idea = RUS_superregional_econ }
+	#				}
+	#				swap_ideas = {
+	#					remove_idea = RUS_regional_econ
+	#					add_idea = RUS_superregional_econ
+	#				}
+	#			}
+	#			for_each_scope_loop = {
+	#				array = global.russian_warlords
+	#				if = {
+	#					limit = {
+	#						NOT = { tag = ROOT }
+	#						exists = no
+	#						OR = {
+	#							is_central_russian_nation = yes
+	#							is_west_siberian_nation = yes
+	#						}
+	#					}
+	#					every_state = {
+	#						limit = { is_core_of = PREV }
+	#						PREV = { remove_state_core = PREV }
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
 	
-	DRL_intervene_in_kazakhstan = {
+	#DRL_intervene_in_kazakhstan = {
 
-		icon = GFX_decision_diplo_kazakhstan
+	#icon = GFX_decision_diplo_kazakhstan
 
-		visible = {
-			has_country_flag = RUS_superregional_stage
-			has_country_leader = {
-				character = DRL_Oskar_Dirlewanger
-				ruling_only = yes
-			}
-			original_tag = DRL
-			NOT = { has_global_flag = RUS_national_unification }
-		}
+	#	visible = {
+	#		has_country_flag = RUS_superregional_stage
+	#		has_country_leader = {
+	#			character = DRL_Oskar_Dirlewanger
+	#			ruling_only = yes
+	#		}
+	#		original_tag = DRL
+	#		NOT = { has_global_flag = RUS_national_unification }
+	#	}
 		
-		available = {
-			is_subject = no
-			has_war = no
-		}
+	#	available = {
+	#		is_subject = no
+	#		has_war = no
+	#	}
 
-		days_re_enable = 0
+	#	days_re_enable = 0
 
-		cost = 50
+	#	cost = 50
 
-		ai_will_do = {
-			factor = 50
-		}
+	#ai_will_do = {
+	#		factor = 50
+	#	}
 		
-		days_remove = 30
-		fire_only_once = yes
-		highlight_states = {
-			highlight_state_targets = {
-				state = 404
-			}
-		}
+	#	days_remove = 30
+	#	fire_only_once = yes
+	#	highlight_states = {
+	#		highlight_state_targets = {
+	#			state = 404
+	#		}
+	#	}
 		
-		modifier = {
-			command_power_gain = -0.5
-			political_power_gain = -0.75
-		}
+	#	modifier = {
+	#		command_power_gain = -0.5
+	#		political_power_gain = -0.75
+	#	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan"
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan remove"
-			every_country = {
-				limit = {
-					is_kazakh_nation = yes
-				}
-				ROOT = {
-					declare_war_on = {
-						target = PREV
-						type = annex_everything
-					}
-				}
-			}
-		}
+	#	complete_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan"
+	#	}
+	#	remove_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_intervene_in_kazakhstan remove"
+	#		every_country = {
+	#			limit = {
+	#				is_kazakh_nation = yes
+	#			}
+	#			ROOT = {
+	#				declare_war_on = {
+	#					target = PREV
+	#					type = annex_everything
+	#				}
+	#			}
+	#		}
+	#	}
 		
-		cancel_trigger = { hidden_trigger = { has_war = yes } }
-	}
+	#	cancel_trigger = { hidden_trigger = { has_war = yes } }
+	#}
 
-	DRL_war_with_siberia = {
-		icon = GFX_decision_diplo_siberia_superregional
-		allowed = {
-			original_tag = DRL
-		}
-		visible = {
-			has_country_flag = RUS_superregional_stage
-			NOT = {
-				has_global_flag = RUS_national_unification
-			}
-			NOT = { has_country_flag = DRL_siberia_war_decisions }
-			NOT = {
-				has_country_flag = RWS_war_decisions
-			}
-			OR = {
-				can_form_central_siberia = no
-				can_form_far_east = no
-			}
-		}
-		available = {
-			date > 1971.1.1
-			is_subject = no
-			has_war = no
-			NOT = { has_country_flag = DRL_siberia_war_decisions }
-		}
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0
-				AND = {
-					OR = {
-						has_game_rule = {
-							rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
-							option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_RWS
-						}
-						has_game_rule = {
-							rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
-							option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_SIB
-						}
-					}
-					RWS_SIB_is_compatible = yes
-					NOT = {
-						has_country_flag = RUS_fucked_up_horribly_war_time_superregional
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_siberia"
-			set_country_flag = DRL_siberia_war_decisions
-			set_country_flag = RWS_war_decisions
-			country_event = {
-				id = russia_unification.19
-				days = 1
-			}
-			SIB = {
-				country_event = {
-					id = russia_unification.0
-					days = 1
-				}
-			}
-			hidden_effect = {
-				every_country = {
-					limit = {
+	#DRL_war_with_siberia = {
+	#	icon = GFX_decision_diplo_siberia_superregional
+	#	allowed = {
+	#		original_tag = DRL
+	#	}
+	#	visible = {
+	#		has_country_flag = RUS_superregional_stage
+	#		NOT = {
+	#			has_global_flag = RUS_national_unification
+	#		}
+	#		NOT = { has_country_flag = DRL_siberia_war_decisions }
+	#		NOT = {
+	#			has_country_flag = RWS_war_decisions
+	#		}
+	#		OR = {
+	#			can_form_central_siberia = no
+	#			can_form_far_east = no
+	#		}
+	#	}
+	#	available = {
+	#		date > 1971.1.1
+	#		is_subject = no
+	#		has_war = no
+	#		NOT = { has_country_flag = DRL_siberia_war_decisions }
+	#	}
+	#	ai_will_do = {
+	#		factor = 50
+	#		modifier = {
+	#			factor = 0
+	#			AND = {
+	#				OR = {
+	#					has_game_rule = {
+	#						rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
+	#						option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_RWS
+	#					}
+	#					has_game_rule = {
+	#						rule = RUSSIA_TOTAL_UNIFICATION_CONFERENCE
+	#						option = RUSSIA_TOTAL_UNIFICATION_CONFERENCE_SIB
+	#					}
+	#				}
+	#				RWS_SIB_is_compatible = yes
+	#				NOT = {
+	#					has_country_flag = RUS_fucked_up_horribly_war_time_superregional
+	#				}
+	#			}
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	complete_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_war_with_siberia"
+	#		set_country_flag = DRL_siberia_war_decisions
+	#		set_country_flag = RWS_war_decisions
+	#		country_event = {
+	#			id = russia_unification.19
+	#			days = 1
+	#		}
+	#		SIB = {
+	#			country_event = {
+	#				id = russia_unification.0
+	#				days = 1
+	#			}
+	#		}
+	#		hidden_effect = {
+	#			every_country = {
+	#				limit = {
+	#
+	#					OR = {
+	#						is_central_siberian_nation = yes
+	#						is_far_eastern_nation = yes
+	#					}
+	#				}
+	#				add_ai_strategy = {
+	#					type = prepare_for_war
+	#					id = RWS
+	#					value = 200
+	#				}
+	#				RWS = {
+	#					add_ai_strategy = {
+	#						type = prepare_for_war
+	#						id = PREV
+	#						value = 200
+	#					}
+	#				}
+	#			}
+	#		}
+	#		set_variable = { RUSWarPreparedness = 0 }
+	#		if = {
+	#			limit = {
+	#				has_game_rule = {
+	#					rule = RUSSIA_TOTAL_UNIFICATION_OUTCOME
+	#					option = RUSSIA_TOTAL_UNIFICATION_OUTCOME_RWS
+	#				}
+	#			}
+	#			country_event = {
+	#				id = russia_unification.200
+	#				days = 365
+	#			}
+	#		}
+	#	}
+	#}
 
-						OR = {
-							is_central_siberian_nation = yes
-							is_far_eastern_nation = yes
-						}
-					}
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = RWS
-						value = 200
-					}
-					RWS = {
-						add_ai_strategy = {
-							type = prepare_for_war
-							id = PREV
-							value = 200
-						}
-					}
-				}
-			}
-			set_variable = { RUSWarPreparedness = 0 }
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = RUSSIA_TOTAL_UNIFICATION_OUTCOME
-						option = RUSSIA_TOTAL_UNIFICATION_OUTCOME_RWS
-					}
-				}
-				country_event = {
-					id = russia_unification.200
-					days = 365
-				}
-			}
-		}
-	}
-
-	DRL_absorb_siberia = {
-		icon = GFX_decision_diplo_russia
-		allowed = {
-			original_tag = DRL
-		}
-		visible = {
-			has_country_flag = RUS_superregional_stage
-			NOT = { has_global_flag = RUS_national_unification }
-			OR = {
-				AND = {
-					can_form_central_siberia = yes
-					can_form_far_east = yes
-				}
-				AND = {
-					is_debug = yes
-					any_country = {
-						NOT = { tag = ROOT }
-						OR = {
-							is_central_siberian_nation = yes
-							is_far_eastern_nation = yes
-						}
-					}
-				}
-			}
-		}
-		available = {
-			is_subject = no
-			has_war = no
-			OR = {
-				AND = {
-					can_form_central_siberia = yes
-					can_form_far_east = yes
-				}
-				AND = {
-					is_debug = yes
-					any_country = {
-						NOT = { tag = ROOT }
-						OR = {
-							is_central_siberian_nation = yes
-							is_far_eastern_nation = yes
-						}
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-		ai_will_do = { factor = 200 }
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_siberia"
-			set_global_flag = RUS_national_unification
-			save_global_event_target_as = RUS_total_unifier
-			if = {
-				limit = { amount_research_slots < 4 }
-				add_research_slot = 1
-			}
-			hidden_effect = {
-				### 2WRW ###
-				SWRW_select_generic_focus_tree = yes
-				WRW_RUS_add_forpo_tab = yes
-				country_event = { id = RUS_chain_of_command.1 days = 30 }
-				### END 2WRW ###
-				every_other_country = {
-					limit = {
-						OR = {
-							is_central_siberian_nation = yes
-							is_far_eastern_nation = yes
-						}
-					}
-					ROOT = {
-						annex_country = {
-							target = PREV
-							transfer_troops = yes
-						}
-					}
-				}
-				add_manpower = 450000
-				add_stability = 0.15
-				if = { #Kills North Siberian Anarchy if AI sucks
-					limit = { country_exists = NRL }
-					annex_country = {
-						target = NRL
-						transfer_troops = no
-					}
-					every_state = {
-						limit = { is_core_of = NRL }
-						remove_core_of = NRL
-					}
-				}
-				for_each_scope_loop = {
-					array = global.russian_warlords
-					if = {
-						limit = {
-							NOT = { tag = ROOT }
-							exists = no
-						}
-						every_state = {
-							limit = {
-								is_core_of = PREV
-							}
-							PREV = { remove_state_core = PREV }
-						}
-					}
-				}
-				every_country = {
-					limit = {
-						is_ai = no
-					}
-					news_event = { id = DRL_wnews.1 days = 1 }
-				}
-				set_country_flag = RUS_hide_superregional_war_decisions
-				set_country_flag = RUS_hide_superregional_peace_decisions
-				remove_ideas = RUS_superregional_manpower
-				remove_ideas = RUS_superregional_econ
-				DRL_update_reunification_cosmetic_tag = yes
-			}
-			set_cosmetic_tag = DIR_RUSSIA
-			econ_raise_max_credit_rating = yes
-		}
-	}
+	#DRL_absorb_siberia = {
+	#	icon = GFX_decision_diplo_russia
+	#	allowed = {
+	#		original_tag = DRL
+	#	}
+	#	visible = {
+	#		has_country_flag = RUS_superregional_stage
+	#		NOT = { has_global_flag = RUS_national_unification }
+	#		OR = {
+	#			AND = {
+	#				can_form_central_siberia = yes
+	#				can_form_far_east = yes
+	#			}
+	#			AND = {
+	#				is_debug = yes
+	#				any_country = {
+	#					NOT = { tag = ROOT }
+	#					OR = {
+	#						is_central_siberian_nation = yes
+	#						is_far_eastern_nation = yes
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	available = {
+	#		is_subject = no
+	#		has_war = no
+	#		OR = {
+	#			AND = {
+	#				can_form_central_siberia = yes
+	#				can_form_far_east = yes
+	#			}
+	#			AND = {
+	#				is_debug = yes
+	#				any_country = {
+	#					NOT = { tag = ROOT }
+	#					OR = {
+	#						is_central_siberian_nation = yes
+	#						is_far_eastern_nation = yes
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	ai_will_do = { factor = 200 }
+	#	complete_effect = {
+	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_absorb_siberia"
+	#		set_global_flag = RUS_national_unification
+	#		save_global_event_target_as = RUS_total_unifier
+	#		if = {
+	#			limit = { amount_research_slots < 4 }
+	#			add_research_slot = 1
+	#		}
+	#		hidden_effect = {
+	#			### 2WRW ###
+	#			SWRW_select_generic_focus_tree = yes
+	#			WRW_RUS_add_forpo_tab = yes
+	#			country_event = { id = RUS_chain_of_command.1 days = 30 }
+	#			### END 2WRW ###
+	#			every_other_country = {
+	#				limit = {
+	#					OR = {
+	#						is_central_siberian_nation = yes
+	#						is_far_eastern_nation = yes
+	#					}
+	#				}
+	#				ROOT = {
+	#					annex_country = {
+	#						target = PREV
+	#						transfer_troops = yes
+	#					}
+	#				}
+	#			}
+	#			add_manpower = 450000
+	#			add_stability = 0.15
+	#			if = { #Kills North Siberian Anarchy if AI sucks
+	#				limit = { country_exists = NRL }
+	#				annex_country = {
+	#					target = NRL
+	#					transfer_troops = no
+	#				}
+	#				every_state = {
+	#					limit = { is_core_of = NRL }
+	#					remove_core_of = NRL
+	#				}
+	#			}
+	#			for_each_scope_loop = {
+	#				array = global.russian_warlords
+	#				if = {
+	#					limit = {
+	#						NOT = { tag = ROOT }
+	#						exists = no
+	#					}
+	#					every_state = {
+	#						limit = {
+	#							is_core_of = PREV
+	#						}
+	#						PREV = { remove_state_core = PREV }
+	#					}
+	#				}
+	#			}
+	#			every_country = {
+	#				limit = {
+	#					is_ai = no
+	#				}
+	#				news_event = { id = DRL_wnews.1 days = 1 }
+	#			}
+	#			set_country_flag = RUS_hide_superregional_war_decisions
+	#			set_country_flag = RUS_hide_superregional_peace_decisions
+	#			remove_ideas = RUS_superregional_manpower
+	#			remove_ideas = RUS_superregional_econ
+	#			DRL_update_reunification_cosmetic_tag = yes
+	#		}
+	#		set_cosmetic_tag = DIR_RUSSIA
+	#		econ_raise_max_credit_rating = yes
+	#	}
+	#}
 }

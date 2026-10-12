@@ -1,0 +1,126 @@
+### West Russia/ RoE Modified окда ###
+defined_text = {
+	name = GetWestRussianReunificationTitle
+	text = {
+		trigger = {
+			original_tag = GAY
+		}
+		localization_key = RUS_GAY_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = VYT
+		}
+		localization_key = RUS_VYT_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+		}
+		localization_key = RUS_KOM_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+		}
+		localization_key = RUS_PRM_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = SAM
+		}
+		localization_key = RUS_SAM_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = VOL
+		}
+		localization_key = RUS_VOL_west_russia
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = WRS
+			}
+		}
+		localization_key = RUS_WRS_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = BZI
+		}
+		localization_key = RUS_BZI_west_russia
+	}
+	text = {
+		trigger = {
+			original_tag = DRL
+		}
+		localization_key = RUS_DRL_roe_west_russia
+	}
+	text = {
+		localization_key = RUS_somethings_wrong
+	}
+}
+
+defined_text = {
+	name = GetWestRussianReunificationDesc
+	text = {
+		trigger = {
+			original_tag = GAY
+		}
+		localization_key = RUS_GAY_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = VYT
+		}
+		localization_key = RUS_VYT_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+		}
+		localization_key = RUS_KOM_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+		}
+		localization_key = RUS_PRM_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = SAM
+		}
+		localization_key = RUS_SAM_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = VOL
+		}
+		localization_key = RUS_VOL_west_russia_desc
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = WRS
+			}
+		}
+		localization_key = RUS_WRS_west_russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = BZI
+		}
+		localization_key = RUS_BZI_West_Russia_desc
+	}
+	text = {
+		trigger = {
+			original_tag = DRL
+		}
+		localization_key = RUS_DRL_roe_west_russia_desc
+	}
+	text = {
+		localization_key = RUS_somethings_wrong_desc
+	}
+}
