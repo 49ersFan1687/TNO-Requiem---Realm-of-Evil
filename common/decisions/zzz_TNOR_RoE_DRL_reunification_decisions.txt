@@ -1,79 +1,121 @@
 RUS_reunification_category = {
 
-	DRL_southern_urals_reunification = {
-		icon = GFX_decision_diplo_south_urals
+	DRL_west_russia_reunification = {
+		icon = GFX_decision_diplo_western_russia
 		allowed = {
 			original_tag = DRL
 		}
 		visible = {
-			OR = {
-			has_country_flag = DRL_regional_smuta_prep
-			has_completed_focus = DRL_to_conquer_the_south
-			}
-			NOT = { has_country_flag = DRL_southern_urals_unified }
+			has_country_flag = DRL_ready_for_smuta
 			NOT = { has_country_flag = RUS_regional_stage }
 		}
 		available = {
+			date > 1965.2.2
 			is_subject = no
 			has_war = no
 			OR = {
-				can_form_southern_urals = yes
+				can_form_west_russia = yes
 				is_debug = yes
 			}
-			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
-			849 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
-			652 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
-			852 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
-			847 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
-			848 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
-			582 = {
-					is_owned_by = ROOT
-					is_core_of = ROOT
-				}
+			has_country_flag = RUS_Smuta_Ended
 		}
 		fire_only_once = yes
 		ai_will_do = { factor = 200 }
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision DRL_southern_urals_reunification"
-			save_global_event_target_as = RUS_southern_urals_unifier
-			set_country_flag = DRL_southern_urals_unified
-			custom_effect_tooltip = DRL_southern_urals_reunification_tt
-			set_cosmetic_tag = DIR_BEST
-			# DRL_reveal_west_russia_smuta_interregnum = yes
-			generate_russia_state_gdp = yes
-			clr_country_flag = is_warlord
+			log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
+			RUS_drop_russian_anarchy = yes
+			# Onega is outside DRL's active Smuta contender array, so explicitly
+			# remove its anarchy overlay when West Russia is declared unified.
+			ONG = { RUS_drop_russian_anarchy = yes }
+			DRL_reveal_west_russia_smuta_interregnum = yes
 			if = {
-				limit = { amount_research_slots < 2 }
+				limit = { has_country_flag = RUS_Smuta_Enabled }
+				RUS_Smuta_Disable = yes
+			}
+			set_global_flag = RUS_West_Russian_unification
+			save_global_event_target_as = RUS_western_unifier
+			RUS_calculate_prestige_value = yes
+			set_variable = { RUS_diplo_prestige_bonus = 2 }
+			if = {
+				limit = { amount_research_slots < 3 }
 				add_research_slot = 1
 			}
+			clr_country_flag = is_warlord
+			set_country_flag = RUS_regional_stage
+			set_country_flag = W_RUSSIA_UNIFIED
+			# Keep this transition outside the flavor/setup block so the debug
+			# reunification path always receives the proper DRL regional tree.
+			load_focus_tree = dirlewanger_regional
+			mark_focus_tree_layout_dirty = yes
+			# Re-evaluate the staged DRL cosmetics after the regional flags are set;
+			# this selects DRL_Westrussia in both normal and debug reunification.
+			DRL_update_reunification_cosmetic_tag = yes
+			clear_variable = loot_amount
+			navy_experience = 30
+			add_ideas = RUS_administrative_overload_1
+			generate_russia_state_gdp = yes
+			custom_effect_tooltip = WSR_uprising_stirs
 			hidden_effect = {
+				DRL_Oskar_Dirlewanger = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }
+					army = {
+						large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png"
+						}
+					}
+				}
+				add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
+				country_event = { id = RUS.2 days = 30 }
+				country_event = { id = RUS.3 days = 60 }
+				add_manpower = 150000
+				FIN = {
+						country_event = {
+							id = murmansk.1
+							days = 150
+						}
+					}
+				if = {
+					limit = { has_idea = tno_income_taxation_not_applicable }
+					swap_ideas = {
+						remove_idea = tno_income_taxation_not_applicable
+						add_idea = tno_income_taxation_flat_taxes
+					}
+				}
+				if = {
+					limit = { has_idea = RUS_warlord_manpower }
+					swap_ideas = {
+						remove_idea = RUS_warlord_manpower
+						add_idea = RUS_regional_manpower
+					}
+				}
+				if = {
+					limit = { has_idea = RUS_warlord_econ }
+					swap_ideas = {
+						remove_idea = RUS_warlord_econ
+						add_idea = RUS_regional_econ
+					}
+				}
+
+				if = {
+					limit = { NOT = { has_idea = tno_research_facilities_outdated } }
+					remove_ideas = {
+						tno_research_facilities_basic
+						tno_research_facilities_makeshift
+					}
+					add_ideas = tno_research_facilities_outdated
+					set_variable = { research_facilities_counter = -240 }
+					multiply_variable = { research_facilities_monthly_change = 0.25 }
+				}
 				for_each_scope_loop = {
 					array = global.russian_warlords
 					if = {
 						limit = {
 							NOT = { tag = ROOT }
 							exists = no
-							is_southern_urals_nation = yes
+							is_central_russian_nation = yes
 						}
 						every_state = {
-							limit = {
-								is_core_of = PREV
-							}
+							limit = { is_core_of = PREV }
 							PREV = { remove_state_core = PREV }
 						}
 					}
@@ -81,130 +123,6 @@ RUS_reunification_category = {
 			}
 		}
 	}
-	###### It was decided to remove the effects of these decisions, since they are repetitive and appear alongside the usual TNO ones ######
-	#DRL_west_russia_reunification = {
-	#	icon = GFX_decision_diplo_western_russia
-	#	allowed = {
-	#		original_tag = DRL
-	#	}
-	#	visible = {
-	#		has_country_flag = DRL_ready_for_smuta
-	#		NOT = { has_country_flag = RUS_regional_stage }
-	#	}
-	#	available = {
-	#		date > 1965.2.2
-	#		is_subject = no
-	#		has_war = no
-	#		OR = {
-	#			can_form_west_russia = yes
-	#			is_debug = yes
-	#		}
-	#		has_country_flag = RUS_Smuta_Ended
-	#	}
-	#	fire_only_once = yes
-	#	ai_will_do = { factor = 200 }
-	#	complete_effect = {
-	#		log = "[GetDateText]: [Root.GetName]: Decision DRL_west_russia_reunification"
-	#		RUS_drop_russian_anarchy = yes
-	#		# Onega is outside DRL's active Smuta contender array, so explicitly
-	#		# remove its anarchy overlay when West Russia is declared unified.
-	#		ONG = { RUS_drop_russian_anarchy = yes }
-	#		DRL_reveal_west_russia_smuta_interregnum = yes
-	#		if = {
-	#			limit = { has_country_flag = RUS_Smuta_Enabled }
-	#			RUS_Smuta_Disable = yes
-	#		}
-	#		set_global_flag = RUS_West_Russian_unification
-	#		save_global_event_target_as = RUS_western_unifier
-	#		RUS_calculate_prestige_value = yes
-	#		set_variable = { RUS_diplo_prestige_bonus = 2 }
-	#		if = {
-	#			limit = { amount_research_slots < 3 }
-	#			add_research_slot = 1
-	#		}
-	#		clr_country_flag = is_warlord
-	#		set_country_flag = RUS_regional_stage
-	#		set_country_flag = W_RUSSIA_UNIFIED
-	#		# Keep this transition outside the flavor/setup block so the debug
-	#		# reunification path always receives the proper DRL regional tree.
-	#		load_focus_tree = dirlewanger_regional
-	#		mark_focus_tree_layout_dirty = yes
-	#		# Re-evaluate the staged DRL cosmetics after the regional flags are set;
-	#		# this selects DRL_Westrussia in both normal and debug reunification.
-	#		DRL_update_reunification_cosmetic_tag = yes
-	#		clear_variable = loot_amount
-	#		navy_experience = 30
-	#		add_ideas = RUS_administrative_overload_1
-	#		generate_russia_state_gdp = yes
-	#		custom_effect_tooltip = WSR_uprising_stirs
-	#		hidden_effect = {
-	#			DRL_Oskar_Dirlewanger = {
-	#				set_portraits = {
-	#					civilian = { large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png" }
-	#				army = {
-	#					large = "gfx/leaders/DRL/Portrait_Dirlewanger_Regional_Oskar_Dirlewanger.png"
-	#					}
-	#				}
-	#			}
-	#			add_dynamic_modifier = { modifier = TNO_deficit_effects_modifier }
-	#			country_event = { id = RUS.2 days = 30 }
-	#			country_event = { id = RUS.3 days = 60 }
-	#			add_manpower = 150000
-	#			FIN = {
-	#					country_event = {
-	#						id = murmansk.1
-	#						days = 150
-	#					}
-	#				}
-	#			if = {
-	#				limit = { has_idea = tno_income_taxation_not_applicable }
-	#				swap_ideas = {
-	#					remove_idea = tno_income_taxation_not_applicable
-	#					add_idea = tno_income_taxation_flat_taxes
-	#				}
-	#			}
-	#			if = {
-	#				limit = { has_idea = RUS_warlord_manpower }
-	#				swap_ideas = {
-	#					remove_idea = RUS_warlord_manpower
-	#					add_idea = RUS_regional_manpower
-	#				}
-	#			}
-	#			if = {
-	#				limit = { has_idea = RUS_warlord_econ }
-	#				swap_ideas = {
-	#					remove_idea = RUS_warlord_econ
-	#					add_idea = RUS_regional_econ
-	#				}
-	#			}
-	#			
-	#			if = {
-	#				limit = { NOT = { has_idea = tno_research_facilities_outdated } }
-	#				remove_ideas = {
-	#					tno_research_facilities_basic
-	#					tno_research_facilities_makeshift
-	#				}
-	#				add_ideas = tno_research_facilities_outdated
-	#				set_variable = { research_facilities_counter = -240 }
-	#				multiply_variable = { research_facilities_monthly_change = 0.25 }
-	#			}
-	#			for_each_scope_loop = {
-	#				array = global.russian_warlords
-	#				if = {
-	#					limit = {
-	#						NOT = { tag = ROOT }
-	#						exists = no
-	#						is_central_russian_nation = yes
-	#					}
-	#					every_state = {
-	#						limit = { is_core_of = PREV }
-	#						PREV = { remove_state_core = PREV }
-	#					}
-	#				}
-	#			}
-	#		}
-	#	}
-	#}
 
 	#	DRL_war_with_west_siberia = {
 	#		icon = GFX_decision_diplo_western_siberia

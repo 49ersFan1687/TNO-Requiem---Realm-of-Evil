@@ -1,0 +1,31 @@
+# Southern Urals proclamation is granted by The South All Ours.
+DRL_unify_southern_urals = {
+	save_global_event_target_as = RUS_southern_urals_unifier
+	set_country_flag = DRL_southern_urals_unified
+	custom_effect_tooltip = DRL_southern_urals_reunification_tt
+	set_cosmetic_tag = DIR_BEST
+	generate_russia_state_gdp = yes
+	clr_country_flag = is_warlord
+	if = {
+		limit = { amount_research_slots < 2 }
+		add_research_slot = 1
+	}
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.russian_warlords
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					exists = no
+					is_southern_urals_nation = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					PREV = { remove_state_core = PREV }
+				}
+			}
+		}
+	}
+}

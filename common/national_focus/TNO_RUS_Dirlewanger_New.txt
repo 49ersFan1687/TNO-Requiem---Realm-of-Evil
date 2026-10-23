@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = dirlewanger_start
 	country = {
 		factor = 0
@@ -1235,6 +1235,10 @@ shared_focus = {
 				}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_south_all_ours"
+		if = {
+			limit = { NOT = { has_country_flag = DRL_southern_urals_unified } }
+			DRL_unify_southern_urals = yes
+		}
 		country_event = {
 				id = DRL_beginning.11
 				hours = 13
