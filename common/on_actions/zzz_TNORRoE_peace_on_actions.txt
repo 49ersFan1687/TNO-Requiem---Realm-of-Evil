@@ -92,42 +92,7 @@ on_actions = {
 					582 = { remove_core_of = DRL add_core_of = URL add_manpower = 3000 }
 					846 = { remove_core_of = DRL add_core_of = URL add_manpower = 5500 }
 					ROOT = {
-						kill_ideology_leader = national_socialism_bandit_nazism_subtype
-						retire_character = DRL_Oskar_Dirlewanger
-						set_cosmetic_tag = DRL_DED
-					add_country_leader_role = {
-						character = DRL_Anarchic
-						promote_leader = yes
-						country_leader = {
-								expire = "1999.12.25"
-								ideology = socialist_subtype
-								traits = {
-								}	
-							
-							}
-						}
-					set_politics = {
-							ruling_party = socialist
-						}
-
-						set_popularities = {
-							communist = 0
-							socialist = 100
-							progressivism = 0
-							liberalism = 0
-							conservatism = 0
-							anocracy = 0
-							despotism = 0
-							fascism = 0
-							national_socialism = 0
-							ultranationalism = 0
-				
-						}
-						set_party_name = {
-							ideology = socialist
-							long_name = DRL_DED_socialist_party_long
-							name = DRL_DED_socialist_party
-						}
+						
 					if = {
 						limit = {
 							has_template = "Infanterie-Division"
@@ -182,9 +147,6 @@ on_actions = {
 							DRL_faster_boi
 							DRL_SS_spirit
 						}
-						remove_unit_leader_role = DRL_Fritz_Schmedes
-						remove_unit_leader_role = DRL_Gennady_Karkov
-						remove_unit_leader_role = DRL_Kallistros_Thielecke
 						load_focus_tree = ZZZ_blank_focus
 						add_war_support = -1
 						add_political_power = -2000
@@ -237,4 +199,3 @@ on_actions = {
 			log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
 		}
 	}
-}
