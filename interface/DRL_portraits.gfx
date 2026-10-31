@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_DRL_gennady_karkov"
+        texturefile = "gfx/leaders/DRL/Portrait_Dirlewanger_Brigade_Gennady_Karkov.png"
+    }
+}
