@@ -1,0 +1,36 @@
+﻿add_namespace = DRL_struggle
+
+country_event = { 
+    id = DRL_struggle.1 
+    title = DRL_struggle.1.t 
+    desc = DRL_struggle.1.desc 
+    picture = GFX_report_event_DRL_dirlewanger 
+    is_triggered_only = yes 
+    
+    option = { 
+        name = DRL_struggle.1.a
+        ai_chance = { factor = 1 }
+        
+        # 1. Shifts the ruling party to Esoteric Totalitarianism
+        set_politics = {
+            ruling_party = esoteric_totalitarianism
+            election_frequency = 0
+            elections_allowed = no
+        }
+        
+        # 2. Adjust popularity blocks safely
+        set_popularities = {
+            esoteric_totalitarianism = 90
+            national_socialism = 10
+        }
+        
+        # 3. Elevate Gennady to his Burgundy sub-ideology path
+        promote_character = {
+            character = DRL_Gennady_Karkov
+            ideology = esoteric_totalitarianism_subtype
+        }
+        
+        set_cosmetic_tag = DIR_KARKOV_RUSSIA
+    }
+}
+
