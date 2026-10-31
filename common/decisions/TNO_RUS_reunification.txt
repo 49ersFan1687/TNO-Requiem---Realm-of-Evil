@@ -1,4 +1,4 @@
-﻿RUS_murmansk_crisis_category = {
+RUS_murmansk_crisis_category = {
 	WSR_intervention_timer = {
 		icon = GFX_decision_generic_border_war
 		visible = {
@@ -463,7 +463,7 @@ RUS_reunification_category = {
 			OR = {
 				original_tag = DRL
 				AND = {
-					is_russian_unifier = yes
+					OR = { original_tag = WRS original_tag = VYT original_tag = SAM original_tag = KOM original_tag = PRM original_tag = DRL original_tag = BZI original_tag = OMS original_tag = TYM original_tag = SVR original_tag = TOM original_tag = SBA original_tag = NOV original_tag = KEM original_tag = CHT original_tag = AMR original_tag = MAG original_tag = BRY original_tag = IRK original_tag = OMO }
 				}
 			}
 		}
@@ -924,7 +924,7 @@ RUS_reunification_category = {
 				original_tag = DRL
 				AND = {
 					OR = {
-						is_central_russian_nation = yes
+						OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 						is_west_siberian_nation = yes
 					}
 
@@ -1252,6 +1252,10 @@ RUS_reunification_category = {
 	}
 
 	west_russia_reunification = {
+		# DRL uses its custom proclamation to load the correct regional setup.
+		visible = {
+			NOT = { original_tag = DRL }
+		}
 		icon = GFX_decision_diplo_western_russia
 		available = {
 			can_form_west_russia = yes
@@ -1259,7 +1263,8 @@ RUS_reunification_category = {
 			has_country_flag = RUS_Smuta_Ended
 		}
 		allowed = {
-			is_central_russian_nation = yes
+			OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
+			NOT = { original_tag = DRL }
 		}
 		fire_only_once = yes
 		ai_will_do = {
@@ -1563,7 +1568,7 @@ RUS_reunification_category = {
 	integrate_south_urals = {
 		icon = GFX_decision_diplo_south_urals
 		allowed = {
-			is_russian_unifier = yes
+			OR = { original_tag = WRS original_tag = VYT original_tag = SAM original_tag = KOM original_tag = PRM original_tag = DRL original_tag = BZI original_tag = OMS original_tag = TYM original_tag = SVR original_tag = TOM original_tag = SBA original_tag = NOV original_tag = KEM original_tag = CHT original_tag = AMR original_tag = MAG original_tag = BRY original_tag = IRK original_tag = OMO }
 		}
 		visible = {
 			OR = {
@@ -1596,7 +1601,7 @@ RUS_reunification_category = {
 	west_russia_launch_race_to_urals = {
 		icon = GFX_decision_diplo_south_urals
 		allowed = {
-			is_central_russian_nation = yes
+			OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 		}
 
 		visible = {
@@ -1638,7 +1643,7 @@ RUS_reunification_category = {
 			OR = {
 				original_tag = DRL
 				AND = {
-					is_central_russian_nation = yes
+					OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 				}
 			}
 		}
@@ -1724,7 +1729,7 @@ RUS_reunification_category = {
 	west_russia_diplo_with_wsb = {
 		icon = GFX_decision_diplo_western_siberia
 		allowed = {
-			is_central_russian_nation = yes
+			OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 		}
 		available = {
 			date > 1969.01.01
@@ -2748,7 +2753,7 @@ RUS_reunification_category = {
 				original_tag = DRL
 				AND = {
 					OR = {
-						is_central_russian_nation = yes
+						OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 						is_west_siberian_nation = yes
 					}
 				}
@@ -2854,7 +2859,7 @@ RUS_reunification_category = {
 		icon = GFX_decision_diplo_siberia_superregional
 		allowed = {
 			OR = {
-				is_central_russian_nation = yes
+				OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 				is_west_siberian_nation = yes
 			}
 		}
@@ -3146,7 +3151,7 @@ RUS_reunification_category = {
 			OR = {
 				original_tag = DRL
 				AND = {
-					is_central_russian_nation = yes
+					OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 				}
 			}
 		}
@@ -3449,7 +3454,7 @@ RUS_reunification_category = {
 			OR = {
 				original_tag = DRL
 				AND = {
-					is_central_russian_nation = yes
+					OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 				}
 			}
 		}
@@ -3745,7 +3750,7 @@ RUS_reunification_category = {
 			OR = {
 				original_tag = DRL
 				AND = {
-					is_central_russian_nation = yes
+					OR = { original_tag = WRS original_tag = ONG original_tag = KOM original_tag = SAM original_tag = GOR original_tag = VOL original_tag = VYT original_tag = TAR original_tag = PRM original_tag = GAY original_tag = BKR original_tag = DRL original_tag = BZI }
 				}
 			}
 		}

@@ -13,11 +13,49 @@ RUS_reunification_category = {
 			date > 1965.2.2
 			is_subject = no
 			has_war = no
-			OR = {
+			custom_trigger_tooltip = {
+				tooltip = DRL_owns_all_west_russian_states_tt
 				can_form_west_russia = yes
-				is_debug = yes
 			}
 			has_country_flag = RUS_Smuta_Ended
+		}
+		# Highlight the territory covered by the ownership requirement.
+		highlight_states = {
+			highlight_state_targets = {
+				state = 214
+				state = 249
+				state = 250
+				state = 251
+				state = 252
+				state = 256
+				state = 262
+				state = 351
+				state = 397
+				state = 398
+				state = 399
+				state = 400
+				state = 651
+				state = 752
+				state = 753
+				state = 755
+				state = 850
+				state = 851
+				state = 853
+				state = 854
+				state = 855
+				state = 856
+				state = 857
+				state = 860
+				state = 861
+				state = 862
+				state = 864
+				state = 865
+				state = 866
+				state = 867
+				state = 868
+				state = 869
+				state = 870
+			}
 		}
 		fire_only_once = yes
 		ai_will_do = { factor = 200 }

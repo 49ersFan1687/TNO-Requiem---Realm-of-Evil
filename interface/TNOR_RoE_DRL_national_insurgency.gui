@@ -36,7 +36,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "DRL_insurgency_title"
-			position = { x = 15 y = -6 }
+			position = { x = 15 y = -9 }
 			font = "vt323_72_WT_outline"
 			text = "DRL_NATIONAL_INSURGENCY_TITLE"
 			maxWidth = 1060
@@ -62,21 +62,32 @@ guiTypes = {
 			orientation = UPPER_RIGHT
 		}
 
+		instantTextboxType = { name = "DRL_insurgency_classification" position = { x = 25 y = 72 } font = "aldrich_16_outline" text = "DRL_INSURGENCY_CLASSIFICATION" maxWidth = 970 maxHeight = 24 fixedsize = yes format = left }
+		instantTextboxType = { name = "DRL_insurgency_map_caption" position = { x = 28 y = 166 } font = "aldrich_16_outline" text = "DRL_INSURGENCY_MAP_CAPTION" maxWidth = 452 maxHeight = 20 fixedsize = yes format = left }
+
 		# DRL insurgency status strip.
 		containerWindowType = {
 			name = "DRL_insurgency_top_bar"
-			size = { width = 482 height = 82 }
-			position = { x = 13 y = 77 }
-			background = { name = "DRL_insurgency_top_bar_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
-			instantTextboxType = { name = "DRL_insurgency_value" position = { x = 0 y = 8 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_VALUE" maxWidth = 482 maxHeight = 26 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_bar" position = { x = 45 y = 42 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_BAR" maxWidth = 392 maxHeight = 28 fixedsize = yes format = centre }
+			size = { width = 472 height = 70 }
+			position = { x = 18 y = 94 }
+			background = { name = "DRL_insurgency_top_bar_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+			instantTextboxType = { name = "DRL_insurgency_value" position = { x = 0 y = 8 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_VALUE" maxWidth = 472 maxHeight = 26 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_bar" position = { x = 40 y = 39 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_BAR" maxWidth = 392 maxHeight = 28 fixedsize = yes format = centre }
+		}
+
+		# Native cyan CRT frame; kept behind the clickable map sectors.
+		containerWindowType = {
+			name = "DRL_insurgency_map_frame"
+			position = { x = 13 y = 186 }
+			size = { width = 482 height = 468 }
+			background = { name = "DRL_insurgency_map_frame_bg" quadTextureSprite = "GFX_crt_2b_tile" }
 		}
 
 		# Left-hand operational map.
 		containerWindowType = {
 			name = "DRL_insurgency_map"
 			size = { width = 462 height = 452 }
-			position = { x = 23 y = 180 }
+			position = { x = 23 y = 194 }
 			iconType = { name = "DRL_insurgency_map_base" position = { x = 0 y = 0 } spriteType = "GFX_DRL_insurgency_base" }
 			buttonType = { name = "DRL_operation_ong" position = { x = 3 y = 27 } spriteType = "GFX_DRL_insurgency_arkhangelsk" pdx_tooltip = "DRL_OPERATION_ONG" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
 			buttonType = { name = "DRL_operation_nen" position = { x = 180 y = 2 } spriteType = "GFX_DRL_insurgency_nenets" pdx_tooltip = "DRL_OPERATION_NEN" pdx_tooltip_delayed = "DRL_OPERATION_TOOLTIP" }
@@ -96,26 +107,45 @@ guiTypes = {
 		containerWindowType = {
 			name = "DRL_insurgency_field_ledger"
 			size = { width = 462 height = 205 }
-			position = { x = 23 y = 650 }
-			background = { name = "DRL_insurgency_field_ledger_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
-			instantTextboxType = { name = "DRL_insurgency_ledger_title" position = { x = 10 y = 10 } font = "aldrich_24_outline" text = "DRL_INSURGENCY_LEDGER_TITLE" maxWidth = 442 maxHeight = 28 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_operation_status" position = { x = 15 y = 45 } font = "aldrich_20_outline" text = "DRL_INSURGENCY_OPERATION_STATUS" maxWidth = 432 maxHeight = 30 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_costs" position = { x = 15 y = 82 } font = "aldrich_18_outline" text = "DRL_INSURGENCY_OPERATION_COSTS" maxWidth = 432 maxHeight = 48 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_field_report" position = { x = 18 y = 138 } font = "aldrich_16_outline" text = "DRL_INSURGENCY_FIELD_REPORT" maxWidth = 426 maxHeight = 58 fixedsize = yes format = centre }
+			position = { x = 23 y = 660 }
+			background = { name = "DRL_insurgency_field_ledger_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+			instantTextboxType = { name = "DRL_insurgency_ledger_title" position = { x = 10 y = 10 } font = "aldrich_20_outline" text = "DRL_INSURGENCY_LEDGER_TITLE" maxWidth = 442 maxHeight = 28 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_operation_status" position = { x = 15 y = 45 } font = "aldrich_20_outline" text = "DRL_INSURGENCY_OPERATION_STATUS" maxWidth = 432 maxHeight = 38 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_costs" position = { x = 15 y = 91 } font = "aldrich_18_outline" text = "DRL_INSURGENCY_OPERATION_COSTS" maxWidth = 432 maxHeight = 48 fixedsize = yes format = centre }
+			instantTextboxType = { name = "DRL_insurgency_field_report" position = { x = 18 y = 146 } font = "aldrich_16_outline" text = "DRL_INSURGENCY_FIELD_REPORT" maxWidth = 426 maxHeight = 48 fixedsize = yes format = left }
 		}
 
-		# Right-hand briefing and operation panel.
+		# Right-hand staff dossier with native neon CRT frame tiles.
 		containerWindowType = {
 			name = "DRL_insurgency_operations_panel"
-			size = { width = 640 height = 790 }
-			position = { x = 505 y = 75 }
-			background = { name = "DRL_insurgency_operations_panel_bg" quadTextureSprite = "GFX_tiled_window_thin_border2" }
-			instantTextboxType = { name = "DRL_insurgency_operations" position = { x = 0 y = 20 } font = "aldrich_28_outline" text = "DRL_NATIONAL_INSURGENCY_OPERATIONS" maxWidth = 640 maxHeight = 34 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_desc" position = { x = 25 y = 72 } font = "aldrich_16_outline" text = "DRL_NATIONAL_INSURGENCY_DESC" maxWidth = 590 maxHeight = 175 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_insurgency_deadline" position = { x = 25 y = 245 } font = "aldrich_20_outline" text = "DRL_NATIONAL_INSURGENCY_DEADLINE" maxWidth = 590 maxHeight = 150 fixedsize = yes format = centre }
-			instantTextboxType = { name = "DRL_operation_list_left" position = { x = 25 y = 365 } font = "aldrich_18_outline" text = "DRL_OPERATION_LIST_LEFT" maxWidth = 285 maxHeight = 315 fixedsize = yes format = left }
-			instantTextboxType = { name = "DRL_operation_list_right" position = { x = 330 y = 365 } font = "aldrich_18_outline" text = "DRL_OPERATION_LIST_RIGHT" maxWidth = 285 maxHeight = 315 fixedsize = yes format = left }
-			instantTextboxType = { name = "DRL_insurgency_footer" position = { x = 25 y = 710 } font = "aldrich_18_outline" text = "DRL_NATIONAL_INSURGENCY_FOOTER" maxWidth = 590 maxHeight = 60 fixedsize = yes format = centre }
+			size = { width = 640 height = 775 }
+			position = { x = 505 y = 94 }
+			background = { name = "DRL_insurgency_operations_panel_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+			instantTextboxType = { name = "DRL_insurgency_operations" position = { x = 20 y = 14 } font = "aldrich_24_outline" text = "DRL_NATIONAL_INSURGENCY_OPERATIONS" maxWidth = 600 maxHeight = 30 fixedsize = yes format = left }
+			instantTextboxType = { name = "DRL_insurgency_desc" position = { x = 25 y = 58 } font = "aldrich_16_outline" text = "DRL_NATIONAL_INSURGENCY_DESC" maxWidth = 590 maxHeight = 146 fixedsize = yes format = left }
+			containerWindowType = {
+				name = "DRL_insurgency_deadline_frame"
+				position = { x = 18 y = 215 }
+				size = { width = 604 height = 116 }
+				background = { name = "DRL_insurgency_deadline_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+				instantTextboxType = { name = "DRL_insurgency_deadline" position = { x = 14 y = 12 } font = "aldrich_18_outline" text = "DRL_NATIONAL_INSURGENCY_DEADLINE" maxWidth = 576 maxHeight = 94 fixedsize = yes format = left }
+			}
+			instantTextboxType = { name = "DRL_insurgency_sector_heading" position = { x = 25 y = 348 } font = "aldrich_18_outline" text = "DRL_INSURGENCY_SECTOR_HEADING" maxWidth = 590 maxHeight = 24 fixedsize = yes format = left }
+			containerWindowType = {
+				name = "DRL_insurgency_sector_left_frame"
+				position = { x = 18 y = 380 }
+				size = { width = 298 height = 320 }
+				background = { name = "DRL_insurgency_sector_left_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+				instantTextboxType = { name = "DRL_operation_list_left" position = { x = 13 y = 12 } font = "aldrich_16_outline" text = "DRL_OPERATION_LIST_LEFT" maxWidth = 272 maxHeight = 306 fixedsize = yes format = left }
+			}
+			containerWindowType = {
+				name = "DRL_insurgency_sector_right_frame"
+				position = { x = 324 y = 380 }
+				size = { width = 298 height = 320 }
+				background = { name = "DRL_insurgency_sector_right_bg" quadTextureSprite = "GFX_crt_2b_tile" }
+				instantTextboxType = { name = "DRL_operation_list_right" position = { x = 13 y = 12 } font = "aldrich_16_outline" text = "DRL_OPERATION_LIST_RIGHT" maxWidth = 272 maxHeight = 306 fixedsize = yes format = left }
+			}
+			instantTextboxType = { name = "DRL_insurgency_footer" position = { x = 25 y = 714 } font = "aldrich_16_outline" text = "DRL_NATIONAL_INSURGENCY_FOOTER" maxWidth = 590 maxHeight = 48 fixedsize = yes format = left }
 		}
 	}
 }
