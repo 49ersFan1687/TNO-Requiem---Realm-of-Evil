@@ -786,7 +786,10 @@ DIR_RUSSIA = {
 	color = rgb { 10 10 10 }
 	color_ui = rgb { 10 10 10 }
 }
-
+DIR_KARKOV_RUSSIA = {
+	color = rgb { 25 0 50 }
+	color_ui = rgb { 25 0 50 }
+}
 TAJ_ssr = {
 	color = rgb { 163 66 76 }
 	color_ui = rgb { 163 66 76 }
