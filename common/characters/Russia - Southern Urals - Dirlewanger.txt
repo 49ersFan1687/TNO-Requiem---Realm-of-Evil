@@ -103,6 +103,7 @@ characters = {
 			legacy_id = 3522
 		}
 	}
+    
 	DRL_Anarchic = {
 		name = DRL_Anarchic
 		portraits = {
@@ -111,6 +112,7 @@ characters = {
 			}
 		}
 	}
+    
 	DRL_Lorenz_Hackenholt = {
 		name = DRL_Lorenz_Hackenholt
 		portraits = {
@@ -132,6 +134,7 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
+    
 	DRL_Hermann_Erich_Bauer = {
 		name = DRL_Hermann_Erich_Bauer
 		portraits = {
@@ -155,16 +158,29 @@ characters = {
 	}
 
 	# Generals #
-	DRL_Gennady_Karkov = {
+		DRL_Gennady_Karkov = {
 		name = DRL_Gennady_Karkov
 		portraits = {
+			civilian = {
+				large = GFX_portrait_DRL_gennady_karkov
+			}
 			army = {
-				large = "gfx/leaders/DRL/Portrait_Dirlewanger_Brigade_Gennady_Karkov.png"
+				large = GFX_portrait_DRL_gennady_karkov
 			}
 		}
+		
+		country_leader = {
+			expire = "1999.1.1"
+			ideology = esoteric_totalitarianism_subtype
+			desc = "POLITICS_GENNADY_KARKOV_DESC"
+			traits = {
+				harsh_leader
+			}
+			id = -1
+		}
+		
 		corps_commander = {
 			traits = { harsh_leader }
-			#desc = "LEADER_GENNADY_KARKOV_DESC"
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -173,6 +189,7 @@ characters = {
 			legacy_id = 3523
 		}
 	}
+    
 	DRL_Kallistros_Thielecke = {
 		name = DRL_Kallistros_Thielecke
 		portraits = {
@@ -191,6 +208,7 @@ characters = {
 			legacy_id = 3524
 		}
 	}
+    
 	DRL_Gerhard_Sommer = {
 		name = DRL_Gerhard_Sommer
 		portraits = {
@@ -199,4 +217,4 @@ characters = {
 			}
 		}
 	}
-}
+} 
