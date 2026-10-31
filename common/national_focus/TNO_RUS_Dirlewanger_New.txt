@@ -3741,3 +3741,172 @@ shared_focus = {
 		add_political_power = 50
 	}
 }
+shared_focus = {
+	id = DRL_what_comes_next
+	icon = GFX_focus_DRL_the_realm_begins
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_beyond_the_urals }
+	x = 8
+	y = 1
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_what_comes_next"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_the_last_storm
+	icon = GFX_focus_DRL_The_last_storm
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_what_comes_next }
+	x = 8
+	y = 2
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_last_storm"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_placing_the_greatest_bet
+	icon = GFX_focus_DRL_Placing_the_greatest_bet
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_the_last_storm }
+	x = 8
+	y = 3
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_placing_the_greatest_bet"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_on_dirlewanger
+	icon = GFX_focus_DRL_who_i_am
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_placing_the_greatest_bet }
+	x = 8
+	y = 4
+		mutually_exclusive = { focus = DRL_on_a_great_russia }
+		mutually_exclusive = { focus = DRL_on_a_reborn_russia }
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_on_dirlewanger"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_on_a_great_russia
+	icon = GFX_focus_DRL_On_a_great_russia
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_placing_the_greatest_bet }
+	x = 6
+	y = 4
+	mutually_exclusive = { focus = DRL_on_dirlewanger }
+	mutually_exclusive = { focus = DRL_on_a_reborn_russia }
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_on_a_great_russia"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_on_a_reborn_russia
+	icon = GFX_focus_DRL_On_a_reborn_russia
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_placing_the_greatest_bet }
+	x = 10
+	y = 4
+	mutually_exclusive = { focus = DRL_on_dirlewanger }
+	mutually_exclusive = { focus = DRL_on_a_great_russia }
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_on_a_reborn_russia"
+		add_political_power = 50
+		set_country_flag = DRL_karkov_path_chosen
+	}
+}
+shared_focus = {
+	id = DRL_the_final_struggle
+	icon = GFX_focus_DRL_The_final_Struggle
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { 
+		focus = DRL_on_a_reborn_russia
+		focus = DRL_on_a_great_russia
+		focus = DRL_on_dirlewanger
+	 }
+	available = {
+        OR = {
+            has_completed_focus = DRL_on_a_reborn_russia
+            has_completed_focus = DRL_on_a_great_russia
+            has_completed_focus = DRL_on_dirlewange
+        }
+    }
+
+	x = 8
+	y = 5
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_the_final_struggle"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = DRL_what_shall_thy_fate_be
+	icon = GFX_focus_DRL_What_shall_thy_fate_be
+	cost = 3
+	available_if_capitulated = no
+	cancelable = yes
+	prerequisite = { focus = DRL_the_final_struggle }
+	x = 8
+	y = 6
+	ai_will_do = { factor = 80 }
+	available = {
+			NOT = { has_country_flag = DRL_Oskar_Dirlewanger_Dead }
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DRL_what_shall_thy_fate_be"
+		add_political_power = 50
+		 if = {
+            limit = { 
+                has_country_flag = DRL_karkov_path_chosen 
+            }
+            country_event = { id = DRL_struggle.1 } 
+        }
+	}
+}
